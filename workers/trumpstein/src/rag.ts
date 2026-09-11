@@ -257,6 +257,6 @@ ${rathboneContext}`);
 ${ragContext}`);
   }
 
-  sections.push(`RAG RULE: The above entries inform what you know. You should use 2–3 of them as [CHIP OVERRIDE] glitches woven into your response — each must be directly relevant and genuinely funny/useful. Space them naturally throughout your reply, not bunched together. Do not enumerate these entries. Do not summarize them. Do not mention entry numbers unless the user explicitly asks for sources.`);
+  sections.push(`RAG RULE: The above entries inform what you know. Choose how much evidence appears in the response from semantic fit and question depth, not a fixed count. For a narrow question, use only the strongest relevant fact if it genuinely helps; for a comparison, timeline, or multi-part follow-up, weave several independent facts only when each adds distinct support. Never force a chip, repeat the same point, or turn the reply into an entry list. Do not enumerate these entries. Do not summarize them. Do not mention entry numbers unless the user explicitly asks for sources.`);
   return sections.join("\n\n");
 }

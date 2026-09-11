@@ -455,7 +455,9 @@ function buildSingleQuery(
   referencesPreviousAnswer: boolean,
   conversationState: ConversationState
 ): string {
-  const parts = [querySeed || message];
+  // Preserve the user's actual terms. `querySeed` is a compact continuity hint
+  // (often just an entity such as "Trump"), not a substitute for the question.
+  const parts = [message, querySeed];
   if (entities.length > 0) parts.push(entities.slice(0, 3).join(" "));
   if (themes.length > 0) parts.push(themes.slice(0, 3).join(" "));
   if (referencesPreviousAnswer && conversationState.currentTopic) parts.push(conversationState.currentTopic);

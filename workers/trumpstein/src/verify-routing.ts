@@ -61,6 +61,7 @@ function caseB(router: Layer0TurnRouter): void {
   assert(route.intent === "corpus factual", "case B: expected corpus factual");
   assert(route.retrievalPlan.mode === "single", "case B: expected single retrieval");
   assert(route.retrievalPlan.query.length > 0, "case B: expected query");
+  assert(route.retrievalPlan.query.includes("media lane"), "case B: single retrieval must preserve the user's semantic terms");
 }
 
 function caseC(router: Layer0TurnRouter): void {

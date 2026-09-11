@@ -1,4 +1,4 @@
-import { dedupeCandidates, materializeRagResult, rerankCandidates, type RagCandidate } from "./rag";
+import { buildAugmentedPrompt, dedupeCandidates, materializeRagResult, rerankCandidates, type RagCandidate } from "./rag";
 
 function assert(condition: unknown, message: string): void { if (!condition) throw new Error(message); }
 
@@ -26,6 +26,10 @@ function main(): void {
 
   const result = materializeRagResult(Array.from({ length: 15 }, (_, index) => candidate({ key: `entry:${index}`, entryNumber: index, context: `Entry #${index}`, category: String(index) })));
   assert(result.entryNumbers.length === 12, "final context must cap at 12 entries");
+
+  const prompt = buildAugmentedPrompt("persona", "Entry #1 | Title: fixture");
+  assert(prompt.includes("semantic fit and question depth"), "RAG prompt must select evidence by relevance and depth");
+  assert(!prompt.includes("2–3 of them"), "RAG prompt must not impose a fixed chip count");
   console.log("verify-rag: ok");
 }
 
