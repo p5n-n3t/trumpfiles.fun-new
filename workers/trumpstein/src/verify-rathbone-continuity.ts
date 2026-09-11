@@ -11,6 +11,8 @@ function assert(condition: unknown, message: string): void {
 
 function main(): void {
   const dormant = createDormantRathboneWorldState();
+  assert(isRathboneContinuityTurn(dormant, "what about rahbone?"), "typo recovery: Rahbone must activate canon");
+  assert(isRathboneContinuityTurn(dormant, "tell me about rathbpone"), "typo recovery: Rathbpone must activate canon");
 
   const stage0Noop = absorbRathboneAssistantCanon(dormant, "Rathbone and Shmuley are in a same-room showdown.");
   assert(stage0Noop.stage === 0, "stage 0: assistant canon should not activate dormant state");

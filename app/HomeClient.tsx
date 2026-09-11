@@ -146,7 +146,7 @@ export default function HomeClient({
                                             Every scandal. Every lie. Every <span className="text-orange-400 italic" style={{ fontFamily: 'var(--font-arctic-guardian-grad-italic)' }}>abuse of power.</span>
                                         </p>
                                         <p className="text-sm text-foreground/65 leading-relaxed max-w-sm" style={{ fontFamily: 'var(--font-outfit)', fontWeight: 400 }}>
-                                            <span className="text-orange-300/80 font-semibold">5,900+</span> documented entries — scored, sourced, and archived so the record <span className="font-mono text-[12px] bg-white/5 px-1 rounded border border-white/10">survives</span> the churn.
+                                            Documented entries — scored, sourced, and archived so the record <span className="font-mono text-[12px] bg-white/5 px-1 rounded border border-white/10">survives</span> the churn.
                                         </p>
                                     </div>
                                     <div className="flex justify-start pt-3">

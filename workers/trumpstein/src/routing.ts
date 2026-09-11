@@ -56,7 +56,7 @@ export interface TurnRoute {
 const ENTITY_PATTERNS: Array<{ label: string; aliases: string[] }> = [
   { label: "Trumpstein", aliases: ["trumpstein", "trumpstein ai"] },
   { label: "Trump", aliases: ["trump", "donald trump", "donald j. trump"] },
-  { label: "Rathbone", aliases: ["rathbone", "thugbone", "saeedmsr", "martinkrenk", "mood basket", "lolo mcleftie", "squishymellowdragon"] },
+  { label: "Rathbone", aliases: ["rathbone", "rahbone", "rathbpone", "thugbone", "saeedmsr", "martinkrenk", "mood basket", "lolo mcleftie", "squishymellowdragon"] },
   { label: "Hasan Piker", aliases: ["hasan", "hasan piker", "hasanabi"] },
   { label: "Shmuley", aliases: ["shmuley", "boteach"] },
   { label: "Laura Loomer", aliases: ["laura loomer", "loomer"] },

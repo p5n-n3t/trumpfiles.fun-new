@@ -289,7 +289,29 @@ export function serializeRathboneWorldState(state: RathboneWorldState): string {
 
 export function isRathboneMention(text: string): boolean {
   const normalized = normalizeText(text);
-  return RATHBONE_ALIASES.some((alias) => normalized.includes(alias));
+  return RATHBONE_ALIASES.some((alias) => normalized.includes(alias)) ||
+    normalized.split(" ").some(isRathboneTypo);
+}
+
+function isRathboneTypo(token: string): boolean {
+  if (token.length < 6 || token.length > 10) return false;
+  return levenshteinDistance(token, "rathbone") <= 2;
+}
+
+function levenshteinDistance(left: string, right: string): number {
+  let previous = Array.from({ length: right.length + 1 }, (_, index) => index);
+  for (let leftIndex = 1; leftIndex <= left.length; leftIndex += 1) {
+    const current = [leftIndex];
+    for (let rightIndex = 1; rightIndex <= right.length; rightIndex += 1) {
+      current[rightIndex] = Math.min(
+        current[rightIndex - 1] + 1,
+        previous[rightIndex] + 1,
+        previous[rightIndex - 1] + (left[leftIndex - 1] === right[rightIndex - 1] ? 0 : 1)
+      );
+    }
+    previous = current;
+  }
+  return previous[right.length];
 }
 
 export function updateRathboneWorldState(

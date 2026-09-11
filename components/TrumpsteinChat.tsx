@@ -568,9 +568,30 @@ export default function TrumpsteinChat({
   );
 }
 
-// Animated chip component with hover tooltip fetching entry data
+interface EntryPreview {
+  entry_number: number;
+  title: string;
+  synopsis?: string | null;
+  rationale_short?: string | null;
+  category?: string | null;
+  phase?: string | null;
+  date_start?: string | null;
+  date_end?: string | null;
+  danger?: number | null;
+  authoritarianism?: number | null;
+  lawlessness?: number | null;
+  insanity?: number | null;
+  absurdity?: number | null;
+  credibility_risk?: number | null;
+  recency_intensity?: number | null;
+  impact_scope?: number | null;
+  all_keywords?: string[] | null;
+  sources?: Array<{ url?: string; title?: string | null; publisher?: string | null }>;
+}
+
+// Animated chip component with a full, provenance-aware entry preview on hover.
 function ChipOverride({ text }: { text: string }) {
-  const [tooltip, setTooltip] = useState<{ title: string; synopsis: string; danger: number } | null>(null);
+  const [tooltip, setTooltip] = useState<EntryPreview | null>(null);
   const [loading, setLoading] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [showTooltip, setShowTooltip] = useState(false);
@@ -579,29 +600,37 @@ function ChipOverride({ text }: { text: string }) {
   const entryMatch = text.match(/Entry #(\d+)/);
   const entryNum = entryMatch ? entryMatch[1] : null;
 
+  const loadTooltip = async () => {
+    if (!entryNum || tooltip || loading) return;
+    setLoading(true);
+    try {
+      const res = await fetch(`/api/entry/${entryNum}`);
+      if (res.ok) setTooltip(await res.json() as EntryPreview);
+    } catch { /* silent */ } finally {
+      setLoading(false);
+    }
+  };
+
   const handleMouseEnter = async (e: React.MouseEvent) => {
     setShowTooltip(true);
     setMousePos({ x: e.clientX, y: e.clientY });
-    if (entryNum && !tooltip && !loading) {
-      setLoading(true);
-      try {
-        const res = await fetch(`/api/entry/${entryNum}`);
-        if (res.ok) {
-          const data = await res.json();
-          setTooltip({ title: data.title, synopsis: data.synopsis?.slice(0, 200), danger: data.danger });
-        }
-      } catch { /* silent */ } finally {
-        setLoading(false);
-      }
-    }
+    await loadTooltip();
   };
+
+  const handleFocus = () => {
+    setShowTooltip(true);
+    setMousePos({ x: 16, y: 24 });
+    void loadTooltip();
+  };
+
+  const sourceLinks = tooltip?.sources?.filter((source): source is { url: string; title?: string | null; publisher?: string | null } => typeof source.url === "string" && source.url.length > 0) ?? [];
 
   const handleMouseMove = (e: React.MouseEvent) => {
     setMousePos({ x: e.clientX, y: e.clientY });
   };
 
   return (
-    <span className="relative inline-block">
+    <span className="relative inline-block" onMouseLeave={() => setShowTooltip(false)}>
       <span
         className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md font-mono text-[10px] cursor-pointer select-none mx-0.5 my-0.5"
         style={{
@@ -613,7 +642,8 @@ function ChipOverride({ text }: { text: string }) {
         }}
         onMouseEnter={handleMouseEnter}
         onMouseMove={handleMouseMove}
-        onMouseLeave={() => setShowTooltip(false)}
+        onFocus={handleFocus}
+        tabIndex={0}
       >
         <span style={{ fontSize: "8px", opacity: 0.7 }}>⚡</span>
         {text.replace(/^\[CHIP OVERRIDE:\s*/, "").replace(/\]$/, "").slice(0, 60)}
@@ -622,22 +652,34 @@ function ChipOverride({ text }: { text: string }) {
 
       {showTooltip && (tooltip || loading) && typeof window !== "undefined" && (
         <span
-          className="fixed z-[9999] pointer-events-none"
+          className="fixed z-[9999]"
+          role="dialog"
+          aria-label={`Full archive entry ${tooltip?.entry_number ?? entryNum ?? "preview"}`}
           style={{
-            left: Math.min(mousePos.x + 12, window.innerWidth - 280),
-            top: mousePos.y - 10,
-            width: 260,
+            left: Math.min(Math.max(12, mousePos.x + 12), window.innerWidth - 388),
+            top: Math.min(Math.max(12, mousePos.y - 10), window.innerHeight - 520),
+            width: 372,
           }}
         >
-          <span className="block rounded-xl p-3 text-[11px] leading-relaxed"
-               style={{ background: "#0a1a0a", border: "1px solid rgba(0,220,100,0.35)", boxShadow: "0 4px 20px rgba(0,0,0,0.7)" }}>
+          <span className="block max-h-[min(31rem,calc(100vh-24px))] overflow-y-auto rounded-xl p-4 text-[11px] leading-relaxed"
+               style={{ background: "#09110c", border: "1px solid rgba(0,220,100,0.38)", boxShadow: "0 12px 32px rgba(0,0,0,0.78)" }}>
             {loading ? (
               <span style={{ color: "rgba(0,220,100,0.6)" }}>Loading chip data…</span>
             ) : tooltip ? (
               <>
-                <span className="block font-bold mb-1" style={{ color: "#00e664", fontSize: "11px" }}>{tooltip.title}</span>
-                <span className="block" style={{ color: "rgba(255,255,255,0.65)" }}>{tooltip.synopsis}…</span>
-                <span className="block mt-1.5 font-mono" style={{ color: "#ff4d5e", fontSize: "10px" }}>Danger: {tooltip.danger}/10</span>
+                <span className="block mb-1 font-mono text-[9px] uppercase tracking-[0.16em]" style={{ color: "rgba(0,230,100,0.7)" }}>Archive entry #{tooltip.entry_number}</span>
+                <span className="block font-bold text-sm leading-snug" style={{ color: "#00e664" }}>{tooltip.title}</span>
+                <span className="mt-2 block text-[10px] font-mono" style={{ color: "rgba(255,255,255,0.45)" }}>
+                  {[tooltip.category, tooltip.phase, tooltip.date_start, tooltip.date_end].filter(Boolean).join(" · ") || "Archive metadata unavailable"}
+                </span>
+                {tooltip.synopsis && <span className="mt-3 block whitespace-pre-wrap" style={{ color: "rgba(255,255,255,0.78)" }}>{tooltip.synopsis}</span>}
+                {tooltip.rationale_short && <span className="mt-3 block border-l-2 pl-2.5" style={{ borderColor: "rgba(0,230,100,0.45)", color: "rgba(255,255,255,0.62)" }}>{tooltip.rationale_short}</span>}
+                <span className="mt-3 grid grid-cols-3 gap-1.5 font-mono text-[9px]" style={{ color: "rgba(255,255,255,0.58)" }}>
+                  {[["Danger", tooltip.danger], ["Authoritarian", tooltip.authoritarianism], ["Lawless", tooltip.lawlessness], ["Insanity", tooltip.insanity], ["Absurdity", tooltip.absurdity], ["Credibility", tooltip.credibility_risk], ["Recency", tooltip.recency_intensity], ["Impact", tooltip.impact_scope]].filter(([, value]) => typeof value === "number").map(([label, value]) => <span key={String(label)} className="rounded bg-white/5 px-1.5 py-1">{label}: {value}/10</span>)}
+                </span>
+                {tooltip.all_keywords?.length ? <span className="mt-3 block" style={{ color: "rgba(255,255,255,0.5)" }}>Keywords: {tooltip.all_keywords.join(", ")}</span> : null}
+                {sourceLinks.length ? <span className="mt-3 block" style={{ color: "rgba(255,255,255,0.58)" }}>Sources: {sourceLinks.map((source, index) => <a key={`${source.url}-${index}`} href={source.url} target="_blank" rel="noreferrer" className="ml-1 text-green-300 underline underline-offset-2">{source.publisher || source.title || "source"}</a>)}</span> : null}
+                <a href={`/entry/${tooltip.entry_number}`} target="_blank" rel="noreferrer" className="mt-4 inline-flex rounded-md border px-2.5 py-1.5 font-mono text-[10px] font-bold transition-colors hover:bg-green-300/10" style={{ borderColor: "rgba(0,230,100,0.45)", color: "#00e664" }}>Open full entry ↗</a>
               </>
             ) : null}
           </span>
