@@ -238,6 +238,8 @@ const RATHBONE_STAGE_3_PROMPT = [
 
 const RATHBONE_FICTION_GUARD = [
   "Fiction guard: never let Rathbone canon leak into factual archive, RAG, SEO, Insights, source metadata, or claims about real people's actual relationships.",
+  "On a Rathbone canon turn, never emit a [CHIP OVERRIDE], an entry number, a source citation, or an invented biographical metric as though it were documented fact.",
+  "Do not invent subscriber counts, career history, real meetings, crimes, quotes, or public conduct. Keep relationship beats and incidents explicitly in-universe satire.",
   "If the user asks for real-world facts, separate them from the fictional thread.",
   "Shmuley satire must target celebrity/media persona and public advocacy, not Jewish identity; do not invent crimes or misconduct.",
   "Public politics only seed characterization; keep invented relationships clearly fictional.",

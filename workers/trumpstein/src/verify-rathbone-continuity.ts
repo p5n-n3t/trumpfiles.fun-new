@@ -21,6 +21,13 @@ function main(): void {
     history: [],
     currentTurn: 1,
   }).state;
+  const firstPrompt = updateRathboneWorldState(dormant, {
+    message: "What do you think of Rathbone?",
+    history: [],
+    currentTurn: 1,
+  }).promptAugmentation;
+  assert(firstPrompt.includes("never emit a [CHIP OVERRIDE]"), "fiction guard: Rathbone turns must block fictional chip claims");
+  assert(firstPrompt.includes("Do not invent subscriber counts"), "fiction guard: Rathbone turns must block invented biography metrics");
   const withCanon = absorbRathboneAssistantCanon(
     seeded,
     "Shmuley returns for a same-room callback, Tucker becomes the wildcard, and the rivalry bit lands."
