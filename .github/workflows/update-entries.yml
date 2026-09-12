@@ -1,19 +1,26 @@
 name: Trump Files — Auto Update Entries
 
+concurrency:
+  group: trump-files-auto-update
+  cancel-in-progress: true
+
 on:
-  schedule:
-    # Runs every 6 hours
-    - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
+      run_live:
+        description: 'Required explicit confirmation to allow DB writes and Vectorize'
+        required: true
+        type: boolean
+        default: false
       dry_run:
         description: 'Dry run (research only, no DB insert)'
         required: false
-        default: 'false'
+        type: boolean
+        default: true
       max_entries:
         description: 'Max new entries to insert per run'
         required: false
-        default: '10'
+        default: '5'
 
 jobs:
   update:
@@ -70,8 +77,9 @@ jobs:
           EXA_API_KEY_2: ${{ secrets.EXA_API_KEY_2 }}
           EXA_API_KEY_3: ${{ secrets.EXA_API_KEY_3 }}
           WORKER_URL: https://trumpstein.trumpstein.workers.dev
-          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
-          MAX_ENTRIES: ${{ github.event.inputs.max_entries || '10' }}
+          RUN_LIVE: ${{ github.event.inputs.run_live || 'false' }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'true' }}
+          MAX_ENTRIES: ${{ github.event.inputs.max_entries || '5' }}
         run: node scripts/auto-update.mjs
       # NOTE: Vectorize is handled INSIDE auto-update.mjs (incremental, new entries only).
       # Full reindex is in .github/workflows/reindex-vectorize.yml (manual only).

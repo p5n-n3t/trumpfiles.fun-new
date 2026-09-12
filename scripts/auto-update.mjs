@@ -29,8 +29,12 @@ const DATABASE_URL = process.env.DATABASE_URL;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY; // no longer required — kept for backward compat
 const INGEST_SECRET = process.env.INGEST_SECRET;
 const WORKER_URL = process.env.WORKER_URL || 'https://trumpstein.trumpstein.workers.dev';
-const DRY_RUN = process.env.DRY_RUN === 'true';
-const MAX_ENTRIES = parseInt(process.env.MAX_ENTRIES || '10', 10);
+const RUN_LIVE = process.env.RUN_LIVE === 'true';
+const DRY_RUN = !RUN_LIVE || process.env.DRY_RUN !== 'false';
+const requestedMaxEntries = Number.parseInt(process.env.MAX_ENTRIES || '5', 10);
+const MAX_ENTRIES = Number.isFinite(requestedMaxEntries)
+  ? Math.min(Math.max(requestedMaxEntries, 1), 10)
+  : 5;
 
 // Exa key rotation — cycle through available keys to distribute load
 const EXA_KEYS = [

@@ -1,0 +1,11 @@
+{
+  "schema": "trump-claims-staging-1",
+  "input_dir": "/home/jq/Desktop/trump_claims",
+  "candidate_count": 150,
+  "total_groups": 10105,
+  "curated_linked_groups": 150,
+  "occurrence_only_groups": 9955,
+  "omitted_by_cap": 9955,
+  "max_candidates": 150,
+  "analysis_included": false
+}

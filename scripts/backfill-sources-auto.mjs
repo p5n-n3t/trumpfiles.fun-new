@@ -30,7 +30,10 @@ const EXA_KEYS = [
 if (!DATABASE_URL) { console.error('DATABASE_URL required'); process.exit(1); }
 if (!EXA_KEYS.length) { console.error('At least one EXA_API_KEY required'); process.exit(1); }
 
-const BATCH_SIZE = parseInt(process.env.BATCH_SIZE ?? '200', 10);
+const requestedBatchSize = Number.parseInt(process.env.BATCH_SIZE ?? '25', 10);
+const BATCH_SIZE = Number.isFinite(requestedBatchSize)
+  ? Math.min(Math.max(requestedBatchSize, 1), 50)
+  : 25;
 const START_ENTRY = parseInt(process.env.START_ENTRY ?? '1', 10);
 const END_ENTRY = parseInt(process.env.END_ENTRY ?? '9999', 10);
 

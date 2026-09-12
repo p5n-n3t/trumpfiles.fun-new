@@ -1,11 +1,17 @@
 name: Backfill Entry Sources (Exa)
 
+concurrency:
+  group: trump-files-source-backfill
+  cancel-in-progress: true
+
 on:
-  schedule:
-    # Run every night at 2am UTC — zero agent tokens, uses Exa REST directly
-    - cron: '0 2 * * *'
   workflow_dispatch:
     inputs:
+      confirm_run:
+        description: 'Required explicit confirmation to run source backfill'
+        required: true
+        type: boolean
+        default: false
       start_entry:
         description: 'Start entry number (0 = auto-detect lowest unsourced)'
         default: '0'
@@ -14,10 +20,12 @@ on:
         default: '9999'
       batch_size:
         description: 'Entries to process per run'
-        default: '200'
+        default: '25'
+        type: number
 
 jobs:
   backfill:
+    if: github.event.inputs.confirm_run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -66,7 +74,7 @@ jobs:
           EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
           EXA_API_KEY_2: ${{ secrets.EXA_API_KEY_2 }}
           EXA_API_KEY_3: ${{ secrets.EXA_API_KEY_3 }}
-          BATCH_SIZE: ${{ github.event.inputs.batch_size || '200' }}
+          BATCH_SIZE: ${{ github.event.inputs.batch_size || '25' }}
           START_ENTRY: ${{ github.event.inputs.start_entry || '0' }}
           END_ENTRY: ${{ github.event.inputs.end_entry || '9999' }}
         run: node scripts/backfill-sources-auto.mjs
