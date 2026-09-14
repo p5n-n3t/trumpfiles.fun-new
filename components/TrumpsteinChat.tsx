@@ -283,15 +283,17 @@ export default function TrumpsteinChat({
       .map(m => `${m.role === "user" ? "You" : "Trumpstein"}: ${m.content}`)
       .join("\n\n");
     try {
-      await fetch("/api/send-email", {
+      const response = await fetch("/api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          type: "transcript",
           to: emailAddr,
           subject: "Your Trumpstein Chat Transcript",
           message: `Here's your chat with Trumpstein:\n\n${transcript}\n\n— Trumpstein Files`,
         }),
       });
+      if (!response.ok) throw new Error("Email service rejected the transcript");
       setEmailSent(true);
       setTimeout(() => { setShowEmailModal(false); setEmailSent(false); }, 2000);
     } catch { /* silent */ } finally {

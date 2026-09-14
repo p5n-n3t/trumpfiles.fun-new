@@ -56,7 +56,6 @@
     "react-is": "19.2.7",
     "react-router-dom": "^6.30.3",
     "recharts": "^3.3.0",
-    "resend": "^6.2.2",
     "rough-notation": "^0.5.1",
     "tailwind-merge": "^3.6.0",
     "tailwindcss-animate": "^1.0.7",

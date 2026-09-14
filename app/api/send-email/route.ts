@@ -1,49 +1,36 @@
-import { NextRequest, NextResponse } from 'next/server'
-import { Resend } from 'resend'
+import { NextRequest, NextResponse } from "next/server";
 
-const resend = process.env.RESEND_API_KEY
-  ? new Resend(process.env.RESEND_API_KEY)
-  : null
+const WORKER_URL = process.env.TRUMPSTEIN_WORKER_URL
+  ?? process.env.NEXT_PUBLIC_TRUMPSTEIN_WORKER_URL
+  ?? "https://trumpstein.trumpstein.workers.dev";
+const MAX_EMAIL_REQUEST_BYTES = 44_096;
 
-export async function POST(request: NextRequest) {
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  const contentLength = Number(request.headers.get("content-length") ?? "0");
+  if (Number.isFinite(contentLength) && contentLength > MAX_EMAIL_REQUEST_BYTES) {
+    return NextResponse.json({ error: "Message is too large" }, { status: 413 });
+  }
+  const body = await request.text();
+  if (new TextEncoder().encode(body).byteLength > MAX_EMAIL_REQUEST_BYTES) {
+    return NextResponse.json({ error: "Message is too large" }, { status: 413 });
+  }
+
   try {
-    if (!resend) {
-      return NextResponse.json(
-        { error: 'Email service not configured' },
-        { status: 503 }
-      )
-    }
-
-    const { name, email, message } = await request.json()
-
-    if (!name || !email || !message) {
-      return NextResponse.json(
-        { error: 'Missing required fields' },
-        { status: 400 }
-      )
-    }
-
-    const data = await resend.emails.send({
-      from: 'Trump Files <djt@trumpstein.me>',
-      to: ['eojiraam@gmail.com'],
-      subject: `Contact Form: ${name}`,
-      html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #FF4500;">New Contact Form Submission</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Message:</strong></p>
-          <p style="background-color: #f5f5f5; padding: 15px; border-radius: 5px;">${message}</p>
-        </div>
-      `,
-    })
-
-    return NextResponse.json({ success: true, data })
-  } catch (error) {
-    console.error('Error sending email:', error)
-    return NextResponse.json(
-      { error: 'Failed to send email' },
-      { status: 500 }
-    )
+    const response = await fetch(`${WORKER_URL.replace(/\/$/, "")}/send-email`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Origin: request.headers.get("origin") ?? "https://trumpstein.me",
+      },
+      body,
+      cache: "no-store",
+    });
+    const text = await response.text();
+    return new NextResponse(text, {
+      status: response.status,
+      headers: { "Content-Type": response.headers.get("content-type") ?? "application/json" },
+    });
+  } catch {
+    return NextResponse.json({ error: "Email service unavailable" }, { status: 502 });
   }
 }

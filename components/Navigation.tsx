@@ -4,13 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -46,14 +40,12 @@ function ArcticNavLabel({ label }: { label: string }) {
             rest: {
               y: 0,
               background: "linear-gradient(180deg, #ffffff 0%, #ffffff 50%, #ff8c00 80%, #ff6b00 100%)",
-              WebkitBackgroundClip: "text",
               backgroundClip: "text",
               color: "transparent",
             },
             hover: {
               y: index % 2 === 0 ? -3 : 2,
               background: "linear-gradient(180deg, #ff6b00 0%, #ff8c00 40%, #ffffff 70%, #ffffff 100%)",
-              WebkitBackgroundClip: "text",
               backgroundClip: "text",
               color: "transparent",
             },
@@ -119,29 +111,18 @@ export default function Navigation() {
   const handleContactSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-
     try {
       const response = await fetch("/api/send-email", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.get("name"),
-          email: formData.get("email"),
-          message: formData.get("message"),
-        }),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type: "contact", name: formData.get("name"), email: formData.get("email"), message: formData.get("message") }),
       });
-
-      if (response.ok) {
-        alert("Message sent successfully!");
-        setShowContact(false);
-      } else {
-        alert("Failed to send message. Please try again.");
-      }
+      if (!response.ok) throw new Error("Email service rejected the message");
+      alert("Message sent successfully!");
+      setShowContact(false);
     } catch (error) {
-      console.error("Error sending email:", error);
-      alert("An error occurred. Please try again.");
+      console.error("Error sending contact message:", error);
+      alert("The message could not be sent. Please try again later.");
     }
   };
 
@@ -248,17 +229,15 @@ export default function Navigation() {
                 </Link>
               </motion.div>
             ))}
-
-            {/* Contact Button */}
             <motion.div initial="rest" whileHover={reduceMotion ? undefined : "hover"} whileFocus={reduceMotion ? undefined : "hover"} whileTap={reduceMotion ? undefined : { scale: 0.97 }}>
-            <Button
-              variant="ghost"
-              onClick={() => setShowContact(true)}
-              className="min-h-11 rounded-md px-3 text-[13px] font-medium text-foreground/70 transition-colors duration-200 hover:bg-transparent hover:text-orange-200 focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-            >
-              <Mail size={16} className="text-orange-400/50" />
-              <ArcticNavLabel label="Contact" />
-            </Button>
+              <Button
+                variant="ghost"
+                onClick={() => setShowContact(true)}
+                className="min-h-11 rounded-md px-3 text-[13px] font-medium text-foreground/70 transition-colors duration-200 hover:bg-transparent hover:text-orange-200 focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              >
+                <Mail size={16} className="text-orange-400/50" />
+                <ArcticNavLabel label="Contact" />
+              </Button>
             </motion.div>
           </div>
 
@@ -340,17 +319,9 @@ export default function Navigation() {
                   </motion.div>
                 ))}
 
-                {/* Mobile Contact */}
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.25 }}
-                >
+                <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.25 }}>
                   <button
-                    onClick={() => {
-                      setIsOpen(false);
-                      setShowContact(true);
-                    }}
+                    onClick={() => { setIsOpen(false); setShowContact(true); }}
                     className="flex items-center gap-3 px-3 py-2 rounded-lg text-foreground/70 hover:bg-orange-500/10 hover:text-orange-300 transition-all duration-200 w-full"
                   >
                     <Mail size={16} className="text-orange-400/50" />
@@ -364,51 +335,17 @@ export default function Navigation() {
         </AnimatePresence>
       </motion.nav>
 
-      {/* Contact Dialog */}
       <Dialog open={showContact} onOpenChange={setShowContact}>
         <DialogContent className="sm:max-w-[425px] bg-black/95 border-orange-500/30">
           <DialogHeader>
-            <DialogTitle className="text-orange-400">Contact Us</DialogTitle>
-            <DialogDescription>
-              Have information to share? Found an error? We want to hear from you.
-            </DialogDescription>
+            <DialogTitle className="text-orange-400">Contact Trumpstein Files</DialogTitle>
+            <DialogDescription>Have information to share or found an error? Send it to the archive team.</DialogDescription>
           </DialogHeader>
           <form onSubmit={handleContactSubmit} className="space-y-4">
-            <div>
-              <Label htmlFor="name">Name</Label>
-              <Input
-                id="name"
-                name="name"
-                required
-                className="bg-black/50 border-orange-500/30 focus:border-orange-500"
-              />
-            </div>
-            <div>
-              <Label htmlFor="email">Email</Label>
-              <Input
-                id="email"
-                name="email"
-                type="email"
-                required
-                className="bg-black/50 border-orange-500/30 focus:border-orange-500"
-              />
-            </div>
-            <div>
-              <Label htmlFor="message">Message</Label>
-              <Textarea
-                id="message"
-                name="message"
-                required
-                rows={4}
-                className="bg-black/50 border-orange-500/30 focus:border-orange-500"
-              />
-            </div>
-            <Button
-              type="submit"
-              className="w-full bg-orange-600 hover:bg-orange-700 text-white"
-            >
-              Send Message
-            </Button>
+            <div><Label htmlFor="name">Name</Label><Input id="name" name="name" required className="bg-black/50 border-orange-500/30 focus:border-orange-500" /></div>
+            <div><Label htmlFor="email">Email</Label><Input id="email" name="email" type="email" required className="bg-black/50 border-orange-500/30 focus:border-orange-500" /></div>
+            <div><Label htmlFor="message">Message</Label><Textarea id="message" name="message" required rows={4} className="bg-black/50 border-orange-500/30 focus:border-orange-500" /></div>
+            <Button type="submit" className="w-full bg-orange-600 hover:bg-orange-700 text-white">Send Message</Button>
           </form>
         </DialogContent>
       </Dialog>
