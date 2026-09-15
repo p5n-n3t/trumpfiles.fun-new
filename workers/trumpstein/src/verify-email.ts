@@ -60,7 +60,7 @@ function createFakeDb(): D1Database {
 }
 
 interface SentEmail {
-  from: string;
+  from: { email: string; name: string };
   to: string;
   subject: string;
   replyTo?: string;
@@ -89,7 +89,7 @@ const response = await handleSendEmail(new Request("https://worker.test/send-ema
 }), env);
 assert(response.status === 200, "valid contact message should be accepted");
 assert(sent.length === 1, "accepted contact message should be sent once");
-assert(sent[0]?.from === "hello@example.com" && sent[0]?.to === "owner@example.com", "Cloudflare builder should use configured addresses");
+assert(sent[0]?.from.email === "hello@example.com" && sent[0]?.from.name === "Trumpstein Files" && sent[0]?.to === "owner@example.com", "Cloudflare builder should use configured addresses");
 assert(sent[0]?.replyTo === "ada@example.com", "Cloudflare builder should preserve reply-to");
 assert(sent[0]?.text?.includes("A useful source."), "Cloudflare builder should include body text");
 

@@ -120,7 +120,7 @@ export async function handleSendEmail(request: Request, env: EmailEnv): Promise<
 
   try {
     await env.EMAIL.send({
-      from: env.MAIL_FROM,
+      from: { email: env.MAIL_FROM, name: "Trumpstein Files" },
       to: env.CONTACT_RECIPIENT,
       subject: email.subject,
       ...(email.replyTo ? { replyTo: email.replyTo } : {}),
