@@ -289,7 +289,7 @@ export default function TrumpsteinChat({
         body: JSON.stringify({
           type: "transcript",
           to: emailAddr,
-          subject: "Your Trumpstein Chat Transcript",
+          subject: "Trumpstein chat transcript",
           message: `Here's your chat with Trumpstein:\n\n${transcript}\n\n— Trumpstein Files`,
         }),
       });
@@ -540,7 +540,7 @@ export default function TrumpsteinChat({
       {showEmailModal && (
         <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60" onClick={() => setShowEmailModal(false)}>
           <div className="rounded-2xl border border-orange-500/30 bg-zinc-950 p-5 w-72 shadow-2xl" onClick={e => e.stopPropagation()}>
-            <p className="font-bold text-white text-sm mb-3">Email this chat transcript</p>
+            <p className="font-bold text-white text-sm mb-3">Send this chat transcript</p>
             {emailSent ? (
               <p className="text-green-400 text-sm">Sent! Believe me, tremendous email.</p>
             ) : (
@@ -549,7 +549,7 @@ export default function TrumpsteinChat({
                   type="email"
                   value={emailAddr}
                   onChange={e => setEmailAddr(e.target.value)}
-                  placeholder="your@email.com"
+                  placeholder="your@email.com (for replies)"
                   className="w-full rounded-lg bg-zinc-800 border border-zinc-700 px-3 py-2 text-sm text-white placeholder-zinc-500 outline-none focus:border-orange-500 mb-3"
                 />
                 <div className="flex gap-2">

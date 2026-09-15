@@ -6,6 +6,7 @@ const MAX_SUBJECT_LENGTH = 180;
 const MAX_MESSAGE_LENGTH = 40_000;
 const RATE_LIMIT = 8;
 const RATE_WINDOW_MS = 60 * 60 * 1000;
+let rateLimitTableReady: Promise<void> | undefined;
 
 export interface EmailEnv {
   DB: D1Database;
@@ -66,25 +67,29 @@ async function hashRateKey(value: string): Promise<string> {
 }
 
 async function consumeRateLimit(db: D1Database, key: string): Promise<boolean> {
-  await db.prepare(`CREATE TABLE IF NOT EXISTS email_send_rate_limits (
-    bucket TEXT PRIMARY KEY,
-    window_started INTEGER NOT NULL,
-    send_count INTEGER NOT NULL
-  )`).run();
+  if (!rateLimitTableReady) {
+    rateLimitTableReady = db.prepare(`CREATE TABLE IF NOT EXISTS email_send_rate_limits (
+      bucket TEXT PRIMARY KEY,
+      window_started INTEGER NOT NULL,
+      send_count INTEGER NOT NULL
+    )`).run().then(() => undefined).catch((error) => {
+      rateLimitTableReady = undefined;
+      throw error;
+    });
+  }
+  await rateLimitTableReady;
 
   const now = Date.now();
-  const existing = await db.prepare("SELECT window_started, send_count FROM email_send_rate_limits WHERE bucket = ?")
-    .bind(key)
-    .first<{ window_started: number; send_count: number }>();
-  if (!existing || now - existing.window_started >= RATE_WINDOW_MS) {
-    await db.prepare("INSERT OR REPLACE INTO email_send_rate_limits (bucket, window_started, send_count) VALUES (?, ?, 1)")
-      .bind(key, now)
-      .run();
-    return true;
-  }
-  if (existing.send_count >= RATE_LIMIT) return false;
-  await db.prepare("UPDATE email_send_rate_limits SET send_count = send_count + 1 WHERE bucket = ?").bind(key).run();
-  return true;
+  const windowCutoff = now - RATE_WINDOW_MS;
+  const result = await db.prepare(`
+    INSERT INTO email_send_rate_limits (bucket, window_started, send_count)
+    VALUES (?, ?, 1)
+    ON CONFLICT(bucket) DO UPDATE SET
+      window_started = CASE WHEN window_started <= ? THEN excluded.window_started ELSE window_started END,
+      send_count = CASE WHEN window_started <= ? THEN 1 ELSE send_count + 1 END
+    WHERE window_started <= ? OR send_count < ?
+  `).bind(key, now, windowCutoff, windowCutoff, windowCutoff, RATE_LIMIT).run();
+  return result.meta.changes > 0;
 }
 
 function json(body: unknown, status = 200): Response {
@@ -108,7 +113,7 @@ export async function handleSendEmail(request: Request, env: EmailEnv): Promise<
   const email = validateEmailPayload(payload);
   if (!email) return json({ error: "A valid message and optional email address are required" }, 400);
 
-  const bucket = await hashRateKey(`${request.headers.get("CF-Connecting-IP") ?? "unknown"}:${request.headers.get("Origin") ?? ""}`);
+  const bucket = await hashRateKey(request.headers.get("X-Contact-Client-IP") ?? "unknown");
   if (!await consumeRateLimit(env.DB, bucket)) return json({ error: "Too many messages; try again later" }, 429);
 
   try {

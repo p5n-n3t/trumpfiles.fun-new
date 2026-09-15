@@ -2,6 +2,7 @@ import { handleSendEmail, type EmailEnv } from "./email";
 
 interface Env extends EmailEnv {
   ALLOWED_ORIGINS?: string;
+  INTERNAL_EMAIL_TOKEN?: string;
 }
 
 function corsHeaders(request: Request, allowedOrigins: string): HeadersInit {
@@ -22,6 +23,12 @@ export default {
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
     if (new URL(request.url).pathname !== "/send-email" || request.method !== "POST") {
       return new Response("Not Found", { status: 404, headers: cors });
+    }
+    if (!env.INTERNAL_EMAIL_TOKEN || request.headers.get("X-Trumpstein-Email-Token") !== env.INTERNAL_EMAIL_TOKEN) {
+      return new Response(JSON.stringify({ error: "Unauthorized" }), {
+        status: 401,
+        headers: { ...cors, "Content-Type": "application/json" },
+      });
     }
     const response = await handleSendEmail(request, env);
     const headers = new Headers(response.headers);
