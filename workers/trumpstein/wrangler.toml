@@ -16,14 +16,9 @@ database_id = "088a21f7-6834-466e-8408-83e0238338c2"
 binding = "VECTORIZE"
 index_name = "trumpstein-rag"
 
-[[send_email]]
-name = "EMAIL"
-
 [vars]
 NEON_API_URL = "https://trumpfiles.fun/api"
 ALLOWED_ORIGINS = "https://trumpfiles.fun,https://trumpstein.me,http://localhost:3000,https://trumpfiles-fun-new.vercel.app,https://trumpfiles-fun-new-git-main-joeyqleqs-projects.vercel.app"
 
 # Secrets (set via wrangler secret put):
 # NEON_DATABASE_URL — Neon pooler connection string for ingest script
-# CONTACT_RECIPIENT — private delivery inbox for contact/transcript messages
-# MAIL_FROM — verified Cloudflare Email Sending address

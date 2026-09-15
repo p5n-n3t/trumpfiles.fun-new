@@ -1,4 +1,4 @@
-import type { Ai, Vectorize, D1Database, SendEmail } from "@cloudflare/workers-types";
+import type { Ai, Vectorize, D1Database } from "@cloudflare/workers-types";
 import { TRUMPSTEIN_SYSTEM_PROMPT } from "./persona";
 import { executeRagPlan, buildAugmentedPrompt } from "./rag";
 import { handleIngest, type IngestEnv } from "./ingest";
@@ -22,7 +22,6 @@ import {
   type RathboneWorldState,
 } from "./rathbone";
 import { DEFAULT_CHAT_MODEL, runSelectedStreamingChatModel, selectChatModel } from "./model-routing";
-import { handleSendEmail } from "./email";
 
 export interface Env extends IngestEnv {
   AI: Ai;
@@ -33,9 +32,6 @@ export interface Env extends IngestEnv {
   EXA_API_KEY?: string;  // optional web search
   CHAT_MODEL?: string;
   GLM_MODEL?: string;
-  EMAIL?: SendEmail;
-  CONTACT_RECIPIENT?: string;
-  MAIL_FROM?: string;
 }
 
 interface ChatMessage {
@@ -699,8 +695,6 @@ export default {
         response = await handleGenerate(request, env);
       } else if (url.pathname === "/feedback" && request.method === "POST") {
         response = await handleFeedback(request, env);
-      } else if (url.pathname === "/send-email" && request.method === "POST") {
-        response = await handleSendEmail(request, env);
       } else if (url.pathname === "/history" && request.method === "GET") {
         response = await handleHistory(request, env);
       } else if (url.pathname === "/ingest" && request.method === "POST") {

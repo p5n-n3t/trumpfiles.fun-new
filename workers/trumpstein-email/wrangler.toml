@@ -1,0 +1,20 @@
+name = "trumpstein-email"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+account_id = "0228e3fe174bbc185f30b1d4eaf5f166"
+
+[[send_email]]
+name = "EMAIL"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "trumpstein-email"
+database_id = "c9f54442-6d5f-44b0-8b3e-073179f774c6"
+
+[vars]
+ALLOWED_ORIGINS = "https://trumpfiles.fun,https://trumpstein.me,http://localhost:3000,https://trumpfiles-fun-new.vercel.app,https://trumpfiles-fun-new-git-main-joeyqleqs-projects.vercel.app"
+
+# Secrets (set with `wrangler secret put`):
+# CONTACT_RECIPIENT — private delivery inbox for contact/transcript messages
+# MAIL_FROM — verified sender address at mail.trumpstein.me

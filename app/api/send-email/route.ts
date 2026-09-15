@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const WORKER_URL = process.env.TRUMPSTEIN_WORKER_URL
-  ?? process.env.NEXT_PUBLIC_TRUMPSTEIN_WORKER_URL
-  ?? "https://trumpstein.trumpstein.workers.dev";
+// Email Sending must run in the Cloudflare account that owns mail.trumpstein.me.
+// Keep this separate from the chat Worker, which uses a different account's D1/AI bindings.
+const EMAIL_WORKER_URL = process.env.TRUMPSTEIN_EMAIL_WORKER_URL
+  ?? "https://trumpstein-email.joeyq.workers.dev";
 const MAX_EMAIL_REQUEST_BYTES = 44_096;
 
 export async function POST(request: NextRequest): Promise<NextResponse> {
@@ -16,7 +17,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   }
 
   try {
-    const response = await fetch(`${WORKER_URL.replace(/\/$/, "")}/send-email`, {
+    const response = await fetch(`${EMAIL_WORKER_URL.replace(/\/$/, "")}/send-email`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
