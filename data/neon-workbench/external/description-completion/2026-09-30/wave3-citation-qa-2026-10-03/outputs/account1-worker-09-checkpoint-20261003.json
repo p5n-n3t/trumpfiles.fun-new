@@ -1,0 +1,51 @@
+{
+  "checkpoint_kind": "worker_citation_qa_exact_set_checkpoint",
+  "worker": "account1-worker-09",
+  "branch": "ls/9-trump-description-rescue-09-of-12-52-dis-a_J8",
+  "source_packet_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+  "input_path": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/worker-22-input.jsonl",
+  "input_sha256": "ab531dfda08b58ebf7602960162b4aabfb9a89af53bd6bce5ec65d06d3417c14",
+  "assigned_entry_numbers": [
+    219,
+    293,
+    643,
+    774,
+    853,
+    969,
+    1729,
+    2330,
+    2466,
+    2615,
+    3139,
+    3804,
+    4097,
+    4692,
+    5559,
+    6141,
+    6293
+  ],
+  "terminal_rows": 17,
+  "unique_ids": 17,
+  "qa": "PASS: exact assigned set present once each; both batches are 5-10 rows; allowed statuses and required fields validated; every URL has a source-specific mapping/access note; every prior_input_hash matches the immutable input-file SHA256.",
+  "status_counts": {
+    "citation_repaired_proposal": 1,
+    "corrected_claim_proposal": 12,
+    "scope_exclusion_proposal": 3,
+    "unresolved_hold": 1
+  },
+  "outputs": [
+    {
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-09-batch-20261003-01.jsonl",
+      "rows": 8,
+      "sha256": "c623e79c50d43a01fc8b4c6b79c52662b81f0a7fc05b78c5cb64653c43fa1a69"
+    },
+    {
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-09-batch-20261003-02.jsonl",
+      "rows": 9,
+      "sha256": "0afa7f8f6f670ed1e2dfb4facea466f17287cf08b9a449b929b86030df35025f"
+    }
+  ],
+  "unresolved_gaps": [
+    "entry-853: no matching Joseph Frederick commutation warrant, docket, or case-specific primary record in the supplied evidence packet."
+  ]
+}
