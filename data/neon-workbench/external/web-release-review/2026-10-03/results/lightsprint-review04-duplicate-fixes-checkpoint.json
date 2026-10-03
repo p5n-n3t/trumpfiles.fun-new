@@ -1,0 +1,41 @@
+{
+  "status": "corrections_prepared_proposal_only",
+  "proposal_only": true,
+  "scope": "exact 59 assignment-review04.json keys; held namespace only",
+  "source_results_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "original_packet_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+  "assignment_file": "results/assignment-review04.json",
+  "assignment_sha256": "ee63dc0eecac4a8dd0b3740abbbd8b9d93dde3b37d0f6b260c9679dc06b9e014",
+  "counterpart_fulltext_sha256": "8e7753a304f5d085a99b059179fcb29bff3819a4e83cefba75c5bd485d7bf600",
+  "access_blocker": "results/checkpoint-access-blocked-2026-10-03.json",
+  "unpublished_cloud_amendments_recovered": false,
+  "latest_published_revision_counts": {
+    "2000": 40,
+    "2": 10,
+    "3": 9
+  },
+  "input_key_count": 59,
+  "correction_row_count": 59,
+  "qa_row_count": 59,
+  "correction_batches": [
+    "lightsprint-review04-duplicate-fixes-batch-001.jsonl",
+    "lightsprint-review04-duplicate-fixes-batch-002.jsonl",
+    "lightsprint-review04-duplicate-fixes-batch-003.jsonl",
+    "lightsprint-review04-duplicate-fixes-batch-004.jsonl",
+    "lightsprint-review04-duplicate-fixes-batch-005.jsonl",
+    "lightsprint-review04-duplicate-fixes-batch-006.jsonl"
+  ],
+  "qa_file": "lightsprint-review04-duplicate-fixes-qa.jsonl",
+  "latest_result_precedence": "Highest published revision across review04-revision2, duplicate-qa-review04 revision 2000 and review04-revision3.",
+  "source_policy": "Exact URLs retained per row. Source access is listed per URL; frozen metadata and counterpart excerpts remain leads unless text was returned. Vijesti retrieval returned 404; its income claim is omitted.",
+  "outcome_counts": {
+    "pass": 59,
+    "fail": 0
+  },
+  "failed_qa_keys": [],
+  "scope_notes": [
+    "No held keys outside assignment-review04 were changed.",
+    "No fresh, PR47, Web80, other workers, canonical records, database/index values, merge, deploy or install were touched.",
+    "No claim is made that unpublished cloud amendments were recovered."
+  ]
+}

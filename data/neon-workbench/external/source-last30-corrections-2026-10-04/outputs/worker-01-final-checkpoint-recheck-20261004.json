@@ -1,0 +1,24 @@
+{
+  "record_type": "final_exact_set_checkpoint_recheck",
+  "packet": "source-last30-corrections-2026-10-04",
+  "worker": "01",
+  "checkpoint_date": "2026-10-04",
+  "source_campaign_commit": "19831e87e22fd5890fe0a764be51c617580d4a99",
+  "worker05_branch_commit": "ef2007fd51a47a237f10e35213faaa50eb7c7df5",
+  "assigned_entry_numbers": [
+    4231,
+    4398,
+    4446,
+    4781,
+    5104
+  ],
+  "saved_terminal_batch": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-01-batch-20261004-a.jsonl",
+  "saved_terminal_batch_sha256": "08073068c5828a02a919e9900644cc25870c7e41fec4cf8f7f69f54b38829aa9",
+  "terminal_rows": 5,
+  "final_qa_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-01-final-qa-recheck-20261004.json",
+  "final_qa_sha256": "8eb71a73540bdc4616dbb52e5f3fac21161dad82f34cb24b47ecd87810853781",
+  "validated": "Exact IDs, original equality, source-to-fact crosswalk, source limitations, and all description length requirements.",
+  "remaining_gap_count": 5,
+  "no_history_rewrite": true,
+  "no_canonical_or_neon_writes": true
+}

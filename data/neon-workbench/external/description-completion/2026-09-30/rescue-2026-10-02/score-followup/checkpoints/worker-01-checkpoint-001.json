@@ -1,0 +1,23 @@
+{
+  "worker": "01",
+  "phase": "score-followup",
+  "source_commit": "539c34d9572db4a234ee9e73a4fe8c1d4b3e373e",
+  "input": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/worker-01-score-input.jsonl",
+  "batch": 1,
+  "output": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/score-outputs/worker-01-batch-001.jsonl",
+  "row_count": 10,
+  "processed_ids": [
+    "entry-1000",
+    "entry-1196",
+    "entry-1265",
+    "entry-1324",
+    "entry-1385",
+    "entry-1428",
+    "entry-1472",
+    "entry-1509",
+    "entry-1535",
+    "entry-1558"
+  ],
+  "cumulative_count": 10,
+  "output_sha256": "122a59b6ba0a360a9673db74a07080297ca9dda95e79c3c0ca6cc9421ba50cb6"
+}

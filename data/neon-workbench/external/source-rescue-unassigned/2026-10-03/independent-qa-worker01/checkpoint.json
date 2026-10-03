@@ -1,0 +1,183 @@
+{
+  "checkpoint_revision": 1,
+  "campaign": "source-rescue-unassigned-2026-10-03",
+  "qa_worker": 1,
+  "source_campaign_branch": "codex/source-rescue-unassigned-2026-10-03",
+  "source_campaign_commit": "19831e87e22fd5890fe0a764be51c617580d4a99",
+  "manifest_sha256": "14f3237a7dfb5a3e5a75a1e1c38ae8d22ae827e30fd2006866b3436bf3f10ef4",
+  "prompt_sha256": "363789f755dd706a2cadb4dfdacf4a6da85ec1acbef4693dcebb1c9fb3983ade",
+  "scope": {
+    "workers": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "assigned_ids": 270,
+    "excluded_held_overlap": 114,
+    "excluded_light_overlap": 0
+  },
+  "assignment_validation": {
+    "input_packets_validated": 9,
+    "input_rows": 270,
+    "unique_entry_numbers": 270,
+    "per_worker_count": 30,
+    "input_checksums_match_manifest": true
+  },
+  "qa_counts": {
+    "reviewed": 0,
+    "pending_worker_output": 270,
+    "failed_or_flagged": 0
+  },
+  "worker_status": {
+    "4": {
+      "assigned": 30,
+      "reviewed": 0,
+      "pending_worker_output": 30,
+      "published_outputs_seen": 0
+    },
+    "5": {
+      "assigned": 30,
+      "reviewed": 0,
+      "pending_worker_output": 30,
+      "published_outputs_seen": 0
+    },
+    "6": {
+      "assigned": 30,
+      "reviewed": 0,
+      "pending_worker_output": 30,
+      "published_outputs_seen": 0
+    },
+    "7": {
+      "assigned": 30,
+      "reviewed": 0,
+      "pending_worker_output": 30,
+      "published_outputs_seen": 0
+    },
+    "8": {
+      "assigned": 30,
+      "reviewed": 0,
+      "pending_worker_output": 30,
+      "published_outputs_seen": 0
+    },
+    "9": {
+      "assigned": 30,
+      "reviewed": 0,
+      "pending_worker_output": 30,
+      "published_outputs_seen": 0
+    },
+    "10": {
+      "assigned": 30,
+      "reviewed": 0,
+      "pending_worker_output": 30,
+      "published_outputs_seen": 0
+    },
+    "11": {
+      "assigned": 30,
+      "reviewed": 0,
+      "pending_worker_output": 30,
+      "published_outputs_seen": 0
+    },
+    "12": {
+      "assigned": 30,
+      "reviewed": 0,
+      "pending_worker_output": 30,
+      "published_outputs_seen": 0
+    }
+  },
+  "worker_branches_checked": [
+    {
+      "worker": 4,
+      "branch": "ls/3-trump-description-worker-04-batches-3-11-N7Kv",
+      "commit": "26c009955b19f9c59594414dde649b7fef6c3482",
+      "expected_result_file_present": false
+    },
+    {
+      "worker": 5,
+      "branch": "ls/6-trump-description-worker-05-batches-4-12--fe8",
+      "commit": "10ae19be7dba7570241c283a03c69df358299505",
+      "expected_result_file_present": false
+    },
+    {
+      "worker": 6,
+      "branch": "ls/7-trump-description-worker-06-batches-5-13-X4T3",
+      "commit": "11e267ee5b3e2c702fd7a5a227cd7cca44051f46",
+      "expected_result_file_present": false
+    },
+    {
+      "worker": 7,
+      "branch": "ls/8-trump-description-worker-07-batches-6-14-Sp0k",
+      "commit": "ac8bcb7e450872bc87d3a63853355cfcd0c0dd8e",
+      "expected_result_file_present": false
+    },
+    {
+      "worker": 8,
+      "branch": "ls/9-trump-description-worker-08-batches-7-15--wd4",
+      "commit": "6a04c8d288c57744491c927c1b3226859ddb103d",
+      "expected_result_file_present": false
+    },
+    {
+      "worker": 9,
+      "branch": "ls/11-trump-description-worker-09-90-unwritten-r-lL",
+      "commit": "9865fa1954becede68fa4b973c4f06d334c22c5e",
+      "expected_result_file_present": false
+    },
+    {
+      "worker": 10,
+      "branch": "ls/10-trump-description-worker-10-90-unwritten-4T8Z",
+      "commit": "23847ce3df1e78f0a1372da282a94a1d6936c04f",
+      "expected_result_file_present": false
+    },
+    {
+      "worker": 11,
+      "branch": "ls/12-trump-description-worker-11-90-unwritten-UjHB",
+      "commit": "7945606bbffe06d0a46449ca3e49c974b6abe14e",
+      "expected_result_file_present": false
+    },
+    {
+      "worker": 12,
+      "branch": "ls/15-trump-description-worker-12-90-unwritten-cKVL",
+      "commit": "9aa520842bf091aa089f8c332b791c15b1fe542b",
+      "expected_result_file_present": false
+    }
+  ],
+  "checked_source_result_locations": [
+    "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-04-batch-*.jsonl",
+    "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-05-batch-*.jsonl",
+    "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-06-batch-*.jsonl",
+    "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-*.jsonl",
+    "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-08-batch-*.jsonl",
+    "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-09-batch-*.jsonl",
+    "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-10-batch-*.jsonl",
+    "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-11-batch-*.jsonl",
+    "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-12-batch-*.jsonl"
+  ],
+  "blockers": [
+    {
+      "type": "worker_outputs_not_published",
+      "workers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "details": "No worker result files were present under the expected outputs path in the pinned campaign commit or on the checked worker branches. All affected IDs remain pending; absence is not treated as completion."
+    }
+  ],
+  "ledger_batches": [
+    "ledger-batch-001.jsonl"
+  ],
+  "append_only_policy": "Initial pending intake rows are retained; each later completed audit appends a new QA revision that names the superseded revision. Do not modify worker outputs or canonical/Neon data.",
+  "last_checked_campaign_ref_commit": "19831e87e22fd5890fe0a764be51c617580d4a99",
+  "status": "pending_worker_outputs"
+}

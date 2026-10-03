@@ -1,0 +1,95 @@
+{
+  "record_type": "independent_final_qa",
+  "packet": "source-last30-corrections-2026-10-04",
+  "worker": "01",
+  "qa_date": "2026-10-04",
+  "scope_entry_numbers": [
+    4231,
+    4398,
+    4446,
+    4781,
+    5104
+  ],
+  "scope_record_ids": [
+    "entry-4231",
+    "entry-4398",
+    "entry-4446",
+    "entry-4781",
+    "entry-5104"
+  ],
+  "terminal_output_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-01-batch-20261004-a.jsonl",
+  "terminal_output_sha256": "08073068c5828a02a919e9900644cc25870c7e41fec4cf8f7f69f54b38829aa9",
+  "terminal_row_count": 5,
+  "status_counts": {
+    "needs_correction": 5,
+    "accepted_source": 0,
+    "exclusion_candidate": 0,
+    "still_unresolved": 0
+  },
+  "checks": {
+    "exact_assigned_id_coverage": "pass",
+    "one_terminal_row_per_id": "pass",
+    "frozen_original_preserved": "pass",
+    "source_input_and_campaign_provenance": "pass",
+    "worker05_prior_proposal_provenance": "pass",
+    "every_correction_source_in_prior_packet_provenance": "pass",
+    "source_urls_https_and_unique_per_row": "pass",
+    "source_to_fact_mapping_and_limits_present": "pass",
+    "title_and_short_max_180_chars": "pass",
+    "medium_45_to_90_words": "pass",
+    "long_140_to_300_words": "pass",
+    "unsupported_claims_and_exact_gaps_recorded": "pass",
+    "later_worker05_batches_checked_for_assigned_ids": "pass"
+  },
+  "later_worker05_batches": [
+    {
+      "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-05-batch-002.jsonl",
+      "sha256": "ba31a8b08df2e6382d50b7b4c82a93cf673acfc1381338b0577ccc188922a50f",
+      "matching_assigned_ids": []
+    },
+    {
+      "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-05-batch-003.jsonl",
+      "sha256": "9a09b1996d2a5e71b68f25611a55f897826cdd2ee546aafd39ca2f892caca28b",
+      "matching_assigned_ids": []
+    }
+  ],
+  "evidence_access_limitations": [
+    {
+      "entry_number": 4398,
+      "source_url": "https://www.congress.gov/crs-product/R48633",
+      "limitation": "HTTP 403 in this session; projection carried from the published worker-05 review of this exact CRS report."
+    },
+    {
+      "entry_number": 4781,
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_09112025.pdf",
+      "limitation": "HTTP 403 in this session; CPI figures carried from the published worker-05 review of this exact archived release."
+    }
+  ],
+  "exact_remaining_gaps": [
+    {
+      "entry_number": 4231,
+      "gap": "A source establishing Patel's reimbursement, official purpose for each trip, any rule violation, a gold-medal celebration, or the complaint's later OIG disposition is not in the reviewed packet. Keep those points unresolved."
+    },
+    {
+      "entry_number": 4398,
+      "gap": "The claimed 4.8-million Medicaid/CHIP coverage loss by June 2026, and attribution of any observed decline to the law, need a dated enrollment source plus causal analysis. Neither is established by the cited projections."
+    },
+    {
+      "entry_number": 4446,
+      "gap": "A causal relationship between Blanche's remarks and the reported increase in judicial threats is not supported. If retaining the 400/78% statistic, cite its source separately and do not attribute it to this speech without direct evidence."
+    },
+    {
+      "entry_number": 4781,
+      "gap": "A causal estimate attributing the August 2025 food-at-home CPI increase to tariffs, and a documented comparison establishing 'fastest since 2022,' are absent from the reviewed sources."
+    },
+    {
+      "entry_number": 5104,
+      "gap": "The original murder assertion needs a named clemency recipient and a matching murder conviction record. No such recipient or record is identified by the proclamation and cited DOJ releases; keep that claim excluded."
+    }
+  ],
+  "scope_exclusions": [
+    "No IDs outside the exact five-entry assignment were included.",
+    "No canonical database or Neon data was written.",
+    "No other worker output was edited."
+  ]
+}

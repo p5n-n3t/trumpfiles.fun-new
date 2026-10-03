@@ -1,0 +1,255 @@
+{
+  "packet_provenance": {
+    "branch": "codex/account1-late-source-corrections-2026-10-03",
+    "commit": "d1c9c5990d6b15257fbb406671cd73994b45420e",
+    "input_file": "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/worker-01-input.jsonl",
+    "input_sha256": "a8b321f39e98e87c98c90b6f593bfc7002c77a40125534fcdbe8015e522cb683",
+    "worker": 1,
+    "proposal_only": true
+  },
+  "expected_ids": [
+    "entry-4235",
+    "entry-4545",
+    "entry-5219",
+    "entry-5734",
+    "entry-5818",
+    "entry-5895",
+    "entry-6442",
+    "entry-6514",
+    "entry-6634",
+    "entry-6700",
+    "entry-6762",
+    "entry-6836",
+    "entry-6934"
+  ],
+  "reviewed_ids": [
+    "entry-4235",
+    "entry-4545",
+    "entry-5219",
+    "entry-5734",
+    "entry-5818",
+    "entry-5895",
+    "entry-6442",
+    "entry-6514",
+    "entry-6634",
+    "entry-6700",
+    "entry-6762",
+    "entry-6836",
+    "entry-6934"
+  ],
+  "count_expected": 13,
+  "count_reviewed": 13,
+  "coverage_exact": true,
+  "status": "complete",
+  "batch_files": [
+    {
+      "path": "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/outputs/worker-01-batch-001-20261003-account1-a.jsonl",
+      "records": 7,
+      "sha256": "1bd97f4e43279114d63499affb4bd287dfb41d563ad921337f7f770162399e51"
+    },
+    {
+      "path": "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/outputs/worker-01-batch-002-20261003-account1-b.jsonl",
+      "records": 6,
+      "sha256": "67a41370475dbe20fab13291dbca862da4bb780d0cef24268ab9047b5e2bf93b"
+    }
+  ],
+  "canonical_or_neon_writes": false,
+  "qa_rows": [
+    {
+      "key": "entry-4235",
+      "length_qa": {
+        "short_characters": 79,
+        "medium_words": 54,
+        "long_words": 152
+      },
+      "source_urls": [
+        "https://www.epa.gov/regulations-emissions-vehicles-and-engines/final-rule-rescission-greenhouse-gas-endangerment",
+        "https://www.federalregister.gov/documents/2026/02/18/2026-03157/rescission-of-the-greenhouse-gas-endangerment-finding-and-motor-vehicle-greenhouse-gas-emission"
+      ],
+      "remaining_gaps": [
+        "No source provided explains the stored emissions projections or ties them to this rule."
+      ]
+    },
+    {
+      "key": "entry-4545",
+      "length_qa": {
+        "short_characters": 75,
+        "medium_words": 90,
+        "long_words": 161
+      },
+      "source_urls": [
+        "https://www.kff.org/medicaid/the-impact-of-h-r-1-on-two-medicaid-eligibility-rules/",
+        "https://www.kff.org/medicaid/medicaid-changes-in-house-reconciliation-bill-would-increase-costs-for-1-3-million-low-income-medicare-beneficiaries/"
+      ],
+      "remaining_gaps": [
+        "Actual individual coverage losses are not quantified by these projections."
+      ]
+    },
+    {
+      "key": "entry-5219",
+      "length_qa": {
+        "short_characters": 85,
+        "medium_words": 60,
+        "long_words": 150
+      },
+      "source_urls": [
+        "https://www.wired.com/story/people-paying-millions-donald-trump-mar-a-lago/",
+        "https://www.axios.com/2025/03/04/trump-maga-inc-fundraiser-cost"
+      ],
+      "remaining_gaps": [
+        "No evidence supplied ties the named donor’s payment or alleged pitch to this event."
+      ]
+    },
+    {
+      "key": "entry-5734",
+      "length_qa": {
+        "short_characters": 79,
+        "medium_words": 76,
+        "long_words": 190
+      },
+      "source_urls": [
+        "https://www.reuters.com/world/us/abrego-garcia-way-us-face-criminal-charges-abc-news-reports-2025-06-06/",
+        "https://www.reuters.com/legal/government/returned-deportee-abrego-due-us-court-over-bail-conditions-2025-06-25/"
+      ],
+      "remaining_gaps": [
+        "Later outcomes of the criminal and immigration proceedings need dated sources."
+      ]
+    },
+    {
+      "key": "entry-5818",
+      "length_qa": {
+        "short_characters": 89,
+        "medium_words": 63,
+        "long_words": 154
+      },
+      "source_urls": [
+        "https://www.whitehouse.gov/presidential-actions/2025/01/prioritizing-military-excellence-and-readiness/",
+        "https://storage.courtlistener.com/recap/gov.uscourts.dcd.276845/gov.uscourts.dcd.276845.89.0_1.pdf"
+      ],
+      "remaining_gaps": [
+        "Later litigation and individual personnel outcomes need current case-specific sourcing."
+      ]
+    },
+    {
+      "key": "entry-5895",
+      "length_qa": {
+        "short_characters": 94,
+        "medium_words": 57,
+        "long_words": 149
+      },
+      "source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/943320/000119312505067289/d10k.htm"
+      ],
+      "remaining_gaps": [
+        "A broad bankruptcy count requires records for each relevant entity and proceeding."
+      ]
+    },
+    {
+      "key": "entry-6442",
+      "length_qa": {
+        "short_characters": 60,
+        "medium_words": 55,
+        "long_words": 159
+      },
+      "source_urls": [
+        "https://www.supremecourt.gov/opinions/24pdf/24a790%5F6i79.pdf"
+      ],
+      "remaining_gaps": [
+        "Final litigation disposition and any operational effects require later court or agency records."
+      ]
+    },
+    {
+      "key": "entry-6514",
+      "length_qa": {
+        "short_characters": 84,
+        "medium_words": 46,
+        "long_words": 144
+      },
+      "source_urls": [
+        "https://www.businessinsider.com/donald-trump-campaign-finance-report-2016-6",
+        "https://www.today.com/news/donald-trump-if-i-have-i-ll-self-fund-my-t99666",
+        "https://www.ms.now/transcript/2016-06-21-msna868116"
+      ],
+      "remaining_gaps": [
+        "Business, tax, and expert-response allegations need independent records."
+      ]
+    },
+    {
+      "key": "entry-6634",
+      "length_qa": {
+        "short_characters": 116,
+        "medium_words": 70,
+        "long_words": 148
+      },
+      "source_urls": [
+        "https://www.reuters.com/world/us/trump-administration-keeping-only-294-usaid-staff-out-over-10000-globally-2025-02-06/",
+        "https://www.reuters.com/world/us/trump-administration-scraps-over-80-usaid-programs-top-diplomat-rubio-says-2025-03-10/"
+      ],
+      "remaining_gaps": [
+        "No final comprehensive staffing count or independent program audit is supplied."
+      ]
+    },
+    {
+      "key": "entry-6700",
+      "length_qa": {
+        "short_characters": 78,
+        "medium_words": 55,
+        "long_words": 148
+      },
+      "source_urls": [
+        "https://www.govinfo.gov/content/pkg/BUDGET-2018-MSV/pdf/BUDGET-2018-MSV.pdf",
+        "https://www.budget.senate.gov/imo/media/doc/PB%2018%20Mandatory%20BB052417.pdf",
+        "https://www.cbo.gov/publication/52752"
+      ],
+      "remaining_gaps": [
+        "Actual Medicaid outlays and beneficiary effects are not established by proposal estimates."
+      ]
+    },
+    {
+      "key": "entry-6762",
+      "length_qa": {
+        "short_characters": 81,
+        "medium_words": 60,
+        "long_words": 154
+      },
+      "source_urls": [
+        "https://www.reuters.com/world/us/us-authorities-arrest-palestinian-student-protester-columbia-university-students-2025-03-09/",
+        "https://www.reuters.com/world/arrested-palestinian-student-protester-moved-louisiana-jail-lawyers-fight-2025-03-10/"
+      ],
+      "remaining_gaps": [
+        "Later case developments and current legal status need dated records."
+      ]
+    },
+    {
+      "key": "entry-6836",
+      "length_qa": {
+        "short_characters": 90,
+        "medium_words": 49,
+        "long_words": 142
+      },
+      "source_urls": [
+        "https://www.lsc.gov/press-release/white-house-budget-proposes-eliminating-lsc-defunding-civil-legal-aid-millions-low-income-americans",
+        "https://www.lsc.gov/i-am-grantee/laws-regulations-and-guidance/lsc-appropriations",
+        "https://www.govinfo.gov/content/pkg/PLAW-119publ74/pdf/PLAW-119publ74.pdf"
+      ],
+      "remaining_gaps": [
+        "The sources do not quantify service reductions caused by the proposal."
+      ]
+    },
+    {
+      "key": "entry-6934",
+      "length_qa": {
+        "short_characters": 90,
+        "medium_words": 61,
+        "long_words": 153
+      },
+      "source_urls": [
+        "https://ofac.treasury.gov/recent-actions/20250610",
+        "https://www.reuters.com/world/middle-east/us-issues-sanctions-against-charities-supporting-hamas-pflp-2025-06-10/"
+      ],
+      "remaining_gaps": [
+        "Broader effects on organizations outside the listed designations are not established."
+      ]
+    }
+  ]
+}

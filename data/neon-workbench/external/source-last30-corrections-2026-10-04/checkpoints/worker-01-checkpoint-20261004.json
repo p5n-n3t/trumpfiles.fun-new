@@ -1,0 +1,53 @@
+{
+  "record_type": "terminal_checkpoint",
+  "packet": "source-last30-corrections-2026-10-04",
+  "worker": "01",
+  "checkpoint_date": "2026-10-04",
+  "source_campaign": {
+    "branch": "codex/source-rescue-unassigned-2026-10-03",
+    "commit": "19831e87e22fd5890fe0a764be51c617580d4a99",
+    "manifest_sha256": "14f3237a7dfb5a3e5a75a1e1c38ae8d22ae827e30fd2006866b3436bf3f10ef4",
+    "prompt_sha256": "363789f755dd706a2cadb4dfdacf4a6da85ec1acbef4693dcebb1c9fb3983ade",
+    "worker05_input_sha256": "7d62a5538346e70e12f535cc8a55eddbb620aba8fbf2c66607306e0c5172c1ce"
+  },
+  "effective_worker05_source": {
+    "branch": "ls/5-trump-description-rescue-05-of-12-53-dis-8OoQ",
+    "commit": "ef2007fd51a47a237f10e35213faaa50eb7c7df5",
+    "batch001_sha256": "ca0a80b7489a864ca9f000d0dab26eb2cd17f8521452b4b4d44230f8324387c4"
+  },
+  "assigned_entry_numbers": [
+    4231,
+    4398,
+    4446,
+    4781,
+    5104
+  ],
+  "terminal_output_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-01-batch-20261004-a.jsonl",
+  "terminal_output_sha256": "08073068c5828a02a919e9900644cc25870c7e41fec4cf8f7f69f54b38829aa9",
+  "terminal_row_count": 5,
+  "remaining_gaps_by_entry": [
+    {
+      "entry_number": 4231,
+      "gap": "A source establishing Patel's reimbursement, official purpose for each trip, any rule violation, a gold-medal celebration, or the complaint's later OIG disposition is not in the reviewed packet. Keep those points unresolved."
+    },
+    {
+      "entry_number": 4398,
+      "gap": "The claimed 4.8-million Medicaid/CHIP coverage loss by June 2026, and attribution of any observed decline to the law, need a dated enrollment source plus causal analysis. Neither is established by the cited projections."
+    },
+    {
+      "entry_number": 4446,
+      "gap": "A causal relationship between Blanche's remarks and the reported increase in judicial threats is not supported. If retaining the 400/78% statistic, cite its source separately and do not attribute it to this speech without direct evidence."
+    },
+    {
+      "entry_number": 4781,
+      "gap": "A causal estimate attributing the August 2025 food-at-home CPI increase to tariffs, and a documented comparison establishing 'fastest since 2022,' are absent from the reviewed sources."
+    },
+    {
+      "entry_number": 5104,
+      "gap": "The original murder assertion needs a named clemency recipient and a matching murder conviction record. No such recipient or record is identified by the proclamation and cited DOJ releases; keep that claim excluded."
+    }
+  ],
+  "final_qa_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/qa/worker-01-final-qa-20261004.json",
+  "final_qa_sha256": "52de91a7f5311bb61f9e4df4719a3ae58d37824348e99cc57d729fe8d5d4d036",
+  "scope": "Exact five IDs only; append-only packet output; no canonical/Neon or other-worker writes."
+}

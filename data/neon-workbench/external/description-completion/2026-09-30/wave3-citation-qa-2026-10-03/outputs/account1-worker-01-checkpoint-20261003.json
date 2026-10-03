@@ -1,0 +1,100 @@
+{
+  "job": "Wave3 citation QA account1 takeover worker-01",
+  "assignment": "36 exact IDs from worker-14-input.jsonl and worker-15-input.jsonl only",
+  "pinned_input_branch": "codex/wave3-citation-qa-2026-10-03",
+  "pinned_input_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+  "input_hashes": {
+    "worker-14-input.jsonl": "37711ccae09724ab369bc8872b52d79c4829f0f80e50083cfcf9d4323b4f7e1e",
+    "worker-15-input.jsonl": "dc42a89d7ddd880f2d1bcc76a9570eabfd1e91fb69e16a9fbcb2b5b57ac6b5dd"
+  },
+  "output_branch": "ls/1-trump-description-rescue-01-of-12-53-dis-nGTY",
+  "output_files": [
+    "account1-worker-01-batch-20261003-a.jsonl",
+    "account1-worker-01-batch-20261003-b.jsonl",
+    "account1-worker-01-batch-20261003-c.jsonl",
+    "account1-worker-01-batch-20261003-d.jsonl"
+  ],
+  "exact_ids": [
+    "entry-35",
+    "entry-230",
+    "entry-378",
+    "entry-655",
+    "entry-801",
+    "entry-878",
+    "entry-990",
+    "entry-1771",
+    "entry-2343",
+    "entry-2504",
+    "entry-2721",
+    "entry-3385",
+    "entry-3839",
+    "entry-4257",
+    "entry-5309",
+    "entry-5605",
+    "entry-6199",
+    "entry-6340",
+    "entry-37",
+    "entry-231",
+    "entry-380",
+    "entry-674",
+    "entry-804",
+    "entry-884",
+    "entry-996",
+    "entry-1779",
+    "entry-2373",
+    "entry-2515",
+    "entry-2731",
+    "entry-3444",
+    "entry-3873",
+    "entry-4296",
+    "entry-5374",
+    "entry-5661",
+    "entry-6200",
+    "entry-6356"
+  ],
+  "row_count": 36,
+  "status_counts": {
+    "citation_repaired_proposal": 4,
+    "corrected_claim_proposal": 26,
+    "scope_exclusion_proposal": 4,
+    "unresolved_hold": 2
+  },
+  "qa_checks": {
+    "exact_id_set": true,
+    "no_duplicate_ids": true,
+    "input_hashes_reverified": true,
+    "source_urls_http_syntax": true,
+    "recommended_urls_have_fact_mapping": true,
+    "replacement_copy_lengths_checked": true,
+    "scope_exclusions": [
+      "entry-2343",
+      "entry-1779",
+      "entry-2373",
+      "entry-2515"
+    ],
+    "unresolved_holds": [
+      "entry-231",
+      "entry-6200"
+    ],
+    "pending_specific_evidence": [
+      "entry-231: article URL returns 404; need accessible source/proposal text and implementation evidence for implementation claims",
+      "entry-4257: crosstabs PDF downloaded but could not be text-extracted; exact sample/question details remain unverified and were omitted",
+      "entry-6200: need dated Trump post, transcript, recording, or event-specific report matching the alleged Fauci statements"
+    ],
+    "status_integrity": "No collector status transition is approved merely because this citation audit recommends corrected copy; preserve staged status unless separately authorized."
+  },
+  "limitations": "This is a source-to-claim QA proposal only. No canonical/staged descriptions, Neon data, or other workers’ outputs were modified; evidence gaps remain explicit.",
+  "qa_file": "account1-worker-01-qa-20261003.json",
+  "qa_validated": true,
+  "exact_unresolved_holds": [
+    "entry-231",
+    "entry-6200"
+  ],
+  "scope_exclusions": [
+    "entry-2343",
+    "entry-1779",
+    "entry-2373",
+    "entry-2515"
+  ],
+  "replacement_copy_limits_checked": true
+}

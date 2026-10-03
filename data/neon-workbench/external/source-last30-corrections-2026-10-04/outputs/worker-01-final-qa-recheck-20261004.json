@@ -1,0 +1,298 @@
+{
+  "record_type": "final_exact_set_qa_recheck",
+  "packet": "source-last30-corrections-2026-10-04",
+  "worker": "01",
+  "created_at": "2026-10-04",
+  "scope": {
+    "entry_numbers": [
+      4231,
+      4398,
+      4446,
+      4781,
+      5104
+    ],
+    "record_ids": [
+      "entry-4231",
+      "entry-4398",
+      "entry-4446",
+      "entry-4781",
+      "entry-5104"
+    ],
+    "exact_count": 5
+  },
+  "inputs": {
+    "frozen_worker05_input": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/worker-05-input.jsonl",
+    "source_campaign_commit": "19831e87e22fd5890fe0a764be51c617580d4a99",
+    "input_sha256": "7d62a5538346e70e12f535cc8a55eddbb620aba8fbf2c66607306e0c5172c1ce",
+    "saved_terminal_batch": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-01-batch-20261004-a.jsonl",
+    "saved_terminal_batch_sha256": "08073068c5828a02a919e9900644cc25870c7e41fec4cf8f7f69f54b38829aa9"
+  },
+  "results": {
+    "unique_ids": "pass",
+    "exact_set_coverage": "pass",
+    "one_terminal_row_per_id": "pass",
+    "frozen_originals_match_input_byte-decoded_objects": "pass",
+    "source_to_supported_fact_mapping_complete": "pass",
+    "every_source_has_limits": "pass",
+    "source_urls_https_unique_and_in_prior_provenance": "pass",
+    "title_and_short_max_180_chars": "pass",
+    "medium_45_to_90_words": "pass",
+    "long_140_to_300_words": "pass",
+    "explicit_hold_or_gap_present_when_claim_not_supported": "pass"
+  },
+  "per_entry": [
+    {
+      "record_id": "entry-4231",
+      "entry_number": 4231,
+      "status": "needs_correction",
+      "original_preserved_exactly": true,
+      "source_count": 2,
+      "source_mapping_complete": true,
+      "title_chars": 76,
+      "short_chars": 76,
+      "medium_words": 57,
+      "long_words": 152,
+      "length_rule": "pass",
+      "exact_gap": "A source establishing Patel's reimbursement, official purpose for each trip, any rule violation, a gold-medal celebration, or the complaint's later OIG disposition is not in the reviewed packet. Keep those points unresolved."
+    },
+    {
+      "record_id": "entry-4398",
+      "entry_number": 4398,
+      "status": "needs_correction",
+      "original_preserved_exactly": true,
+      "source_count": 3,
+      "source_mapping_complete": true,
+      "title_chars": 109,
+      "short_chars": 109,
+      "medium_words": 53,
+      "long_words": 149,
+      "length_rule": "pass",
+      "exact_gap": "The claimed 4.8-million Medicaid/CHIP coverage loss by June 2026, and attribution of any observed decline to the law, need a dated enrollment source plus causal analysis. Neither is established by the cited projections."
+    },
+    {
+      "record_id": "entry-4446",
+      "entry_number": 4446,
+      "status": "needs_correction",
+      "original_preserved_exactly": true,
+      "source_count": 1,
+      "source_mapping_complete": true,
+      "title_chars": 61,
+      "short_chars": 61,
+      "medium_words": 50,
+      "long_words": 143,
+      "length_rule": "pass",
+      "exact_gap": "A causal relationship between Blanche's remarks and the reported increase in judicial threats is not supported. If retaining the 400/78% statistic, cite its source separately and do not attribute it to this speech without direct evidence."
+    },
+    {
+      "record_id": "entry-4781",
+      "entry_number": 4781,
+      "status": "needs_correction",
+      "original_preserved_exactly": true,
+      "source_count": 1,
+      "source_mapping_complete": true,
+      "title_chars": 53,
+      "short_chars": 53,
+      "medium_words": 53,
+      "long_words": 154,
+      "length_rule": "pass",
+      "exact_gap": "A causal estimate attributing the August 2025 food-at-home CPI increase to tariffs, and a documented comparison establishing 'fastest since 2022,' are absent from the reviewed sources."
+    },
+    {
+      "record_id": "entry-5104",
+      "entry_number": 5104,
+      "status": "needs_correction",
+      "original_preserved_exactly": true,
+      "source_count": 3,
+      "source_mapping_complete": true,
+      "title_chars": 74,
+      "short_chars": 74,
+      "medium_words": 54,
+      "long_words": 149,
+      "length_rule": "pass",
+      "exact_gap": "The original murder assertion needs a named clemency recipient and a matching murder conviction record. No such recipient or record is identified by the proclamation and cited DOJ releases; keep that claim excluded."
+    }
+  ],
+  "source_to_fact_mapping": [
+    {
+      "record_id": "entry-4231",
+      "source_url": "https://campaignlegal.org/sites/default/files/2026-03/CLC%20Complaint%20_%20Patel%20_%20DOJ%20OIG.pdf",
+      "supported_fact_indexes": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "mapped_supported_facts": [
+        "Campaign Legal Center filed a complaint with the DOJ inspector general on March 4, 2026.",
+        "The complaint alleged at least ten trips by FBI Director Kash Patel on government aircraft appeared to involve personal travel.",
+        "The complaint cited a February 2026 trip to Milan during the Winter Olympics."
+      ],
+      "mapping_note": "Filing date, alleged trip count and Milan Olympics trip.",
+      "source_limit": "A complainant filing; it is not an OIG finding and does not establish reimbursement status or a violation."
+    },
+    {
+      "record_id": "entry-4231",
+      "source_url": "https://campaignlegal.org/document/clc-complaint-doj-inspector-general-regarding-fbi-director-kash-patels-personal-travel",
+      "supported_fact_indexes": [
+        "F1"
+      ],
+      "mapped_supported_facts": [
+        "Campaign Legal Center filed a complaint with the DOJ inspector general on March 4, 2026."
+      ],
+      "mapping_note": "Complaint identity and filing date.",
+      "source_limit": "Does not independently adjudicate allegations."
+    },
+    {
+      "record_id": "entry-4398",
+      "source_url": "https://www.whitehouse.gov/releases/2025/07/president-trumps-one-big-beautiful-bill-is-now-the-law/",
+      "supported_fact_indexes": [
+        "F1"
+      ],
+      "mapped_supported_facts": [
+        "President Trump signed the reconciliation law on July 4, 2025."
+      ],
+      "mapping_note": "Law signing date.",
+      "source_limit": "Administration announcement; not an independent estimate of effects."
+    },
+    {
+      "record_id": "entry-4398",
+      "source_url": "https://www.congress.gov/crs-product/R48633",
+      "supported_fact_indexes": [
+        "F3"
+      ],
+      "mapped_supported_facts": [
+        "CBO's Medicaid-provision projection is 7.5 million more uninsured people in 2034."
+      ],
+      "mapping_note": "CBO projection of 7.5 million more uninsured people in 2034 from Medicaid provisions.",
+      "source_limit": "Projected effects, not observed enrollment losses; the page returned 403 during this session, so this fact relies on the published worker-05 source review."
+    },
+    {
+      "record_id": "entry-4398",
+      "source_url": "https://www.kff.org/medicaid/allocating-cbos-estimates-of-federal-medicaid-spending-reductions-across-the-states-enacted-reconciliation-package/",
+      "supported_fact_indexes": [
+        "F2"
+      ],
+      "mapped_supported_facts": [
+        "KFF's analysis of CBO estimates projects about $911 billion in federal Medicaid spending reductions over ten years."
+      ],
+      "mapping_note": "KFF's CBO-based estimate of about $911 billion in federal Medicaid spending reductions over ten years.",
+      "source_limit": "Projection of spending effects, not a count of enrollees already disenrolled."
+    },
+    {
+      "record_id": "entry-4446",
+      "source_url": "https://news.bloomberglaw.com/us-law-week/dojs-no-2-official-asks-lawyers-to-join-war-against-judges",
+      "supported_fact_indexes": [
+        "F1",
+        "F2"
+      ],
+      "mapped_supported_facts": [
+        "Deputy Attorney General Todd Blanche made the reported remarks at the Federalist Society's National Lawyers Convention on November 7, 2025.",
+        "Bloomberg Law reports that Blanche described DOJ's conflict with federal judges as 'a war' and urged young lawyers to join the fight."
+      ],
+      "mapping_note": "November 7, 2025 event, reported “a war” quote and invitation to young lawyers.",
+      "source_limit": "Reports the speech and quote, not a causal link between the remarks and threats against judges."
+    },
+    {
+      "record_id": "entry-4781",
+      "source_url": "https://www.bls.gov/news.release/archives/cpi_09112025.pdf",
+      "supported_fact_indexes": [
+        "F1",
+        "F2"
+      ],
+      "mapped_supported_facts": [
+        "BLS reported food-at-home CPI rose 0.6% in August 2025 and 2.7% over the previous 12 months.",
+        "The August 2025 CPI release was published September 11, 2025."
+      ],
+      "mapping_note": "August 2025 food-at-home CPI monthly and annual changes, plus the publication date.",
+      "source_limit": "Reports measured prices and does not attribute the August increase to tariffs."
+    },
+    {
+      "record_id": "entry-5104",
+      "source_url": "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/",
+      "supported_fact_indexes": [
+        "F1"
+      ],
+      "mapped_supported_facts": [
+        "On January 20, 2025, the presidential proclamation commuted 14 named sentences and pardoned other people convicted of covered January 6-related federal offenses."
+      ],
+      "mapping_note": "January 20, 2025 proclamation, commutation of 14 sentences and pardons for covered January 6 offenses.",
+      "source_limit": "Defines covered offenses; does not substantiate the broad murder claim or unrelated conduct."
+    },
+    {
+      "record_id": "entry-5104",
+      "source_url": "https://www.justice.gov/usao-dc/pr/california-man-sentenced-prison-felony-charges-including-conspiracy-and-assaulting-police",
+      "supported_fact_indexes": [
+        "F2"
+      ],
+      "mapped_supported_facts": [
+        "Daniel Rodriguez was sentenced for federal charges including assaulting a police officer during the Capitol breach."
+      ],
+      "mapping_note": "Subclaim F2a only; this source does not establish Quaglin’s case.",
+      "source_limit": "Documents the case and sentence, not the terms of the later clemency proclamation.",
+      "parent_supported_fact_indexes": [
+        "F2"
+      ]
+    },
+    {
+      "record_id": "entry-5104",
+      "source_url": "https://www.justice.gov/usao-dc/pr/new-jersey-man-sentenced-12-years-prison-assaulting-law-enforcement-and-other-charges",
+      "supported_fact_indexes": [
+        "F2"
+      ],
+      "mapped_supported_facts": [
+        "Christopher Quaglin was sentenced for assaults on law enforcement during January 6."
+      ],
+      "mapping_note": "Subclaim F2b only; this source does not establish Rodriguez’s case.",
+      "source_limit": "Documents the case and sentence, not unrelated crimes or the broad murder claim.",
+      "parent_supported_fact_indexes": [
+        "F2"
+      ]
+    }
+  ],
+  "source_access_limitations": [
+    {
+      "entry_number": 4398,
+      "url": "https://www.congress.gov/crs-product/R48633",
+      "result": "HTTP 403 in this session; the 7.5-million projection is traced to the pinned worker-05 review."
+    },
+    {
+      "entry_number": 4781,
+      "url": "https://www.bls.gov/news.release/archives/cpi_09112025.pdf",
+      "result": "HTTP 403 in this session; CPI figures are traced to the pinned worker-05 review."
+    }
+  ],
+  "later_worker05_batches_checked": [
+    {
+      "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-05-batch-002.jsonl",
+      "sha256": "ba31a8b08df2e6382d50b7b4c82a93cf673acfc1381338b0577ccc188922a50f",
+      "assigned_id_matches": []
+    },
+    {
+      "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-05-batch-003.jsonl",
+      "sha256": "9a09b1996d2a5e71b68f25611a55f897826cdd2ee546aafd39ca2f892caca28b",
+      "assigned_id_matches": []
+    }
+  ],
+  "remaining_gaps": [
+    {
+      "entry_number": 4231,
+      "exact_gap": "A source establishing Patel's reimbursement, official purpose for each trip, any rule violation, a gold-medal celebration, or the complaint's later OIG disposition is not in the reviewed packet. Keep those points unresolved."
+    },
+    {
+      "entry_number": 4398,
+      "exact_gap": "The claimed 4.8-million Medicaid/CHIP coverage loss by June 2026, and attribution of any observed decline to the law, need a dated enrollment source plus causal analysis. Neither is established by the cited projections."
+    },
+    {
+      "entry_number": 4446,
+      "exact_gap": "A causal relationship between Blanche's remarks and the reported increase in judicial threats is not supported. If retaining the 400/78% statistic, cite its source separately and do not attribute it to this speech without direct evidence."
+    },
+    {
+      "entry_number": 4781,
+      "exact_gap": "A causal estimate attributing the August 2025 food-at-home CPI increase to tariffs, and a documented comparison establishing 'fastest since 2022,' are absent from the reviewed sources."
+    },
+    {
+      "entry_number": 5104,
+      "exact_gap": "The original murder assertion needs a named clemency recipient and a matching murder conviction record. No such recipient or record is identified by the proclamation and cited DOJ releases; keep that claim excluded."
+    }
+  ],
+  "scope_note": "This QA addition does not alter the saved correction batch, other worker output, canonical data or Neon."
+}

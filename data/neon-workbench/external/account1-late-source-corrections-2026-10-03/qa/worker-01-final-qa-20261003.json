@@ -1,0 +1,94 @@
+{
+  "packet_provenance": {
+    "branch": "codex/account1-late-source-corrections-2026-10-03",
+    "commit": "d1c9c5990d6b15257fbb406671cd73994b45420e",
+    "input_file": "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/worker-01-input.jsonl",
+    "input_sha256": "a8b321f39e98e87c98c90b6f593bfc7002c77a40125534fcdbe8015e522cb683",
+    "worker": 1,
+    "proposal_only": true
+  },
+  "verified_input_sha256": "a8b321f39e98e87c98c90b6f593bfc7002c77a40125534fcdbe8015e522cb683",
+  "expected_ids": [
+    "entry-4235",
+    "entry-4545",
+    "entry-5219",
+    "entry-5734",
+    "entry-5818",
+    "entry-5895",
+    "entry-6442",
+    "entry-6514",
+    "entry-6634",
+    "entry-6700",
+    "entry-6762",
+    "entry-6836",
+    "entry-6934"
+  ],
+  "actual_ids": [
+    "entry-4235",
+    "entry-4545",
+    "entry-5219",
+    "entry-5734",
+    "entry-5818",
+    "entry-5895",
+    "entry-6442",
+    "entry-6514",
+    "entry-6634",
+    "entry-6700",
+    "entry-6762",
+    "entry-6836",
+    "entry-6934"
+  ],
+  "exact_coverage": true,
+  "unique_ids": true,
+  "all_title_short_medium_long_limits_pass": true,
+  "https_and_deduplicated_urls": true,
+  "claim_to_exact_source_mappings": true,
+  "evidence_access_limits_recorded": true,
+  "unresolved_rows": [],
+  "remaining_gaps": {
+    "entry-4235": [
+      "No source provided explains the stored emissions projections or ties them to this rule."
+    ],
+    "entry-4545": [
+      "Actual individual coverage losses are not quantified by these projections."
+    ],
+    "entry-5219": [
+      "No evidence supplied ties the named donor’s payment or alleged pitch to this event."
+    ],
+    "entry-5734": [
+      "Later outcomes of the criminal and immigration proceedings need dated sources."
+    ],
+    "entry-5818": [
+      "Later litigation and individual personnel outcomes need current case-specific sourcing."
+    ],
+    "entry-5895": [
+      "A broad bankruptcy count requires records for each relevant entity and proceeding."
+    ],
+    "entry-6442": [
+      "Final litigation disposition and any operational effects require later court or agency records."
+    ],
+    "entry-6514": [
+      "Business, tax, and expert-response allegations need independent records."
+    ],
+    "entry-6634": [
+      "No final comprehensive staffing count or independent program audit is supplied."
+    ],
+    "entry-6700": [
+      "Actual Medicaid outlays and beneficiary effects are not established by proposal estimates."
+    ],
+    "entry-6762": [
+      "Later case developments and current legal status need dated records."
+    ],
+    "entry-6836": [
+      "The sources do not quantify service reductions caused by the proposal."
+    ],
+    "entry-6934": [
+      "Broader effects on organizations outside the listed designations are not established."
+    ]
+  },
+  "batch_hashes": {
+    "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/outputs/worker-01-batch-001-20261003-account1-a.jsonl": "1bd97f4e43279114d63499affb4bd287dfb41d563ad921337f7f770162399e51",
+    "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/outputs/worker-01-batch-002-20261003-account1-b.jsonl": "67a41370475dbe20fab13291dbca862da4bb780d0cef24268ab9047b5e2bf93b"
+  },
+  "scope": "Only the 13 worker-01 IDs were processed; no other worker outputs, canonical records, or Neon data were edited."
+}

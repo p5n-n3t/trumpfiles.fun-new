@@ -1,0 +1,103 @@
+{
+  "job": "Independent exact-set QA for account1 Wave3 citation QA worker-01",
+  "reviewed_ids": [
+    "entry-35",
+    "entry-230",
+    "entry-378",
+    "entry-655",
+    "entry-801",
+    "entry-878",
+    "entry-990",
+    "entry-1771",
+    "entry-2343",
+    "entry-2504",
+    "entry-2721",
+    "entry-3385",
+    "entry-3839",
+    "entry-4257",
+    "entry-5309",
+    "entry-5605",
+    "entry-6199",
+    "entry-6340",
+    "entry-37",
+    "entry-231",
+    "entry-380",
+    "entry-674",
+    "entry-804",
+    "entry-884",
+    "entry-996",
+    "entry-1779",
+    "entry-2373",
+    "entry-2515",
+    "entry-2731",
+    "entry-3444",
+    "entry-3873",
+    "entry-4296",
+    "entry-5374",
+    "entry-5661",
+    "entry-6200",
+    "entry-6356"
+  ],
+  "reviewed_count": 36,
+  "duplicate_ids": [],
+  "unassigned_ids": [],
+  "out_of_scope_ids": [],
+  "status_counts": {
+    "citation_repaired_proposal": 4,
+    "corrected_claim_proposal": 26,
+    "scope_exclusion_proposal": 4,
+    "unresolved_hold": 2
+  },
+  "validation": {
+    "batch_rows_total": 36,
+    "all_rows_have_required_schema": true,
+    "all_source_urls_syntactically_http": true,
+    "all_recommended_urls_have_fact_mapping": true,
+    "all_changed_copy_limits_pass": true,
+    "retained_latest_copy_title_short_medium_long_limits_pass": true,
+    "input_hashes_match_pinned_files": true,
+    "account2_or_other_worker_outputs_read_or_changed": false,
+    "canonical_or_neon_data_changed": false,
+    "rejected_candidate_urls_recorded": true,
+    "accessible_crosstabs_limits_observed": true
+  },
+  "exact_remaining_gaps": [
+    {
+      "id": "entry-231",
+      "gap": "Only cited University of Utah union article returns HTTP 404; an accessible copy and exact proposal text are needed before approving even the proposal description; any implementation claim additionally requires a specific enacted action and jurisdiction."
+    },
+    {
+      "id": "entry-4257",
+      "gap": "Official YouGov summary supports 36% approval and 60% disapproval. The linked crosstabs PDF downloaded but local text extraction was unavailable; sample size, exact question wording, and unsure percentage are omitted."
+    },
+    {
+      "id": "entry-6200",
+      "gap": "No dated Trump post, speech transcript, recording, or matching event-specific report supports the alleged 2023 Fauci statements; the supplied Politico story concerns Robert Redfield."
+    },
+    {
+      "id": "entry-35",
+      "gap": "The evidence supports complaint allegations and decree terms, not a court finding of discriminatory liability; retain explicit allegation and no-admission framing."
+    },
+    {
+      "id": "entry-6340",
+      "gap": "Reuters URL returned HTTP 401; CNBC text directly supports an estimated $148M in global purchases tied to the contest. Reuters-specific qualifying-holdings and wallet-location estimates were not independently checked; no claim of direct payment or buyer citizenship is supported."
+    }
+  ],
+  "scope_dispositions": {
+    "entry-2343": "Historical Maxwell parliamentary event is supported but has no Trump nexus.",
+    "entry-1779": "Atlantic URL is a 50-moment collection, not a specific event substantiating the narrative-effect claim.",
+    "entry-2373": "CNP lists have different provenance and completeness; supplied sources do not establish Trump membership or a Trump event.",
+    "entry-2515": "TrumpFile excerpt is unauthenticated and does not connect to Trump."
+  },
+  "duplicate_or_mismatched_url_findings": [
+    "entry-35: Washington Post citation is unmatched/previously timed out; use Clearinghouse case file.",
+    "entry-655: supplied EPA release returns 404; AP and NPR are generic hubs; use EPA release and fact sheet.",
+    "entry-801: AP link is a general hub; use CNBC event report.",
+    "entry-5605 and entry-5374: supplied NYT link is about Trump’s indictment and is unrelated to both travel-order and Bannon claims.",
+    "entry-6199: NBC article is about Kash Patel; use Trump Truth archive entry.",
+    "entry-804: supplied Yahoo link is unrelated; use WaPo and Roll Call.",
+    "entry-996: DOJ media/1116766 file is mismatched; use recipient-specific file/1358316.",
+    "entry-2373: slash/no-slash TrumpFile CNP URLs are duplicates of one page, not independent evidence."
+  ],
+  "limitations": "QA recommendations only. No canonical description, staged row, Neon database, account2 output, or other worker output was edited."
+}
