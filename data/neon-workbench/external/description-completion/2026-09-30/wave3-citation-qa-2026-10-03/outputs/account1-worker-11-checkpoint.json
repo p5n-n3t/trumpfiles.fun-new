@@ -1,0 +1,56 @@
+{
+  "packet_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+  "input_file": "worker-23-input.jsonl",
+  "input_sha256": "609357b5bd2d253defe1b89ddaf092b82a70fba23f25532e033caa07306a2a44",
+  "account": 1,
+  "worker": 11,
+  "assigned_count": 17,
+  "processed_count": 17,
+  "terminal_count": 17,
+  "outcome_rows_total": 17,
+  "batch_files": [
+    "account1-worker-11-batch-001.jsonl",
+    "account1-worker-11-batch-002.jsonl"
+  ],
+  "processed_entry_numbers": [
+    222,
+    352,
+    651,
+    776,
+    860,
+    978,
+    1768,
+    2340,
+    2496,
+    2636,
+    3273,
+    3832,
+    4144,
+    5094,
+    5565,
+    6146,
+    6319
+  ],
+  "pending_entry_numbers": [],
+  "final_qa": {
+    "input_sha256_verified": true,
+    "exact_assigned_id_coverage": true,
+    "unique_latest_outcomes": 17,
+    "terminal_statuses": {
+      "corrected_claim_proposal": 12,
+      "citation_repaired_proposal": 2,
+      "scope_exclusion_proposal": 2,
+      "unresolved_hold": 1
+    },
+    "batch_sizes": [
+      8,
+      9
+    ],
+    "full_schema_consistent": true,
+    "every_row_has_source_to_fact_mapping_and_exact_urls": true,
+    "every_row_has_uncertainty_or_exact_gap": true,
+    "all_corrected_descriptions_within_prompt_lengths": true,
+    "append_only_history_preserved": true
+  },
+  "notes": "Account1 worker 11 citation-to-claim review only. Input is immutable. No account2 outputs or canonical/Neon data were changed."
+}

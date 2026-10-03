@@ -1,0 +1,51 @@
+{
+  "worker": 11,
+  "phase": "final-context-evidence-resolution-2026-10-03",
+  "input_commit": "b746cabf167043cd52896163368baea52af66c07",
+  "assigned_ids": [
+    "entry-1726",
+    "entry-2328",
+    "entry-2442",
+    "entry-2501",
+    "entry-2615",
+    "entry-4054",
+    "entry-426",
+    "entry-5403",
+    "entry-6072",
+    "entry-6202",
+    "entry-6294",
+    "entry-6395",
+    "entry-6795",
+    "entry-735",
+    "entry-814",
+    "entry-853"
+  ],
+  "complete_ids": [
+    "entry-2328",
+    "entry-2442"
+  ],
+  "needs_context_ids": [
+    "entry-1726",
+    "entry-2501",
+    "entry-2615",
+    "entry-4054",
+    "entry-426",
+    "entry-5403",
+    "entry-6072",
+    "entry-6202",
+    "entry-6294",
+    "entry-6395",
+    "entry-6795",
+    "entry-735",
+    "entry-814",
+    "entry-853"
+  ],
+  "remaining_ids": [],
+  "counts": {
+    "assigned": 16,
+    "complete": 2,
+    "needs_context": 14,
+    "remaining": 0
+  },
+  "latest_output": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/final-context-lightsprint/outputs/worker-11-evidence-resolution-batch-002.jsonl"
+}

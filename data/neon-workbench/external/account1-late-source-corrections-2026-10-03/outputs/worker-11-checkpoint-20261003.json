@@ -1,0 +1,50 @@
+{
+  "worker": 11,
+  "packet_branch": "codex/account1-late-source-corrections-2026-10-03",
+  "packet_commit": "d1c9c5990d6b15257fbb406671cd73994b45420e",
+  "input_file": "worker-11-input.jsonl",
+  "input_sha256": "9aa93d0109a966c1f026e78fc6f766f1798a6e37e569ba6f6ed70c7b738f4d37",
+  "assigned_ids": [
+    "entry-4416",
+    "entry-5166",
+    "entry-5666",
+    "entry-5810",
+    "entry-5866",
+    "entry-6420",
+    "entry-6509",
+    "entry-6617",
+    "entry-6666",
+    "entry-6754",
+    "entry-6813",
+    "entry-6899"
+  ],
+  "terminal_outcomes": {
+    "entry-4416": "corrected_claim",
+    "entry-5166": "corrected_claim",
+    "entry-5666": "corrected_claim",
+    "entry-5810": "corrected_claim",
+    "entry-5866": "corrected_claim",
+    "entry-6420": "corrected_claim",
+    "entry-6509": "corrected_claim",
+    "entry-6617": "corrected_claim",
+    "entry-6666": "corrected_claim",
+    "entry-6754": "corrected_claim",
+    "entry-6813": "corrected_claim",
+    "entry-6899": "corrected_claim"
+  },
+  "batch_files": {
+    "worker-11-batch-20261003-001.jsonl": 6,
+    "worker-11-batch-20261003-002.jsonl": 6
+  },
+  "qa": {
+    "input_sha256_matches_manifest": true,
+    "input_ids_match_assignment": true,
+    "output_count": 12,
+    "output_ids_exactly_match_assignment_once_each": true,
+    "batch_sizes_within_5_to_10": true,
+    "all_records_have_descriptions_and_supported_facts": true,
+    "all_citations_are_https_with_specific_support_and_uncertainty": true,
+    "no_canonical_or_neon_writes": true,
+    "no_other_worker_ids": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "worker": 11,
+  "assigned_entry_numbers": [
+    6807,
+    6826,
+    6881,
+    6918,
+    6952
+  ],
+  "output_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-11-batch-20261004-001.jsonl",
+  "output_rows": 5,
+  "terminal_outcomes": {
+    "6807": "corrected_claim",
+    "6826": "corrected_claim",
+    "6881": "corrected_claim",
+    "6918": "corrected_claim",
+    "6952": "corrected_claim"
+  },
+  "qa": {
+    "exact_assigned_ids_once_each": true,
+    "one_terminal_row_per_assigned_id": true,
+    "title_and_short_at_most_180_chars": true,
+    "medium_45_to_90_words": true,
+    "long_140_to_300_words": true,
+    "every_source_has_url_specific_support_and_limit": true,
+    "prior_worker5_source_output_preserved_verbatim_in_each_row": true,
+    "no_other_entry_numbers_processed": true,
+    "no_canonical_or_neon_writes": true
+  },
+  "source_context": {
+    "source_branch": "ls/5-trump-description-rescue-05-of-12-53-dis-8OoQ",
+    "source_commit": "ef2007fd51a47a237f10e35213faaa50eb7c7df5",
+    "effective_source_output": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-05-batch-003.jsonl",
+    "effective_source_lines": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "requested_input_path": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/worker-05-input.jsonl",
+    "input_path_status": "absent from fetched commit; only worker-05-input.jsonl in commit is data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/worker-05-input.jsonl and it contains none of the five assigned IDs",
+    "frozen_snapshot_gap": "Exact frozen original title/synopsis could not be copied. The append-only correction retains the worker-05 source output, unsupported-claim list, and provenance without reconstructing the missing snapshot."
+  }
+}
