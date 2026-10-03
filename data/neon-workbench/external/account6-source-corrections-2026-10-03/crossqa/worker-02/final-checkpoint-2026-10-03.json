@@ -1,0 +1,43 @@
+{
+  "checkpoint_type": "independent_crossqa_final_checkpoint",
+  "created_at": "2026-10-03T11:40:09+00:00",
+  "reviewer_worker": 2,
+  "reviewer_branch": "ls/2-trump-files-source118-review-02-of-12-alSU",
+  "reviewed_worker": 3,
+  "reviewed_branch": "ls/3-trump-files-source118-review-03-of-12-mwSm",
+  "reviewed_commit": "b1d3ed267c7ee28e8b13021619049d97a90c6e06",
+  "remote_branch_head_at_review": "3b6abdbd2d436c74cc8712cd39d6344ea9f71f8d",
+  "scope_note": "The cross-QA is anchored to the exact worker-03 commit requested. The fetched branch head was later (3b6abdbd2d436c74cc8712cd39d6344ea9f71f8d); changes after the requested commit are outside this review.",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_input": "worker-03-input.jsonl",
+  "packet_input_sha256": "a8b37f6ce430c73606565455cfe32100d5d5e304060ec0a6f208ec4455786cb0",
+  "worker03_output": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-03-batch-2026-10-03-source118-review-03.jsonl",
+  "worker03_output_sha256": "51dc7fd9f3924cec1ac669cab3499608c6f6b2277c440795b502c5d4af035373",
+  "exact_assigned_ids": [
+    "entry-4306",
+    "entry-5091",
+    "entry-5717",
+    "entry-5823",
+    "entry-6408",
+    "entry-6495",
+    "entry-6632",
+    "entry-6731",
+    "entry-6809",
+    "entry-6916"
+  ],
+  "exact_set_row_count": 10,
+  "ledger_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-02/worker-03-crossqa-2026-10-03.jsonl",
+  "ledger_sha256": "ff255c3b2092acb7be9f4cb93537eec30824daecb0a129edf2daed574f16d01e",
+  "summary": {
+    "rows_with_supported_narrow_correction": 10,
+    "fully_clear_verdicts": 9,
+    "open_date_followups": 1,
+    "all_lengths_pass": true,
+    "all_packet_urls_retained_and_mapped": true,
+    "source_triage_needs_correction_preserved": true
+  },
+  "overall_verdict": "pass_with_one_explicit_follow_up",
+  "follow_up": "entry-6916: choose and document the date semantics for the reframed FEC MUR 7784 event. The legacy 2020 date and the cited 2022 FEC disposition refer to different time anchors; do not silently reuse the 2020 date for the FEC review.",
+  "access_limitations": "Some sources returned HTTP 401/403 during this review. The affected row reviews cite the packet source-triage access notes and do not claim a fresh direct retrieval for those URLs.",
+  "own_worker02_checkpoint_commit": "fc2f5ee1"
+}

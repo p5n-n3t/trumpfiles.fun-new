@@ -1,0 +1,29 @@
+{
+  "checkpoint_type": "final_worker_batch_exact_set",
+  "created_at": "2026-10-03T11:36:35+00:00",
+  "worker": 2,
+  "branch": "ls/2-trump-files-source118-review-02-of-12-alSU",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_input": "worker-02-input.jsonl",
+  "packet_input_sha256": "87a92c93aad426f6691b022af93fb800600c50f363e2c0d856f4e78090efeea5",
+  "correction_output": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-02-batch-2026-10-03-001.jsonl",
+  "correction_output_sha256": "15e2f7982077a18a723a02401011885502b56876bf753a6da61b919a80857be5",
+  "exact_ids": [
+    "entry-4243",
+    "entry-5083",
+    "entry-5603",
+    "entry-5820",
+    "entry-6405",
+    "entry-6494",
+    "entry-6621",
+    "entry-6726",
+    "entry-6800",
+    "entry-6910"
+  ],
+  "row_count": 10,
+  "exact_set_qa_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-02-exact-set-qa-2026-10-03.jsonl",
+  "exact_set_qa_sha256": "69241bbe5357741ec372fd92ad442bbe72bfbaac14f0b0cbb6aa3d7787673af7",
+  "result": "pass",
+  "summary": "Exactly one correction row for each assigned ID; all text-length, source URL mapping, packet URL preservation, terminal status, and evidence-gap checks pass. source_triage remains needs_correction for all rows; no accepted_source or verified state is asserted.",
+  "checkpointed_correction_commit": "b6035291c97d3baa2fdb90aa9d35a4f22c406db6"
+}
