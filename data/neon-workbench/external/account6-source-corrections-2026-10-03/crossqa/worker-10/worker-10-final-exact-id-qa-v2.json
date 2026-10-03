@@ -1,0 +1,967 @@
+{
+  "artifact": "worker-10-final-exact-id-qa-v2",
+  "review_date": "2026-10-03",
+  "reviewer_branch": "ls/10-trump-files-source118-review-10-of-12-0nIr",
+  "packet": {
+    "branch": "codex/account6-source-corrections-2026-10-03",
+    "commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+    "prompt_sha256": "6d51a7c7c661f416160d341c32abfa590d1f778504c19c6e5f65445860f3438a",
+    "worker10_input_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-10-input.jsonl",
+    "worker10_input_sha256": "ec822054a07dfa1f1d8ee156fec271f60366920a3da02f7d90673e41a010e73c",
+    "worker11_input_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-11-input.jsonl",
+    "worker11_input_sha256": "ad146d393ae56378ca0e523e1bbdf28f0b7bf6b50e043584384c7f3abf20d988"
+  },
+  "worker10_output": {
+    "path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-10-batch-2026-10-03.jsonl",
+    "sha256": "026e63729759b1880818ac57fdbdedfe7ce7b52c39cb13a9fa2970a12a8116da",
+    "expected_keys": [
+      "entry-4546",
+      "entry-5328",
+      "entry-5758",
+      "entry-5879",
+      "entry-6458",
+      "entry-6576",
+      "entry-6671",
+      "entry-6767",
+      "entry-6868",
+      "entry-6966"
+    ],
+    "observed_keys": [
+      "entry-4546",
+      "entry-5328",
+      "entry-5758",
+      "entry-5879",
+      "entry-6458",
+      "entry-6576",
+      "entry-6671",
+      "entry-6767",
+      "entry-6868",
+      "entry-6966"
+    ],
+    "row_count": 10,
+    "checks": {
+      "exact_key_sequence": true,
+      "one_terminal_row_per_assigned_key": true,
+      "source_triage_remains_needs_correction": true,
+      "description_lengths_within_limits": true,
+      "all_urls_have_exactly_one_fact_mapping": true,
+      "all_rows_retain_a_precise_unresolved_gap_or_limit": true
+    },
+    "per_key": [
+      {
+        "key": "entry-4546",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source_flag": "not_present; no accepted_source state asserted",
+        "disposition": "corrected_scope",
+        "corrected_title": "2025 Law Adds Six-Month Medicaid Expansion Renewals and Shortens Retroactive Coverage",
+        "date_correction": {
+          "from": "2025-07-04",
+          "proposed_start": "2025-07-04",
+          "proposed_end": null,
+          "basis": "The law was signed on July 4, 2025; the cited eligibility and coverage provisions take effect later."
+        },
+        "description_lengths": {
+          "short_characters": 123,
+          "medium_words": 60,
+          "long_words": 156
+        },
+        "source_url_count": 2,
+        "source_url_fact_mapping": [
+          {
+            "url": "https://www.kff.org/medicaid/health-provisions-in-the-2025-federal-budget-reconciliation-law/",
+            "supports": [
+              "P.L. 119-21 requires six-month eligibility redeterminations for Medicaid expansion adults for renewals scheduled on or after December 31, 2026.",
+              "Section 71112 limits retroactive Medicaid coverage to one month for expansion adults and two months for traditional enrollees beginning January 1, 2027."
+            ],
+            "limits": [
+              "Supports statutory requirements and KFF coverage estimates, not a specific realized coverage loss."
+            ]
+          },
+          {
+            "url": "https://www.everycrsreport.com/reports/R48633.html",
+            "supports": [
+              "CRS describes Section 71112's changes to Medicaid and CHIP retroactive coverage, including the one-month expansion and two-month other-group periods effective January 1, 2027.",
+              "CRS summarizes the federal-law provisions and associated implementation dates."
+            ],
+            "limits": [
+              "A policy analysis does not establish an individual enrollee's outcome."
+            ]
+          }
+        ],
+        "unsupported_original_claims_removed_or_limited": [
+          "The frozen claim that the law ends retroactive Medicaid coverage is false.",
+          "The source supports the statutory requirements and effective dates, not the card's unqualified prediction that they will reproduce the prior unwinding's harms."
+        ],
+        "remaining_evidence_gaps": [
+          "The supplied sources do not establish implementation outcomes or a specific realized coverage loss; the description therefore states statutory requirements only."
+        ],
+        "old_text_preservation_note": [
+          "The former claim that retroactive coverage ends is inaccurate. The staged draft's reference to impacts from the prior unwinding is omitted because the cited sources do not establish those effects for this law."
+        ],
+        "review_result": "pass_with_source_access_or_evidence_limits_recorded"
+      },
+      {
+        "key": "entry-5328",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source_flag": "not_present; no accepted_source state asserted",
+        "disposition": "corrected_scope",
+        "corrected_title": "DOJ Prosecutor Email Summarizes Trump’s Epstein-Aircraft Flights, 1993–1996",
+        "date_correction": {
+          "from": "1994-05-15",
+          "proposed_start": "2020-01-08",
+          "proposed_end": null,
+          "basis": "The corrected event is the dated prosecutor email summarizing flights from 1993 through 1996; it does not substantiate the frozen record's May 15, 1994 itinerary."
+        },
+        "description_lengths": {
+          "short_characters": 108,
+          "medium_words": 66,
+          "long_words": 163
+        },
+        "source_url_count": 3,
+        "source_url_fact_mapping": [
+          {
+            "url": "https://www.justice.gov/epstein/files/DataSet%208/EFTA00028716.pdf",
+            "supports": [
+              "The January 8, 2020 prosecutor email summarizing received flight records."
+            ],
+            "limits": [
+              "The PDF triggered an age-verification page during direct retrieval; it is an email summary, not the underlying flight logs."
+            ]
+          },
+          {
+            "url": "https://www.epsteinscan.org/document/813372",
+            "supports": [
+              "Readable OCR transcription of the DOJ email: at least eight flights in 1993–1996, at least four with Maxwell, and some with Marla Maples, Tiffany Trump, or Eric Trump."
+            ],
+            "limits": [
+              "Third-party OCR is used to read the linked government document; it does not verify individual flight manifests."
+            ]
+          },
+          {
+            "url": "https://www.justice.gov/opa/pr/attorney-general-pamela-bondi-releases-first-phase-declassified-epstein-files",
+            "supports": [
+              "The document's release context within the DOJ Epstein files collection."
+            ],
+            "limits": [
+              "This release announcement does not establish passenger, route, or flight-count details."
+            ]
+          }
+        ],
+        "unsupported_original_claims_removed_or_limited": [
+          "The cited DOJ email does not contain the May 15, 1994 itinerary, N988JE aircraft identifier, Reagan National/Teterboro routing, or passenger list naming Mark Middleton and Tiffany’s nanny.",
+          "The statement that this is the only flight with infant Tiffany is unsupported by the email."
+        ],
+        "remaining_evidence_gaps": [
+          "The May 15, 1994 itinerary, aircraft identifier, route, and complete passenger list require the underlying official flight-log page; the cited prosecutor email and its OCR do not establish them."
+        ],
+        "old_text_preservation_note": [
+          "Scope is narrowed to the email's supported multi-year summary. The title and date now identify the January 2020 reporting document rather than an unsupported single flight."
+        ],
+        "review_result": "pass_with_source_access_or_evidence_limits_recorded"
+      },
+      {
+        "key": "entry-5758",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source_flag": "not_present; no accepted_source state asserted",
+        "disposition": "corrected_scope",
+        "corrected_title": "Rep. Andy Ogles Introduces Proposal to Allow a Third Presidential Election",
+        "date_correction": {
+          "from": "2025-08-29",
+          "proposed_start": "2025-01-23",
+          "proposed_end": null,
+          "basis": "Ogles's announcement and H.J.Res.29 introduction are dated January 23, 2025."
+        },
+        "description_lengths": {
+          "short_characters": 94,
+          "medium_words": 58,
+          "long_words": 149
+        },
+        "source_url_count": 2,
+        "source_url_fact_mapping": [
+          {
+            "url": "https://ogles.house.gov/media/press-releases/rep-ogles-proposes-amending-22nd-amendment-allow-trump-serve-third-term",
+            "supports": [
+              "Ogles's January 23, 2025 announcement and introduction of a constitutional amendment permitting up to three presidential elections.",
+              "The text of the proposed amendment and Ogles's stated intent that Trump could serve a third term."
+            ]
+          },
+          {
+            "url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/29",
+            "supports": [
+              "Official bill metadata identifying H.J.Res.29, Ogles as sponsor, its January 23, 2025 introduction, and referral to House Judiciary."
+            ],
+            "limits": [
+              "The page returned HTTP 403 to direct automated retrieval in this review; bill metadata is also stated in the packet's source review."
+            ]
+          }
+        ],
+        "unsupported_original_claims_removed_or_limited": [
+          "The resolution was not introduced on August 29, 2025 by a coalition of lawmakers.",
+          "The sources establish a proposal, not that lawmakers acted days after the unspecified comments described in the frozen synopsis."
+        ],
+        "remaining_evidence_gaps": [
+          "The cited records do not identify a separate August 29, 2025 coalition event matching the frozen description."
+        ],
+        "old_text_preservation_note": [
+          "This entry retains the amendment-proposal event while correcting its sponsor, date, and scope; no separate August 29 event is merged into it."
+        ],
+        "review_result": "pass_with_source_access_or_evidence_limits_recorded"
+      },
+      {
+        "key": "entry-5879",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source_flag": "not_present; no accepted_source state asserted",
+        "disposition": "corrected_scope",
+        "corrected_title": "2018 Indictment Alleges Manafort Concealed Ukraine-Related Income Through Offshore Accounts",
+        "date_correction": {
+          "from": "2016-06-01",
+          "proposed_start": null,
+          "proposed_end": null,
+          "display": "2018 superseding indictment",
+          "basis": "The corrected claim concerns allegations in the 2018 charging document; an exact filing day was not recovered from the linked PDF during this review."
+        },
+        "description_lengths": {
+          "short_characters": 133,
+          "medium_words": 71,
+          "long_words": 170
+        },
+        "source_url_count": 2,
+        "source_url_fact_mapping": [
+          {
+            "url": "https://www.justice.gov/sco-durham/file/955651/dl?inline=",
+            "supports": [
+              "The 2018 superseding indictment's allegations concerning Ukraine-related political consulting, more than $75 million routed through offshore accounts, and more than $30 million in concealed income with Gates's assistance."
+            ],
+            "limits": [
+              "The linked PDF was retrieved, but its text was not extracted in this review; the figures are limited to the source-rescue packet's description of the indictment."
+            ]
+          },
+          {
+            "url": "https://www.justice.gov/archives/sco/page/file/1070326/dl?inline=",
+            "supports": [
+              "A DOJ-hosted copy of the superseding indictment used for the staged correction's allegations and figures."
+            ],
+            "limits": [
+              "The indictment states prosecutors' allegations, not factual findings; it does not support the specific $65 million payer attribution."
+            ]
+          }
+        ],
+        "unsupported_original_claims_removed_or_limited": [
+          "The reviewed indictment does not support the headline's exact $65 million total as payments specifically from Rinat Akhmetov and Viktor Yanukovych.",
+          "The indictment is an allegation; it does not establish every allegation in this synopsis as an adjudicated fact."
+        ],
+        "remaining_evidence_gaps": [
+          "No reviewed source supports the $65 million figure as payments specifically from Akhmetov and Yanukovych. The exact filing day of the cited 2018 superseding indictment also remains to be confirmed from its docket record."
+        ],
+        "old_text_preservation_note": [
+          "The proposed metadata date is year-level because the PDF content was not text-extractable in this environment; the frozen June 2016 date should not be carried over as the indictment's date."
+        ],
+        "review_result": "pass_with_source_access_or_evidence_limits_recorded"
+      },
+      {
+        "key": "entry-6458",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source_flag": "not_present; no accepted_source state asserted",
+        "disposition": "corrected_scope",
+        "corrected_title": "Iran Fires Missiles at Israel After Israel Begins June 2025 Attack",
+        "date_correction": {
+          "from": "2025-06-14",
+          "proposed_start": "2025-06-13",
+          "proposed_end": null,
+          "basis": "Reuters dated the initial Iranian missile barrage June 13, 2025."
+        },
+        "description_lengths": {
+          "short_characters": 97,
+          "medium_words": 61,
+          "long_words": 148
+        },
+        "source_url_count": 1,
+        "source_url_fact_mapping": [
+          {
+            "url": "https://www.reuters.com/world/middle-east/iran-fires-fewer-than-100-missiles-israel-most-intercepted-israeli-military-says-2025-06-13/",
+            "supports": [
+              "Reuters's June 13 report that Iran launched fewer than 100 missiles toward Israel and that most were intercepted, according to the Israeli military.",
+              "The report's chronology places the initial Iranian barrage after Israel began its attack campaign."
+            ],
+            "limits": [
+              "The interception and missile count are attributed to the Israeli military."
+            ]
+          }
+        ],
+        "unsupported_original_claims_removed_or_limited": [
+          "Iran fired more than 100 missiles immediately after joint U.S.–Israeli strikes.",
+          "The described June 13 attack was triggered by the later U.S. strikes."
+        ],
+        "remaining_evidence_gaps": [
+          "The cited report attributes the initial missile count and interceptions to Israel's military; the description preserves that attribution."
+        ],
+        "old_text_preservation_note": [
+          "The frozen June 14 date is replaced with the cited report's June 13 event date. Later U.S. strikes are explicitly kept out of the causal sequence for this initial barrage."
+        ],
+        "review_result": "pass_with_source_access_or_evidence_limits_recorded"
+      },
+      {
+        "key": "entry-6576",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source_flag": "not_present; no accepted_source state asserted",
+        "disposition": "corrected_scope",
+        "corrected_title": "Trump Commutes Kwame Kilpatrick's Federal Sentence, Leaving His Convictions Intact",
+        "date_correction": {
+          "from": "2021-01-20",
+          "proposed_start": "2021-01-13",
+          "proposed_end": null,
+          "basis": "The executive grant is dated January 13; the White House announced it on January 20."
+        },
+        "description_lengths": {
+          "short_characters": 122,
+          "medium_words": 61,
+          "long_words": 159
+        },
+        "source_url_count": 4,
+        "source_url_fact_mapping": [
+          {
+            "url": "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-executive-grants-clemency-012021/",
+            "supports": [
+              "White House announcement on January 20, 2021 that Trump commuted Kilpatrick's sentence.",
+              "White House's account that Kilpatrick served about seven years for his role in a racketeering and bribery scheme."
+            ],
+            "limits": [
+              "The announcement does not establish whether DOJ's ordinary clemency review was bypassed."
+            ]
+          },
+          {
+            "url": "https://www.justice.gov/pardon/page/file/1358296/dl?inline=",
+            "supports": [
+              "The executive clemency grant is a commutation dated January 13, 2021."
+            ],
+            "limits": [
+              "The action is not a pardon and does not erase convictions."
+            ]
+          },
+          {
+            "url": "https://www.justice.gov/pardon/commutations-granted-president-donald-j-trump-2017-2021",
+            "supports": [
+              "Official DOJ clemency-reference page for Trump's 2017–2021 commutations."
+            ],
+            "limits": [
+              "It does not establish the review path for Kilpatrick's case."
+            ]
+          },
+          {
+            "url": "https://apnews.com/article/donald-trump-kwame-kilpatrick-detroit-8441a18980a74aaa6503a5c098db25a1",
+            "supports": [
+              "Associated Press reporting that Kilpatrick was released after the commutation."
+            ],
+            "limits": [
+              "The article returned HTTP 403 to direct automated retrieval in this review; its use is limited to the packet's cited release fact."
+            ]
+          }
+        ],
+        "unsupported_original_claims_removed_or_limited": [
+          "The clemency was a commutation, not a pardon.",
+          "The January 20 announcement date is not the signature date of the order.",
+          "The claim that the action bypassed traditional DOJ review is not established by these sources."
+        ],
+        "remaining_evidence_gaps": [
+          "The reviewed source set does not establish whether Kilpatrick's case followed or bypassed DOJ's traditional clemency review process."
+        ],
+        "old_text_preservation_note": [
+          "Correction replaces 'pardon' with 'commutation' and separates the January 13 grant date from the January 20 public announcement."
+        ],
+        "review_result": "pass_with_source_access_or_evidence_limits_recorded"
+      },
+      {
+        "key": "entry-6671",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source_flag": "not_present; no accepted_source state asserted",
+        "disposition": "corrected_scope",
+        "corrected_title": "Wallets Linked to $TRUMP Token Creators Accumulated Nearly $100 Million in Trading Fees",
+        "date_correction": {
+          "from": "2025-04-01",
+          "proposed_start": "2025-01-17",
+          "proposed_end": "2025-01-30",
+          "basis": "Reuters estimated the fee accumulation over the token's first two weeks, January 17–30, 2025."
+        },
+        "description_lengths": {
+          "short_characters": 131,
+          "medium_words": 57,
+          "long_words": 167
+        },
+        "source_url_count": 1,
+        "source_url_fact_mapping": [
+          {
+            "url": "https://www.reuters.com/markets/currencies/trumps-meme-coin-made-nearly-100-million-trading-fees-small-traders-lost-money-2025-02-03/",
+            "supports": [
+              "Reuters's estimate that three creator-linked wallets accumulated roughly $86–100 million in trading fees between January 17 and January 30, 2025.",
+              "Reuters's report that opaque ownership and distribution prevented it from determining what portion, if any, accrued to Trump personally."
+            ],
+            "limits": [
+              "The estimate is trading-fee revenue associated with wallets, not a verified amount of realized personal profit. The page returned HTTP 401 to direct automated retrieval in this review; the facts follow the packet's source review."
+            ]
+          }
+        ],
+        "unsupported_original_claims_removed_or_limited": [
+          "Trump personally realized $100 million or more in profit while president.",
+          "The reporting establishes insider cash-outs or the amount retail investors lost."
+        ],
+        "remaining_evidence_gaps": [
+          "The ultimate fee recipients and any realized personal proceeds remain unverified in the cited Reuters report."
+        ],
+        "old_text_preservation_note": [
+          "Date range follows the Reuters measurement window, not the original unsupported April 2025 event date."
+        ],
+        "review_result": "pass_with_source_access_or_evidence_limits_recorded"
+      },
+      {
+        "key": "entry-6767",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source_flag": "not_present; no accepted_source state asserted",
+        "disposition": "corrected_scope",
+        "corrected_title": "Appeals Court Hears Challenge to Boasberg Contempt Inquiry Over Deportation Flights",
+        "date_correction": {
+          "from": "2025-03-15",
+          "proposed_start": "2026-09-29",
+          "proposed_end": null,
+          "basis": "The corrected entry concerns the D.C. Circuit hearing on September 29, 2026; March 15, 2025 is the date of the underlying deportation flights."
+        },
+        "description_lengths": {
+          "short_characters": 125,
+          "medium_words": 58,
+          "long_words": 164
+        },
+        "source_url_count": 3,
+        "source_url_fact_mapping": [
+          {
+            "url": "https://www.politico.com/news/2026/09/29/james-boasberg-contempt-proceedings-deportations",
+            "supports": [
+              "Reporting on the September 29, 2026 appellate argument concerning Boasberg's contempt proceedings."
+            ],
+            "limits": [
+              "A contemporaneous report does not establish a later appellate outcome."
+            ]
+          },
+          {
+            "url": "https://www.washingtonpost.com/national-security/2026/09/29/appeals-court-signals-support-contempt-inquiry-deportation-flights/",
+            "supports": [
+              "Reporting on the D.C. Circuit panel's questions and the dispute over continuing the contempt inquiry."
+            ],
+            "limits": [
+              "The article's account of panel questions is not a final ruling."
+            ]
+          },
+          {
+            "url": "https://www.reuters.com/legal/government/us-appeals-court-mulls-contempt-probe-over-trump-deportation-flights-2026-09-29/",
+            "supports": [
+              "Reuters's September 29 report on the appeals court hearing and the unresolved challenge to the contempt inquiry."
+            ],
+            "limits": [
+              "The report describes the procedural posture on that date, not a final decision."
+            ]
+          }
+        ],
+        "unsupported_original_claims_removed_or_limited": [
+          "The administration’s direct defiance of an operative written order is an uncontested final finding.",
+          "Legal experts universally rejected the administration’s timing argument."
+        ],
+        "remaining_evidence_gaps": [
+          "A later appellate decision may change the procedural posture; this correction is expressly limited to the status reported on October 3, 2026."
+        ],
+        "old_text_preservation_note": [
+          "The March 15, 2025 date is retained as context for the flights but not as the date of this corrected appellate-hearing event."
+        ],
+        "review_result": "pass_with_source_access_or_evidence_limits_recorded"
+      },
+      {
+        "key": "entry-6868",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source_flag": "not_present; no accepted_source state asserted",
+        "disposition": "corrected_scope",
+        "corrected_title": "Trump Says Country Would Become Like Detroit at October 2024 Campaign Event",
+        "date_correction": {
+          "from": "2024-08-01",
+          "proposed_start": "2024-10-10",
+          "proposed_end": null,
+          "basis": "The corrected event is the Detroit Economic Club appearance reported on October 10, 2024."
+        },
+        "description_lengths": {
+          "short_characters": 104,
+          "medium_words": 58,
+          "long_words": 175
+        },
+        "source_url_count": 3,
+        "source_url_fact_mapping": [
+          {
+            "url": "https://apnews.com/article/trump-detroit-2382e6f01ea6d236e8a2b755ff150580",
+            "supports": [
+              "The October 10, 2024 Detroit Economic Club remark: “The whole country will end up being like Detroit if she is your president.”"
+            ],
+            "limits": [
+              "The AP page returned HTTP 403 to direct automated retrieval in this review; the exact quote and date are stated in the packet's source review."
+            ]
+          },
+          {
+            "url": "https://www.presidency.ucsb.edu/documents/remarks-campaign-rally-detroit-michigan-0",
+            "supports": [
+              "A separate Trump campaign appearance and transcript from Detroit on October 18, 2024, useful for distinguishing remarks made at another event."
+            ],
+            "limits": [
+              "This October 18 transcript does not establish the October 10 Economic Club quote."
+            ]
+          },
+          {
+            "url": "https://www.nytimes.com/interactive/2024/11/02/us/politics/trump-places-quotes.html",
+            "supports": [
+              "A compilation of Trump remarks about U.S. places across different dates and contexts, relevant to separating quotations."
+            ],
+            "limits": [
+              "It does not validate the frozen entry's full multi-city composite as one October 2024 event."
+            ]
+          }
+        ],
+        "unsupported_original_claims_removed_or_limited": [
+          "Trump used each of “war zones,” “hellholes,” “crime-infested,” and “unsafe for everyone” about Detroit, Chicago, and Baltimore at multiple 2024 rallies.",
+          "The cited remark itself establishes the racial motive asserted in the synopsis."
+        ],
+        "remaining_evidence_gaps": [
+          "Each additional city-specific quotation needs its own date, transcript, and source; the supplied source set does not validate the original composite package."
+        ],
+        "old_text_preservation_note": [
+          "The row is narrowed to the documented October 10 Detroit remark; separate quotations are not combined or asserted as part of this event."
+        ],
+        "review_result": "pass_with_source_access_or_evidence_limits_recorded"
+      },
+      {
+        "key": "entry-6966",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source_flag": "not_present; no accepted_source state asserted",
+        "disposition": "corrected_scope",
+        "corrected_title": "Trump Signs Childhood-Vaccine Order and Discusses Autism in August 2026 Remarks",
+        "date_correction": {
+          "from": "2025-08-01",
+          "proposed_start": "2026-08-10",
+          "proposed_end": null,
+          "basis": "Executive Order 14420 and the signing transcript are dated August 10, 2026."
+        },
+        "description_lengths": {
+          "short_characters": 126,
+          "medium_words": 59,
+          "long_words": 150
+        },
+        "source_url_count": 3,
+        "source_url_fact_mapping": [
+          {
+            "url": "https://www.whitehouse.gov/presidential-actions/2026/08/delivering-gold-standard-childhood-vaccine-recommendations-for-americans/",
+            "supports": [
+              "Executive Order 14420 was signed by President Trump on August 10, 2026.",
+              "The order addresses federal childhood-vaccine recommendations, including separate MMR components when available and spacing immunizations across visits."
+            ]
+          },
+          {
+            "url": "https://www.presidency.ucsb.edu/documents/remarks-signing-executive-order-childhood-vaccine-schedule-recommendations-and-exchange",
+            "supports": [
+              "Transcript of Trump's August 10, 2026 signing remarks, including his comments mentioning autism."
+            ]
+          },
+          {
+            "url": "https://www.who.int/publications/i/item/9789240123533",
+            "supports": [
+              "WHO evidence review through 2025: the most methodologically rigorous primary studies do not support a causal association between vaccines and autism spectrum disorder."
+            ]
+          }
+        ],
+        "unsupported_original_claims_removed_or_limited": [
+          "The event occurred in August 2025.",
+          "RFK Jr. signed the executive order.",
+          "The policy event alone proves an MMR-autism causal link."
+        ],
+        "remaining_evidence_gaps": [
+          "The frozen record's date_start of August 1, 2025 is incorrect; this output proposes August 10, 2026. The described event does not establish a vaccine-autism causal link."
+        ],
+        "old_text_preservation_note": [
+          "Corrected the signing year/date and identified Trump as signer. The executive order, signing remarks, and WHO evidence review are mapped separately."
+        ],
+        "review_result": "pass_with_source_access_or_evidence_limits_recorded"
+      }
+    ],
+    "result": "pass_with_documented_access_limits"
+  },
+  "worker11_crossqa": {
+    "target_branch": "ls/11-trump-files-source118-review-11-of-12-8RJW",
+    "reviewed_commit": "b1b581372a2dcbe6f3652bab4887893167d49f8a",
+    "current_target_tip": "fd7586ca21d3acf2685b79f76accf6ff7c6264e5",
+    "reviewed_commit_is_ancestor_of_tip": true,
+    "post_review_changed_paths": [
+      "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-11-exact-set-qa-20261003.jsonl",
+      "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-11-final-checkpoint-20261003.json"
+    ],
+    "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-11-batch-20261003-001.jsonl",
+    "output_sha256": "70c0db573b9798f491fa05c602c04c97fd79c4d56b492827802281f21dc69d80",
+    "expected_keys": [
+      "entry-4697",
+      "entry-5333",
+      "entry-5763",
+      "entry-5890",
+      "entry-6459",
+      "entry-6580",
+      "entry-6684",
+      "entry-6772",
+      "entry-6878"
+    ],
+    "observed_keys": [
+      "entry-4697",
+      "entry-5333",
+      "entry-5763",
+      "entry-5890",
+      "entry-6459",
+      "entry-6580",
+      "entry-6684",
+      "entry-6772",
+      "entry-6878"
+    ],
+    "row_count": 9,
+    "checks": {
+      "exact_key_sequence": true,
+      "one_terminal_row_per_assigned_key": true,
+      "source_triage_remains_needs_correction": true,
+      "accepted_source_false_for_all": true,
+      "description_lengths_within_limits": true,
+      "all_urls_mapped_once": true
+    },
+    "per_key_structural_audit": [
+      {
+        "key": "entry-4697",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source": false,
+        "description_lengths": {
+          "short_characters": 80,
+          "medium_words": 65,
+          "long_words": 144
+        },
+        "source_urls": [
+          "https://www.reuters.com/world/us/trump-reports-over-14-billion-income-crypto-ventures-2026-06-30/"
+        ],
+        "source_mapping": [
+          {
+            "url": "https://www.reuters.com/world/us/trump-reports-over-14-billion-income-crypto-ventures-2026-06-30/",
+            "supports": [
+              "Reuters’ review of the 2025 financial disclosure and its reported crypto-income figures, including World Liberty Financial-related activity, $TRUMP income, and a separate cumulative earnings estimate."
+            ],
+            "limitations": [
+              "Does not turn the unlike $7 billion components into a comparable total or establish a quid pro quo."
+            ],
+            "access_note": "Packet triage records the article as read; direct retrieval in this run returned HTTP 401."
+          }
+        ],
+        "review_result": "see_independent_per_key_crossqa_ledger"
+      },
+      {
+        "key": "entry-5333",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source": false,
+        "description_lengths": {
+          "short_characters": 85,
+          "medium_words": 65,
+          "long_words": 145
+        },
+        "source_urls": [
+          "https://www.thedailybeast.com/jeffrey-epsteins-sick-story-played-out-for-years-in-plain-sight/",
+          "https://talkingpointsmemo.com/edblog/i-was-told-epstein-belonged-to-intelligence-and-to-leave-it-alone"
+        ],
+        "source_mapping": [
+          {
+            "url": "https://www.thedailybeast.com/jeffrey-epsteins-sick-story-played-out-for-years-in-plain-sight/",
+            "supports": [
+              "Vicky Ward’s report of Acosta’s alleged transition-interview statement and his prior role in the Epstein non-prosecution deal."
+            ],
+            "limitations": [
+              "The article is the source of the attributed account; it does not publish contemporaneous DOJ emails establishing the quote or Trump’s knowledge."
+            ]
+          },
+          {
+            "url": "https://talkingpointsmemo.com/edblog/i-was-told-epstein-belonged-to-intelligence-and-to-leave-it-alone",
+            "supports": [
+              "TPM’s July 10, 2019 summary directing readers to Ward’s Daily Beast reporting."
+            ],
+            "limitations": [
+              "This is a contemporaneous secondary discussion of Ward’s account, not independent corroboration of the underlying interview."
+            ]
+          }
+        ],
+        "review_result": "see_independent_per_key_crossqa_ledger"
+      },
+      {
+        "key": "entry-5763",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source": false,
+        "description_lengths": {
+          "short_characters": 75,
+          "medium_words": 69,
+          "long_words": 162
+        },
+        "source_urls": [
+          "https://www.bea.gov/index.php/news/2025/gross-domestic-product-2nd-quarter-2025-second-estimate-and-corporate-profits-preliminary",
+          "https://www.reuters.com/world/us/trump-again-attacks-fed-chair-says-powell-hurting-housing-industry-2025-08-19/"
+        ],
+        "source_mapping": [
+          {
+            "url": "https://www.bea.gov/index.php/news/2025/gross-domestic-product-2nd-quarter-2025-second-estimate-and-corporate-profits-preliminary",
+            "supports": [
+              "BEA’s August 28, 2025 second estimate: 3.3% annualized real GDP growth in Q2 2025, following a 0.5% contraction in Q1."
+            ],
+            "limitations": [
+              "One quarterly estimate is not a comprehensive determination of recession status."
+            ]
+          },
+          {
+            "url": "https://www.reuters.com/world/us/trump-again-attacks-fed-chair-says-powell-hurting-housing-industry-2025-08-19/",
+            "supports": [
+              "Reuters’ report of Trump’s August 19 remarks that Powell was hurting housing and the renewed call for a large rate cut."
+            ],
+            "limitations": [
+              "Does not support the alleged Biden, China or “deep state” campaign or the claim that Trump demanded Powell’s firing."
+            ],
+            "access_note": "Packet triage records the article as read; direct retrieval in this run returned HTTP 401."
+          }
+        ],
+        "review_result": "see_independent_per_key_crossqa_ledger"
+      },
+      {
+        "key": "entry-5890",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source": false,
+        "description_lengths": {
+          "short_characters": 86,
+          "medium_words": 60,
+          "long_words": 161
+        },
+        "source_urls": [
+          "https://www.nj.gov/casinos/about/history/"
+        ],
+        "source_mapping": [
+          {
+            "url": "https://www.nj.gov/casinos/about/history/",
+            "supports": [
+              "The Commission history says that it agreed to reserve a license for Donald Trump for what became Trump Plaza Hotel Casino during the 1982 licensing period."
+            ],
+            "limitations": [
+              "The page does not identify the precise date, specific mob-linked contractor findings, or a cooperation-based reason for the licensing action."
+            ]
+          }
+        ],
+        "review_result": "see_independent_per_key_crossqa_ledger"
+      },
+      {
+        "key": "entry-6459",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source": false,
+        "description_lengths": {
+          "short_characters": 70,
+          "medium_words": 61,
+          "long_words": 152
+        },
+        "source_urls": [
+          "https://www.investing.com/news/world-news/us-aircraft-carrier-heads-west-from-schina-sea-amid-middle-east-tensions-4096328",
+          "https://news.usni.org/2025/06/18/middle-east-aircraft-carrier-commitment-keeps-pressure-on-u-s-fleet-deployment-data-shows"
+        ],
+        "source_mapping": [
+          {
+            "url": "https://www.investing.com/news/world-news/us-aircraft-carrier-heads-west-from-schina-sea-amid-middle-east-tensions-4096328",
+            "supports": [
+              "A reproduced Reuters report that Nimitz left the South China Sea heading west on June 16, 2025, with its Vietnam port call canceled amid regional tensions."
+            ],
+            "limitations": [
+              "Does not establish an order involving Ford and Eisenhower or the complete operational rationale."
+            ],
+            "access_note": "Packet evidence-resolution notes record reading the reproduced Reuters article; direct retrieval during this run returned HTTP 403."
+          },
+          {
+            "url": "https://news.usni.org/2025/06/18/middle-east-aircraft-carrier-commitment-keeps-pressure-on-u-s-fleet-deployment-data-shows",
+            "supports": [
+              "Regional carrier-commitment and deployment-pattern context reported by USNI News."
+            ],
+            "limitations": [
+              "Does not support the original June 10 order, ship pair, attributed announcement or aircraft details."
+            ],
+            "access_note": "Packet evidence-resolution notes record reading the article; direct retrieval during this run returned HTTP 403."
+          }
+        ],
+        "review_result": "see_independent_per_key_crossqa_ledger"
+      },
+      {
+        "key": "entry-6580",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source": false,
+        "description_lengths": {
+          "short_characters": 73,
+          "medium_words": 51,
+          "long_words": 141
+        },
+        "source_urls": [
+          "https://www.whitehouse.gov/Presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/"
+        ],
+        "source_mapping": [
+          {
+            "url": "https://www.whitehouse.gov/Presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/",
+            "supports": [
+              "The January 20, 2025 proclamation commuted Rhodes’s January 6-related sentence to time served and separately pardoned other people convicted of related offenses."
+            ],
+            "limitations": [
+              "The proclamation does not state Rhodes’s original sentence length or identify his conviction offense by name."
+            ]
+          }
+        ],
+        "review_result": "see_independent_per_key_crossqa_ledger"
+      },
+      {
+        "key": "entry-6684",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source": false,
+        "description_lengths": {
+          "short_characters": 80,
+          "medium_words": 65,
+          "long_words": 146
+        },
+        "source_urls": [
+          "https://www.investing.com/news/stock-market-news/kushners-affinitys-assets-jump-to-48-billion-after-gulf-cash-injection-3955097"
+        ],
+        "source_mapping": [
+          {
+            "url": "https://www.investing.com/news/stock-market-news/kushners-affinitys-assets-jump-to-48-billion-after-gulf-cash-injection-3955097",
+            "supports": [
+              "Reuters’ report carried by Investing.com on Affinity’s $4.8 billion year-end 2024 AUM, $1.5 billion 2024 capital injection, participating Gulf investors and Kushner’s statement that the raise closed before Trump’s reelection."
+            ],
+            "limitations": [
+              "AUM is not capital raised during the period; the article does not support a $7 billion 2025 raise or a policy quid pro quo."
+            ],
+            "access_note": "Packet triage records the Reuters article as read; direct Investing.com retrieval in this run returned HTTP 403."
+          }
+        ],
+        "review_result": "see_independent_per_key_crossqa_ledger"
+      },
+      {
+        "key": "entry-6772",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source": false,
+        "description_lengths": {
+          "short_characters": 74,
+          "medium_words": 54,
+          "long_words": 154
+        },
+        "source_urls": [
+          "https://www.supremecourt.gov/opinions/24pdf/24a931_2c83.pdf",
+          "https://www.reuters.com/legal/government/us-appeals-court-mulls-contempt-probe-over-trump-deportation-flights-2026-09-29/"
+        ],
+        "source_mapping": [
+          {
+            "url": "https://www.supremecourt.gov/opinions/24pdf/24a931_2c83.pdf",
+            "supports": [
+              "The April 7, 2025 opinion says core habeas venue lies in the district of confinement and requires notice that allows a reasonable opportunity to seek habeas relief before removal."
+            ],
+            "limitations": [
+              "The opinion addresses a specific Alien Enemies Act case; it is not a general ruling stripping or affirming all immigration jurisdiction."
+            ],
+            "access_note": "Primary opinion opened directly and its text was read through PDF text extraction."
+          },
+          {
+            "url": "https://www.reuters.com/legal/government/us-appeals-court-mulls-contempt-probe-over-trump-deportation-flights-2026-09-29/",
+            "supports": [
+              "A separate 2026 appellate dispute concerning possible contempt proceedings over deportation-flight compliance."
+            ],
+            "limitations": [
+              "This later report does not support the 2025 Supreme Court holding or an allegation of broad jurisdiction stripping."
+            ],
+            "access_note": "Packet triage identifies this as later, contextual litigation; direct Reuters retrieval in this run returned HTTP 401."
+          }
+        ],
+        "review_result": "see_independent_per_key_crossqa_ledger"
+      },
+      {
+        "key": "entry-6878",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "accepted_source": false,
+        "description_lengths": {
+          "short_characters": 66,
+          "medium_words": 63,
+          "long_words": 142
+        },
+        "source_urls": [
+          "https://money.cnn.com/2018/01/17/media/president-trump-fake-news-count/index.html",
+          "https://web.archive.org/web/20180118011922id_/http://money.cnn.com/2018/01/17/media/president-trump-fake-news-count/index.html"
+        ],
+        "source_mapping": [
+          {
+            "url": "https://money.cnn.com/2018/01/17/media/president-trump-fake-news-count/index.html",
+            "supports": [
+              "CNNMoney’s report that Trump used the word “fake” at least 404 times in tweets and public appearances between inauguration and the January 17, 2018 article."
+            ],
+            "limitations": [
+              "The count is of the word “fake,” not the exact phrase “fake news,” and does not cover the full first term."
+            ],
+            "access_note": "The current CNNMoney URL returned HTTP 503 in this run; the archived copy below was retrieved and read."
+          },
+          {
+            "url": "https://web.archive.org/web/20180118011922id_/http://money.cnn.com/2018/01/17/media/president-trump-fake-news-count/index.html",
+            "supports": [
+              "Archived CNNMoney article text, including the 404 count, January 20, 2017 start date, methodology attribution to Factba.se, and examples of several “fake” phrases."
+            ],
+            "limitations": [
+              "Archive preserves the same CNNMoney article and is not an independent corroborating source."
+            ]
+          }
+        ],
+        "review_result": "see_independent_per_key_crossqa_ledger"
+      }
+    ],
+    "existing_independent_ledger_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-10/worker-11-crossqa-b1b5813.jsonl",
+    "existing_independent_ledger_sha256": "c85f51f9c87bcc2e2ac73076a9dce4e3f33ed1ea0b6f3b0987a9c2cf3fbcce73",
+    "existing_ledger_keys": [
+      "entry-4697",
+      "entry-5333",
+      "entry-5763",
+      "entry-5890",
+      "entry-6459",
+      "entry-6580",
+      "entry-6684",
+      "entry-6772",
+      "entry-6878"
+    ],
+    "final_result": "pass_with_one_minor_source_mapping_follow_up",
+    "unsupported_or_unmapped_claims": [
+      {
+        "key": "entry-6459",
+        "claim": "Long description says Reuters attributed the Nimitz route change to an “emergent operational requirement,” but that specific attribution is absent from the Reuters URL mapping’s supports list.",
+        "exact_url": "https://www.investing.com/news/world-news/us-aircraft-carrier-heads-west-from-schina-sea-amid-middle-east-tensions-4096328",
+        "required_follow_up": "When this row is next revised, add the attributed statement to this URL’s supports list or remove the clause."
+      }
+    ],
+    "clarity_note": {
+      "key": "entry-5333",
+      "note": "Short and medium descriptions could make clearer that Ward attributed the remark to an anonymous former White House official; long text already limits the claim to Ward’s reporting. This is an attribution clarity note, not an established factual contradiction."
+    }
+  },
+  "scope_controls": {
+    "worker10_terminal_rows_rewritten": false,
+    "worker11_output_edited": false,
+    "canonical_or_neon_data_edited": false,
+    "other_workers_edited": false
+  }
+}

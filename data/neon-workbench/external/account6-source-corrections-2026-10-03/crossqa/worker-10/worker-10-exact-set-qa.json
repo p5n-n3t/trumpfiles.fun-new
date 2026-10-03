@@ -1,0 +1,146 @@
+{
+  "artifact": "worker-10-exact-set-qa",
+  "packet_branch": "codex/account6-source-corrections-2026-10-03",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "input_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-10-input.jsonl",
+  "input_sha256": "ec822054a07dfa1f1d8ee156fec271f60366920a3da02f7d90673e41a010e73c",
+  "task_branch": "ls/10-trump-files-source118-review-10-of-12-0nIr",
+  "source_output_commit": "bdde965ee7cb28f553c675d5ad0d15ae0665da8a",
+  "source_output_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-10-batch-2026-10-03.jsonl",
+  "source_output_sha256": "026e63729759b1880818ac57fdbdedfe7ce7b52c39cb13a9fa2970a12a8116da",
+  "expected_keys": [
+    "entry-4546",
+    "entry-5328",
+    "entry-5758",
+    "entry-5879",
+    "entry-6458",
+    "entry-6576",
+    "entry-6671",
+    "entry-6767",
+    "entry-6868",
+    "entry-6966"
+  ],
+  "observed_keys": [
+    "entry-4546",
+    "entry-5328",
+    "entry-5758",
+    "entry-5879",
+    "entry-6458",
+    "entry-6576",
+    "entry-6671",
+    "entry-6767",
+    "entry-6868",
+    "entry-6966"
+  ],
+  "checks": {
+    "input_checksum_matches_packet_manifest": true,
+    "exact_key_sequence_matches": true,
+    "exactly_one_terminal_row_per_key": true,
+    "all_source_triage_statuses_preserved_as_needs_correction": true,
+    "all_description_lengths_within_requested_limits": true,
+    "all_source_urls_have_one_fact_mapping": true
+  },
+  "per_key": [
+    {
+      "key": "entry-4546",
+      "terminal": true,
+      "source_triage_status": "needs_correction",
+      "description_characters": 123,
+      "description_medium_words": 60,
+      "description_long_words": 156,
+      "source_url_count": 2,
+      "every_url_mapped_once": true
+    },
+    {
+      "key": "entry-5328",
+      "terminal": true,
+      "source_triage_status": "needs_correction",
+      "description_characters": 108,
+      "description_medium_words": 66,
+      "description_long_words": 163,
+      "source_url_count": 3,
+      "every_url_mapped_once": true
+    },
+    {
+      "key": "entry-5758",
+      "terminal": true,
+      "source_triage_status": "needs_correction",
+      "description_characters": 94,
+      "description_medium_words": 58,
+      "description_long_words": 149,
+      "source_url_count": 2,
+      "every_url_mapped_once": true
+    },
+    {
+      "key": "entry-5879",
+      "terminal": true,
+      "source_triage_status": "needs_correction",
+      "description_characters": 133,
+      "description_medium_words": 71,
+      "description_long_words": 170,
+      "source_url_count": 2,
+      "every_url_mapped_once": true
+    },
+    {
+      "key": "entry-6458",
+      "terminal": true,
+      "source_triage_status": "needs_correction",
+      "description_characters": 97,
+      "description_medium_words": 61,
+      "description_long_words": 148,
+      "source_url_count": 1,
+      "every_url_mapped_once": true
+    },
+    {
+      "key": "entry-6576",
+      "terminal": true,
+      "source_triage_status": "needs_correction",
+      "description_characters": 122,
+      "description_medium_words": 61,
+      "description_long_words": 159,
+      "source_url_count": 4,
+      "every_url_mapped_once": true
+    },
+    {
+      "key": "entry-6671",
+      "terminal": true,
+      "source_triage_status": "needs_correction",
+      "description_characters": 131,
+      "description_medium_words": 57,
+      "description_long_words": 167,
+      "source_url_count": 1,
+      "every_url_mapped_once": true
+    },
+    {
+      "key": "entry-6767",
+      "terminal": true,
+      "source_triage_status": "needs_correction",
+      "description_characters": 125,
+      "description_medium_words": 58,
+      "description_long_words": 164,
+      "source_url_count": 3,
+      "every_url_mapped_once": true
+    },
+    {
+      "key": "entry-6868",
+      "terminal": true,
+      "source_triage_status": "needs_correction",
+      "description_characters": 104,
+      "description_medium_words": 58,
+      "description_long_words": 175,
+      "source_url_count": 3,
+      "every_url_mapped_once": true
+    },
+    {
+      "key": "entry-6966",
+      "terminal": true,
+      "source_triage_status": "needs_correction",
+      "description_characters": 126,
+      "description_medium_words": 59,
+      "description_long_words": 150,
+      "source_url_count": 3,
+      "every_url_mapped_once": true
+    }
+  ],
+  "result": "pass"
+}

@@ -1,0 +1,33 @@
+{
+  "artifact": "worker-10-final-checkpoint",
+  "checkpoint_date": "2026-10-03",
+  "task_branch": "ls/10-trump-files-source118-review-10-of-12-0nIr",
+  "checkpoint_base_commit": "bdde965ee7cb28f553c675d5ad0d15ae0665da8a",
+  "packet": {
+    "branch": "codex/account6-source-corrections-2026-10-03",
+    "commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+    "worker_input_sha256": "ec822054a07dfa1f1d8ee156fec271f60366920a3da02f7d90673e41a010e73c"
+  },
+  "completed_output": {
+    "path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-10-batch-2026-10-03.jsonl",
+    "sha256": "026e63729759b1880818ac57fdbdedfe7ce7b52c39cb13a9fa2970a12a8116da",
+    "assigned_key_count": 10,
+    "assigned_keys": [
+      "entry-4546",
+      "entry-5328",
+      "entry-5758",
+      "entry-5879",
+      "entry-6458",
+      "entry-6576",
+      "entry-6671",
+      "entry-6767",
+      "entry-6868",
+      "entry-6966"
+    ],
+    "terminal_rows": 10,
+    "source_triage_status": "needs_correction"
+  },
+  "exact_set_qa_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-10/worker-10-exact-set-qa.json",
+  "qa_result": "pass",
+  "scope_note": "Checkpoint records the worker-10 proposal output only; no canonical data, database, or other worker output was changed."
+}

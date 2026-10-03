@@ -1,0 +1,75 @@
+{
+  "artifact": "worker-10-crossqa-final-checkpoint",
+  "checkpoint_date": "2026-10-03",
+  "reviewer_branch": "ls/10-trump-files-source118-review-10-of-12-0nIr",
+  "reviewer_base_commit": "4e9036b2c091b91068bc059cc0414b4a81679c8a",
+  "worker10_own_exact_set_checkpoint": {
+    "qa_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-10/worker-10-exact-set-qa.json",
+    "checkpoint_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-10/worker-10-final-checkpoint.json",
+    "output_sha256": "026e63729759b1880818ac57fdbdedfe7ce7b52c39cb13a9fa2970a12a8116da",
+    "qa_sha256": "a3d0cb0c7643f9aa727a535cbee6ef09d644cef1c8f349601dcbf0dc6cf7939f",
+    "result": "pass"
+  },
+  "packet": {
+    "branch": "codex/account6-source-corrections-2026-10-03",
+    "commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+    "worker11_input_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-11-input.jsonl",
+    "worker11_input_sha256": "ad146d393ae56378ca0e523e1bbdf28f0b7bf6b50e043584384c7f3abf20d988",
+    "manifest_expected_count": 9,
+    "manifest_expected_keys": [
+      "entry-4697",
+      "entry-5333",
+      "entry-5763",
+      "entry-5890",
+      "entry-6459",
+      "entry-6580",
+      "entry-6684",
+      "entry-6772",
+      "entry-6878"
+    ]
+  },
+  "worker11_review": {
+    "branch": "ls/11-trump-files-source118-review-11-of-12-8RJW",
+    "reviewed_commit": "b1b581372a2dcbe6f3652bab4887893167d49f8a",
+    "branch_tip_at_review": "fd7586ca21d3acf2685b79f76accf6ff7c6264e5",
+    "tip_relation": "The reviewed commit is an ancestor of the branch tip; the only later changes are worker-11 exact-set QA/checkpoint files, and the worker-11 correction output is unchanged.",
+    "output_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-11-batch-20261003-001.jsonl",
+    "output_sha256": "70c0db573b9798f491fa05c602c04c97fd79c4d56b492827802281f21dc69d80",
+    "observed_keys": [
+      "entry-4697",
+      "entry-5333",
+      "entry-5763",
+      "entry-5890",
+      "entry-6459",
+      "entry-6580",
+      "entry-6684",
+      "entry-6772",
+      "entry-6878"
+    ],
+    "terminal_rows": 9,
+    "all_source_triage_statuses_preserved_as_needs_correction": true,
+    "all_accepted_source_flags_false": true,
+    "all_description_limits_pass": true,
+    "all_output_urls_mapped_once": true,
+    "per_key_crossqa_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-10/worker-11-crossqa-b1b5813.jsonl",
+    "per_key_crossqa_sha256": "c85f51f9c87bcc2e2ac73076a9dce4e3f33ed1ea0b6f3b0987a9c2cf3fbcce73",
+    "per_key_results": {
+      "entry-4697": "pass_with_access_note",
+      "entry-5333": "pass_with_attribution_note",
+      "entry-5763": "pass",
+      "entry-5890": "pass",
+      "entry-6459": "follow_up_minor_source_mapping_gap",
+      "entry-6580": "pass",
+      "entry-6684": "pass_with_access_note",
+      "entry-6772": "pass",
+      "entry-6878": "pass_with_scope_note"
+    },
+    "overall_result": "pass_with_one_minor_mapping_follow_up"
+  },
+  "scope_controls": {
+    "worker11_output_edited": false,
+    "canonical_or_neon_data_edited": false,
+    "other_worker_files_edited": false
+  },
+  "final_result": "pass_with_one_minor_source_mapping_follow_up"
+}

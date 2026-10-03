@@ -1,0 +1,55 @@
+{
+  "artifact": "worker-10-final-exact-id-qa-checkpoint-v2",
+  "checkpoint_date": "2026-10-03",
+  "task_branch": "ls/10-trump-files-source118-review-10-of-12-0nIr",
+  "checkpoint_base_commit": "d2e65e0a78b814f6aa7cba4494f7ffca88d4d2e8",
+  "worker10": {
+    "assigned_count": 10,
+    "assigned_keys": [
+      "entry-4546",
+      "entry-5328",
+      "entry-5758",
+      "entry-5879",
+      "entry-6458",
+      "entry-6576",
+      "entry-6671",
+      "entry-6767",
+      "entry-6868",
+      "entry-6966"
+    ],
+    "terminal_rows": 10,
+    "output_sha256": "026e63729759b1880818ac57fdbdedfe7ce7b52c39cb13a9fa2970a12a8116da",
+    "final_exact_id_qa_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-10/worker-10-final-exact-id-qa-v2.json",
+    "final_exact_id_qa_sha256": "c92f59700662997f0392cee365cc20372ebf4d39a2719c4167957ecf1330f6ba",
+    "result": "pass_with_documented_access_limits"
+  },
+  "worker11_rotated_crossqa": {
+    "assigned_count": 9,
+    "assigned_keys": [
+      "entry-4697",
+      "entry-5333",
+      "entry-5763",
+      "entry-5890",
+      "entry-6459",
+      "entry-6580",
+      "entry-6684",
+      "entry-6772",
+      "entry-6878"
+    ],
+    "reviewed_commit": "b1b581372a2dcbe6f3652bab4887893167d49f8a",
+    "target_branch_tip": "fd7586ca21d3acf2685b79f76accf6ff7c6264e5",
+    "target_output_sha256": "70c0db573b9798f491fa05c602c04c97fd79c4d56b492827802281f21dc69d80",
+    "per_key_ledger_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-10/worker-11-crossqa-b1b5813.jsonl",
+    "per_key_ledger_sha256": "c85f51f9c87bcc2e2ac73076a9dce4e3f33ed1ea0b6f3b0987a9c2cf3fbcce73",
+    "prior_checkpoint_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-10/worker-10-crossqa-final-checkpoint.json",
+    "result": "pass_with_one_minor_source_mapping_follow_up",
+    "outstanding_mapping_finding": "entry-6459: exact Reuters URL is listed above in final QA; remove or map the “emergent operational requirement” clause."
+  },
+  "append_only_note": "New supplemental final QA/checkpoint artifacts. Existing terminal output rows and prior QA history were not rewritten.",
+  "scope_controls": {
+    "worker10_terminal_rows_rewritten": false,
+    "worker11_output_edited": false,
+    "canonical_or_neon_data_edited": false,
+    "other_workers_edited": false
+  }
+}
