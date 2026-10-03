@@ -1,0 +1,64 @@
+{
+  "checkpoint_type": "independent_worker_12_crossqa_final_checkpoint",
+  "reviewer_worker": 11,
+  "reviewer_branch": "ls/11-trump-files-source118-review-11-of-12-8RJW",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_input_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-12-input.jsonl",
+  "packet_input_sha256": "b4d927b32fd61aef0e209bf46ba3c93e1824582fa422d72fb16b3f40e823ee06",
+  "target_branch": "ls/12-trump-files-source118-review-12-of-12-MQJb",
+  "target_commit": "52ead5afd111e17e95a38363f8105b908aaad8e4",
+  "target_output_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-12-batch-001.jsonl",
+  "target_output_sha256": "d90517231e2561d59ce112880379a2a90e7d970a6cbf4704671b16c5b30cfa0d",
+  "expected_keys": [
+    "entry-4866",
+    "entry-5342",
+    "entry-5804",
+    "entry-5894",
+    "entry-6470",
+    "entry-6610",
+    "entry-6708",
+    "entry-6783",
+    "entry-6882"
+  ],
+  "reviewed_keys": [
+    "entry-4866",
+    "entry-5342",
+    "entry-5804",
+    "entry-5894",
+    "entry-6470",
+    "entry-6610",
+    "entry-6708",
+    "entry-6783",
+    "entry-6882"
+  ],
+  "exact_set_match": true,
+  "unique_rows_per_key": true,
+  "target_rows_checked": 9,
+  "all_description_lengths_pass": true,
+  "all_output_urls_have_fact_maps": true,
+  "all_staged_urls_preserved": true,
+  "crossqa_ledger_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-11/worker-12-per-key-crossqa.jsonl",
+  "crossqa_ledger_sha256": "387b5a5b1367b71c1263191ad5e17842da8f9c86685bf35660a51296af8ceaaf",
+  "verdict_counts": {
+    "needs_revision": 1,
+    "partial": 1,
+    "pass": 3,
+    "pass_with_access_limit": 4
+  },
+  "overall_status": "needs_follow_up",
+  "scope_note": "QA only. Worker 12 output, packet inputs, canonical data, and Neon were not modified.",
+  "required_follow_up": [
+    "entry-6783: preserve as unresolved unless the original Bondi-directed dismissal event has case-specific evidence; do not replace it with unrelated clemency.",
+    "entry-6708: support the exact 2018-08-28 event date or reduce date precision."
+  ],
+  "follow_up_items": [
+    {
+      "record_id": "entry-6783",
+      "issue": "The corrected entry substitutes a separate Jan. 20 clemency event for the frozen Jan. 21 Bondi-dismissal event. Keep the original event unresolved unless case-specific evidence supports it."
+    },
+    {
+      "record_id": "entry-6708",
+      "issue": "The estimate and official-toll status are supported at month-level, but the exact 2018-08-28 event date lacks a mapped dated adoption source."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "checkpoint_type": "worker_11_final_checkpoint",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "input_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-11-input.jsonl",
+  "input_sha256": "ad146d393ae56378ca0e523e1bbdf28f0b7bf6b50e043584384c7f3abf20d988",
+  "output_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-11-batch-20261003-001.jsonl",
+  "output_sha256": "70c0db573b9798f491fa05c602c04c97fd79c4d56b492827802281f21dc69d80",
+  "exact_expected_keys": [
+    "entry-4697",
+    "entry-5333",
+    "entry-5763",
+    "entry-5890",
+    "entry-6459",
+    "entry-6580",
+    "entry-6684",
+    "entry-6772",
+    "entry-6878"
+  ],
+  "exact_output_keys": [
+    "entry-4697",
+    "entry-5333",
+    "entry-5763",
+    "entry-5890",
+    "entry-6459",
+    "entry-6580",
+    "entry-6684",
+    "entry-6772",
+    "entry-6878"
+  ],
+  "exact_set_match": true,
+  "terminal_row_count": 9,
+  "unique_key_count": 9,
+  "all_rows_preserve_needs_correction_classification": true,
+  "all_description_lengths_pass": true,
+  "all_source_urls_map_to_support_facts": true,
+  "exact_set_qa_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-11-exact-set-qa-20261003.jsonl",
+  "exact_set_qa_sha256": "097a95e1ee413c3fe74be58532724ea8f66f4244fb59a882c6f46dc073eaedde",
+  "checkpoint_status": "pass"
+}
