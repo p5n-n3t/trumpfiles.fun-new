@@ -1,0 +1,268 @@
+{
+  "job": "account2 source270 coordinator QA",
+  "coordinator_worker": 17,
+  "source_assignment_branch": "origin/codex/source-rescue-unassigned-2026-10-03",
+  "source_assignment_commit": "19831e87e22fd5890fe0a764be51c617580d4a99",
+  "manifest_source_queue": 384,
+  "manifest_assigned": 270,
+  "manifest_workers": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "assigned_unique_keys": 270,
+  "result_rows": 270,
+  "result_unique_keys": 270,
+  "coverage_counts": {
+    "terminal_proposal": 240,
+    "pending": 30
+  },
+  "terminal_proposal_status_counts": {
+    "accepted_source": 29,
+    "needs_correction": 207,
+    "exclusion_candidate": 4
+  },
+  "pending_count": 30,
+  "pending_ids": [
+    "entry-4231",
+    "entry-4398",
+    "entry-4446",
+    "entry-4781",
+    "entry-5104",
+    "entry-5316",
+    "entry-5522",
+    "entry-5729",
+    "entry-5748",
+    "entry-5802",
+    "entry-5831",
+    "entry-5855",
+    "entry-5892",
+    "entry-6407",
+    "entry-6434",
+    "entry-6462",
+    "entry-6503",
+    "entry-6528",
+    "entry-6604",
+    "entry-6630",
+    "entry-6651",
+    "entry-6682",
+    "entry-6730",
+    "entry-6752",
+    "entry-6771",
+    "entry-6807",
+    "entry-6826",
+    "entry-6881",
+    "entry-6918",
+    "entry-6952"
+  ],
+  "by_worker": {
+    "4": {
+      "assigned": 30,
+      "terminal": 30,
+      "pending": 0,
+      "terminal_status_counts": {
+        "accepted_source": 23,
+        "needs_correction": 6,
+        "exclusion_candidate": 1
+      },
+      "mapping_class_counts": {
+        "explicit_source_fact_notes": 23,
+        "multi_source_global_facts_only": 4,
+        "single_source_global_facts": 3
+      },
+      "input_sha256": "99eb8e59f8f691eccb65b9a4414ab4c199a700c4de3f15758ece7bbe304e3838",
+      "published_branch": "origin/ls/4-trump-description-rescue-04-of-12-53-dis-S_ao",
+      "published_branch_sha": "53917b7704aaaf228c295bfa8bb1596357e29e91",
+      "batch_files": [
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-04-batch-001-20261003-source.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-04-batch-002-20261003-source.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-04-batch-003-20261003-source.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-04-batch-004-20261003-support-evidence.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-04-batch-005-20261003-support-evidence.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-04-batch-006-20261003-support-evidence.jsonl"
+      ]
+    },
+    "5": {
+      "assigned": 30,
+      "terminal": 0,
+      "pending": 30,
+      "terminal_status_counts": {},
+      "mapping_class_counts": {},
+      "input_sha256": "7d62a5538346e70e12f535cc8a55eddbb620aba8fbf2c66607306e0c5172c1ce",
+      "published_branch": "origin/ls/5-trump-description-rescue-05-of-12-53-dis-8OoQ",
+      "published_branch_sha": "9ebd1da0d450fb40e565dcae2ac494f758edfab6",
+      "batch_files": []
+    },
+    "6": {
+      "assigned": 30,
+      "terminal": 30,
+      "pending": 0,
+      "terminal_status_counts": {
+        "needs_correction": 30
+      },
+      "mapping_class_counts": {
+        "multi_source_global_facts_only": 15,
+        "single_source_global_facts": 15
+      },
+      "input_sha256": "11eba459d0ec99483ce443fe8bb5118987fcffab977c9375fc22b424ede4d5f1",
+      "published_branch": "origin/ls/6-trump-description-rescue-06-of-12-53-dis-Qq2x",
+      "published_branch_sha": "79bc6ca1c160d42cbe26d90ed7f737bceb5bd793",
+      "batch_files": [
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-06-batch-001.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-06-batch-002.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-06-batch-003.jsonl"
+      ]
+    },
+    "7": {
+      "assigned": 30,
+      "terminal": 30,
+      "pending": 0,
+      "terminal_status_counts": {
+        "needs_correction": 29,
+        "exclusion_candidate": 1
+      },
+      "mapping_class_counts": {
+        "explicit_url_to_fact_note": 30
+      },
+      "input_sha256": "b6d92fad4aecbb44502faaf55d2e23e38e4de77f767a1587f080b2621c933687",
+      "published_branch": "origin/ls/7-trump-description-rescue-07-of-12-53-dis-zltS",
+      "published_branch_sha": "91475b40dfea7cb1a040537709d5bced2ea26cfa",
+      "batch_files": [
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-001-20261003-a.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-002-20261003-a.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-003-20261003-a.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-004-20261003-a.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-005-20261003-a.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-006-20261003-a.jsonl"
+      ]
+    },
+    "8": {
+      "assigned": 30,
+      "terminal": 30,
+      "pending": 0,
+      "terminal_status_counts": {
+        "needs_correction": 30
+      },
+      "mapping_class_counts": {
+        "fact_rows_reference_urls": 30
+      },
+      "input_sha256": "655f8228b0974a24983fe6c1d355af4c63e68f92b1c9ba5f75a237bc2d126e60",
+      "published_branch": "origin/ls/8-trump-description-rescue-08-of-12-53-dis-W2qL",
+      "published_branch_sha": "98faadd65de1a80e5c582c088cc38067b45c2251",
+      "batch_files": [
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-08-batch-2026-10-03-001.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-08-batch-2026-10-03-002.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-08-batch-2026-10-03-003.jsonl"
+      ]
+    },
+    "9": {
+      "assigned": 30,
+      "terminal": 30,
+      "pending": 0,
+      "terminal_status_counts": {
+        "needs_correction": 29,
+        "exclusion_candidate": 1
+      },
+      "mapping_class_counts": {
+        "single_source_global_facts": 17,
+        "multi_source_global_facts_only": 13
+      },
+      "input_sha256": "33386ff236ef7d46d3c3fb3e0a71008457b3bf39174b15782a193da784d54c5c",
+      "published_branch": "origin/ls/9-trump-description-rescue-09-of-12-52-dis-a_J8",
+      "published_branch_sha": "3c70c7c57e929fb74a18a5a14ce640340b91386d",
+      "batch_files": [
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-09-batch-001.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-09-batch-002.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-09-batch-003.jsonl"
+      ]
+    },
+    "10": {
+      "assigned": 30,
+      "terminal": 30,
+      "pending": 0,
+      "terminal_status_counts": {
+        "needs_correction": 30
+      },
+      "mapping_class_counts": {
+        "explicit_source_fact_notes": 30
+      },
+      "input_sha256": "95fff8dae3837cc6794eea22f37b29ef152a00b6a88eda783eac78b69ac36d51",
+      "published_branch": "origin/ls/10-trump-description-rescue-10-of-12-52-dis-7sqL",
+      "published_branch_sha": "de80bea866366161619efb011f7bcf287f74bb13",
+      "batch_files": [
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-10-batch-20261003-001.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-10-batch-20261003-002.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-10-batch-20261003-003.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-10-batch-20261003-004.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-10-batch-20261003-005.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-10-batch-20261003-006.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-10-batch-20261003-007.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-10-batch-20261003-008.jsonl"
+      ]
+    },
+    "11": {
+      "assigned": 30,
+      "terminal": 30,
+      "pending": 0,
+      "terminal_status_counts": {
+        "needs_correction": 30
+      },
+      "mapping_class_counts": {
+        "multi_source_global_facts_only": 19,
+        "single_source_global_facts": 11
+      },
+      "input_sha256": "145effce2954b4b3d36faa0520eee25386d42fda977c324dbdd396a8fc01db02",
+      "published_branch": "origin/ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+      "published_branch_sha": "08eda3cef3f0050e903b27de3ea7ef9576e69b0b",
+      "batch_files": [
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-11-batch-001.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-11-batch-002.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-11-batch-003.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-11-batch-004.jsonl"
+      ]
+    },
+    "12": {
+      "assigned": 30,
+      "terminal": 30,
+      "pending": 0,
+      "terminal_status_counts": {
+        "needs_correction": 23,
+        "accepted_source": 6,
+        "exclusion_candidate": 1
+      },
+      "mapping_class_counts": {
+        "multi_source_global_facts_only": 15,
+        "explicit_source_fact_notes": 7,
+        "single_source_global_facts": 8
+      },
+      "input_sha256": "9c37bb09a9f6ed72f8f823752794496c27de571e7393b7634c30991fa5d635cd",
+      "published_branch": "origin/ls/12-trump-description-rescue-12-of-12-52-dis--oyt",
+      "published_branch_sha": "96593dee15f4113d861cb4b02b35657bedd9a69f",
+      "batch_files": [
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-12-batch-2026-10-03-01.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-12-batch-2026-10-03-02.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-12-batch-2026-10-03-03.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-12-batch-2026-10-03-04.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-12-batch-2026-10-03-05.jsonl",
+        "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-12-batch-2026-10-03-06-support-notes.jsonl"
+      ]
+    }
+  },
+  "scope": "Independent aggregate QA of published terminal rows only. No source re-research was performed; pending rows remain pending. No canonical records or database were changed.",
+  "batch_file": "data/neon-workbench/external/account2-coordination-2026-10-03/worker-17/worker-17-source270-qa-batch-001.jsonl",
+  "source_url_fact_mapping_counts": {
+    "explicit_source_fact_notes": 60,
+    "multi_source_global_facts_only": 66,
+    "single_source_global_facts": 54,
+    "pending": 30,
+    "explicit_url_to_fact_note": 30,
+    "fact_rows_reference_urls": 30
+  },
+  "mapping_caveat_count": 66
+}

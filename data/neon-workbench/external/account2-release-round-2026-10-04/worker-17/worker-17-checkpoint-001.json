@@ -1,0 +1,499 @@
+{
+  "job": "account2 release-gate audit worker 17",
+  "source_packet_branch": "codex/citation190-crossqa-2026-10-03",
+  "source_packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "manifest_assigned": 190,
+  "manifest_owner_count": 12,
+  "input_key_count": 190,
+  "effective_result_rows": 190,
+  "effective_unique_keys": 190,
+  "release_gate_counts": {
+    "hold": 10,
+    "revision_required": 58,
+    "accepted_narrower_claim": 97,
+    "exclusion": 25
+  },
+  "account5_worker_branches": {
+    "1": {
+      "branch": "ls/1-trump-files-sample100-review-01-of-12-iPnX",
+      "branch_head": "1a94e2256de5de555cb8a5a01c04987b09738cb1",
+      "normalized_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-01-normalized.jsonl",
+      "normalized_sha256": "4c891bb146cd378075229b69a51ddaaff3967576a60fb213a1ebc79478711760",
+      "final_qa_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/final-qa.json",
+      "assigned_count": 16,
+      "normalized_count": 16,
+      "release_gate_counts": {
+        "hold": 1,
+        "revision_required": 6,
+        "accepted_narrower_claim": 8,
+        "exclusion": 1
+      },
+      "packet_input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-01-input.jsonl",
+      "packet_input_sha256": "b3afbca66c441a34405a3f1144c013b037afeaaca2c9340ebbb6999f1d4df0a6",
+      "packet_input_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+      "branch_final_qa_packet_hashes_checked": true
+    },
+    "2": {
+      "branch": "ls/2-trump-files-sample100-review-02-of-12-6WFh",
+      "branch_head": "c5bf875c052abaa7e0b8322254fb95b91a0311af",
+      "normalized_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-02-normalized.jsonl",
+      "normalized_sha256": "4f1c78170590d5fbfada1e5ce3f3a185c2923a79afb5fb986eb73e061c8f9cee",
+      "final_qa_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/final-qa.json",
+      "assigned_count": 16,
+      "normalized_count": 16,
+      "release_gate_counts": {
+        "accepted_narrower_claim": 10,
+        "revision_required": 4,
+        "exclusion": 1,
+        "hold": 1
+      },
+      "packet_input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-02-input.jsonl",
+      "packet_input_sha256": "24c3f6d0ca57bf5861269a2b9cd3355cd31e0361c974f980ea8e04e1dd33991c",
+      "packet_input_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+      "branch_final_qa_packet_hashes_checked": true
+    },
+    "3": {
+      "branch": "ls/3-trump-files-sample100-review-03-of-12-gPrZ",
+      "branch_head": "e06c4cc47222eb31194cfce8e71ee1df1e80d681",
+      "normalized_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-03-normalized.jsonl",
+      "normalized_sha256": "464d6dc76fc52e4b45ecfc2297aa3cd0f6dfaa2c09665b25235b0e2cfc25e3b4",
+      "final_qa_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/final-qa.json",
+      "assigned_count": 16,
+      "normalized_count": 16,
+      "release_gate_counts": {
+        "accepted_narrower_claim": 6,
+        "revision_required": 7,
+        "exclusion": 1,
+        "hold": 2
+      },
+      "packet_input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-03-input.jsonl",
+      "packet_input_sha256": "b445048d1ffc033464e0f751b7f0b8d28e088c1fe9035d2fd2aaea76d25179fa",
+      "packet_input_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+      "branch_final_qa_packet_hashes_checked": true
+    },
+    "4": {
+      "branch": "ls/4-trump-files-sample100-review-04-of-12-aICV",
+      "branch_head": "983f465b5d59d6cadca9a7b94f35013bf4721507",
+      "normalized_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-04-normalized.jsonl",
+      "normalized_sha256": "ff3e61930eddcd38e3f25d48ca095842f9edd76943bb184d5c282db3f5665b84",
+      "final_qa_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/final-qa.json",
+      "assigned_count": 16,
+      "normalized_count": 16,
+      "release_gate_counts": {
+        "revision_required": 5,
+        "accepted_narrower_claim": 9,
+        "exclusion": 2
+      },
+      "packet_input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-04-input.jsonl",
+      "packet_input_sha256": "0864d06b4a85b94c73d77ff96dc7dedb3de23583042db34b2a6202917df080b9",
+      "packet_input_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+      "branch_final_qa_packet_hashes_checked": true
+    },
+    "5": {
+      "branch": "ls/5-trump-files-sample100-review-05-of-12-uITi",
+      "branch_head": "4cd949b2be9ba1ff69050b0a5fbb9f7573461355",
+      "normalized_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-05-normalized.jsonl",
+      "normalized_sha256": "862d498f3caaf0d39a351cf194b8f4e88689dcfdd2cb0eadfda06ad82e70c4f4",
+      "final_qa_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/final-qa.json",
+      "assigned_count": 16,
+      "normalized_count": 16,
+      "release_gate_counts": {
+        "exclusion": 4,
+        "accepted_narrower_claim": 9,
+        "hold": 2,
+        "revision_required": 1
+      },
+      "packet_input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-05-input.jsonl",
+      "packet_input_sha256": "17e946decb723c2ef7d6f9ede57bfefe08526b018d805e219d8b83b974fde6ee",
+      "packet_input_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+      "branch_final_qa_packet_hashes_checked": true
+    },
+    "6": {
+      "branch": "ls/6-trump-files-sample100-review-06-of-12-pfm2",
+      "branch_head": "00dcebbb523a5cd4e52c989313f0c5fe89de6540",
+      "normalized_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-06-normalized.jsonl",
+      "normalized_sha256": "30ca191c14c4cbfac6deb9f1ec9fb3c50761b94c05c08077e74943c598d3348c",
+      "final_qa_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/final-qa.json",
+      "assigned_count": 16,
+      "normalized_count": 16,
+      "release_gate_counts": {
+        "accepted_narrower_claim": 11,
+        "exclusion": 3,
+        "revision_required": 2
+      },
+      "packet_input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-06-input.jsonl",
+      "packet_input_sha256": "b4c7d9a725e43e402eb13a9862ab0ba6efe39da7982f3ea49c98b285b5041a7c",
+      "packet_input_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+      "branch_final_qa_packet_hashes_checked": true
+    },
+    "7": {
+      "branch": "ls/7-trump-files-sample100-review-07-of-12-WFXm",
+      "branch_head": "638eabe516349970413c528b5d80f2651a7016a6",
+      "normalized_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-07-normalized.jsonl",
+      "normalized_sha256": "134f35144c1e2fcb65ce54119534886c02fc1662ac4876ca67f0a6f950268410",
+      "final_qa_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/final-qa.json",
+      "assigned_count": 16,
+      "normalized_count": 16,
+      "release_gate_counts": {
+        "accepted_narrower_claim": 10,
+        "exclusion": 4,
+        "revision_required": 1,
+        "hold": 1
+      },
+      "packet_input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-07-input.jsonl",
+      "packet_input_sha256": "de46e19ba08ca6765362043b1cf9d0c7a3df78108a65ea13ca84b90a7b5145fb",
+      "packet_input_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+      "branch_final_qa_packet_hashes_checked": true
+    },
+    "8": {
+      "branch": "ls/8-trump-files-sample100-review-08-of-12-Qhy0",
+      "branch_head": "e46548eb9e18085164bfa7853068985dbfdfe8b5",
+      "normalized_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-08-normalized.jsonl",
+      "normalized_sha256": "6efca3268e42fb9a52e39924be70a757784ffdfc1b8ac1eea86b96a465f7c7bb",
+      "final_qa_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/final-qa.json",
+      "assigned_count": 16,
+      "normalized_count": 16,
+      "release_gate_counts": {
+        "revision_required": 12,
+        "accepted_narrower_claim": 2,
+        "exclusion": 2
+      },
+      "packet_input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-08-input.jsonl",
+      "packet_input_sha256": "42400b29493c02465990e69c739c9d06f08e508ea7bbbd7c13180f9ab4d8aab9",
+      "packet_input_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+      "branch_final_qa_packet_hashes_checked": true
+    },
+    "9": {
+      "branch": "ls/9-trump-files-sample100-review-09-of-12-WtKf",
+      "branch_head": "a887bcb4d6eaf9e4786ed7a426628571d41ab911",
+      "normalized_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-09-normalized.jsonl",
+      "normalized_sha256": "1ac20ae05786d19d1027fed911cb02e9202aa85f0b662866b9d1815870318db5",
+      "final_qa_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/final-qa.json",
+      "assigned_count": 16,
+      "normalized_count": 16,
+      "release_gate_counts": {
+        "accepted_narrower_claim": 8,
+        "revision_required": 6,
+        "hold": 1,
+        "exclusion": 1
+      },
+      "packet_input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-09-input.jsonl",
+      "packet_input_sha256": "b25a3e967f9ac4d437e396a71e4bd57d3def1ede3e34d6b72d121139b7da4884",
+      "packet_input_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+      "branch_final_qa_packet_hashes_checked": true
+    },
+    "10": {
+      "branch": "ls/10-trump-files-sample100-review-10-of-12-5b45",
+      "branch_head": "59186011281f6a21f1fbc3ede03da9be73fb2c6b",
+      "normalized_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-10-normalized.jsonl",
+      "normalized_sha256": "7f6e79f3356c817b8a2630edf1cb475cc0270a949f76e3a2b42e38eb221cb473",
+      "final_qa_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/final-qa.json",
+      "assigned_count": 16,
+      "normalized_count": 16,
+      "release_gate_counts": {
+        "revision_required": 7,
+        "accepted_narrower_claim": 5,
+        "exclusion": 3,
+        "hold": 1
+      },
+      "packet_input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-10-input.jsonl",
+      "packet_input_sha256": "542f33e20f62876f9c10dbe882dabb7202ac30c69a99a046f3aaf0d235a87569",
+      "packet_input_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+      "branch_final_qa_packet_hashes_checked": true
+    },
+    "11": {
+      "branch": "ls/11-trump-files-sample100-review-11-of-12-mShY",
+      "branch_head": "acfa096935de35c098630d26575f8c76e5ca5e3c",
+      "normalized_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-11-normalized.jsonl",
+      "normalized_sha256": "4c1948c4b9e46574aeb971dd58ad3667da29630753c7c8f9332a1f69896431a6",
+      "final_qa_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/final-qa.json",
+      "assigned_count": 15,
+      "normalized_count": 15,
+      "release_gate_counts": {
+        "accepted_narrower_claim": 10,
+        "hold": 1,
+        "exclusion": 1,
+        "revision_required": 3
+      },
+      "packet_input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-11-input.jsonl",
+      "packet_input_sha256": "46fa711b53c7a1665a846eabe328bfc10a1cc34e20f2fb08dd5b516765a2334a",
+      "packet_input_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+      "branch_final_qa_packet_hashes_checked": true
+    },
+    "12": {
+      "branch": "ls/12-trump-files-sample100-review-12-of-12-fLSj",
+      "branch_head": "03282adfe6313b912f1535db714b82962a077680",
+      "normalized_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-12-normalized.jsonl",
+      "normalized_sha256": "1e2e8c0ca04744656a6ba2c24a4eec3244a7ae67d4a730764c000b205647dcf3",
+      "final_qa_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/final-qa.json",
+      "assigned_count": 15,
+      "normalized_count": 15,
+      "release_gate_counts": {
+        "revision_required": 4,
+        "accepted_narrower_claim": 9,
+        "exclusion": 2
+      },
+      "packet_input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-12-input.jsonl",
+      "packet_input_sha256": "7e9be3cee37b7d50d5accadc1f164099f5d3288689bad0cf9c7e500e0d3271e3",
+      "packet_input_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+      "branch_final_qa_packet_hashes_checked": true
+    }
+  },
+  "crosscheck_source270": {
+    "dataset_commit": "0a838afad9c844c843e89034c22e6af9f2860ba5",
+    "key_count": 270,
+    "overlap_count": 0,
+    "overlap_keys": []
+  },
+  "url_fact_mapping_exceptions": [
+    {
+      "key": "entry-2518",
+      "worker": 6,
+      "gate": "exclusion",
+      "urls_without_exact_mapping": [
+        "https://archive.nytimes.com/www.nytimes.com/library/world/global/022100russia-israel-launder.html",
+        "https://www.hbgacademic.com/titles/robert-i-friedman/red-mafiya/9780316092876/",
+        "https://www.publishersweekly.com/9780316294744"
+      ],
+      "note": "The record is an intentional exclusion; the unmatched citation is not relied on for any released Trump-specific claim."
+    },
+    {
+      "key": "entry-2864",
+      "worker": 6,
+      "gate": "exclusion",
+      "urls_without_exact_mapping": [
+        "https://apnews.com/article/shootings-ohio-dayton-connor-betts-5fcb671bc9a8a7745514158939d9aa0e"
+      ],
+      "note": "The record is an intentional exclusion; the unmatched citation is not relied on for any released Trump-specific claim."
+    },
+    {
+      "key": "entry-1782",
+      "worker": 8,
+      "gate": "revision_required",
+      "urls_without_exact_mapping": [
+        "https://apnews.com/article/9290fcaad1cb6fcb1cbc1befabc01994"
+      ],
+      "note": "The verified URL does not exactly match the mapped URL; inspect the retained mapping/canonicalization note before release."
+    },
+    {
+      "key": "entry-2401",
+      "worker": 8,
+      "gate": "exclusion",
+      "urls_without_exact_mapping": [
+        "https://www.washingtonpost.com/archive/lifestyle/1991/10/25/media-baron-sues-seymour-hersh/c16c29e2-04ba-4038-9fff-08113fa33b77/"
+      ],
+      "note": "The record is an intentional exclusion; the unmatched citation is not relied on for any released Trump-specific claim."
+    }
+  ],
+  "blockers": {
+    "holds": [
+      {
+        "key": "entry-35",
+        "worker": 1,
+        "reasons": [
+          "Corrected claim distinguishes DOJ allegations and settlement terms from an adjudicated liability finding. The recommended short copy accurately says a consent decree imposed obligations without admission.",
+          "Do not restore the unsupported claim that a court found liability; the Washington Post candidate was not retained.",
+          "Preserved source-proposal uncertainty: Keep staged status needs_context unless the task’s status-transition rules are separately satisfied; the evidence supports the case history but the decree is not a liability finding.",
+          "Reconciliation: one terminal row for this key exists in the prior worker-01 citation batch; prior and resumed final-QA classifications agree. No duplicate conflicting terminal row found.",
+          "Proposal provenance: source branch ls/1-trump-description-rescue-01-of-12-53-dis-nGTY at commit 9098660508ee97e9ab5ab4daac23902fe5dde4a8; source file data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-01-batch-20261003-a.jsonl.",
+          "Description length validation: corrected_description_short: 150 chars (limit <=180), pass.",
+          "Release blocker: the proposal explicitly says to retain staged status needs_context unless status-transition rules are separately satisfied; citation support does not clear that status caveat."
+        ]
+      },
+      {
+        "key": "entry-2496",
+        "worker": 2,
+        "reasons": [
+          "Effective prior terminal row: unsupported_hold; source row 9 of 16 in data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-02-batch-2026-10-03-1159Z.jsonl. Exactly one own worker-02 terminal row was found for this ID; no duplicate-row conflict to resolve.",
+          "Hold/exclude the money-laundering assertion. The placeholder and tenant-dispute URL do not establish a transaction, property link, or criminal finding; do not invent a narrower event.",
+          "Source limitation for https://trumpfile.org/trump-parc-east-610-park-avenue-condominiums-open-with-links-to-money-laundering: Its only source note is “Sarah Kendzior, page 99, will update”; it provides no passage, transaction, parties, trail, or finding.",
+          "Source limitation for https://www.nytimes.com/1998/03/26/nyregion/win-trump-no-tenants-battle-80-s-ends-with-glad-handing-all-around.html: The returned title/excerpt does not identify a laundering transaction or connect financial crime to either property; the input’s statement that no text was accessible was not reproduced by cache retrieval, but the accessible material still does not support the allegation.",
+          "uncertainty: There is no verified transaction, date, counterparty, financial trail, or finding connecting either property to money laundering.",
+          "access_notes: https://trumpfile.org/trump-parc-east-610-park-avenue-condominiums-open-with-links-to-money-laundering — Direct page returned HTTP 200; the placeholder was read.",
+          "access_notes: https://www.nytimes.com/1998/03/26/nyregion/win-trump-no-tenants-battle-80-s-ends-with-glad-handing-all-around.html — Direct request returned HTTP 403; only the URL/title was available.",
+          "exact_gap: Provide the cited Kendzior passage or primary/credible records naming the transaction, counterparties, and link to one of the two properties; until then, keep the item on hold.",
+          "unsupported_original_claims: No reviewed source establishes a money-laundering connection between Trump Parc East or 610 Park Avenue and a specific transaction.",
+          "Account1 selected source URL(s): https://trumpfile.org/trump-parc-east-610-park-avenue-condominiums-open-with-links-to-money-laundering, https://www.nytimes.com/1998/03/26/nyregion/win-trump-no-tenants-battle-80-s-ends-with-glad-handing-all-around.html",
+          "Prior terminal disposition is an unsupported hold; it remains blocked and is not upgraded to pass."
+        ]
+      },
+      {
+        "key": "entry-5462",
+        "worker": 3,
+        "reasons": [
+          "Prior independent citation QA classification: unsupported_hold.",
+          "The exact Reuters URL returned HTTP 401 during this independent check. The proposed “at least eight flights, 1993–1996” claim is a precise count/date range and cannot be verified from the exact source body here. Hold this numeric proposal until the exact report is accessible or another adequate source is mapped; do not rely on a headline/search snippet or the prior author’s summary.",
+          "URL review error_HTTP_401 — https://www.reuters.com/world/us/us-justice-department-releases-new-tranche-epstein-files-2025-12-23/: Exact Reuters URL returned crawler HTTP 401; no article body was available for inspection. Access/scope limit: The count, date range and email attribution remain unverified in this independent pass; no substitute source URL is mapped.",
+          "Length check passed for description_short: 132 characters.",
+          "Length check passed for description_medium: 69 words.",
+          "Length check passed for description_long: 171 words.",
+          "Release is blocked; unavailable exact-source content leaves the specific proposed claims unverified."
+        ]
+      },
+      {
+        "key": "entry-5996",
+        "worker": 3,
+        "reasons": [
+          "Prior independent citation QA classification: unsupported_hold.",
+          "The exact Reuters URL returned HTTP 401 during this independent check. The proposed >5,000 Wisconsin observer-training figure and actor attribution are specific numerical claims that cannot be verified from the exact report body here. Hold until the exact report is accessible or another source is mapped; do not treat search snippets as proof.",
+          "URL review error_HTTP_401 — https://www.reuters.com/world/us/pro-trump-poll-watchers-primed-election-day-action-key-state-2024-10-31/: Exact Reuters URL returned crawler HTTP 401; no article body was available for inspection. Access/scope limit: The >5,000 count and attribution to RNC/Wisconsin GOP remain unverified in this independent pass; no alternate mapped source supports them.",
+          "Length check passed for description_short: 127 characters.",
+          "Length check passed for description_medium: 63 words.",
+          "Length check passed for description_long: 153 words.",
+          "Release is blocked; unavailable exact-source content leaves the specific proposed claims unverified."
+        ]
+      },
+      {
+        "key": "entry-853",
+        "worker": 5,
+        "reasons": [
+          "The exact DOJ commutations index is relevant, and the packet’s focused name search reports no exact “Joseph Frederick” entry. The packet itself cautions that a missing name cannot rule out a variant-name or separately indexed warrant; it supplies no case-specific identifier or primary clemency record. Do not conclude the alleged action never occurred.",
+          "URL https://www.justice.gov/pardon/commutations-granted-president-donald-j-trump-2017-2021 limitation: Official DOJ commutations register. A missing name in this list is not proof that no differently indexed or variant-name record exists.",
+          "URL https://www.justice.gov/pardon/commutations-granted-president-donald-j-trump-2017-2021 review: The DOJ index can support only the bounded statement that this exact name was not found in the checked listing. It cannot establish non-occurrence. The staged short/medium preserve that limitation and request a case-specific warrant or reliable record; the item remains on hold pending that evidence.",
+          "Reconciliation: one terminal row for this ID exists across the two worker-05 citation batches; no conflicting duplicate terminal row was found.",
+          "Description length check: {\"long_words\": null, \"medium_words\": 71, \"short_chars\": 106}; criteria applied where text exists: short <=180 characters, medium 45–90 words, long 140–300 words.",
+          "Blocking: prior terminal decision is hold; normalized release readiness remains false."
+        ]
+      },
+      {
+        "key": "entry-4603",
+        "worker": 5,
+        "reasons": [
+          "Reuters’ exact August 13, 2025 article describes prospective seasonal sales: about four million metric tons booked for October from South America, while U.S. exporters risked missing sales. The article is months after the frozen March 4, 2025 record date and does not substantiate the proposed $14.9 billion annual shortfall or 72% soybean-collapse figure.",
+          "URL https://www.reuters.com/world/china/us-losing-out-china-soybean-sales-brazil-fills-key-supply-period-2025-08-13/ limitation: Does not support frozen March 4 annual loss/72% claim; source/date mismatch.",
+          "URL https://www.reuters.com/world/china/us-losing-out-china-soybean-sales-brazil-fills-key-supply-period-2025-08-13/ review: The staged descriptions correctly identify the source/date mismatch and disclaim the annual totals, but the source cannot substantiate the frozen event’s date or headline figures. Keep the proposed item on hold until the event date and annual figures have their own exact, contemporaneous sources.",
+          "Reconciliation: one terminal row for this ID exists across the two worker-05 citation batches; no conflicting duplicate terminal row was found.",
+          "Description length check: {\"long_words\": 164, \"medium_words\": 68, \"short_chars\": 116}; criteria applied where text exists: short <=180 characters, medium 45–90 words, long 140–300 words.",
+          "Blocking: prior terminal decision is hold; normalized release readiness remains false."
+        ]
+      },
+      {
+        "key": "entry-2929",
+        "worker": 7,
+        "reasons": [
+          "The proposal title and staged copy concern Eric Trump’s COVID-19 prediction, but both mapped URLs are Brian Murphy’s September 2020 DHS whistleblower-reprisal complaint and the House committee release about that complaint. The complaint PDF and release contain no Eric Trump prediction or Fox News segment; no source for the proposed COVID claim is supplied.",
+          "Prior QA claim scope: Both exact citations are accessible and substantively about Brian Murphy/DHS intelligence allegations. They do not support the Eric Trump/COVID claim; a source mismatch blocks the proposal.",
+          "Source proposal uncertainty retained: Allegations, not independent proof of edits/fabrication.",
+          "Source access/finding [https://courthousenews.com/wp-content/uploads/2020/09/murphy_wb_dhs_oig_complaint9.8.20.pdf]: HTTP 200 direct PDF; parsed with pypdf — The PDF is Brian Murphy’s September 8, 2020 DHS OIG whistleblower-reprisal complaint; it is not about Eric Trump or COVID-19.",
+          "Source access/finding [https://democrats-intelligence.house.gov/news/documentsingle.aspx?DocumentID=1054]: HTTP 200 direct HTML — House committee release dated September 9, 2020 says Brian Murphy filed a reprisal complaint on September 8; it concerns DHS/I&A allegations.",
+          "Release is blocked; retain this disposition until the stated source/copy issue is resolved."
+        ]
+      },
+      {
+        "key": "entry-801",
+        "worker": 9,
+        "reasons": [
+          "Prior terminal disposition preserved: unsupported_hold.",
+          "The single exact citation cannot be read and there is no event-specific accessible source in the proposal mapping. Motive claims are correctly excluded, but the corrected personnel-action claim still lacks verified URL-to-fact support.",
+          "Hold until a readable exact contemporaneous or primary source is cited and checked.",
+          "Description length checks (short <=180 characters; medium 45-90 whitespace words; long 140-300 whitespace words): proposal.corrected_description_short 108 chars (limit <=180) PASS; proposal.corrected_description_medium 47 words (limit 45-90) PASS; proposal.corrected_description_long 163 words (limit 140-300) PASS; staged.description_short 75 chars (limit <=180) PASS; staged.description_medium 69 words (limit 45-90) PASS; staged.description_long 165 words (limit 140-300) PASS.",
+          "Hold release: the sole event-specific CNBC URL returned 404, so the personnel-change claim remains unverified by the exact citation.",
+          "Source-list difference preserved: account1 proposed/recommended URLs differ from staged_description.source_urls; the proposal object retains both verbatim and no implicit merge was made."
+        ]
+      },
+      {
+        "key": "entry-6200",
+        "worker": 10,
+        "reasons": [
+          "Prior worker-10 citation QA terminal disposition: unsupported_hold (proposal status: unresolved_hold); source row is from batch 2.",
+          "https://www.politico.com/news/2023/03/08/trumps-cdc-director-says-fauci-shut-down-debate-on-covids-origin-00086112 — Access: Exact Politico article retrieved in Exa cache; dated March 8, 2023. Supports: Redfield’s congressional testimony about Fauci/Collins and COVID-origin debate. Does not support: The alleged Trump statements (“Dr. Death,” COVID-creation funding accusation, or prosecution demand).",
+          "Account1 proposal assessment: The only mapped Politico article is about former CDC Director Robert Redfield’s account of COVID-origin discussions and his claim that Fauci/Collins excluded him. It does not report Trump calling Fauci “Dr. Death,” accusing him of funding COVID’s creation, or demanding prosecution. Account1 correctly leaves the event on hold and requests a dated Trump post, transcript, recording or event-specific report.",
+          "short assessment: No affirmative Trump-event short description is supported.",
+          "medium assessment: The exclusion/hold explanation is accurate; do not present the underlying allegations as fact.",
+          "long assessment: No corrected event long text is supported; retain hold until a matching source identifies the words and date.",
+          "Scope/access limits and uncertainty: A mismatched citation and absence of a matching source in this packet do not prove the statements never occurred.",
+          "Staged-text alignment: The staged title proposes exclusion, but the account1 disposition remains NEEDS_REVIEW_HOLD. Do not convert the hold into a factual Trump event or imply the allegations are disproven universally.",
+          "Duplicate reconciliation: exactly one terminal worker-10 QA row exists for this ID; no competing descendant/conflict was present.",
+          "BLOCKED / HOLD: the mapped Politico story concerns Robert Redfield and does not support the alleged Trump statements; require a dated Trump post, transcript, recording or event-specific report. The mismatch does not prove the statements never occurred."
+        ]
+      },
+      {
+        "key": "entry-2061",
+        "worker": 11,
+        "reasons": [
+          "Prior terminal citation review disposition: supported_proposal; QA result: pass.",
+          "An indexed result for the exact DNYUZ URL contains the matching March 4, 2026 syndicated “Four Questions About What’s Next in Texas” text and the excerpt that Trump said he would endorse soon and ask the other candidate to leave. The exact Texas Tribune article reports the Cornyn–Paxton Senate runoff and Talarico’s Democratic nomination. The proposal labels the NYT item analysis, not a Trump action, says only part of the four-question framing is accessible, and rejects a later endorsement/outcome. Direct Firecrawl retrieval of the DNYUZ URL rendered a generic DNYUZ page rather than that archived article, so this pass relies only on the URL-matched indexed excerpt, not an asserted complete article read.",
+          "The claim is supported only to the excerpt’s scope. The direct-render inconsistency and NYT 403 are disclosed; no later Trump endorsement is evidenced.",
+          "The prior QA supports only the indexed excerpt at the exact DNYUZ URL; direct retrieval rendered a generic page. Keep the factual disposition but hold release pending a stable direct source view."
+        ]
+      }
+    ],
+    "revision_required_count": 58,
+    "intentional_exclusion_count": 25
+  },
+  "artifacts": [
+    "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-account5-citation190-effective-001.jsonl",
+    "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-checkpoint-001.json",
+    "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-independent-qa.json",
+    "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-qa-report.md"
+  ],
+  "url_mapping_canonical_alias_matches": [
+    {
+      "key": "entry-5597",
+      "worker": 9,
+      "aliases": [
+        {
+          "verified_url": "https://apnews.com/article/4e8bc57e132c3f9a7f1c2a3754359993",
+          "mapped_url": "https://apnews.com/article/trump-inspectors-general-fired-congress-unlawful-4e8bc57e132c3f9a7f1c2a3754359993",
+          "same_ap_article_id": "4e8bc57e132c3f9a7f1c2a3754359993"
+        }
+      ]
+    }
+  ],
+  "url_mapping_exceptions": [
+    {
+      "key": "entry-2518",
+      "worker": 6,
+      "gate": "exclusion",
+      "unmapped_urls": [
+        "https://archive.nytimes.com/www.nytimes.com/library/world/global/022100russia-israel-launder.html",
+        "https://www.hbgacademic.com/titles/robert-i-friedman/red-mafiya/9780316092876/",
+        "https://www.publishersweekly.com/9780316294744"
+      ],
+      "reason": [
+        "The proposal appropriately recommends exclusion from a Trump-specific chronology because sources concern a 2000 book/review and organized crime, not Trump. There is also a source mismatch in the draft: the Hachette URL is not retained as a verified source, and the exact URL resolved to a generic HBG Academic page rather than usable title evidence.",
+        "The copy’s general book-review subject is separable from this dataset inclusion question. The proposed long text also says “Hachette identifies it” despite the mismatched URL and should be corrected if reused.",
+        "Recommended disposition/correction: Exclude from Trump event set absent a sourced Trump connection; remove/replace the Hachette assertion or provide a working title-specific URL."
+      ]
+    },
+    {
+      "key": "entry-2864",
+      "worker": 6,
+      "gate": "exclusion",
+      "unmapped_urls": [
+        "https://apnews.com/article/shootings-ohio-dayton-connor-betts-5fcb671bc9a8a7745514158939d9aa0e"
+      ],
+      "reason": [
+        "The supplied sources support the Dayton shooting and FBI findings, but neither source set connects the attack to a Trump statement, policy, or action. Exclusion from the Trump-focused collection is the supported scope decision.",
+        "The FBI attribution and casualty/date wording are properly scoped in the proposed standalone account. Accurate unrelated reporting still does not qualify as a Trump event.",
+        "Recommended disposition/correction: Exclude from the Trump-specific set absent a documented direct connection."
+      ]
+    },
+    {
+      "key": "entry-1782",
+      "worker": 8,
+      "gate": "revision_required",
+      "unmapped_urls": [
+        "https://apnews.com/article/9290fcaad1cb6fcb1cbc1befabc01994"
+      ],
+      "reason": [
+        "Prior citation disposition supported_proposal: AP’s contemporaneous reporting directly states that at least 16 files disappeared from the public webpage. This supports a count of files no longer displayed, not destruction of original records, concealment by a named actor, or a shortened legal oversight window.",
+        "Claim scope/precision: Keep the proposal limited to files removed from public display; do not expand it into loss/destruction of source records or proof of motive.",
+        "Prior exact-URL review: The exact AP story URL returned HTTP 200 and supports the stated public-webpage fact."
+      ]
+    },
+    {
+      "key": "entry-2401",
+      "worker": 8,
+      "gate": "exclusion",
+      "unmapped_urls": [
+        "https://www.washingtonpost.com/archive/lifestyle/1991/10/25/media-baron-sues-seymour-hersh/c16c29e2-04ba-4038-9fff-08113fa33b77/"
+      ],
+      "reason": [
+        "Prior citation disposition intentional_exclusion: The mapped sources concern Mordechai Vanunu/Maxwell history, not a Trump event or action. They cannot support the Trump claim; a long-text reference to a 2006 Independent retrospective also lacks its URL in the proposal.",
+        "Claim scope/precision: Exclude from a Trump-specific import. Do not treat the topical/subject mismatch as a copy edit; separate relevant sourcing and a factual Trump nexus would be required.",
+        "Prior exact-URL review: The exact mapped Vanunu source was not scrapeable in the review; other mapped material still concerns unrelated people/events and cannot cure the subject mismatch."
+      ]
+    }
+  ]
+}

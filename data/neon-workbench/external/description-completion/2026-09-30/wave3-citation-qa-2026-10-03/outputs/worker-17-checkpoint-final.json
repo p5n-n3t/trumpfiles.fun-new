@@ -1,0 +1,79 @@
+{
+  "worker": 17,
+  "scope": "Wave3 citation QA; assigned IDs only",
+  "source_branch": "codex/wave3-citation-qa-2026-10-03",
+  "source_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+  "parent_commit": "95eb7977f6d66eb110b38dfba25023743453fd2a",
+  "input_file": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/worker-17-input.jsonl",
+  "input_sha256": "8477a38b8eb5260d7180d3aa6946622bf8d0bbe88e0410fe33710067d7ace75e",
+  "expected_ids": [
+    "entry-178",
+    "entry-255",
+    "entry-425",
+    "entry-735",
+    "entry-814",
+    "entry-920",
+    "entry-1670",
+    "entry-1784",
+    "entry-2401",
+    "entry-2528",
+    "entry-2864",
+    "entry-3574",
+    "entry-3985",
+    "entry-4308",
+    "entry-5413",
+    "entry-5707",
+    "entry-6206"
+  ],
+  "actual_ids": [
+    "entry-178",
+    "entry-255",
+    "entry-425",
+    "entry-735",
+    "entry-814",
+    "entry-920",
+    "entry-1670",
+    "entry-1784",
+    "entry-2401",
+    "entry-2528",
+    "entry-2864",
+    "entry-3574",
+    "entry-3985",
+    "entry-4308",
+    "entry-5413",
+    "entry-5707",
+    "entry-6206"
+  ],
+  "row_count": 17,
+  "unique_id_count": 17,
+  "batch_files": [
+    {
+      "file": "worker-17-batch-001.jsonl",
+      "count": 8,
+      "sha256": "29ea79d7353967a485a7ce5870a50574d34d072fac66bef2d27688714b3cdb01"
+    },
+    {
+      "file": "worker-17-batch-002.jsonl",
+      "count": 9,
+      "sha256": "ced0fd8b6b174530387c4b8c22ba4314afba62951ccdb8c4e4e547a8357e4ce4"
+    }
+  ],
+  "qa": {
+    "exact_id_set": true,
+    "no_duplicate_ids": true,
+    "no_extra_ids": true,
+    "all_rows_have_required_status": true,
+    "all_rows_have_input_hash": true,
+    "source_mapping_and_access_notes_present": true,
+    "corrected_draft_length_limits_passed": true,
+    "all_draft_urls_map_to_source_rows": true,
+    "original_claim_substantiated_true_count": 3,
+    "status_counts": {
+      "corrected_claim_proposal": 11,
+      "citation_repaired_proposal": 3,
+      "scope_exclusion_proposal": 3
+    }
+  },
+  "canonical_or_database_changes": false,
+  "created_at_utc": "2026-10-03T11:23:38.960108+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "batch": 3,
+  "assignment_keys": [
+    "entry-6832",
+    "entry-6889",
+    "entry-6933",
+    "entry-6950",
+    "expanded-20260821-usps-final-rule",
+    "expanded-20260902-doj-welfare-reporting",
+    "expanded-20260910-vance-rnc-misleading-claims",
+    "expanded-20260918-press-ban-announcement"
+  ],
+  "count": 8,
+  "cumulative_count": 24,
+  "expected_total": 33,
+  "scope_note": "Append-only QA proposals; proposal_only=true; no canonical record, score, or database mutation."
+}

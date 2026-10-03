@@ -1,0 +1,284 @@
+{
+  "qa_type": "independent release-gate integration; no new source research or canonical mutation",
+  "exact_set_pass": true,
+  "expected_count": 190,
+  "result_rows": 190,
+  "unique_keys": 190,
+  "missing_keys": [],
+  "extra_keys": [],
+  "duplicate_keys": [],
+  "worker_packet_and_branch_checks": [
+    {
+      "worker": 1,
+      "branch_head": "1a94e2256de5de555cb8a5a01c04987b09738cb1",
+      "input_sha256_match": true,
+      "normalized_ids_exact": true,
+      "final_qa_ids_exact": true,
+      "normalized_rows": 16,
+      "assigned": 16,
+      "release_gate_counts": {
+        "hold": 1,
+        "revision_required": 6,
+        "accepted_narrower_claim": 8,
+        "exclusion": 1
+      }
+    },
+    {
+      "worker": 2,
+      "branch_head": "c5bf875c052abaa7e0b8322254fb95b91a0311af",
+      "input_sha256_match": true,
+      "normalized_ids_exact": true,
+      "final_qa_ids_exact": true,
+      "normalized_rows": 16,
+      "assigned": 16,
+      "release_gate_counts": {
+        "accepted_narrower_claim": 10,
+        "revision_required": 4,
+        "exclusion": 1,
+        "hold": 1
+      }
+    },
+    {
+      "worker": 3,
+      "branch_head": "e06c4cc47222eb31194cfce8e71ee1df1e80d681",
+      "input_sha256_match": true,
+      "normalized_ids_exact": true,
+      "final_qa_ids_exact": true,
+      "normalized_rows": 16,
+      "assigned": 16,
+      "release_gate_counts": {
+        "accepted_narrower_claim": 6,
+        "revision_required": 7,
+        "exclusion": 1,
+        "hold": 2
+      }
+    },
+    {
+      "worker": 4,
+      "branch_head": "983f465b5d59d6cadca9a7b94f35013bf4721507",
+      "input_sha256_match": true,
+      "normalized_ids_exact": true,
+      "final_qa_ids_exact": true,
+      "normalized_rows": 16,
+      "assigned": 16,
+      "release_gate_counts": {
+        "revision_required": 5,
+        "accepted_narrower_claim": 9,
+        "exclusion": 2
+      }
+    },
+    {
+      "worker": 5,
+      "branch_head": "4cd949b2be9ba1ff69050b0a5fbb9f7573461355",
+      "input_sha256_match": true,
+      "normalized_ids_exact": true,
+      "final_qa_ids_exact": true,
+      "normalized_rows": 16,
+      "assigned": 16,
+      "release_gate_counts": {
+        "exclusion": 4,
+        "accepted_narrower_claim": 9,
+        "hold": 2,
+        "revision_required": 1
+      }
+    },
+    {
+      "worker": 6,
+      "branch_head": "00dcebbb523a5cd4e52c989313f0c5fe89de6540",
+      "input_sha256_match": true,
+      "normalized_ids_exact": true,
+      "final_qa_ids_exact": true,
+      "normalized_rows": 16,
+      "assigned": 16,
+      "release_gate_counts": {
+        "accepted_narrower_claim": 11,
+        "exclusion": 3,
+        "revision_required": 2
+      }
+    },
+    {
+      "worker": 7,
+      "branch_head": "638eabe516349970413c528b5d80f2651a7016a6",
+      "input_sha256_match": true,
+      "normalized_ids_exact": true,
+      "final_qa_ids_exact": true,
+      "normalized_rows": 16,
+      "assigned": 16,
+      "release_gate_counts": {
+        "accepted_narrower_claim": 10,
+        "exclusion": 4,
+        "revision_required": 1,
+        "hold": 1
+      }
+    },
+    {
+      "worker": 8,
+      "branch_head": "e46548eb9e18085164bfa7853068985dbfdfe8b5",
+      "input_sha256_match": true,
+      "normalized_ids_exact": true,
+      "final_qa_ids_exact": true,
+      "normalized_rows": 16,
+      "assigned": 16,
+      "release_gate_counts": {
+        "revision_required": 12,
+        "accepted_narrower_claim": 2,
+        "exclusion": 2
+      }
+    },
+    {
+      "worker": 9,
+      "branch_head": "a887bcb4d6eaf9e4786ed7a426628571d41ab911",
+      "input_sha256_match": true,
+      "normalized_ids_exact": true,
+      "final_qa_ids_exact": true,
+      "normalized_rows": 16,
+      "assigned": 16,
+      "release_gate_counts": {
+        "accepted_narrower_claim": 8,
+        "revision_required": 6,
+        "hold": 1,
+        "exclusion": 1
+      }
+    },
+    {
+      "worker": 10,
+      "branch_head": "59186011281f6a21f1fbc3ede03da9be73fb2c6b",
+      "input_sha256_match": true,
+      "normalized_ids_exact": true,
+      "final_qa_ids_exact": true,
+      "normalized_rows": 16,
+      "assigned": 16,
+      "release_gate_counts": {
+        "revision_required": 7,
+        "accepted_narrower_claim": 5,
+        "exclusion": 3,
+        "hold": 1
+      }
+    },
+    {
+      "worker": 11,
+      "branch_head": "acfa096935de35c098630d26575f8c76e5ca5e3c",
+      "input_sha256_match": true,
+      "normalized_ids_exact": true,
+      "final_qa_ids_exact": true,
+      "normalized_rows": 15,
+      "assigned": 15,
+      "release_gate_counts": {
+        "accepted_narrower_claim": 10,
+        "hold": 1,
+        "exclusion": 1,
+        "revision_required": 3
+      }
+    },
+    {
+      "worker": 12,
+      "branch_head": "03282adfe6313b912f1535db714b82962a077680",
+      "input_sha256_match": true,
+      "normalized_ids_exact": true,
+      "final_qa_ids_exact": true,
+      "normalized_rows": 15,
+      "assigned": 15,
+      "release_gate_counts": {
+        "revision_required": 4,
+        "accepted_narrower_claim": 9,
+        "exclusion": 2
+      }
+    }
+  ],
+  "release_gate_counts": {
+    "hold": 10,
+    "revision_required": 58,
+    "accepted_narrower_claim": 97,
+    "exclusion": 25
+  },
+  "release_ready_true_count": 111,
+  "release_ready_false_count": 79,
+  "source270_crosscheck": {
+    "source270_result_file": "data/neon-workbench/external/account2-coordination-2026-10-03/worker-17/worker-17-source270-qa-batch-001.jsonl",
+    "source270_dataset_commit": "0a838afad9c844c843e89034c22e6af9f2860ba5",
+    "source270_unique_keys": 270,
+    "citation190_overlap_count": 0,
+    "overlap_keys": []
+  },
+  "url_fact_mapping_review": {
+    "rows_with_verified_url_not_exactly_in_mapping": 4,
+    "exceptions": [
+      {
+        "key": "entry-2518",
+        "worker": 6,
+        "gate": "exclusion",
+        "unmapped_urls": [
+          "https://archive.nytimes.com/www.nytimes.com/library/world/global/022100russia-israel-launder.html",
+          "https://www.hbgacademic.com/titles/robert-i-friedman/red-mafiya/9780316092876/",
+          "https://www.publishersweekly.com/9780316294744"
+        ],
+        "reason": [
+          "The proposal appropriately recommends exclusion from a Trump-specific chronology because sources concern a 2000 book/review and organized crime, not Trump. There is also a source mismatch in the draft: the Hachette URL is not retained as a verified source, and the exact URL resolved to a generic HBG Academic page rather than usable title evidence.",
+          "The copy’s general book-review subject is separable from this dataset inclusion question. The proposed long text also says “Hachette identifies it” despite the mismatched URL and should be corrected if reused.",
+          "Recommended disposition/correction: Exclude from Trump event set absent a sourced Trump connection; remove/replace the Hachette assertion or provide a working title-specific URL."
+        ]
+      },
+      {
+        "key": "entry-2864",
+        "worker": 6,
+        "gate": "exclusion",
+        "unmapped_urls": [
+          "https://apnews.com/article/shootings-ohio-dayton-connor-betts-5fcb671bc9a8a7745514158939d9aa0e"
+        ],
+        "reason": [
+          "The supplied sources support the Dayton shooting and FBI findings, but neither source set connects the attack to a Trump statement, policy, or action. Exclusion from the Trump-focused collection is the supported scope decision.",
+          "The FBI attribution and casualty/date wording are properly scoped in the proposed standalone account. Accurate unrelated reporting still does not qualify as a Trump event.",
+          "Recommended disposition/correction: Exclude from the Trump-specific set absent a documented direct connection."
+        ]
+      },
+      {
+        "key": "entry-1782",
+        "worker": 8,
+        "gate": "revision_required",
+        "unmapped_urls": [
+          "https://apnews.com/article/9290fcaad1cb6fcb1cbc1befabc01994"
+        ],
+        "reason": [
+          "Prior citation disposition supported_proposal: AP’s contemporaneous reporting directly states that at least 16 files disappeared from the public webpage. This supports a count of files no longer displayed, not destruction of original records, concealment by a named actor, or a shortened legal oversight window.",
+          "Claim scope/precision: Keep the proposal limited to files removed from public display; do not expand it into loss/destruction of source records or proof of motive.",
+          "Prior exact-URL review: The exact AP story URL returned HTTP 200 and supports the stated public-webpage fact."
+        ]
+      },
+      {
+        "key": "entry-2401",
+        "worker": 8,
+        "gate": "exclusion",
+        "unmapped_urls": [
+          "https://www.washingtonpost.com/archive/lifestyle/1991/10/25/media-baron-sues-seymour-hersh/c16c29e2-04ba-4038-9fff-08113fa33b77/"
+        ],
+        "reason": [
+          "Prior citation disposition intentional_exclusion: The mapped sources concern Mordechai Vanunu/Maxwell history, not a Trump event or action. They cannot support the Trump claim; a long-text reference to a 2006 Independent retrospective also lacks its URL in the proposal.",
+          "Claim scope/precision: Exclude from a Trump-specific import. Do not treat the topical/subject mismatch as a copy edit; separate relevant sourcing and a factual Trump nexus would be required.",
+          "Prior exact-URL review: The exact mapped Vanunu source was not scrapeable in the review; other mapped material still concerns unrelated people/events and cannot cure the subject mismatch."
+        ]
+      }
+    ],
+    "mapping_url_alias_rule": "AP article URLs are considered same-article aliases only when their 32-character article identifiers match; alias cases are preserved as differing exact URL strings in the row.",
+    "canonical_alias_matches": [
+      {
+        "key": "entry-5597",
+        "worker": 9,
+        "aliases": [
+          {
+            "verified_url": "https://apnews.com/article/4e8bc57e132c3f9a7f1c2a3754359993",
+            "mapped_url": "https://apnews.com/article/trump-inspectors-general-fired-congress-unlawful-4e8bc57e132c3f9a7f1c2a3754359993",
+            "same_ap_article_id": "4e8bc57e132c3f9a7f1c2a3754359993"
+          }
+        ]
+      }
+    ]
+  },
+  "hold_policy": "No worker hold, source-access caveat, or release_ready=false supported-proposal was promoted to accepted_narrower_claim. Exclusion release_ready=true remains an exclusion, not publication approval.",
+  "no_mutations": {
+    "canonical_edits": false,
+    "neon_writes": false,
+    "other_worker_outputs_edited": false,
+    "pull_request_opened": false
+  },
+  "effective_batch": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-account5-citation190-effective-001.jsonl"
+}

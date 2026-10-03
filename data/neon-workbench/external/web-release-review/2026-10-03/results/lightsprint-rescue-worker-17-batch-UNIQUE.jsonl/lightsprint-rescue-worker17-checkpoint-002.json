@@ -1,0 +1,17 @@
+{
+  "batch": 2,
+  "assignment_keys": [
+    "entry-6504",
+    "entry-6584",
+    "entry-6609",
+    "entry-6642",
+    "entry-6739",
+    "entry-6779",
+    "entry-6791",
+    "entry-6811"
+  ],
+  "count": 8,
+  "cumulative_count": 16,
+  "expected_total": 33,
+  "scope_note": "Append-only QA proposals; proposal_only=true; no canonical record, score, or database mutation."
+}

@@ -1,0 +1,18 @@
+{
+  "batch": 4,
+  "assignment_keys": [
+    "expanded-20260924-senate-oil-donors-report",
+    "expanded-20260928-lee-memorial-bill-objection",
+    "fresh-20260902-stone-haiti-contract",
+    "pr47-review-entry-112",
+    "pr47-review-entry-1297",
+    "pr47-review-entry-1445",
+    "pr47-review-entry-1521",
+    "pr47-review-entry-1590",
+    "pr47-review-entry-1648"
+  ],
+  "count": 9,
+  "cumulative_count": 33,
+  "expected_total": 33,
+  "scope_note": "Append-only QA proposals; proposal_only=true; no canonical record, score, or database mutation."
+}
