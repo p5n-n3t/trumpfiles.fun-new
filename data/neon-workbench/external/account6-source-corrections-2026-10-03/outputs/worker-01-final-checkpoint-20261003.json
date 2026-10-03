@@ -1,0 +1,109 @@
+{
+  "artifact": "worker-01-final-checkpoint",
+  "status": "pass",
+  "branch": "ls/1-trump-files-source118-review-01-of-12-Dnux",
+  "correction_commit": "337eff1cf14581f938d484044c5031d873677ae1",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_input": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-01-input.jsonl",
+  "packet_input_sha256": "6baa302190661b9f09d0882a2f95446063067e63185bac1e425efcb02d0914d0",
+  "output_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-01-batch-20261003-01.jsonl",
+  "output_sha256": "933f5d99bfcf175e74fb628db6147ea8896120655fb143e23d0def6b17df1500",
+  "assigned_keys": [
+    "entry-4234",
+    "entry-5074",
+    "entry-5537",
+    "entry-5817",
+    "entry-6392",
+    "entry-6483",
+    "entry-6618",
+    "entry-6725",
+    "entry-6796",
+    "entry-6898"
+  ],
+  "row_count": 10,
+  "checks": [
+    "exact assigned set; one row per key; all source_triage_status fields remain needs_correction; short <=180 characters; medium 45-90 words; long 140-300 words; every source URL mapped to supported facts"
+  ],
+  "per_key": [
+    {
+      "key": "entry-4234",
+      "short_chars": 141,
+      "medium_words": 79,
+      "long_words": 162,
+      "urls_mapped": 2,
+      "source_triage_status": "needs_correction"
+    },
+    {
+      "key": "entry-5074",
+      "short_chars": 144,
+      "medium_words": 73,
+      "long_words": 173,
+      "urls_mapped": 1,
+      "source_triage_status": "needs_correction"
+    },
+    {
+      "key": "entry-5537",
+      "short_chars": 133,
+      "medium_words": 72,
+      "long_words": 167,
+      "urls_mapped": 2,
+      "source_triage_status": "needs_correction"
+    },
+    {
+      "key": "entry-5817",
+      "short_chars": 144,
+      "medium_words": 62,
+      "long_words": 160,
+      "urls_mapped": 1,
+      "source_triage_status": "needs_correction"
+    },
+    {
+      "key": "entry-6392",
+      "short_chars": 137,
+      "medium_words": 65,
+      "long_words": 173,
+      "urls_mapped": 3,
+      "source_triage_status": "needs_correction"
+    },
+    {
+      "key": "entry-6483",
+      "short_chars": 104,
+      "medium_words": 70,
+      "long_words": 166,
+      "urls_mapped": 3,
+      "source_triage_status": "needs_correction"
+    },
+    {
+      "key": "entry-6618",
+      "short_chars": 155,
+      "medium_words": 69,
+      "long_words": 177,
+      "urls_mapped": 2,
+      "source_triage_status": "needs_correction"
+    },
+    {
+      "key": "entry-6725",
+      "short_chars": 110,
+      "medium_words": 64,
+      "long_words": 151,
+      "urls_mapped": 1,
+      "source_triage_status": "needs_correction"
+    },
+    {
+      "key": "entry-6796",
+      "short_chars": 130,
+      "medium_words": 65,
+      "long_words": 167,
+      "urls_mapped": 1,
+      "source_triage_status": "needs_correction"
+    },
+    {
+      "key": "entry-6898",
+      "short_chars": 138,
+      "medium_words": 60,
+      "long_words": 152,
+      "urls_mapped": 1,
+      "source_triage_status": "needs_correction"
+    }
+  ]
+}

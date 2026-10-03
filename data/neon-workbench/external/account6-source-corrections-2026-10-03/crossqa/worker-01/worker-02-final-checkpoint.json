@@ -1,0 +1,53 @@
+{
+  "artifact": "worker-02-crossqa-final-checkpoint",
+  "status": "pass_with_findings",
+  "review_branch": "ls/2-trump-files-source118-review-02-of-12-alSU",
+  "resolved_review_commit": "b6035291c97d3baa2fdb90aa9d35a4f22c406db6",
+  "user_supplied_commit_text": "b6035291c97d3baa9d90aa9d35a4f22c406db6",
+  "user_supplied_commit_well_formed": false,
+  "resolution_note": "The supplied reference is 38 characters and is not an object. The named branch resolves to the 40-character commit above, message “Add worker 02 source correction batch”; review used that exact branch tip.",
+  "packet_branch": "codex/account6-source-corrections-2026-10-03",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_input": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-02-input.jsonl",
+  "packet_input_sha256": "87a92c93aad426f6691b022af93fb800600c50f363e2c0d856f4e78090efeea5",
+  "packet_manifest_sha256": "87a92c93aad426f6691b022af93fb800600c50f363e2c0d856f4e78090efeea5",
+  "reviewed_output": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-02-batch-2026-10-03-001.jsonl",
+  "reviewed_output_sha256": "15e2f7982077a18a723a02401011885502b56876bf753a6da61b919a80857be5",
+  "qa_ledger": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-01/worker-02-crossqa-ledger.jsonl",
+  "qa_ledger_sha256": "f5a67ed606c0781ef84d20a8e249533c4c6c2e9c6970c4d1cfdafc54e03fc5a5",
+  "reviewed_keys": [
+    "entry-4243",
+    "entry-5083",
+    "entry-5603",
+    "entry-5820",
+    "entry-6405",
+    "entry-6494",
+    "entry-6621",
+    "entry-6726",
+    "entry-6800",
+    "entry-6910"
+  ],
+  "exact_key_count": 10,
+  "description_limits_passed": 10,
+  "source_triage_needs_correction_preserved": 10,
+  "evidence_gap_exact_matches": 10,
+  "prior_source_urls_retained": 10,
+  "explicit_source_url_fact_maps_present_in_target": 0,
+  "source_urls_independently_mapped_in_ledger": 20,
+  "review_status_counts": {
+    "partial_follow_up_recommended": 1,
+    "pass": 3,
+    "pass_with_access_caveat": 4,
+    "pass_with_ap_access_note": 1,
+    "pass_with_stale_landing_page_note": 1
+  },
+  "findings": [
+    "Worker 02 output does not populate source_url_support or source_support on any of its 10 rows; the cross-QA ledger provides per-URL mappings.",
+    "The historical July 30 Yale Budget Lab landing URL now redirects to an August 2026 update; its added historical PDF preserves and verifies the 2025 estimate.",
+    "Entry entry-6800 omits the packet-supported October indictment and November dismissal chronology; the ledger marks this as a follow-up to avoid truncating the case outcome.",
+    "Several source URLs were blocked or timed out during direct review; each access limitation is recorded per URL in the ledger."
+  ],
+  "scope_guard": "Read-only review of worker 02 output and packet inputs. No target output, canonical data, or Neon database was edited.",
+  "own_worker_checkpoint": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-01-final-checkpoint-20261003.json",
+  "own_worker_checkpoint_sha256": "96e637b032b1af4edbe5dceec513b876c70e4f9e4d7b757cf97635dab79eea9b"
+}
