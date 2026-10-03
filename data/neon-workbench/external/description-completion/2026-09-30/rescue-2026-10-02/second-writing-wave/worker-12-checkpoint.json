@@ -1,0 +1,30 @@
+{
+  "phase": "second-writing-wave",
+  "worker": 12,
+  "assigned_ids": [
+    "entry-1334",
+    "entry-181",
+    "entry-22",
+    "entry-2861",
+    "entry-3979",
+    "entry-4296",
+    "entry-5462",
+    "entry-6652"
+  ],
+  "completed_ids": [
+    "entry-1334"
+  ],
+  "needs_context_ids": [
+    "entry-181",
+    "entry-22",
+    "entry-2861",
+    "entry-3979",
+    "entry-4296",
+    "entry-5462",
+    "entry-6652"
+  ],
+  "remaining_ids": [],
+  "completed": 1,
+  "needs_context": 7,
+  "remaining": 0
+}

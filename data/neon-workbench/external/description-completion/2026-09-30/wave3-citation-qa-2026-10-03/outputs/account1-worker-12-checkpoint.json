@@ -1,0 +1,101 @@
+{
+  "worker": 12,
+  "account": 1,
+  "packet_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+  "packet_branch": "codex/wave3-citation-qa-2026-10-03",
+  "input_path": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/worker-24-input.jsonl",
+  "input_sha256": "1a29e26c38bd4c693bf959692b3ce3f6eb55feb962f92b6ac5be87bda10e71c2",
+  "assigned_entry_numbers": [
+    227,
+    365,
+    654,
+    788,
+    873,
+    985,
+    1770,
+    2342,
+    2501,
+    2710,
+    3380,
+    3838,
+    4232,
+    5282,
+    5597,
+    6155,
+    6330
+  ],
+  "outcome_count": 17,
+  "exact_set": true,
+  "duplicate_ids": [],
+  "batches": [
+    {
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-12-batch-001-cqa.jsonl",
+      "sha256": "8867a22c5f754fd586b6e305e27de98a69cc3f5e7014ed8d89755e85dd5a8d67",
+      "rows": 8
+    },
+    {
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-12-batch-002-cqa.jsonl",
+      "sha256": "43183cf5820c21e78bf04d8c0e6ffbd6ba3c4b27368f52a9d5eb9c1199d548cc",
+      "rows": 9
+    }
+  ],
+  "qa": {
+    "valid_jsonl": true,
+    "allowed_statuses_only": true,
+    "all_rows_have_source_mappings_and_access_notes": true,
+    "mapped_urls_match_exact_url_list": true,
+    "short_char_limit_180": true,
+    "medium_word_bounds_45_90": true,
+    "long_word_bounds_140_300": true,
+    "prior_input_hash_matches": true,
+    "scope_exclusion_rows": [
+      "entry-873",
+      "entry-2342",
+      "entry-2501"
+    ],
+    "unresolved_hold_rows": [],
+    "only_task_batch_files_changed": true,
+    "unrelated_untracked_files_preserved": [
+      "bun.lock",
+      "workers/trumpstein/bun.lock"
+    ]
+  },
+  "row_statuses": {
+    "entry-227": "corrected_claim_proposal",
+    "entry-365": "citation_repaired_proposal",
+    "entry-654": "corrected_claim_proposal",
+    "entry-788": "citation_repaired_proposal",
+    "entry-873": "scope_exclusion_proposal",
+    "entry-985": "citation_repaired_proposal",
+    "entry-1770": "corrected_claim_proposal",
+    "entry-2342": "scope_exclusion_proposal",
+    "entry-2501": "scope_exclusion_proposal",
+    "entry-2710": "corrected_claim_proposal",
+    "entry-3380": "corrected_claim_proposal",
+    "entry-3838": "corrected_claim_proposal",
+    "entry-4232": "corrected_claim_proposal",
+    "entry-5282": "corrected_claim_proposal",
+    "entry-5597": "corrected_claim_proposal",
+    "entry-6155": "corrected_claim_proposal",
+    "entry-6330": "corrected_claim_proposal"
+  },
+  "documented_unresolved_claims": {
+    "entry-227": "The supplied CHN article could not be fetched directly (403); NEA source supports only the attributed proposed-cut account, not implementation or the prior numerical reach claims.",
+    "entry-365": "Reports support the remarks and announced directives; subsequent implementation or city deployments are not established.",
+    "entry-654": "No quantified environmental outcome is established by the cited rulemaking records.",
+    "entry-788": "No recipient-specific clemency rationale is stated.",
+    "entry-873": "No evidence supports a corrupt exchange or financial-exploitation classification.",
+    "entry-985": "The DOJ roster verifies the commutation and original terms; the warrant\u2019s exact effect on imprisonment, supervision, and restitution was not reliably verified and is omitted.",
+    "entry-1770": "The cited AP review does not establish repeated review cycles, shifting criteria, or measured credibility costs.",
+    "entry-2342": "The exact enrollment date and homework allegation are unsupported; sourced material is biographical and outside public-policy/harm-event scope.",
+    "entry-2501": "The inquiry supports the event and attributed allegations, but no Trump connection is established.",
+    "entry-2710": "The supplied sources do not independently establish the alleged oligarch meeting or identify the person.",
+    "entry-3380": "The committee finding is not a criminal conviction; the sources do not support describing the account as public testimony at a hearing.",
+    "entry-3838": "The AP/PBS report does not establish retaliation or provide the warrant\u2019s full basis.",
+    "entry-4232": "The Washington Post supports an attributed official-work-end report; the AP savings source and original workforce/cost figures were not verified and are omitted.",
+    "entry-5282": "KFF provides a projection, not evidence of realized cuts or state re-institutionalization of disabled people.",
+    "entry-5597": "The AP source supports January 2025 removals, not the separate June 2025 FBI/IG episode or the claimed elimination of oversight.",
+    "entry-6155": "The order and ruling do not establish the amount of any payments actually withheld.",
+    "entry-6330": "GAO/AP support four trips and specified costs, not profit across all trips or properties."
+  }
+}

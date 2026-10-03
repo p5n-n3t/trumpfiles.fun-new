@@ -1,0 +1,104 @@
+{
+  "worker": 12,
+  "packet_branch": "codex/account1-late-source-corrections-2026-10-03",
+  "packet_commit": "d1c9c5990d6b15257fbb406671cd73994b45420e",
+  "input_file": "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/worker-12-input.jsonl",
+  "input_sha256": "0e5b1285401eb6197123763eaa870a5a05efbc804033f46892e1a8ef614ed0c6",
+  "assigned_ids": [
+    "entry-4504",
+    "entry-5168",
+    "entry-5733",
+    "entry-5811",
+    "entry-5873",
+    "entry-6438",
+    "entry-6512",
+    "entry-6620",
+    "entry-6689",
+    "entry-6755",
+    "entry-6815",
+    "entry-6932"
+  ],
+  "outcome_count": 12,
+  "exact_id_set": true,
+  "duplicate_ids": [],
+  "batches": [
+    {
+      "file": "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/outputs/worker-12-batch-001-corrections.jsonl",
+      "sha256": "9beb758de50c8b5fdff02ff68ebff9b97c47769acfddfb8818afd489e754c361",
+      "rows": 6
+    },
+    {
+      "file": "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/outputs/worker-12-batch-002-corrections.jsonl",
+      "sha256": "a996c8807b302a19efb38a9217d2e100a67a98d19eacbd7633cc566442a6aee0",
+      "rows": 6
+    }
+  ],
+  "qa": {
+    "jsonl_valid": true,
+    "batch_sizes_5_to_10": true,
+    "statuses_terminal_and_allowed": true,
+    "prior_input_hash_verified": true,
+    "one_outcome_per_assigned_id": true,
+    "exact_source_url_mappings_with_access_notes": true,
+    "short_at_most_180_chars": true,
+    "medium_45_to_90_words": true,
+    "long_140_to_300_words": true,
+    "worktree_changes_limited_to_worker12_outputs": true,
+    "unrelated_untracked_files_preserved": [
+      "bun.lock",
+      "workers/trumpstein/bun.lock"
+    ]
+  },
+  "row_statuses": {
+    "entry-4504": "corrected_claim_proposal",
+    "entry-5168": "corrected_claim_proposal",
+    "entry-5733": "corrected_claim_proposal",
+    "entry-5811": "corrected_claim_proposal",
+    "entry-5873": "corrected_claim_proposal",
+    "entry-6438": "corrected_claim_proposal",
+    "entry-6512": "corrected_claim_proposal",
+    "entry-6620": "corrected_claim_proposal",
+    "entry-6689": "corrected_claim_proposal",
+    "entry-6755": "corrected_claim_proposal",
+    "entry-6815": "corrected_claim_proposal",
+    "entry-6932": "corrected_claim_proposal"
+  },
+  "documented_unresolved_claims": {
+    "entry-4504": [
+      "The reports describe timing and market metrics but do not establish causation, coordinated trading, or the alleged insider mechanism. Token valuation depends on the metric and timestamp."
+    ],
+    "entry-5168": [
+      "The proposal is preliminary and potential planning areas do not guarantee a final sale. The January executive-order claim is a separate event not adjudicated by these sources."
+    ],
+    "entry-5733": [
+      "This is an attributed report of allegations and court proceedings. It does not establish the broader July-wide conduct in the original synopsis."
+    ],
+    "entry-5811": [
+      "The Reuters report establishes the personnel action but gives no link to impeachment testimony or January 6 participation."
+    ],
+    "entry-5873": [
+      "The benefit-to-Turkey statement is attributed to the filing. The article does not establish direct payment by Turkey or a later policy connection."
+    ],
+    "entry-6438": [
+      "The request and termination reports are dated on different days; the effective date/time is attributed to PCLOB by The Record."
+    ],
+    "entry-6512": [
+      "The official transcript establishes the statement and context, not a technical evaluation or downstream effect."
+    ],
+    "entry-6620": [
+      "The cited article reports a stated plan, not a final agency recommendation or effects on local water systems."
+    ],
+    "entry-6689": [
+      "This source establishes guidance and an opportunity to seek waivers, not the later approval, implementation, enrollment, or litigation history of individual state proposals."
+    ],
+    "entry-6755": [
+      "The order states a directive and desired strategy. The source does not establish the subsequent implementation or consequences."
+    ],
+    "entry-6815": [
+      "The cited records establish the legal sequence, not all implementation effects or later workplace outcomes."
+    ],
+    "entry-6932": [
+      "The report relies on sources familiar with a screening operation and does not identify any completed deportation based on an old post."
+    ]
+  }
+}
