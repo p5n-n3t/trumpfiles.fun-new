@@ -1,0 +1,27 @@
+{
+  "worker": "07",
+  "phase": "second-writing-wave",
+  "assignment_count": 9,
+  "processed_record_ids": [
+    "entry-1296",
+    "entry-1771",
+    "entry-199",
+    "entry-275",
+    "entry-3139",
+    "entry-4075",
+    "entry-5374",
+    "entry-5572",
+    "entry-720"
+  ],
+  "complete_count": 0,
+  "needs_context_count": 9,
+  "remaining_count": 0,
+  "remaining_record_ids": [],
+  "history_batch_count": 1,
+  "output_record_count": 9,
+  "source_commit": "6d8c7badd5b1e482574949eab1af6260a1b732b2",
+  "source_input_path": "external/description-completion/2026-09-30/rescue-2026-10-02/second-writing-wave/worker-07-input.jsonl",
+  "outputs": [
+    "outputs/worker-07-batch-001.jsonl"
+  ]
+}

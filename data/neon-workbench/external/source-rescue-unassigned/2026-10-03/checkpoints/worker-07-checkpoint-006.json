@@ -1,0 +1,30 @@
+{
+  "worker": 7,
+  "batch_file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-006-20261003-a.jsonl",
+  "batch_sha256": "6e113ab05023258d9b288fef7edac126938fdf3f9a214d78df5a6e844b6577d8",
+  "input_sha256": "b6d92fad4aecbb44502faaf55d2e23e38e4de77f767a1587f080b2621c933687",
+  "entry_numbers": [
+    6812,
+    6836,
+    6886,
+    6932,
+    6956,
+    5861
+  ],
+  "new_entry_numbers": [
+    6812,
+    6836,
+    6886,
+    6932,
+    6956
+  ],
+  "supersedes": [
+    {
+      "record_id": "entry-5861",
+      "previous_batch_file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-003-20261003-a.jsonl",
+      "revision": 2
+    }
+  ],
+  "terminal_count": 6,
+  "validation": "schema-and-exact-id-check-passed"
+}

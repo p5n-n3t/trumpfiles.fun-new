@@ -1,0 +1,20 @@
+{
+  "worker": 7,
+  "phase": "final-context-lightsprint",
+  "packet_commit": "73a2e5144ad19aea9f7a779cc87d113a5a09b9d2",
+  "batch": 4,
+  "terminal_rows": 8,
+  "complete": 0,
+  "needs_context": 8,
+  "record_ids": [
+    "entry-6264",
+    "entry-6356",
+    "entry-6552",
+    "entry-7045",
+    "entry-788",
+    "entry-836",
+    "entry-884",
+    "entry-989"
+  ],
+  "output": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/final-context-lightsprint/outputs/worker-07-batch-004.jsonl"
+}

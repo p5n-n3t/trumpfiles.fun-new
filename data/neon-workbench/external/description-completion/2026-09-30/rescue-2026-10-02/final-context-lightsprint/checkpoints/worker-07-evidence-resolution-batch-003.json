@@ -1,0 +1,21 @@
+{
+  "worker": 7,
+  "phase": "final-context-evidence-resolution",
+  "packet_commit": "b746cabf167043cd52896163368baea52af66c07",
+  "batch": 3,
+  "terminal_rows": 9,
+  "complete": 0,
+  "needs_context": 9,
+  "record_ids": [
+    "entry-4017",
+    "entry-4207",
+    "entry-4336",
+    "entry-4741",
+    "entry-5309",
+    "entry-5471",
+    "entry-5599",
+    "entry-5945",
+    "entry-6159"
+  ],
+  "output": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/final-context-lightsprint/outputs/worker-07-evidence-resolution-batch-003.jsonl"
+}

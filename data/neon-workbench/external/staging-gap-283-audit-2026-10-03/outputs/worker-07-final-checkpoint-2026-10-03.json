@@ -1,0 +1,195 @@
+{
+  "audit": "staging-gap-283-audit-worker-07",
+  "status": "complete_read_only_mapping; all assigned keys mapped to a published proposal-only disposition",
+  "input": {
+    "branch": "codex/staging-gap-283-audit-2026-10-03",
+    "commit": "8e5d2ebc3bf1f68c556aa92345a9a41fc40133fe",
+    "path": "data/neon-workbench/external/staging-gap-283-audit-2026-10-03/worker-07-input.jsonl",
+    "sha256": "96cb21b9c1a10ed35ad0259b88f7e0221c912f839917ff3c8ad8af13a8410abc",
+    "rows": 71,
+    "unique_keys": 71
+  },
+  "scope": {
+    "assigned_keys": [
+      "entry-4239",
+      "entry-4438",
+      "entry-4577",
+      "entry-4753",
+      "entry-5112",
+      "entry-5191",
+      "entry-5237",
+      "entry-5340",
+      "entry-5728",
+      "entry-5737",
+      "entry-5752",
+      "entry-5760",
+      "entry-5815",
+      "entry-5840",
+      "entry-5851",
+      "entry-6125",
+      "entry-6280",
+      "entry-6368",
+      "entry-6409",
+      "entry-6417",
+      "entry-6424",
+      "entry-6432",
+      "entry-6440",
+      "entry-6455",
+      "entry-6463",
+      "entry-6484",
+      "entry-6511",
+      "entry-6560",
+      "entry-6582",
+      "entry-6595",
+      "entry-6600",
+      "entry-6607",
+      "entry-6614",
+      "entry-6625",
+      "entry-6642",
+      "entry-6672",
+      "entry-6693",
+      "entry-6736",
+      "entry-6744",
+      "entry-6758",
+      "entry-6778",
+      "entry-6782",
+      "entry-6787",
+      "entry-6791",
+      "entry-6798",
+      "entry-6803",
+      "entry-6817",
+      "entry-6823",
+      "entry-6829",
+      "entry-6834",
+      "entry-6844",
+      "entry-6867",
+      "entry-6890",
+      "entry-6925",
+      "entry-6930",
+      "entry-6936",
+      "entry-6941",
+      "entry-6949",
+      "entry-6955",
+      "entry-6963",
+      "entry-7050",
+      "entry-7075",
+      "entry-7089",
+      "entry-7110",
+      "entry-7117",
+      "entry-7125",
+      "entry-7132",
+      "entry-7147",
+      "entry-7158",
+      "entry-7176",
+      "entry-7186"
+    ],
+    "assigned_count": 71,
+    "processed_count": 71,
+    "missing_keys": [],
+    "outside_scope_keys": [],
+    "duplicate_outcomes": 0
+  },
+  "staged_snapshot": {
+    "path": "data/neon-workbench/external/description-completion/2026-09-30/merged/descriptions.jsonl",
+    "rows": 6944,
+    "sha256_from_PR49_manifest": "615878c34963cb47a9a06a3ed1bb7db5c17b0ca31938b4d70dbb837ce55d49e5",
+    "absence_verified_by": "Per-key current_description_snapshot=null in PR49 held-dispositions.jsonl; all 71 target rows checked."
+  },
+  "published_pr49": {
+    "url": "https://github.com/p5n-n3t/trumpfiles.fun-new/pull/49",
+    "state": "open_draft",
+    "head_branch": "codex/web-release-review-results-2026-10-03",
+    "head_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+    "base_branch": "codex/web-release-review-2026-10-03",
+    "base_input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+    "mapped_rows": 71,
+    "row_specific_no_review_blockers": 0,
+    "disposition_categories": {
+      "duplicate_consolidation_proposal": 13,
+      "exclusion_proposal": 19,
+      "narrower_event_proposal": 11,
+      "split_proposal": 7,
+      "unresolved_hold": 21
+    },
+    "recommended_dispositions": {
+      "consolidate_as_publication_context_only_exclude_as_event": 2,
+      "exclude_original_claim_pending_source_for_claim": 1,
+      "exclude_pending_new_evidence": 16,
+      "propose_consolidation_with_counterpart": 12,
+      "replace_with_narrower_supported_event": 5,
+      "retain_narrower": 2,
+      "retain_narrower_corrected_event": 4,
+      "retain_separate_do_not_consolidate_generic_tracker": 1,
+      "retain_unresolved": 6,
+      "retain_unresolved_pending_specific_evidence": 15,
+      "split_supported_components": 7
+    },
+    "terminal_authority": "not_materialized",
+    "global_blocker": "Draft PR body says final validation did not pass; ACCESS-BLOCKER checkpoint says terminal authority not materialized and outstanding final integration/validation remain. These are published proposals, not approved or final dispositions.",
+    "blocker_files": [
+      "data/neon-workbench/external/web-release-review/2026-10-03/results/ACCESS-BLOCKER-2026-10-03.md",
+      "data/neon-workbench/external/web-release-review/2026-10-03/results/checkpoint-access-blocked-2026-10-03.json"
+    ]
+  },
+  "outputs": [
+    {
+      "path": "data/neon-workbench/external/staging-gap-283-audit-2026-10-03/outputs/worker-07-batch-001.jsonl",
+      "rows": 9,
+      "first_key": "entry-4239",
+      "last_key": "entry-5728"
+    },
+    {
+      "path": "data/neon-workbench/external/staging-gap-283-audit-2026-10-03/outputs/worker-07-batch-002.jsonl",
+      "rows": 9,
+      "first_key": "entry-5737",
+      "last_key": "entry-6368"
+    },
+    {
+      "path": "data/neon-workbench/external/staging-gap-283-audit-2026-10-03/outputs/worker-07-batch-003.jsonl",
+      "rows": 9,
+      "first_key": "entry-6409",
+      "last_key": "entry-6511"
+    },
+    {
+      "path": "data/neon-workbench/external/staging-gap-283-audit-2026-10-03/outputs/worker-07-batch-004.jsonl",
+      "rows": 9,
+      "first_key": "entry-6560",
+      "last_key": "entry-6672"
+    },
+    {
+      "path": "data/neon-workbench/external/staging-gap-283-audit-2026-10-03/outputs/worker-07-batch-005.jsonl",
+      "rows": 9,
+      "first_key": "entry-6693",
+      "last_key": "entry-6798"
+    },
+    {
+      "path": "data/neon-workbench/external/staging-gap-283-audit-2026-10-03/outputs/worker-07-batch-006.jsonl",
+      "rows": 9,
+      "first_key": "entry-6803",
+      "last_key": "entry-6925"
+    },
+    {
+      "path": "data/neon-workbench/external/staging-gap-283-audit-2026-10-03/outputs/worker-07-batch-007.jsonl",
+      "rows": 9,
+      "first_key": "entry-6930",
+      "last_key": "entry-7089"
+    },
+    {
+      "path": "data/neon-workbench/external/staging-gap-283-audit-2026-10-03/outputs/worker-07-batch-008.jsonl",
+      "rows": 8,
+      "first_key": "entry-7110",
+      "last_key": "entry-7186"
+    }
+  ],
+  "qa": {
+    "input_sha256_matches_requested": true,
+    "exact_71_key_set_matches": true,
+    "all_snapshot_markers_null": true,
+    "all_71_have_published_result_rows": true,
+    "every_row_has_source_path_and_line": true,
+    "every_batch_has_5_to_10_rows": true,
+    "latest_outcome_per_assigned_key": true,
+    "no_unassigned_keys": true,
+    "no_database_or_canonical_or_source_packet_changes": true
+  }
+}

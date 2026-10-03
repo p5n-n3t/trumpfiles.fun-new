@@ -1,0 +1,83 @@
+{
+  "worker": 7,
+  "input_commit": "19831e87e22fd5890fe0a764be51c617580d4a99",
+  "input_sha256": "b6d92fad4aecbb44502faaf55d2e23e38e4de77f767a1587f080b2621c933687",
+  "assigned_entry_numbers": [
+    4235,
+    4410,
+    4504,
+    4893,
+    5166,
+    5331,
+    5555,
+    5733,
+    5753,
+    5810,
+    5836,
+    5861,
+    5895,
+    6410,
+    6438,
+    6474,
+    6509,
+    6550,
+    6616,
+    6634,
+    6654,
+    6689,
+    6735,
+    6754,
+    6773,
+    6812,
+    6836,
+    6886,
+    6932,
+    6956
+  ],
+  "latest_terminal_outcomes": 30,
+  "historical_batch_rows": 31,
+  "superseded_rows": [
+    {
+      "entry_number": 5861,
+      "revision": 1,
+      "superseded_by_revision": 2
+    }
+  ],
+  "status_counts": {
+    "exclusion_candidate": 1,
+    "needs_correction": 29
+  },
+  "batches": [
+    {
+      "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-001-20261003-a.jsonl",
+      "sha256": "f6ce034af8514febf60a83798c5a1089765b6182eada860919b0360d5dbd874b",
+      "rows": 5
+    },
+    {
+      "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-002-20261003-a.jsonl",
+      "sha256": "e1fbd29b54b977f99b03c942ebc1bf03c69a67faf9b4eaddad4e5fc4213f8504",
+      "rows": 5
+    },
+    {
+      "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-003-20261003-a.jsonl",
+      "sha256": "933c9c035fe064bea85ce6b56bcc9d87c4c5f134d35c66db77898a34ec087ce5",
+      "rows": 5
+    },
+    {
+      "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-004-20261003-a.jsonl",
+      "sha256": "dd133d2a043df71c656ebfe778d4358290d9e9246a4bc0726058b8a012c6c6e9",
+      "rows": 5
+    },
+    {
+      "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-005-20261003-a.jsonl",
+      "sha256": "5c3ed2eab68d892b1ee81e368072eba895142d8871aa086702b1203819805891",
+      "rows": 5
+    },
+    {
+      "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-006-20261003-a.jsonl",
+      "sha256": "6e113ab05023258d9b288fef7edac126938fdf3f9a214d78df5a6e844b6577d8",
+      "rows": 6
+    }
+  ],
+  "validation": "passed: pinned input hash, six 5-10 row batches, required fields/source URLs, exact assigned-ID coverage, latest-outcome deduplication, and checkpoint hashes"
+}

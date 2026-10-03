@@ -1,0 +1,17 @@
+{
+  "worker": 7,
+  "phase": "dual-account-wave3",
+  "batch": 1,
+  "output_file": "worker-07-batch-wave3-20261003-01.jsonl",
+  "record_ids": [
+    "entry-1716",
+    "entry-209",
+    "entry-2375",
+    "entry-2554",
+    "entry-290",
+    "entry-367",
+    "entry-4009"
+  ],
+  "count": 7,
+  "checked_against_packet": true
+}

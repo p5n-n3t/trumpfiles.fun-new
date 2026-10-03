@@ -1,0 +1,15 @@
+{
+  "worker": 7,
+  "batch_file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-07-batch-005-20261003-a.jsonl",
+  "batch_sha256": "5c3ed2eab68d892b1ee81e368072eba895142d8871aa086702b1203819805891",
+  "input_sha256": "b6d92fad4aecbb44502faaf55d2e23e38e4de77f767a1587f080b2621c933687",
+  "entry_numbers": [
+    6654,
+    6689,
+    6735,
+    6754,
+    6773
+  ],
+  "terminal_count": 5,
+  "validation": "schema-and-exact-id-check-passed"
+}
