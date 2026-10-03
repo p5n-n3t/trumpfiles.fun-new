@@ -1,0 +1,133 @@
+{
+  "artifact_type": "worker-03-final-checkpoint-and-exact-set-qa",
+  "worker": 3,
+  "created_at_utc": "2026-10-03T11:36:01.806720+00:00",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "input_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-03-input.jsonl",
+  "input_sha256": "a8b37f6ce430c73606565455cfe32100d5d5e304060ec0a6f208ec4455786cb0",
+  "expected_keys": [
+    "entry-4306",
+    "entry-5091",
+    "entry-5717",
+    "entry-5823",
+    "entry-6408",
+    "entry-6495",
+    "entry-6632",
+    "entry-6731",
+    "entry-6809",
+    "entry-6916"
+  ],
+  "observed_keys": [
+    "entry-4306",
+    "entry-5091",
+    "entry-5717",
+    "entry-5823",
+    "entry-6408",
+    "entry-6495",
+    "entry-6632",
+    "entry-6731",
+    "entry-6809",
+    "entry-6916"
+  ],
+  "exact_set_match": true,
+  "row_count": 10,
+  "unique_key_count": 10,
+  "source_triage_status_preserved": "needs_correction",
+  "per_key_checks": [
+    {
+      "key": "entry-4306",
+      "status": "corrected",
+      "source_triage_status": "needs_correction",
+      "short_chars": 124,
+      "medium_words": 70,
+      "long_words": 169,
+      "url_mapping_complete": true
+    },
+    {
+      "key": "entry-5091",
+      "status": "corrected",
+      "source_triage_status": "needs_correction",
+      "short_chars": 91,
+      "medium_words": 58,
+      "long_words": 178,
+      "url_mapping_complete": true
+    },
+    {
+      "key": "entry-5717",
+      "status": "corrected",
+      "source_triage_status": "needs_correction",
+      "short_chars": 100,
+      "medium_words": 55,
+      "long_words": 176,
+      "url_mapping_complete": true
+    },
+    {
+      "key": "entry-5823",
+      "status": "corrected",
+      "source_triage_status": "needs_correction",
+      "short_chars": 102,
+      "medium_words": 63,
+      "long_words": 167,
+      "url_mapping_complete": true
+    },
+    {
+      "key": "entry-6408",
+      "status": "corrected",
+      "source_triage_status": "needs_correction",
+      "short_chars": 128,
+      "medium_words": 50,
+      "long_words": 166,
+      "url_mapping_complete": true
+    },
+    {
+      "key": "entry-6495",
+      "status": "corrected",
+      "source_triage_status": "needs_correction",
+      "short_chars": 106,
+      "medium_words": 47,
+      "long_words": 164,
+      "url_mapping_complete": true
+    },
+    {
+      "key": "entry-6632",
+      "status": "corrected",
+      "source_triage_status": "needs_correction",
+      "short_chars": 127,
+      "medium_words": 61,
+      "long_words": 164,
+      "url_mapping_complete": true
+    },
+    {
+      "key": "entry-6731",
+      "status": "corrected",
+      "source_triage_status": "needs_correction",
+      "short_chars": 128,
+      "medium_words": 54,
+      "long_words": 163,
+      "url_mapping_complete": true
+    },
+    {
+      "key": "entry-6809",
+      "status": "corrected",
+      "source_triage_status": "needs_correction",
+      "short_chars": 125,
+      "medium_words": 61,
+      "long_words": 170,
+      "url_mapping_complete": true
+    },
+    {
+      "key": "entry-6916",
+      "status": "corrected",
+      "source_triage_status": "needs_correction",
+      "short_chars": 145,
+      "medium_words": 60,
+      "long_words": 176,
+      "url_mapping_complete": true
+    }
+  ],
+  "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-03-batch-2026-10-03-source118-review-03.jsonl",
+  "output_sha256": "51dc7fd9f3924cec1ac669cab3499608c6f6b2277c440795b502c5d4af035373",
+  "output_head_commit": "b1d3ed267c7ee28e8b13021619049d97a90c6e06",
+  "pushed_head_matches_origin": true,
+  "overall": "passed"
+}
