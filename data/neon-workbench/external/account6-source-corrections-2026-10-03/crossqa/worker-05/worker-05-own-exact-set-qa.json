@@ -1,0 +1,145 @@
+{
+  "qa_type": "worker_05_own_final_exact_set_qa",
+  "reviewer": "Codex self-check before independent worker-06 cross-QA",
+  "date": "2026-10-03",
+  "result": "PASS",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_input": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-05-input.jsonl",
+  "packet_sha256": "5de22c1733756cb2c507d406e95ca29037d9f48597b768ddc672231a61120b6b",
+  "expected_keys": [
+    "entry-4386",
+    "entry-5154",
+    "entry-5730",
+    "entry-5842",
+    "entry-6422",
+    "entry-6513",
+    "entry-6641",
+    "entry-6742",
+    "entry-6816",
+    "entry-6938"
+  ],
+  "observed_keys": [
+    "entry-4386",
+    "entry-5154",
+    "entry-5730",
+    "entry-5842",
+    "entry-6422",
+    "entry-6513",
+    "entry-6641",
+    "entry-6742",
+    "entry-6816",
+    "entry-6938"
+  ],
+  "row_count": 10,
+  "checks": {
+    "exact_key_order_and_set": "pass",
+    "unique_terminal_rows": "pass",
+    "source_triage_status_remains_needs_correction": "pass",
+    "short_medium_long_limits": "pass",
+    "each_retained_url_has_nonempty_fact_mapping": "pass"
+  },
+  "per_key": [
+    {
+      "key": "entry-4386",
+      "triage_status_preserved": true,
+      "short_characters": 98,
+      "medium_words": 86,
+      "long_words": 187,
+      "source_urls": 2,
+      "url_fact_mapping": "pass",
+      "result": "pass"
+    },
+    {
+      "key": "entry-5154",
+      "triage_status_preserved": true,
+      "short_characters": 112,
+      "medium_words": 82,
+      "long_words": 187,
+      "source_urls": 4,
+      "url_fact_mapping": "pass",
+      "result": "pass"
+    },
+    {
+      "key": "entry-5730",
+      "triage_status_preserved": true,
+      "short_characters": 103,
+      "medium_words": 69,
+      "long_words": 172,
+      "source_urls": 1,
+      "url_fact_mapping": "pass",
+      "result": "pass"
+    },
+    {
+      "key": "entry-5842",
+      "triage_status_preserved": true,
+      "short_characters": 120,
+      "medium_words": 68,
+      "long_words": 165,
+      "source_urls": 3,
+      "url_fact_mapping": "pass",
+      "result": "pass"
+    },
+    {
+      "key": "entry-6422",
+      "triage_status_preserved": true,
+      "short_characters": 123,
+      "medium_words": 69,
+      "long_words": 178,
+      "source_urls": 2,
+      "url_fact_mapping": "pass",
+      "result": "pass"
+    },
+    {
+      "key": "entry-6513",
+      "triage_status_preserved": true,
+      "short_characters": 100,
+      "medium_words": 59,
+      "long_words": 156,
+      "source_urls": 1,
+      "url_fact_mapping": "pass",
+      "result": "pass"
+    },
+    {
+      "key": "entry-6641",
+      "triage_status_preserved": true,
+      "short_characters": 117,
+      "medium_words": 54,
+      "long_words": 174,
+      "source_urls": 1,
+      "url_fact_mapping": "pass",
+      "result": "pass"
+    },
+    {
+      "key": "entry-6742",
+      "triage_status_preserved": true,
+      "short_characters": 123,
+      "medium_words": 70,
+      "long_words": 179,
+      "source_urls": 1,
+      "url_fact_mapping": "pass",
+      "result": "pass"
+    },
+    {
+      "key": "entry-6816",
+      "triage_status_preserved": true,
+      "short_characters": 97,
+      "medium_words": 62,
+      "long_words": 168,
+      "source_urls": 2,
+      "url_fact_mapping": "pass",
+      "result": "pass"
+    },
+    {
+      "key": "entry-6938",
+      "triage_status_preserved": true,
+      "short_characters": 130,
+      "medium_words": 62,
+      "long_words": 185,
+      "source_urls": 2,
+      "url_fact_mapping": "pass",
+      "result": "pass"
+    }
+  ],
+  "output_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-05-batch-20261003-01.jsonl",
+  "output_sha256": "4fc4d35e74dd5756e0a102ef539f195cb4dadb2ea79fe6fd330119e683f0a445"
+}

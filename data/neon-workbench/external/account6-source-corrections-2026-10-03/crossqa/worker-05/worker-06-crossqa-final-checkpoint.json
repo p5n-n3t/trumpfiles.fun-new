@@ -1,0 +1,52 @@
+{
+  "checkpoint_type": "worker_06_independent_crossqa_final_checkpoint",
+  "date": "2026-10-03",
+  "reviewer_branch": "ls/5-trump-files-source118-review-05-of-12-ry0H",
+  "worker05_prior_checkpoint_commit": "ce291677",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_input": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-06-input.jsonl",
+  "packet_input_sha256": "41307a706afd639ebf17a21597105890bbeb28da32f325fd8e0189ab989ebc13",
+  "target_branch": "ls/6-trump-files-source118-review-06-of-12-vQap",
+  "target_commit": "7207f654f3643be8ae231abeb79577904471465a",
+  "target_output": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-06-batch-001.jsonl",
+  "target_output_sha256": "f38655302093221ed38435714e76bba9a0977117cad438b4acc9c0c794757050",
+  "expected_keys": [
+    "entry-4399",
+    "entry-5212",
+    "entry-5740",
+    "entry-5849",
+    "entry-6429",
+    "entry-6518",
+    "entry-6644",
+    "entry-6746",
+    "entry-6820",
+    "entry-6945"
+  ],
+  "observed_keys": [
+    "entry-4399",
+    "entry-5212",
+    "entry-5740",
+    "entry-5849",
+    "entry-6429",
+    "entry-6518",
+    "entry-6644",
+    "entry-6746",
+    "entry-6820",
+    "entry-6945"
+  ],
+  "exact_set_result": "PASS",
+  "target_output_rows": 10,
+  "description_limits_result": "PASS_ALL_10",
+  "url_fact_checks": 19,
+  "crossqa_ledger": "worker-06-crossqa-ledger.jsonl",
+  "crossqa_ledger_rows": 10,
+  "crossqa_ledger_sha256": "8e66fa9e884d81eb7f564af912dfe92553f8b1ea4c1a70c16fe1ef919cae3296",
+  "overall_result": "PARTIAL_REVIEW_WITH_ACTIONABLE_FINDINGS",
+  "actionable_findings": [
+    "entry-4399: Oklahoma 15% selection-decline figure is not supported by the cited KFF article; title should distinguish plan selections from broader enrollment.",
+    "entry-6746: later April demands/freeze are not sourced by the sole March 31 Reuters link.",
+    "Multiple preserved non-text fields (categories/tags) are listed in staged input but omitted from output rows; downstream merge must retain them."
+  ],
+  "scope": "Independent review only; worker-06 output, canonical data and Neon were not modified. No PR created.",
+  "target_output_source_mapping_format": "flat source_urls array only; explicit per-URL fact mapping is recorded in the independent cross-QA ledger"
+}
