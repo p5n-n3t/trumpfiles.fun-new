@@ -1,0 +1,21 @@
+{
+  "artifact": "worker-06 final checkpoint",
+  "worker": 6,
+  "status": "complete",
+  "branch": "ls/6-trump-files-source118-review-06-of-12-vQap",
+  "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-06-batch-001.jsonl",
+  "output_sha256": "f38655302093221ed38435714e76bba9a0977117cad438b4acc9c0c794757050",
+  "exact_set_qa_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-06/self-exact-set-qa.json",
+  "exact_set_qa_status": "passed",
+  "row_count": 10,
+  "checkpoint_commits": [
+    "c52530d7",
+    "7207f654"
+  ],
+  "existing_unrelated_untracked_files_left_untouched": [
+    "bun.lock",
+    "workers/trumpstein/bun.lock"
+  ],
+  "ui_or_flow_verification": "not_applicable_data_only",
+  "checked_at": "2026-10-03"
+}

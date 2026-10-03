@@ -1,0 +1,82 @@
+{
+  "artifact": "worker-07 independent cross-QA final checkpoint",
+  "reviewer_worker": 6,
+  "target_worker": 7,
+  "review_status": "complete_with_findings",
+  "reviewed_at": "2026-10-03",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_prompt_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/PROMPT.md",
+  "packet_input_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-07-input.jsonl",
+  "packet_input_sha256": "3812ce121181267108020d2ac61ea4aa2ff0c344e42b1d18f27f520b0d34b4c3",
+  "target_branch": "ls/7-trump-files-source118-review-07-of-12-Asbx",
+  "target_commit": "315b0a36b9e6c6bb1812ad751c938cc1c1821b69",
+  "target_output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-07-batch-001-20261003.jsonl",
+  "target_output_sha256": "55329fe1f065cf67eaa62ef46173a7f479e0adc7a345d04e66950660e8391ffb",
+  "expected_keys": [
+    "entry-4413",
+    "entry-5222",
+    "entry-5742",
+    "entry-5853",
+    "entry-6435",
+    "entry-6520",
+    "entry-6653",
+    "entry-6753",
+    "entry-6831",
+    "entry-6953"
+  ],
+  "observed_keys": [
+    "entry-4413",
+    "entry-5222",
+    "entry-5742",
+    "entry-5853",
+    "entry-6435",
+    "entry-6520",
+    "entry-6653",
+    "entry-6753",
+    "entry-6831",
+    "entry-6953"
+  ],
+  "exact_set_pass": true,
+  "unique_rows_pass": true,
+  "triage_status_preserved": true,
+  "description_limits_pass": true,
+  "per_key_status_counts": {
+    "pass": 6,
+    "pass_with_note": 2,
+    "needs_revision": 2
+  },
+  "actionable_findings": [
+    {
+      "key": "entry-5742",
+      "issue": "Reason for removal is unclear is generalized from Jeffrey Kruse to all three removed commanders.",
+      "recommendation": "Limit the sentence to Kruse’s reason."
+    },
+    {
+      "key": "entry-6753",
+      "issue": "EO 14151 is incorrectly cited as requiring paid administrative leave; official XML contains no such directive.",
+      "recommendation": "Separate the EO termination directive from the Education Department’s Jan. 23 paid-leave action."
+    }
+  ],
+  "notes": [
+    {
+      "key": "entry-6435",
+      "note": "The White House release mentions California sports-organization investigations described in the long text, but that fact is omitted from the output URL mapping."
+    },
+    {
+      "key": "entry-6653",
+      "note": "The staged correction’s distinct JCT tax-revenue figure ($3.8T) was omitted; current correction is accurate but loses a useful measure distinction."
+    }
+  ],
+  "live_source_access_limitations": "Several Reuters/AP/CBO/PolitiFact/Investing.com pages returned HTTP 401/403 in this independent fetch. The immutable packet’s exact source notes were consulted; QNA and White House materials were directly checked, and Federal Register EO 14151 XML was retrieved from its official API.",
+  "target_output_modified": false,
+  "canonical_or_neon_modified": false,
+  "ledger_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-06/worker-07-crossqa.jsonl",
+  "ledger_sha256": "c5d2601c03d129d11c8d370762cf5801372066e42a78eeae00603733e60a720e",
+  "self_qa_artifacts_already_committed": [
+    "crossqa/worker-06/self-exact-set-qa.json",
+    "crossqa/worker-06/self-final-checkpoint.json"
+  ],
+  "every_output_url_has_nonempty_fact_mapping": true,
+  "all_output_claims_supported_by_their_mapped_facts": false,
+  "mapping_and_claim_review": "Each output URL has a nonempty exact-URL mapping; cross-QA still found one missing fact mapping in entry-6435 and an incorrectly supported EO 14151 leave claim in entry-6753. See per-key ledger."
+}

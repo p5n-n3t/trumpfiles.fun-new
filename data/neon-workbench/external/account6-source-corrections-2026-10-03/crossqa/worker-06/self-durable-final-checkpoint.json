@@ -1,0 +1,76 @@
+{
+  "artifact": "worker-06 durable final exact-ID QA checkpoint",
+  "worker": 6,
+  "status": "complete_with_scope_note",
+  "branch": "ls/6-trump-files-source118-review-06-of-12-vQap",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_input_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-06-input.jsonl",
+  "packet_input_sha256": "41307a706afd639ebf17a21597105890bbeb28da32f325fd8e0189ab989ebc13",
+  "expected_keys": [
+    "entry-4399",
+    "entry-5212",
+    "entry-5740",
+    "entry-5849",
+    "entry-6429",
+    "entry-6518",
+    "entry-6644",
+    "entry-6746",
+    "entry-6820",
+    "entry-6945"
+  ],
+  "observed_keys": [
+    "entry-4399",
+    "entry-5212",
+    "entry-5740",
+    "entry-5849",
+    "entry-6429",
+    "entry-6518",
+    "entry-6644",
+    "entry-6746",
+    "entry-6820",
+    "entry-6945"
+  ],
+  "expected_count": 10,
+  "observed_count": 10,
+  "duplicate_keys": [],
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "source_triage_needs_correction_preserved": true,
+  "description_limits_pass": true,
+  "exact_url_mapping_complete": true,
+  "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-06-batch-001.jsonl",
+  "output_sha256": "f38655302093221ed38435714e76bba9a0977117cad438b4acc9c0c794757050",
+  "per_key_ledger_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-06/self-final-exact-id-qa.jsonl",
+  "per_key_ledger_sha256": "3dd3b30eac1f17b35f762fec55ac7d4b70248162508f37f6d0eecae93275007b",
+  "scope_findings": [
+    {
+      "key": "entry-5849",
+      "finding": "Original synopsis includes the Nordstrom brand drop and Trump official-account response. The terminal correction discusses the 166% import estimate and omits that separate episode without explicit disposition. The cited AP/CBS URLs do not establish the Nordstrom episode; see exact URLs in the per-key ledger."
+    }
+  ],
+  "unsupported_claims": "Each row records original claims not supported by its exact cited URL set and how the correction handles them. Original unsupported claims are not marked verified.",
+  "worker07_crossqa_checkpoint": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-06/worker-07-final-checkpoint.json",
+  "worker07_crossqa_ledger": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-06/worker-07-crossqa.jsonl",
+  "worker07_review_status": "complete_with_findings",
+  "worker07_actionable_findings": [
+    "entry-5742: Reuters source only says Kruse’s reason was unclear; output generalizes to all three commanders.",
+    "entry-6753: EO 14151 official text contains no paid-leave directive; distinguish the Education Department Jan. 23 action."
+  ],
+  "worker07_mapping_notes": [
+    "entry-6435: White House release URL mapping omits the California sports-organization investigations mentioned in long description.",
+    "entry-6653: final correction omits the staged, distinct $3.8T JCT tax-revenue estimate; current $2.4T deficit statement is accurate."
+  ],
+  "remote_target_verified": {
+    "worker07_branch": "ls/7-trump-files-source118-review-07-of-12-Asbx",
+    "reviewed_target_commit": "315b0a36b9e6c6bb1812ad751c938cc1c1821b69",
+    "current_remote_branch_tip": "b13a0d422183a526959cb04644a847c2be0e8156",
+    "reviewed_commit_is_ancestor_of_current_tip": true,
+    "worker07_output_sha256_at_reviewed_commit_and_current_tip": "55329fe1f065cf67eaa62ef46173a7f479e0adc7a345d04e66950660e8391ffb"
+  },
+  "prior_self_summary_qa_retained": true,
+  "prior_self_checkpoint_retained": true,
+  "target_output_modified": false,
+  "canonical_or_neon_modified": false,
+  "ui_or_flow_verification": "not_applicable_data_only",
+  "checked_at": "2026-10-03"
+}

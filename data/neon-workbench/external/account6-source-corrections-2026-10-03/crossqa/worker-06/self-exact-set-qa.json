@@ -1,0 +1,49 @@
+{
+  "artifact": "worker-06 exact-set QA",
+  "worker": 6,
+  "status": "passed",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_input_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-06-input.jsonl",
+  "packet_input_sha256": "41307a706afd639ebf17a21597105890bbeb28da32f325fd8e0189ab989ebc13",
+  "expected_keys": [
+    "entry-4399",
+    "entry-5212",
+    "entry-5740",
+    "entry-5849",
+    "entry-6429",
+    "entry-6518",
+    "entry-6644",
+    "entry-6746",
+    "entry-6820",
+    "entry-6945"
+  ],
+  "observed_keys": [
+    "entry-4399",
+    "entry-5212",
+    "entry-5740",
+    "entry-5849",
+    "entry-6429",
+    "entry-6518",
+    "entry-6644",
+    "entry-6746",
+    "entry-6820",
+    "entry-6945"
+  ],
+  "expected_count": 10,
+  "observed_count": 10,
+  "duplicate_keys": [],
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-06-batch-001.jsonl",
+  "output_sha256": "f38655302093221ed38435714e76bba9a0977117cad438b4acc9c0c794757050",
+  "checks": {
+    "exact_ordered_set": true,
+    "unique_terminal_rows": true,
+    "source_triage_remains_needs_correction": true,
+    "short_at_most_180_characters": true,
+    "medium_45_to_90_words": true,
+    "long_140_to_300_words": true,
+    "every_source_url_has_nonempty_fact_mapping": true
+  },
+  "checked_at": "2026-10-03"
+}
