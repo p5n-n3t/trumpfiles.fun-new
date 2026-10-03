@@ -1,0 +1,138 @@
+{
+  "packet_commit": "d1c9c5990d6b15257fbb406671cd73994b45420e",
+  "input_file": "worker-04-input.jsonl",
+  "input_sha256": "f055a9e1065d9dd1ed834b34095a71197fa3175723bd06f1d21ee0f527b9db44",
+  "worker": 4,
+  "assigned_entry_numbers": [
+    4410,
+    5062,
+    5339,
+    5757,
+    5848,
+    6410,
+    6480,
+    6575,
+    6654,
+    6737,
+    6792,
+    6886,
+    6957
+  ],
+  "observed_entry_numbers": [
+    4410,
+    5062,
+    5339,
+    5757,
+    5848,
+    6410,
+    6480,
+    6575,
+    6654,
+    6737,
+    6792,
+    6886,
+    6957
+  ],
+  "outcome_count": 13,
+  "batch_files": [
+    "worker-04-batch-001.jsonl",
+    "worker-04-batch-002.jsonl"
+  ],
+  "status_counts": {
+    "corrected_claim_proposal": 13,
+    "unresolved_hold": 0
+  },
+  "checks": {
+    "jsonl_parse": true,
+    "exact_id_set": true,
+    "one_terminal_outcome_per_id": true,
+    "mapped_source_urls_match_proposed_citations": true,
+    "source_support_and_access_notes_present": true,
+    "uncertainties_recorded": true,
+    "title_and_short_at_most_180_characters": true,
+    "medium_45_to_90_words": true,
+    "long_140_to_300_words": true,
+    "input_hash_matches_manifest_and_request": true
+  },
+  "copy_dimensions": {
+    "4410": {
+      "title_chars": 86,
+      "short_chars": 86,
+      "medium_words": 61,
+      "long_words": 182
+    },
+    "5062": {
+      "title_chars": 88,
+      "short_chars": 88,
+      "medium_words": 63,
+      "long_words": 208
+    },
+    "5339": {
+      "title_chars": 72,
+      "short_chars": 72,
+      "medium_words": 54,
+      "long_words": 184
+    },
+    "5757": {
+      "title_chars": 48,
+      "short_chars": 48,
+      "medium_words": 63,
+      "long_words": 179
+    },
+    "5848": {
+      "title_chars": 99,
+      "short_chars": 99,
+      "medium_words": 73,
+      "long_words": 146
+    },
+    "6410": {
+      "title_chars": 71,
+      "short_chars": 71,
+      "medium_words": 53,
+      "long_words": 141
+    },
+    "6480": {
+      "title_chars": 73,
+      "short_chars": 73,
+      "medium_words": 55,
+      "long_words": 156
+    },
+    "6575": {
+      "title_chars": 74,
+      "short_chars": 74,
+      "medium_words": 54,
+      "long_words": 157
+    },
+    "6654": {
+      "title_chars": 86,
+      "short_chars": 86,
+      "medium_words": 63,
+      "long_words": 160
+    },
+    "6737": {
+      "title_chars": 111,
+      "short_chars": 111,
+      "medium_words": 48,
+      "long_words": 228
+    },
+    "6792": {
+      "title_chars": 80,
+      "short_chars": 80,
+      "medium_words": 66,
+      "long_words": 153
+    },
+    "6886": {
+      "title_chars": 86,
+      "short_chars": 86,
+      "medium_words": 78,
+      "long_words": 167
+    },
+    "6957": {
+      "title_chars": 69,
+      "short_chars": 69,
+      "medium_words": 57,
+      "long_words": 169
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,45 @@
+{
+  "worker": 4,
+  "source_commit": "95eb7977f6d66eb110b38dfba25023743453fd2a",
+  "batches": [
+    {
+      "file": "worker-04-batch-001-20261003-evidence.jsonl",
+      "completed_record_ids": [
+        "entry-1670",
+        "entry-203",
+        "entry-236",
+        "entry-2528",
+        "entry-2854",
+        "entry-3574"
+      ]
+    },
+    {
+      "file": "worker-04-batch-002-20261003-evidence.jsonl",
+      "completed_record_ids": [
+        "entry-3985",
+        "entry-4353",
+        "entry-5462",
+        "entry-5996",
+        "entry-6293",
+        "entry-720",
+        "entry-853"
+      ]
+    }
+  ],
+  "completed_record_ids": [
+    "entry-1670",
+    "entry-203",
+    "entry-236",
+    "entry-2528",
+    "entry-2854",
+    "entry-3574",
+    "entry-3985",
+    "entry-4353",
+    "entry-5462",
+    "entry-5996",
+    "entry-6293",
+    "entry-720",
+    "entry-853"
+  ],
+  "remaining_record_ids": []
+}

@@ -1,0 +1,84 @@
+{
+  "worker": 4,
+  "assigned_entry_numbers": [
+    6462,
+    6503,
+    6528,
+    6604,
+    6630
+  ],
+  "observed_entry_numbers": [
+    6462,
+    6503,
+    6528,
+    6604,
+    6630
+  ],
+  "outcome_count": 5,
+  "batch_files": [
+    "worker-04-batch-001.jsonl"
+  ],
+  "input_source": {
+    "branch": "codex/source-rescue-unassigned-2026-10-03",
+    "commit": "19831e87e22fd5890fe0a764be51c617580d4a99",
+    "path": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/worker-05-input.jsonl",
+    "sha256": "7d62a5538346e70e12f535cc8a55eddbb620aba8fbf2c66607306e0c5172c1ce"
+  },
+  "effective_source_outputs": {
+    "branch": "ls/5-trump-description-rescue-05-of-12-53-dis-8OoQ",
+    "commit": "ef2007fd51a47a237f10e35213faaa50eb7c7df5",
+    "files": [
+      "worker-05-batch-002.jsonl"
+    ]
+  },
+  "status_counts": {
+    "corrected_claim_proposal": 5,
+    "unresolved_hold": 0
+  },
+  "checks": {
+    "jsonl_parse": true,
+    "exact_five_id_set": true,
+    "one_terminal_row_per_id": true,
+    "frozen_original_preserved": true,
+    "source_provenance_preserved": true,
+    "source_urls_map_to_specific_facts": true,
+    "original_claims_not_marked_supported": true,
+    "title_and_short_at_most_180_chars": true,
+    "medium_45_to_90_words": true,
+    "long_140_to_300_words": true,
+    "input_sha_recorded": true
+  },
+  "copy_dimensions": {
+    "6462": {
+      "title_chars": 80,
+      "short_chars": 80,
+      "medium_words": 55,
+      "long_words": 147
+    },
+    "6503": {
+      "title_chars": 90,
+      "short_chars": 90,
+      "medium_words": 63,
+      "long_words": 150
+    },
+    "6528": {
+      "title_chars": 76,
+      "short_chars": 76,
+      "medium_words": 54,
+      "long_words": 149
+    },
+    "6604": {
+      "title_chars": 69,
+      "short_chars": 69,
+      "medium_words": 57,
+      "long_words": 143
+    },
+    "6630": {
+      "title_chars": 87,
+      "short_chars": 87,
+      "medium_words": 56,
+      "long_words": 151
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,28 @@
+{
+  "worker_id": 4,
+  "phase": "second-writing-wave",
+  "assignment_count": 9,
+  "input_branch": "codex/rescue-second-writing-wave-2026-10-02",
+  "input_commit": "6d8c7badd5b1e482574949eab1af6260a1b732b2",
+  "assignment_path": "external/description-completion/2026-09-30/rescue-2026-10-02/second-writing-wave/worker-04-input.jsonl",
+  "completed_count": 1,
+  "needs_context_count": 8,
+  "remaining_count": 0,
+  "completed_ids": [
+    "entry-1904"
+  ],
+  "needs_context_ids": [
+    "entry-1200",
+    "entry-176",
+    "entry-264",
+    "entry-2930",
+    "entry-4017",
+    "entry-4320",
+    "entry-5505",
+    "entry-7010"
+  ],
+  "remaining_ids": [],
+  "output_files": [
+    "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/second-writing-wave/outputs/worker-04-batch-001.jsonl"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "worker": "04",
+  "phase": "impact-v2-score-followup",
+  "batch": 3,
+  "count": 15,
+  "record_ids": [
+    "entry-2881",
+    "entry-3184",
+    "entry-342",
+    "entry-365",
+    "entry-3870",
+    "entry-4084",
+    "entry-4166",
+    "entry-4300",
+    "entry-4687",
+    "entry-5402",
+    "entry-5518",
+    "entry-5593",
+    "entry-5984",
+    "entry-6139",
+    "entry-6202"
+  ],
+  "output_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/score-outputs/worker-04-batch-003.jsonl",
+  "sha256": "0a14dfb48ce72f0684bb06159a940d8a84a8e5f72b336ddc5506df9843d0989a",
+  "scored": 5,
+  "deferred": 10
+}

@@ -1,0 +1,159 @@
+{
+  "packet_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+  "input_file": "worker-20-input.jsonl",
+  "input_sha256": "fd9aa6254acd685601e87893b7e214a57808b27796e549983e406b14dee98036",
+  "worker": "account1-worker-04",
+  "assigned_entry_numbers": [
+    210,
+    267,
+    581,
+    769,
+    830,
+    954,
+    1727,
+    2106,
+    2441,
+    2562,
+    3009,
+    3722,
+    4040,
+    4619,
+    5505,
+    6127,
+    6241
+  ],
+  "observed_entry_numbers": [
+    210,
+    267,
+    581,
+    769,
+    830,
+    954,
+    1727,
+    2106,
+    2441,
+    2562,
+    3009,
+    3722,
+    4040,
+    4619,
+    5505,
+    6127,
+    6241
+  ],
+  "outcome_count": 17,
+  "batch_files": [
+    "account1-worker-04-batch-001.jsonl",
+    "account1-worker-04-batch-002.jsonl"
+  ],
+  "status_counts": {
+    "citation_repaired_proposal": 3,
+    "corrected_claim_proposal": 12,
+    "scope_exclusion_proposal": 2,
+    "unresolved_hold": 0
+  },
+  "checks": {
+    "jsonl_parse": true,
+    "exact_id_set": true,
+    "one_outcome_per_id": true,
+    "source_urls_mapped": true,
+    "source_support_and_access_notes_present": true,
+    "title_and_short_at_most_180_characters": true,
+    "medium_45_to_90_words": true,
+    "long_140_to_300_words": true,
+    "prior_input_hash_matches": true
+  },
+  "copy_dimensions": {
+    "210": {
+      "title_characters": 91,
+      "short_characters": 131,
+      "medium_words": 67,
+      "long_words": 160
+    },
+    "267": {
+      "title_characters": 81,
+      "short_characters": 163,
+      "medium_words": 59,
+      "long_words": 160
+    },
+    "581": {
+      "title_characters": 53,
+      "short_characters": 53,
+      "medium_words": 50,
+      "long_words": 174
+    },
+    "769": {
+      "title_characters": 65,
+      "short_characters": 150,
+      "medium_words": 57,
+      "long_words": 174
+    },
+    "830": {
+      "title_characters": 60,
+      "short_characters": 60,
+      "medium_words": 47,
+      "long_words": 160
+    },
+    "954": {
+      "title_characters": 64,
+      "short_characters": 144,
+      "medium_words": 58,
+      "long_words": 179
+    },
+    "1727": {
+      "title_characters": 74,
+      "short_characters": 142,
+      "medium_words": 57,
+      "long_words": 176
+    },
+    "2106": {
+      "title_characters": 50,
+      "short_characters": 161,
+      "medium_words": 60,
+      "long_words": 181
+    },
+    "2441": {
+      "title_characters": 65,
+      "short_characters": 152,
+      "medium_words": 53,
+      "long_words": 175
+    },
+    "3009": {
+      "title_characters": 68,
+      "short_characters": 98,
+      "medium_words": 54,
+      "long_words": 163
+    },
+    "3722": {
+      "title_characters": 74,
+      "short_characters": 155,
+      "medium_words": 59,
+      "long_words": 172
+    },
+    "4619": {
+      "title_characters": 77,
+      "short_characters": 117,
+      "medium_words": 50,
+      "long_words": 166
+    },
+    "5505": {
+      "title_characters": 63,
+      "short_characters": 130,
+      "medium_words": 57,
+      "long_words": 173
+    },
+    "6127": {
+      "title_characters": 84,
+      "short_characters": 143,
+      "medium_words": 52,
+      "long_words": 180
+    },
+    "6241": {
+      "title_characters": 69,
+      "short_characters": 132,
+      "medium_words": 50,
+      "long_words": 160
+    }
+  },
+  "errors": []
+}
