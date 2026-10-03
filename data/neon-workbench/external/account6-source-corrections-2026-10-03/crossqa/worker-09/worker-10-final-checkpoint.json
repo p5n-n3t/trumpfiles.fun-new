@@ -1,0 +1,79 @@
+{
+  "kind": "independent-source-correction-crossqa-exact-set",
+  "reviewer_worker": 9,
+  "review_date": "2026-10-03",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "target_worker": 10,
+  "target_branch": "ls/10-trump-files-source118-review-10-of-12-0nIr",
+  "target_commit": "bdde965ee7cb28f553c675d5ad0d15ae0665da8a",
+  "input_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-10-input.jsonl",
+  "input_sha256": "ec822054a07dfa1f1d8ee156fec271f60366920a3da02f7d90673e41a010e73c",
+  "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-10-batch-2026-10-03.jsonl",
+  "output_sha256": "026e63729759b1880818ac57fdbdedfe7ce7b52c39cb13a9fa2970a12a8116da",
+  "ledger_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-09/worker-10-crossqa-2026-10-03.jsonl",
+  "expected_keys": [
+    "entry-4546",
+    "entry-5328",
+    "entry-5758",
+    "entry-5879",
+    "entry-6458",
+    "entry-6576",
+    "entry-6671",
+    "entry-6767",
+    "entry-6868",
+    "entry-6966"
+  ],
+  "observed_keys": [
+    "entry-4546",
+    "entry-5328",
+    "entry-5758",
+    "entry-5879",
+    "entry-6458",
+    "entry-6576",
+    "entry-6671",
+    "entry-6767",
+    "entry-6868",
+    "entry-6966"
+  ],
+  "row_count": 10,
+  "unique_key_count": 10,
+  "all_input_rows_needs_correction": true,
+  "all_output_rows_preserve_needs_correction": true,
+  "all_rows_terminal": true,
+  "description_length_constraints": {
+    "short_max_characters": 180,
+    "medium_word_range": [
+      45,
+      90
+    ],
+    "long_word_range": [
+      140,
+      300
+    ]
+  },
+  "all_description_lengths_pass": true,
+  "all_source_urls_exactly_mapped": true,
+  "all_prior_staged_source_urls_retained": true,
+  "review_status_counts": {
+    "follow_up_required": 2,
+    "pass": 2,
+    "pass_time_bounded": 1,
+    "pass_with_access_limit": 5
+  },
+  "findings": [
+    {
+      "key": "entry-6458",
+      "severity": "medium",
+      "issue": "The future U.S. strike chronology is asserted in medium/long descriptions but has no supporting URL in source_urls/source_support.",
+      "recommended_resolution": "Add a dated authoritative source for the later U.S. strikes or remove that clause; revise unresolved_gaps to identify any missing independent verification precisely."
+    },
+    {
+      "key": "entry-6966",
+      "severity": "low",
+      "issue": "The unresolved_gaps field calls the supported August 10, 2026 date correction an unresolved gap.",
+      "recommended_resolution": "Move this to a pending downstream record-date update note if applicable, or clear it from evidence gaps."
+    }
+  ],
+  "scope": "Independent cross-QA only. No edits to worker 10 output, packet inputs, canonical data, Neon, impact scores, or another worker branch.",
+  "result": "review_complete_with_two_follow_up_findings"
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "source-correction-final-checkpoint",
+  "worker": 9,
+  "date": "2026-10-03",
+  "branch": "ls/9-trump-files-source118-review-09-of-12-278g",
+  "correction_commit": "d5fe7c52734d1ecbd347320516d95714f35388b2",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "input_sha256": "c7e6c257e05b03ffc0aa7522c002fed7843aa96b3dc931aa5d71dcb5aa413f41",
+  "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-09-batch-001-20261003.jsonl",
+  "qa_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-09-exact-set-qa.json",
+  "expected_keys": [
+    "entry-4496",
+    "entry-5289",
+    "entry-5750",
+    "entry-5868",
+    "entry-6454",
+    "entry-6562",
+    "entry-6669",
+    "entry-6764",
+    "entry-6850",
+    "entry-6965"
+  ],
+  "row_count": 10,
+  "exact_set_qa": "pass",
+  "scope": "Only the ten assigned worker-09 source-correction rows; no canonical, database, or impact-score edits.",
+  "result": "complete"
+}

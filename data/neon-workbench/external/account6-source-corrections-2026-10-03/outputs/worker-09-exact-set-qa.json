@@ -1,0 +1,180 @@
+{
+  "kind": "source-correction-exact-set-qa",
+  "worker": 9,
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "input_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-09-input.jsonl",
+  "input_sha256": "c7e6c257e05b03ffc0aa7522c002fed7843aa96b3dc931aa5d71dcb5aa413f41",
+  "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-09-batch-001-20261003.jsonl",
+  "expected_keys": [
+    "entry-4496",
+    "entry-5289",
+    "entry-5750",
+    "entry-5868",
+    "entry-6454",
+    "entry-6562",
+    "entry-6669",
+    "entry-6764",
+    "entry-6850",
+    "entry-6965"
+  ],
+  "observed_keys": [
+    "entry-4496",
+    "entry-5289",
+    "entry-5750",
+    "entry-5868",
+    "entry-6454",
+    "entry-6562",
+    "entry-6669",
+    "entry-6764",
+    "entry-6850",
+    "entry-6965"
+  ],
+  "row_count": 10,
+  "unique_key_count": 10,
+  "all_input_rows_needs_correction": true,
+  "all_output_rows_preserve_needs_correction": true,
+  "length_constraints": {
+    "short_max_characters": 180,
+    "medium_word_range": [
+      45,
+      90
+    ],
+    "long_word_range": [
+      140,
+      300
+    ]
+  },
+  "per_key": [
+    {
+      "key": "entry-4496",
+      "entry_number": 4496,
+      "input_triage_status": "needs_correction",
+      "terminal_output_row_present": true,
+      "title": "Press-Freedom Lawyers Warn of Possible Espionage Act Prosecutions",
+      "short_characters": 114,
+      "medium_words": 51,
+      "long_words": 148,
+      "source_url_count": 1,
+      "source_urls_match_evidence_map": true,
+      "qa": "pass"
+    },
+    {
+      "key": "entry-5289",
+      "entry_number": 5289,
+      "input_triage_status": "needs_correction",
+      "terminal_output_row_present": true,
+      "title": "EPA’s FY2026 Request Proposes a 47% Cut to the Superfund Account",
+      "short_characters": 91,
+      "medium_words": 49,
+      "long_words": 148,
+      "source_url_count": 1,
+      "source_urls_match_evidence_map": true,
+      "qa": "pass"
+    },
+    {
+      "key": "entry-5750",
+      "entry_number": 5750,
+      "input_triage_status": "needs_correction",
+      "terminal_output_row_present": true,
+      "title": "Bondi DOJ Reverses Limits on Journalists’ Records in Leak Investigations",
+      "short_characters": 81,
+      "medium_words": 58,
+      "long_words": 146,
+      "source_url_count": 2,
+      "source_urls_match_evidence_map": true,
+      "qa": "pass"
+    },
+    {
+      "key": "entry-5868",
+      "entry_number": 5868,
+      "input_triage_status": "needs_correction",
+      "terminal_output_row_present": true,
+      "title": "White House Unveils Privately Funded Rose Garden Renovation Before 2020 Convention",
+      "short_characters": 118,
+      "medium_words": 56,
+      "long_words": 166,
+      "source_url_count": 3,
+      "source_urls_match_evidence_map": true,
+      "qa": "pass"
+    },
+    {
+      "key": "entry-6454",
+      "entry_number": 6454,
+      "input_triage_status": "needs_correction",
+      "terminal_output_row_present": true,
+      "title": "Trump Launches U.S. Strikes Against Houthis; Houthi Authorities Report 31 Killed",
+      "short_characters": 107,
+      "medium_words": 51,
+      "long_words": 167,
+      "source_url_count": 1,
+      "source_urls_match_evidence_map": true,
+      "qa": "pass"
+    },
+    {
+      "key": "entry-6562",
+      "entry_number": 6562,
+      "input_triage_status": "needs_correction",
+      "terminal_output_row_present": true,
+      "title": "CAATSA Sanctions Authority Began Jan. 29, 2018; It Was Not a Deadline to Act",
+      "short_characters": 105,
+      "medium_words": 58,
+      "long_words": 162,
+      "source_url_count": 1,
+      "source_urls_match_evidence_map": true,
+      "qa": "pass"
+    },
+    {
+      "key": "entry-6669",
+      "entry_number": 6669,
+      "input_triage_status": "needs_correction",
+      "terminal_output_row_present": true,
+      "title": "Trump Family and Associate Businesses Approved for Up to $21 Million in PPP Loans",
+      "short_characters": 98,
+      "medium_words": 65,
+      "long_words": 176,
+      "source_url_count": 1,
+      "source_urls_match_evidence_map": true,
+      "qa": "pass"
+    },
+    {
+      "key": "entry-6764",
+      "entry_number": 6764,
+      "input_triage_status": "needs_correction",
+      "terminal_output_row_present": true,
+      "title": "FY2026 Education Budget Proposes Pell, Work-Study and TRIO Cuts, Not an End to All Aid",
+      "short_characters": 111,
+      "medium_words": 52,
+      "long_words": 157,
+      "source_url_count": 5,
+      "source_urls_match_evidence_map": true,
+      "qa": "pass"
+    },
+    {
+      "key": "entry-6850",
+      "entry_number": 6850,
+      "input_triage_status": "needs_correction",
+      "terminal_output_row_present": true,
+      "title": "Trump Says on The View He Might Date Ivanka If She Were Not His Daughter",
+      "short_characters": 82,
+      "medium_words": 58,
+      "long_words": 157,
+      "source_url_count": 2,
+      "source_urls_match_evidence_map": true,
+      "qa": "pass"
+    },
+    {
+      "key": "entry-6965",
+      "entry_number": 6965,
+      "input_triage_status": "needs_correction",
+      "terminal_output_row_present": true,
+      "title": "Trump Announces Stargate AI Infrastructure Venture With Up to $500 Billion Planned Investment",
+      "short_characters": 105,
+      "medium_words": 52,
+      "long_words": 165,
+      "source_url_count": 1,
+      "source_urls_match_evidence_map": true,
+      "qa": "pass"
+    }
+  ],
+  "result": "pass"
+}
