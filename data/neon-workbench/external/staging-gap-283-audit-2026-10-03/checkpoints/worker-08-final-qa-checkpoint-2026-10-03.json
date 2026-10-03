@@ -1,0 +1,245 @@
+{
+  "worker": 8,
+  "status": "complete",
+  "scope": "Read-only audit of only the 71 keys in pinned worker-08 input.",
+  "exact_set_qa": {
+    "expected_count": 71,
+    "output_count": 71,
+    "unique_output_count": 71,
+    "missing_ids": [],
+    "extra_ids": [],
+    "duplicate_ids": [],
+    "output_order_matches_input": true,
+    "all_batches_5_to_10_rows": true,
+    "authoritative_batch_counts": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      8
+    ]
+  },
+  "input": {
+    "branch": "codex/staging-gap-283-audit-2026-10-03",
+    "commit": "8e5d2ebc3bf1f68c556aa92345a9a41fc40133fe",
+    "file": "data/neon-workbench/external/staging-gap-283-audit-2026-10-03/worker-08-input.jsonl",
+    "sha256": "75bb2e03851d8d31fe2eb6f479d8a059f4f8d00aaf5fd4d5b19b551c7ccae532",
+    "sha256_matches_assignment": true
+  },
+  "source_review": {
+    "pr_number": 49,
+    "state": "open_draft_blocked_before_final_validation",
+    "head_branch": "codex/web-release-review-results-2026-10-03",
+    "head_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+    "base_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+    "review_rows_found": 71,
+    "latest_review_rows_verified_against_published_commit": 71,
+    "all_rows_are_proposal_only": true,
+    "outcome_counts": {
+      "supported_proposal_pending_integration": 37,
+      "intentional_exclusion_proposal": 12,
+      "reviewed_and_held": 22
+    },
+    "no_published_review_ids": [],
+    "global_blocker": "PR #49 is an open draft. Its access-blocker checkpoint states the published results are not final authoritative outcomes and final validation was not completed."
+  },
+  "staging_snapshot": {
+    "path": "data/neon-workbench/external/description-completion/2026-09-30/merged/descriptions.jsonl",
+    "rows": 6944,
+    "sha256": "615878c34963cb47a9a06a3ed1bb7db5c17b0ca31938b4d70dbb837ce55d49e5",
+    "bytes_available_in_pinned_pr49_base_tree": false,
+    "bytes_available_in_pinned_pr49_head_tree": false,
+    "per_entry_absence_basis": "Every matching held-dispositions.jsonl row has current_description_snapshot:null. This audit could not independently compare against snapshot bytes because the manifest-listed artifact is absent from both pinned PR49 trees.",
+    "all_71_have_null_current_description_snapshot": true,
+    "all_71_insert_authorized_false": true
+  },
+  "authoritative_batches": [
+    {
+      "file": "worker-08-batch-2026-10-03-001.jsonl",
+      "row_count": 9,
+      "sha256": "7642ed99168940790bc98c8714e066db9ae2690115f07e529559becb4a663dcf",
+      "record_ids": [
+        "entry-4240",
+        "entry-4457",
+        "entry-4696",
+        "entry-4827",
+        "entry-5161",
+        "entry-5207",
+        "entry-5329",
+        "entry-5344",
+        "entry-5731"
+      ]
+    },
+    {
+      "file": "worker-08-batch-2026-10-03-rev02-002.jsonl",
+      "row_count": 9,
+      "sha256": "00875dc5818d753e3f676c297ed3262adfb9b61484240954d10e5fa805331ee5",
+      "record_ids": [
+        "entry-5743",
+        "entry-5754",
+        "entry-5761",
+        "entry-5816",
+        "entry-5844",
+        "entry-5863",
+        "entry-6136",
+        "entry-6315",
+        "entry-6379"
+      ]
+    },
+    {
+      "file": "worker-08-batch-2026-10-03-rev02-003.jsonl",
+      "row_count": 9,
+      "sha256": "89e86335d2ff5326a6155bbc6f57e9bab1f9343bf6276dabe3fc117a3a4a1dad",
+      "record_ids": [
+        "entry-6413",
+        "entry-6419",
+        "entry-6425",
+        "entry-6433",
+        "entry-6443",
+        "entry-6456",
+        "entry-6464",
+        "entry-6498",
+        "entry-6516"
+      ]
+    },
+    {
+      "file": "worker-08-batch-2026-10-03-rev02-004.jsonl",
+      "row_count": 9,
+      "sha256": "d8d290c3fba51b85fd76ee5d915dd43d336fc96450fcafaa2cd6bf38637e606e",
+      "record_ids": [
+        "entry-6564",
+        "entry-6583",
+        "entry-6597",
+        "entry-6601",
+        "entry-6609",
+        "entry-6615",
+        "entry-6631",
+        "entry-6655",
+        "entry-6673"
+      ]
+    },
+    {
+      "file": "worker-08-batch-2026-10-03-rev02-005.jsonl",
+      "row_count": 9,
+      "sha256": "dcfbf8f20074e67f480ece34c14ac9976faec67d91df22710cdb14ed9e32aada",
+      "record_ids": [
+        "entry-6696",
+        "entry-6738",
+        "entry-6749",
+        "entry-6763",
+        "entry-6779",
+        "entry-6784",
+        "entry-6788",
+        "entry-6793",
+        "entry-6799"
+      ]
+    },
+    {
+      "file": "worker-08-batch-2026-10-03-rev02-006.jsonl",
+      "row_count": 9,
+      "sha256": "9ea28fc78b59aae1e0fb9e626e0fa9d89ca8620d753b5f91d44b8c232b68e773",
+      "record_ids": [
+        "entry-6804",
+        "entry-6818",
+        "entry-6824",
+        "entry-6830",
+        "entry-6835",
+        "entry-6857",
+        "entry-6871",
+        "entry-6900",
+        "entry-6926"
+      ]
+    },
+    {
+      "file": "worker-08-batch-2026-10-03-rev02-007.jsonl",
+      "row_count": 9,
+      "sha256": "a06085b939e43d3b2d824a13dc0a0b018c33c24ced072276af20ed270615c5a3",
+      "record_ids": [
+        "entry-6931",
+        "entry-6937",
+        "entry-6943",
+        "entry-6950",
+        "entry-6958",
+        "entry-6964",
+        "entry-7051",
+        "entry-7085",
+        "entry-7094"
+      ]
+    },
+    {
+      "file": "worker-08-batch-2026-10-03-rev02-008.jsonl",
+      "row_count": 8,
+      "sha256": "d8a883fb3328592ab049102317925f705601c727c6fbc621a8fdd6c572e40d31",
+      "record_ids": [
+        "entry-7111",
+        "entry-7120",
+        "entry-7126",
+        "entry-7133",
+        "entry-7153",
+        "entry-7159",
+        "entry-7177",
+        "entry-7188"
+      ]
+    }
+  ],
+  "superseded_first_writes_preserved": [
+    {
+      "file": "worker-08-batch-2026-10-03-002.jsonl",
+      "status": "superseded_invalid_jsonl_literal_backslash_n_separators",
+      "replacement": "worker-08-batch-2026-10-03-rev02-002.jsonl",
+      "old_checkpoint": "worker-08-checkpoint-2026-10-03-002.json",
+      "corrected_checkpoint": "worker-08-checkpoint-2026-10-03-rev02-002.json"
+    },
+    {
+      "file": "worker-08-batch-2026-10-03-003.jsonl",
+      "status": "superseded_invalid_jsonl_literal_backslash_n_separators",
+      "replacement": "worker-08-batch-2026-10-03-rev02-003.jsonl",
+      "old_checkpoint": "worker-08-checkpoint-2026-10-03-003.json",
+      "corrected_checkpoint": "worker-08-checkpoint-2026-10-03-rev02-003.json"
+    },
+    {
+      "file": "worker-08-batch-2026-10-03-004.jsonl",
+      "status": "superseded_invalid_jsonl_literal_backslash_n_separators",
+      "replacement": "worker-08-batch-2026-10-03-rev02-004.jsonl",
+      "old_checkpoint": "worker-08-checkpoint-2026-10-03-004.json",
+      "corrected_checkpoint": "worker-08-checkpoint-2026-10-03-rev02-004.json"
+    },
+    {
+      "file": "worker-08-batch-2026-10-03-005.jsonl",
+      "status": "superseded_invalid_jsonl_literal_backslash_n_separators",
+      "replacement": "worker-08-batch-2026-10-03-rev02-005.jsonl",
+      "old_checkpoint": "worker-08-checkpoint-2026-10-03-005.json",
+      "corrected_checkpoint": "worker-08-checkpoint-2026-10-03-rev02-005.json"
+    },
+    {
+      "file": "worker-08-batch-2026-10-03-006.jsonl",
+      "status": "superseded_invalid_jsonl_literal_backslash_n_separators",
+      "replacement": "worker-08-batch-2026-10-03-rev02-006.jsonl",
+      "old_checkpoint": "worker-08-checkpoint-2026-10-03-006.json",
+      "corrected_checkpoint": "worker-08-checkpoint-2026-10-03-rev02-006.json"
+    },
+    {
+      "file": "worker-08-batch-2026-10-03-007.jsonl",
+      "status": "superseded_invalid_jsonl_literal_backslash_n_separators",
+      "replacement": "worker-08-batch-2026-10-03-rev02-007.jsonl",
+      "old_checkpoint": "worker-08-checkpoint-2026-10-03-007.json",
+      "corrected_checkpoint": "worker-08-checkpoint-2026-10-03-rev02-007.json"
+    },
+    {
+      "file": "worker-08-batch-2026-10-03-008.jsonl",
+      "status": "superseded_invalid_jsonl_literal_backslash_n_separators",
+      "replacement": "worker-08-batch-2026-10-03-rev02-008.jsonl",
+      "old_checkpoint": "worker-08-checkpoint-2026-10-03-008.json",
+      "corrected_checkpoint": "worker-08-checkpoint-2026-10-03-rev02-008.json"
+    }
+  ],
+  "validation": {
+    "latest_numeric_revision_checked_across_published_result_rows_and_checkpoint_json": true,
+    "every_review_file_line_and_held_disposition_line_resolved": true,
+    "all_changes_since_audit_start_confined_to_audit_directory": true,
+    "code_tests_skipped": "No application or code files changed; JSONL/source-reference QA was run instead."
+  }
+}

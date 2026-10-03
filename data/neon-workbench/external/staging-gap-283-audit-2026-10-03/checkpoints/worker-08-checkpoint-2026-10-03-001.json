@@ -1,0 +1,36 @@
+{
+  "checkpoint_id": "worker-08-001",
+  "kind": "progress",
+  "assignment_size": 71,
+  "completed_count": 9,
+  "remaining_count": 62,
+  "input": {
+    "commit": "8e5d2ebc3bf1f68c556aa92345a9a41fc40133fe",
+    "file": "data/neon-workbench/external/staging-gap-283-audit-2026-10-03/worker-08-input.jsonl",
+    "sha256": "75bb2e03851d8d31fe2eb6f479d8a059f4f8d00aaf5fd4d5b19b551c7ccae532"
+  },
+  "source_review": {
+    "pr": 49,
+    "branch": "codex/web-release-review-results-2026-10-03",
+    "commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+    "state": "open draft; blocked before final validation"
+  },
+  "batch_file": "worker-08-batch-2026-10-03-001.jsonl",
+  "batch_sha256": "7642ed99168940790bc98c8714e066db9ae2690115f07e529559becb4a663dcf",
+  "covered_ids": [
+    "entry-4240",
+    "entry-4457",
+    "entry-4696",
+    "entry-4827",
+    "entry-5161",
+    "entry-5207",
+    "entry-5329",
+    "entry-5344",
+    "entry-5731"
+  ],
+  "outcome_counts": {
+    "supported_proposal_pending_integration": 8,
+    "intentional_exclusion_proposal": 1
+  },
+  "unresolved_no_published_review_ids": []
+}

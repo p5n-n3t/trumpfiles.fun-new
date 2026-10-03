@@ -1,0 +1,72 @@
+{
+  "worker": 8,
+  "phase": "evidence-resolution-2026-10-03",
+  "assigned_ids": [
+    "entry-196",
+    "entry-212",
+    "entry-2439",
+    "entry-2496",
+    "entry-3009",
+    "entry-4040",
+    "entry-4232",
+    "entry-4353",
+    "entry-5488",
+    "entry-5605",
+    "entry-5966",
+    "entry-6279",
+    "entry-801",
+    "entry-842",
+    "entry-908",
+    "entry-990"
+  ],
+  "processed_ids": [
+    "entry-196",
+    "entry-212",
+    "entry-2439",
+    "entry-2496",
+    "entry-3009",
+    "entry-4040",
+    "entry-4232",
+    "entry-4353",
+    "entry-5488",
+    "entry-5605",
+    "entry-5966",
+    "entry-6279",
+    "entry-801",
+    "entry-842",
+    "entry-908",
+    "entry-990"
+  ],
+  "complete_ids": [
+    "entry-196",
+    "entry-212"
+  ],
+  "needs_context_ids": [
+    "entry-2439",
+    "entry-2496",
+    "entry-3009",
+    "entry-4040",
+    "entry-4232",
+    "entry-4353",
+    "entry-5488",
+    "entry-5605",
+    "entry-5966",
+    "entry-6279",
+    "entry-801",
+    "entry-842",
+    "entry-908",
+    "entry-990"
+  ],
+  "remaining_ids": [],
+  "output_files": [
+    "worker-08-evidence-resolution-batch-001.jsonl",
+    "worker-08-evidence-resolution-batch-002.jsonl"
+  ],
+  "counts": {
+    "assigned": 16,
+    "processed": 16,
+    "complete": 2,
+    "needs_context": 14,
+    "remaining": 0
+  }
+}

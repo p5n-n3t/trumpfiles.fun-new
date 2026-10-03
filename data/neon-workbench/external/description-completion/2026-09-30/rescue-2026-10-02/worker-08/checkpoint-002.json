@@ -1,0 +1,11 @@
+{
+  "worker": 8,
+  "assignment_commit": "e95178ad5ca0de630c007c46523c19e40d37d54f",
+  "frozen_results_commit": "0b6568247255dd9f165662146fc0c81efe320205",
+  "batch": "batch-002.jsonl",
+  "processed_record_ids": ["entry-1281", "entry-136", "entry-1420", "entry-1461", "entry-1509", "entry-1552", "entry-1594", "entry-1626", "entry-1660", "entry-1703", "entry-1770", "entry-205", "entry-2151", "entry-2302", "entry-235", "entry-2391", "entry-2443", "entry-2496", "entry-2528", "entry-2562"],
+  "assigned_count": 53,
+  "completed_count": 13,
+  "needs_context_count": 7,
+  "remaining_count": 33
+}

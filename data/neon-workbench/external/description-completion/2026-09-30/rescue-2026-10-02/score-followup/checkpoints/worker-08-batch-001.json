@@ -1,0 +1,32 @@
+{
+  "worker": "08",
+  "batch": 1,
+  "input_commit": "539c34d9572db4a234ee9e73a4fe8c1d4b3e373e",
+  "input_sha256": "49ce30addfbc9c1ef19095f48778d1c391cfb5912580e9f3c8f7493781f8112e",
+  "rubric_sha256": "1ac7e1f208a8fe8fde1db5accda6d5b587c79f7780baafa0baa1053909d28d27",
+  "output_file": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/score-outputs/worker-08-batch-001.jsonl",
+  "output_sha256": "9655479fe8ed2852db2a28977528dc64270993980b5ae0cf4c6b1a0b92040753",
+  "row_count": 14,
+  "counts": {
+    "scored": 4,
+    "deferred": 10
+  },
+  "record_ids": [
+    "entry-1043",
+    "entry-1240",
+    "entry-130",
+    "entry-1364",
+    "entry-1412",
+    "entry-1457",
+    "entry-1496",
+    "entry-1523",
+    "entry-1548",
+    "entry-1567",
+    "entry-1594",
+    "entry-1619",
+    "entry-1636",
+    "entry-1657"
+  ],
+  "rationales_clarified_before_commit": true,
+  "ratings_reviewed_before_commit": true
+}
