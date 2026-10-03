@@ -1,0 +1,62 @@
+{
+  "artifact_type": "independent_crossqa_final_checkpoint",
+  "reviewer_worker": 12,
+  "reviewed_worker": 1,
+  "reviewed_branch": "ls/1-trump-files-source118-review-01-of-12-Dnux",
+  "reviewed_commit": "337eff1cf14581f938d484044c5031d873677ae1",
+  "branch_tip_at_fetch": "4df5aad225283edebca95ed8801707593272365d",
+  "reviewed_commit_is_ancestor_of_branch_tip": true,
+  "target_output_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-01-batch-20261003-01.jsonl",
+  "target_output_sha256": "933f5d99bfcf175e74fb628db6147ea8896120655fb143e23d0def6b17df1500",
+  "packet_branch": "codex/account6-source-corrections-2026-10-03",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_input_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-01-input.jsonl",
+  "packet_input_sha256": "6baa302190661b9f09d0882a2f95446063067e63185bac1e425efcb02d0914d0",
+  "expected_keys": [
+    "entry-4234",
+    "entry-5074",
+    "entry-5537",
+    "entry-5817",
+    "entry-6392",
+    "entry-6483",
+    "entry-6618",
+    "entry-6725",
+    "entry-6796",
+    "entry-6898"
+  ],
+  "observed_keys": [
+    "entry-4234",
+    "entry-5074",
+    "entry-5537",
+    "entry-5817",
+    "entry-6392",
+    "entry-6483",
+    "entry-6618",
+    "entry-6725",
+    "entry-6796",
+    "entry-6898"
+  ],
+  "rows_reviewed": 10,
+  "crossqa_ledger": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-12/worker-01-crossqa.jsonl",
+  "crossqa_ledger_sha256": "4a985d0a385f91b98041543c8eb2d217bbf22e8d98cb35b54f7876d44b514724",
+  "result": "pass_with_documented_access_and_wording_caveats",
+  "aggregate_checks": {
+    "exact_key_set_and_order": "pass",
+    "one_output_row_per_assigned_key": "pass",
+    "source_triage_remains_needs_correction": "pass",
+    "short_medium_long_limits": "pass",
+    "every_target_url_has_nonempty_url_specific_fact_support": "pass",
+    "all_preexisting_staged_source_urls_retained": "pass",
+    "factual_scope_and_unsupported_claim_boundaries": "pass",
+    "unresolved_gaps_precise": "pass_with_notes_for_entry_4234_and_entry_5817",
+    "explicit_overlap_disclosure_for_entries_5817_and_6618": "pass",
+    "target_output_or_canonical_or_neon_data_modified": false
+  },
+  "source_access_note": "Several Reuters, ODNI, HHS, and Investing.com pages blocked direct sandbox retrieval with HTTP 401/403. Their exact URL-to-fact mappings were checked against the packet’s source-triage access notes and supported-fact records; accessible cited pages were retrieved directly where available. Each URL access outcome is recorded in the ledger.",
+  "nonblocking_notes": [
+    "Entry-4234 corrects the two dates in the prose but its evidence_gap field does not literally say the original chronology was unsupported.",
+    "Entry-5817 describes downstream intelligence-sharing effects as unsupported in long copy, while its evidence_gap field omits that particular residual claim.",
+    "Entries 5817 and 6618 overlap on the July 30 ODNI release; the overlap is explicitly disclosed in both target rows and both assigned IDs remain separate."
+  ],
+  "own_worker_12_checkpoint_commit": "1e148c10"
+}

@@ -1,0 +1,47 @@
+{
+  "artifact_type": "worker_final_checkpoint",
+  "checkpoint": "final_exact_set_qa",
+  "worker": 12,
+  "branch": "ls/12-trump-files-source118-review-12-of-12-MQJb",
+  "source_correction_commit": "52ead5afd111e17e95a38363f8105b908aaad8e4",
+  "packet": {
+    "branch": "codex/account6-source-corrections-2026-10-03",
+    "commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+    "input_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-12-input.jsonl",
+    "input_sha256": "b4d927b32fd61aef0e209bf46ba3c93e1824582fa422d72fb16b3f40e823ee06"
+  },
+  "output_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-12-batch-001.jsonl",
+  "output_sha256": "d90517231e2561d59ce112880379a2a90e7d970a6cbf4704671b16c5b30cfa0d",
+  "expected_keys": [
+    "entry-4866",
+    "entry-5342",
+    "entry-5804",
+    "entry-5894",
+    "entry-6470",
+    "entry-6610",
+    "entry-6708",
+    "entry-6783",
+    "entry-6882"
+  ],
+  "observed_keys": [
+    "entry-4866",
+    "entry-5342",
+    "entry-5804",
+    "entry-5894",
+    "entry-6470",
+    "entry-6610",
+    "entry-6708",
+    "entry-6783",
+    "entry-6882"
+  ],
+  "row_count": 9,
+  "checks": {
+    "exact_set_and_order": "pass",
+    "one_terminal_row_per_key": "pass",
+    "all_source_triage_statuses_remain_needs_correction": "pass",
+    "short_medium_long_length_limits": "pass",
+    "every_source_url_has_matching_fact_map_entry": "pass",
+    "unrelated_files_or_canonical_or_neon_data_changed": false
+  },
+  "note": "This checkpoint records output completion and exact-set QA. It does not mark any source_triage row accepted or verified."
+}
