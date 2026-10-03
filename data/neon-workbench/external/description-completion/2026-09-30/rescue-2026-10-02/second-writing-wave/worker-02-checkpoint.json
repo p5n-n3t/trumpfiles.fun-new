@@ -1,0 +1,35 @@
+{
+  "worker": "02",
+  "phase": "second-writing-wave",
+  "assignment_commit": "6d8c7badd5b1e482574949eab1af6260a1b732b2",
+  "assignment_ids": [
+    "entry-113",
+    "entry-1736",
+    "entry-185",
+    "entry-2607",
+    "entry-290",
+    "entry-4004",
+    "entry-4304",
+    "entry-5471",
+    "entry-6988"
+  ],
+  "total_assigned": 9,
+  "complete_count": 0,
+  "needs_context_count": 9,
+  "remaining_count": 0,
+  "processed_ids": [
+    "entry-113",
+    "entry-1736",
+    "entry-185",
+    "entry-2607",
+    "entry-290",
+    "entry-4004",
+    "entry-4304",
+    "entry-5471",
+    "entry-6988"
+  ],
+  "output_files": [
+    "worker-02-batch-000.jsonl",
+    "worker-02-batch-001.jsonl"
+  ]
+}

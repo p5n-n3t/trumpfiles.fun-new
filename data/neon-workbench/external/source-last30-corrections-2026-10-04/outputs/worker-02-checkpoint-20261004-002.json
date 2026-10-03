@@ -1,0 +1,41 @@
+{
+  "assignment": "source-last30-corrections-2026-10-04",
+  "worker": 2,
+  "artifact": "final exact-set checkpoint",
+  "created_at_utc": "2026-10-03T22:04:42Z",
+  "branch": "ls/2-trump-description-rescue-02-of-12-53-dis-d-rf",
+  "head_before_qa_commit": "672897a1d84ac990e1f01801ab258d1ec785578d",
+  "assigned_ids": [
+    "entry-5316",
+    "entry-5522",
+    "entry-5729",
+    "entry-5748",
+    "entry-5802"
+  ],
+  "proposal_count": 5,
+  "terminal_count": 5,
+  "unresolved_count": 0,
+  "output_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-02-batch-20261004-001.jsonl",
+  "output_sha256": "34fe827283544297e5469ad040ae4b1ce6e17e612ff5fe081a5dc7d4ba3a0912",
+  "qa_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-02-final-qa-20261004-002.json",
+  "qa_sha256": "99e26337770443125f557385caf8e6db3251ebb9af3f44dfda3a046c429c6100",
+  "qa_result": "PASS_WITH_FROZEN_INPUT_CAVEAT_AND_DIRECT_ACCESS_LIMITS",
+  "checks": {
+    "exactly_five_rows": true,
+    "exact_id_set": true,
+    "no_duplicate_ids": true,
+    "one_terminal_proposal_per_id": true,
+    "original_claim_summaries_exactly_match_effective_worker05_unsupported_claims": true,
+    "frozen_input_unavailable_caveat_retained": true,
+    "provenance_source_commit_and_batch_match": true,
+    "title_and_short_fields_le_180_chars": true,
+    "medium_fields_45_to_90_words": true,
+    "long_fields_140_to_300_words": true,
+    "claim_fields_match_evidence_resolution_proposal": true,
+    "source_urls_match_mapping_and_citation_dispositions": true,
+    "source_urls_preserved_from_effective_worker05_sources": true,
+    "source_mappings_and_supported_facts_present": true
+  },
+  "input_available": false,
+  "scope": "Only the five assigned IDs. Added QA/checkpoint artifacts; batch history, canonical data, Neon, and other-worker files were not changed."
+}

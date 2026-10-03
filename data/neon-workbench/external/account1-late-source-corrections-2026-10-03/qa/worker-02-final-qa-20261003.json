@@ -1,0 +1,173 @@
+{
+  "packet": "account1-late-source-corrections-2026-10-03",
+  "packet_commit": "d1c9c5990d6b15257fbb406671cd73994b45420e",
+  "input_file": "worker-02-input.jsonl",
+  "input_sha256": "f134e33e7d74002eeb4db31bf72257955ac250a834a7616146b25b612022e727",
+  "assigned_ids": [
+    "entry-4242",
+    "entry-4686",
+    "entry-5331",
+    "entry-5741",
+    "entry-5836",
+    "entry-5896",
+    "entry-6452",
+    "entry-6550",
+    "entry-6635",
+    "entry-6716",
+    "entry-6773",
+    "entry-6837",
+    "entry-6942"
+  ],
+  "observed_ids": [
+    "entry-4242",
+    "entry-4686",
+    "entry-5331",
+    "entry-5741",
+    "entry-5836",
+    "entry-5896",
+    "entry-6452",
+    "entry-6550",
+    "entry-6635",
+    "entry-6716",
+    "entry-6773",
+    "entry-6837",
+    "entry-6942"
+  ],
+  "row_count": 13,
+  "checks": {
+    "input_sha256_matches_manifest": true,
+    "row_count_is_13": true,
+    "exact_id_set": true,
+    "no_duplicate_ids": true,
+    "all_records_complete": true,
+    "all_have_source_urls": true,
+    "all_have_evidence_resolution": true,
+    "short_fields_180_or_less": true,
+    "medium_fields_45_to_90_words": true,
+    "long_fields_140_to_300_words": true,
+    "batch_sizes_5_to_10": true
+  },
+  "records": [
+    {
+      "record_id": "entry-4242",
+      "status": "complete",
+      "batch": "worker-02-batch-20261003-001.jsonl",
+      "short_characters": 140,
+      "medium_words": 72,
+      "long_words": 170,
+      "source_count": 1
+    },
+    {
+      "record_id": "entry-4686",
+      "status": "complete",
+      "batch": "worker-02-batch-20261003-001.jsonl",
+      "short_characters": 137,
+      "medium_words": 55,
+      "long_words": 159,
+      "source_count": 1
+    },
+    {
+      "record_id": "entry-5331",
+      "status": "complete",
+      "batch": "worker-02-batch-20261003-001.jsonl",
+      "short_characters": 144,
+      "medium_words": 54,
+      "long_words": 149,
+      "source_count": 2
+    },
+    {
+      "record_id": "entry-5741",
+      "status": "complete",
+      "batch": "worker-02-batch-20261003-001.jsonl",
+      "short_characters": 121,
+      "medium_words": 60,
+      "long_words": 160,
+      "source_count": 1
+    },
+    {
+      "record_id": "entry-5836",
+      "status": "complete",
+      "batch": "worker-02-batch-20261003-001.jsonl",
+      "short_characters": 123,
+      "medium_words": 56,
+      "long_words": 152,
+      "source_count": 1
+    },
+    {
+      "record_id": "entry-5896",
+      "status": "complete",
+      "batch": "worker-02-batch-20261003-001.jsonl",
+      "short_characters": 120,
+      "medium_words": 54,
+      "long_words": 153,
+      "source_count": 1
+    },
+    {
+      "record_id": "entry-6452",
+      "status": "complete",
+      "batch": "worker-02-batch-20261003-001.jsonl",
+      "short_characters": 137,
+      "medium_words": 58,
+      "long_words": 162,
+      "source_count": 2
+    },
+    {
+      "record_id": "entry-6550",
+      "status": "complete",
+      "batch": "worker-02-batch-20261003-002.jsonl",
+      "short_characters": 144,
+      "medium_words": 57,
+      "long_words": 154,
+      "source_count": 2
+    },
+    {
+      "record_id": "entry-6635",
+      "status": "complete",
+      "batch": "worker-02-batch-20261003-002.jsonl",
+      "short_characters": 124,
+      "medium_words": 61,
+      "long_words": 154,
+      "source_count": 1
+    },
+    {
+      "record_id": "entry-6716",
+      "status": "complete",
+      "batch": "worker-02-batch-20261003-002.jsonl",
+      "short_characters": 127,
+      "medium_words": 63,
+      "long_words": 172,
+      "source_count": 2
+    },
+    {
+      "record_id": "entry-6773",
+      "status": "complete",
+      "batch": "worker-02-batch-20261003-002.jsonl",
+      "short_characters": 126,
+      "medium_words": 53,
+      "long_words": 154,
+      "source_count": 1
+    },
+    {
+      "record_id": "entry-6837",
+      "status": "complete",
+      "batch": "worker-02-batch-20261003-002.jsonl",
+      "short_characters": 132,
+      "medium_words": 63,
+      "long_words": 165,
+      "source_count": 1
+    },
+    {
+      "record_id": "entry-6942",
+      "status": "complete",
+      "batch": "worker-02-batch-20261003-002.jsonl",
+      "short_characters": 132,
+      "medium_words": 52,
+      "long_words": 155,
+      "source_count": 1
+    }
+  ],
+  "source_access_note": "Each row preserves source access details in evidence_resolution.sources.access_note; indexed source text was reviewed when direct runtime requests returned HTTP 401 or 403.",
+  "manual_review_note": "The official State Department transcript for entry-4242 explicitly says Iran had violated the recent MOU within two weeks; the frozen triage note incorrectly called that unsupported. The proposal retains the quote while narrowing the separate endgame characterization.",
+  "unresolved_ids": [],
+  "result": "PASS"
+}

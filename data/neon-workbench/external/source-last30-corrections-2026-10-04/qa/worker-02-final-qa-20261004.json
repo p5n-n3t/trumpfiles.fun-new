@@ -1,0 +1,95 @@
+{
+  "assignment": "source-last30-corrections-2026-10-04",
+  "worker": 2,
+  "source_packet_branch": "ls/5-trump-description-rescue-05-of-12-53-dis-8OoQ",
+  "source_packet_commit": "ef2007fd51a47a237f10e35213faaa50eb7c7df5",
+  "assigned_entry_numbers": [
+    5316,
+    5522,
+    5729,
+    5748,
+    5802
+  ],
+  "observed_ids": [
+    "entry-5316",
+    "entry-5522",
+    "entry-5729",
+    "entry-5748",
+    "entry-5802"
+  ],
+  "output_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-02-batch-20261004-001.jsonl",
+  "output_sha256": "34fe827283544297e5469ad040ae4b1ce6e17e612ff5fe081a5dc7d4ba3a0912",
+  "checks": {
+    "exactly_five_rows": true,
+    "exact_id_set": true,
+    "no_duplicate_ids": true,
+    "one_terminal_proposal_per_id": true,
+    "all_rows_have_source_fact_mappings": true,
+    "all_source_urls_https": true,
+    "short_fields_le_180_chars": true,
+    "medium_fields_45_to_90_words": true,
+    "long_fields_140_to_300_words": true,
+    "worker05_source_provenance_present": true,
+    "frozen_input_absence_recorded": true
+  },
+  "records": [
+    {
+      "record_id": "entry-5316",
+      "status": "corrected_claim_proposal",
+      "short_chars": 83,
+      "medium_words": 56,
+      "long_words": 145,
+      "source_count": 2,
+      "source_output_line": 6,
+      "original_claim_gap": "A source establishing a June 2017 Qatari financing transaction, its amount, and any link to official action was not found; the supported lease occurred in August 2018 and involved Brookfield."
+    },
+    {
+      "record_id": "entry-5522",
+      "status": "corrected_claim_proposal",
+      "short_chars": 104,
+      "medium_words": 55,
+      "long_words": 141,
+      "source_count": 2,
+      "source_output_line": 7,
+      "original_claim_gap": "Evidence of an agreement or policy decision exchanged for donations, and evidence that all industry donors received access or favorable treatment, are absent."
+    },
+    {
+      "record_id": "entry-5729",
+      "status": "corrected_claim_proposal",
+      "short_chars": 82,
+      "medium_words": 54,
+      "long_words": 155,
+      "source_count": 1,
+      "source_output_line": 8,
+      "original_claim_gap": "A separate source is needed to establish whether the proposed tariffs took effect, changed, or were delayed after the July 12 announcement."
+    },
+    {
+      "record_id": "entry-5748",
+      "status": "corrected_claim_proposal",
+      "short_chars": 82,
+      "medium_words": 56,
+      "long_words": 144,
+      "source_count": 2,
+      "source_output_line": 9,
+      "original_claim_gap": "The broader claim about unconditional support across policies and operations needs separately dated evidence; the cited sources establish only the June 4 Security Council veto."
+    },
+    {
+      "record_id": "entry-5802",
+      "status": "corrected_claim_proposal",
+      "short_chars": 96,
+      "medium_words": 51,
+      "long_words": 149,
+      "source_count": 1,
+      "source_output_line": 10,
+      "original_claim_gap": "The precise inauguration-day booking claim needs a dated booking or payment record; an Emoluments Clause violation requires legal adjudication or a separately attributed legal analysis."
+    }
+  ],
+  "input_file_check": {
+    "path": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/worker-05-input.jsonl",
+    "available_at_source_commit": false,
+    "verification": "Absent from the complete tree of the specified commit and all locally fetched object paths. Effective worker-05 source output rows for the five IDs were found in batch-001 lines 6-10.",
+    "consequence": "Frozen input was not rewritten; this batch preserves a reference and the prior row’s unsupported-claim summaries, but cannot attach the unavailable frozen snapshot."
+  },
+  "unresolved_ids": [],
+  "result": "PASS_WITH_INPUT_CAVEAT"
+}

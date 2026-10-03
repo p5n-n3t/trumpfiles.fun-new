@@ -1,0 +1,50 @@
+{
+  "worker": 2,
+  "source_branch": "codex/fresh-events-oct-01-03-2026",
+  "source_commit": "432179c3cefe6c531217b4315f00df799639d64b",
+  "parent_commit": "95eb7977f6d66eb110b38dfba25023743453fd2a",
+  "working_branch": "ls/2-trump-description-rescue-02-of-12-53-dis-d-rf",
+  "date_from": "2026-10-01",
+  "date_through": "2026-10-03",
+  "status": "complete",
+  "proposal_status": "PROPOSED_NOT_APPROVED",
+  "complete_candidate_count": 14,
+  "unresolved_lead_count": 2,
+  "total_rows": 16,
+  "batches": [
+    {
+      "file": "data/neon-workbench/external/fresh-events-next/2026-10-03/outputs/worker-02-batch-20261003-001.jsonl",
+      "count": 5
+    },
+    {
+      "file": "data/neon-workbench/external/fresh-events-next/2026-10-03/outputs/worker-02-batch-20261003-002.jsonl",
+      "count": 5
+    },
+    {
+      "file": "data/neon-workbench/external/fresh-events-next/2026-10-03/outputs/worker-02-batch-20261003-003.jsonl",
+      "count": 6
+    }
+  ],
+  "candidate_keys": [
+    "oct2026-1001-scotus-mandatory-detention-cert",
+    "oct2026-1001-rogoff-reinstated",
+    "oct2026-1001-cox-section611-ruling",
+    "oct2026-1001-aau-section117-tro",
+    "oct2026-1002-big-bend-border-wall-injunction",
+    "oct2026-1001-doj-delaware-tuition-suit",
+    "oct2026-1001-epa-blue-marlin-proposed-permits",
+    "oct2026-1001-states-challenge-epa-carbon-repeal",
+    "oct2026-1001-us-diesel-reserve-pressure",
+    "oct2026-1002-g7-coordinated-reserve-release",
+    "oct2026-1002-medicare-90-payment-announcement",
+    "oct2026-1002-cea-dsa-cost-report",
+    "oct2026-1002-doj-white-house-press-ban-brief",
+    "oct2026-1001-trump-iran-flydubai-threat",
+    "oct2026-aircraft-license-slowdown-date-gap",
+    "oct2026-cuba-fuel-vessel-interception-confirmation-gap"
+  ],
+  "impact_v2_scores_assigned": 0,
+  "insert_authorized": false,
+  "live_database_or_canonical_changes": false,
+  "last_research_cutoff": "2026-10-03 UTC"
+}

@@ -1,0 +1,47 @@
+{
+  "status": "passed_with_one_explicit_source_gap",
+  "output_sha256": "d1138fd578dfc9ec238bf71b7d2a0709ee7cca0f42f9e6ac4fc389c834f57350",
+  "checks": {
+    "valid_jsonl": true,
+    "rows_exactly_8": true,
+    "unique_assignment_keys": true,
+    "exact_assignment_key_set": true,
+    "required_review_schema_fields_present": true,
+    "no_unpublished_cloud_amendment_recovery_claim": true,
+    "fresh_terminal_revisions_explicit": true,
+    "held_terminal_revisions_explicit": true,
+    "entry_6443_short_chars_under_180": true,
+    "entry_5851_short_chars_under_180": true,
+    "entry_6456_israel_medium_45_to_90_words": true,
+    "all_new_fresh_long_descriptions_140_to_300_words": true,
+    "source_urls_preserved_and_explicit": true,
+    "unassigned_keys_absent": true
+  },
+  "measured_lengths": {
+    "entry-6443-energy_short_chars": 157,
+    "entry-5851-short_chars": 153,
+    "entry-6456-israel_medium_words": 56,
+    "fresh_long_words": {
+      "fresh-20260914-oge-trump-ptr": 173,
+      "fresh-20260915-tbilisi-launch": 167,
+      "expanded-20260821-visa75-court": 195,
+      "expanded-20260902-california-waivers-order": 180,
+      "expanded-20260902-birthright-new-injunction": 183
+    }
+  },
+  "source_review_notes": [
+    "Full source text is read where stated in each row; issuer promotion, court orders, and Reuters reporting are distinguished.",
+    "The official OGE PDF text extraction and Reuters differ on one purchase date; the exact-date uncertainty is recorded rather than resolved by guess.",
+    "Unpublished cloud amendments were not recovered or claimed."
+  ],
+  "scope_verified": [
+    "fresh-20260914-oge-trump-ptr",
+    "fresh-20260915-tbilisi-launch",
+    "expanded-20260821-visa75-court",
+    "expanded-20260902-california-waivers-order",
+    "expanded-20260902-birthright-new-injunction",
+    "entry-6443",
+    "entry-5851",
+    "entry-6456"
+  ]
+}

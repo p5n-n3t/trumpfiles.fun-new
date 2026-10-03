@@ -1,0 +1,33 @@
+{
+  "assignment": "source-last30-corrections-2026-10-04",
+  "worker": 2,
+  "source_packet_branch": "ls/5-trump-description-rescue-05-of-12-53-dis-8OoQ",
+  "source_packet_commit": "ef2007fd51a47a237f10e35213faaa50eb7c7df5",
+  "assigned_entry_numbers": [
+    5316,
+    5522,
+    5729,
+    5748,
+    5802
+  ],
+  "proposal_count": 5,
+  "terminal_count": 5,
+  "unresolved_count": 0,
+  "input_file_available": false,
+  "effective_source_output": {
+    "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-05-batch-001.jsonl",
+    "sha256": "ca0a80b7489a864ca9f000d0dab26eb2cd17f8521452b4b4d44230f8324387c4",
+    "lines": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "output_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-02-batch-20261004-001.jsonl",
+  "output_sha256": "34fe827283544297e5469ad040ae4b1ce6e17e612ff5fe081a5dc7d4ba3a0912",
+  "qa_file": "qa/worker-02-final-qa-20261004.json",
+  "qa_result": "PASS_WITH_INPUT_CAVEAT",
+  "scope": "Only the five assigned IDs. No canonical, Neon, or other-worker files were modified."
+}

@@ -1,0 +1,108 @@
+{
+  "worker": 2,
+  "account": 1,
+  "status": "COMPLETE_35_ID_CITATION_QA",
+  "source_branch": "codex/wave3-citation-qa-2026-10-03",
+  "source_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+  "working_branch": "ls/2-trump-description-rescue-02-of-12-53-dis-d-rf",
+  "input_files": {
+    "worker-16-input.jsonl": "5f6d5a946e203e828f0657ee8a86e14174b158a76891289f14e06c367591517f",
+    "worker-17-input.jsonl": "8477a38b8eb5260d7180d3aa6946622bf8d0bbe88e0410fe33710067d7ace75e"
+  },
+  "assigned_ids": [
+    "entry-176",
+    "entry-236",
+    "entry-390",
+    "entry-720",
+    "entry-811",
+    "entry-912",
+    "entry-1666",
+    "entry-1782",
+    "entry-2380",
+    "entry-2518",
+    "entry-2854",
+    "entry-3488",
+    "entry-3899",
+    "entry-4304",
+    "entry-5406",
+    "entry-5698",
+    "entry-6202",
+    "entry-6395",
+    "entry-178",
+    "entry-255",
+    "entry-425",
+    "entry-735",
+    "entry-814",
+    "entry-920",
+    "entry-1670",
+    "entry-1784",
+    "entry-2401",
+    "entry-2528",
+    "entry-2864",
+    "entry-3574",
+    "entry-3985",
+    "entry-4308",
+    "entry-5413",
+    "entry-5707",
+    "entry-6206"
+  ],
+  "proposal_status": "PROPOSED_NOT_APPROVED",
+  "outputs": [
+    "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-02-batch-20261003-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-02-batch-20261003-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-02-batch-20261003-003.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-02-batch-20261003-004.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-02-batch-20261003-005.jsonl"
+  ],
+  "output_counts": {
+    "citation_repaired_proposal": 5,
+    "corrected_claim_proposal": 24,
+    "scope_exclusion_proposal": 6
+  },
+  "output_batch_metadata": [
+    {
+      "file": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-02-batch-20261003-001.jsonl",
+      "rows": 7,
+      "sha256": "e0cf8e1c5a5f31a80f2918f86141730290731e711e0d8bd4835ff9e2b7f38548",
+      "commit": "7f6c5daa6d836447386e73761717285a56353654"
+    },
+    {
+      "file": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-02-batch-20261003-002.jsonl",
+      "rows": 7,
+      "sha256": "7165ed005f2acc1a41bd0fba9c7c9b938de06c58140f56578fe366d60ed65792",
+      "commit": "1fba481ac831ae5faa444011f7ebfd956758aa9b"
+    },
+    {
+      "file": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-02-batch-20261003-003.jsonl",
+      "rows": 7,
+      "sha256": "f8bced8b4b2475d1c1ac2cea71fa551ba9e3fb599862845515020e9b93dd6a1d",
+      "commit": "1178a1ad42cec6071208ea708bb7f4f4fd5f1ffe"
+    },
+    {
+      "file": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-02-batch-20261003-004.jsonl",
+      "rows": 7,
+      "sha256": "8f851c9e729a47f353a8714cb248acf7c330f264cc37f044c4a38dd053180118",
+      "commit": "7158834a4a55f04bd58c38df5f6c09e9fdb5020b"
+    },
+    {
+      "file": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-02-batch-20261003-005.jsonl",
+      "rows": 7,
+      "sha256": "23956a79091553297f6e27c23e1c0f66ea93d8302147410d18ced3054d0e243e",
+      "commit": "3a280c17bfa5360a2ee689e835ce72f981955d6c"
+    }
+  ],
+  "final_qa_file": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/qa/account1-worker-02-qa-20261003.json",
+  "final_qa_status": "PASS_EXACT_35_SOURCE_MAPPED_PROPOSALS",
+  "unresolved_holds": [],
+  "scope_exclusions": [
+    "entry-1666",
+    "entry-1670",
+    "entry-2380",
+    "entry-2518",
+    "entry-2401",
+    "entry-2864"
+  ],
+  "no_account2_output_edits": true,
+  "no_canonical_or_neon_edits": true,
+  "final_pre_checkpoint_head": "3a280c17bfa5360a2ee689e835ce72f981955d6c"
+}

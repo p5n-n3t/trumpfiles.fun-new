@@ -1,0 +1,141 @@
+{
+  "worker": 2,
+  "status": "PASS_WITH_SCOPED_SECOND_SWEEP_ADDITIONS",
+  "source_branch": "codex/fresh-events-oct-01-03-2026",
+  "source_commit": "432179c3cefe6c531217b4315f00df799639d64b",
+  "working_branch": "ls/2-trump-description-rescue-02-of-12-53-dis-d-rf",
+  "batch_commit": "94a46464be42f64431f4990f2e5abee606b1c024",
+  "date_from": "2026-10-01",
+  "date_through": "2026-10-03",
+  "research_cutoff": "2026-10-03 UTC",
+  "references": {
+    "frozen_title_date_index": {
+      "rows": 7143,
+      "sha256": "f07fdd5c9edc563373dd8f790a0d1a945503768c8a9da2581ec0684de5f31ff3"
+    },
+    "prior_fresh_context": {
+      "rows": 84,
+      "sha256": "29102aea07191ca1ce3f68f2ed276b41edb8a8ec52a3ebf6a7854a3484ee8102"
+    },
+    "previous_worker02_checkpoint_sha256": "7def10dd4907675de7113010a501b0f2f307f64659a4e3a47c3eaae8252910a9"
+  },
+  "counts": {
+    "prior_rows": 16,
+    "prior_complete_proposals": 14,
+    "prior_unresolved_leads": 2,
+    "second_sweep_rows": 6,
+    "second_sweep_complete_proposals": 6,
+    "second_sweep_unresolved_leads": 0,
+    "total_rows": 22,
+    "total_complete_proposals": 20,
+    "total_unresolved_leads": 2,
+    "batch_counts": [
+      5,
+      5,
+      6,
+      6
+    ],
+    "new_candidate_keys": [
+      "oct2026-1001-state-syria-itar-case-by-case",
+      "oct2026-1002-dhs-new-mexico-border-waiver",
+      "oct2026-1002-usda-reap-cropland-rule",
+      "oct2026-1001-opm-appraisal-cycle-start",
+      "oct2026-1001-trump-iran-deal-ultimatum",
+      "oct2026-1002-trump-denies-diesel-export-ban"
+    ]
+  },
+  "files": {
+    "new_batch": "data/neon-workbench/external/fresh-events-next/2026-10-03/outputs/worker-02-batch-20261003-004.jsonl",
+    "checkpoint": "data/neon-workbench/external/fresh-events-next/2026-10-03/checkpoints/worker-02-checkpoint-20261003-second-sweep.json",
+    "qa": "data/neon-workbench/external/fresh-events-next/2026-10-03/qa/worker-02-qa-20261003-second-sweep.json",
+    "new_batch_sha256": "36111396bee1db0c8dd73616af2370ffaca071381567d55b3d8abbd137e5a61b"
+  },
+  "checks": {
+    "jsonl_parse": true,
+    "existing_packet_schema_preserved": true,
+    "all_22_candidate_keys_unique": true,
+    "new_keys_prefixed_oct2026_and_disjoint_from_prior_16": true,
+    "title_short_max_180_chars": true,
+    "medium_45_to_90_words": true,
+    "long_140_to_300_words": true,
+    "valid_category_taxonomy": true,
+    "event_dates_in_range": true,
+    "official_effective_or_statement_dates_reviewed": true,
+    "all_source_urls_https_and_listed_in_sources": true,
+    "supported_claim_urls_included_in_source_urls": true,
+    "primary_sources_or_explicit_attribution_caveats": true,
+    "near_topic_dedupe_against_index_prior84_and_existing_16": true,
+    "all_candidates_proposed_not_approved": true,
+    "no_insert_authorization_or_impact_scores": true,
+    "prior_two_unresolved_leads_retained_without_rewrite": true,
+    "no_live_database_or_canonical_changes": true,
+    "no_merge_install_deploy_or_web80": true
+  },
+  "screened_out_or_not_promoted": [
+    {
+      "item": "FY2027 refugee admissions presidential determination",
+      "reason": "Published October 2, but the determination is signed September 25; publication is not a new in-window action.",
+      "source_url": "https://www.federalregister.gov/documents/2026/10/02/2026-20318/presidential-determination-on-refugee-admissions-for-fiscal-year-2027"
+    },
+    {
+      "item": "Two White House executive orders published October 2",
+      "reason": "The mosquito-control and “Super Intelligence” orders are dated September 29, outside the event window.",
+      "source_urls": [
+        "https://www.whitehouse.gov/presidential-actions/2026/09/eliminating-disease-carrying-pests-and-restoring-enjoyment-of-the-great-outdoors/",
+        "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/"
+      ]
+    },
+    {
+      "item": "USCIS FY2027 HR-1 immigration-fee inflation notice",
+      "reason": "The notice was published October 1 but implements an annual CPI adjustment required by the 2025 statute; the new amounts take effect October 16. It was a mechanical fee update, not a newly announced discretionary policy in the window.",
+      "source_url": "https://www.federalregister.gov/documents/2026/10/01/2026-20187/fiscal-year-2027-inflation-adjustment-to-hr-1-immigration-fees"
+    },
+    {
+      "item": "IRS temporary regulations for the federal scholarship tax credit",
+      "reason": "Published October 2 and effective December 1, these are technical state/organization reporting and participation rules for a credit enacted in 2025; no supported fit with the packet’s critical-topic taxonomy was established, so no category was forced.",
+      "source_url": "https://www.federalregister.gov/documents/2026/10/02/2026-20264/federal-scholarship-tax-credit"
+    },
+    {
+      "item": "Court orders concerning the H-1B fee reported October 1",
+      "reason": "The rulings are dated September 30, outside the event window; October reporting dates were not treated as ruling dates.",
+      "source_urls": [
+        "https://www.fragomen.com/insights/united-states-california-federal-court-issues-preliminary-injunction-against-the-dollar100000-h-1b-fee.html",
+        "https://nbyula.com/news/usa/h1b-fee-second-court-block/"
+      ]
+    },
+    {
+      "item": "Unrelated October 1 Supreme Court orders and grants",
+      "reason": "The AFP Foundation application concerns Delaware state disclosure law and Missionaries of St. John concerns Kentucky land-use litigation; neither retrieved record tied the event to a Trump administration actor or policy. The mandatory-detention cert grant already appears in the prior worker-02 packet.",
+      "source_urls": [
+        "https://www.supremecourt.gov/orders/courtorders/100126zr1_j4el.pdf",
+        "https://www.supremecourt.gov/orders/courtorders/100126zr_6j37.pdf"
+      ]
+    },
+    {
+      "item": "Congressional actions in the exact date window",
+      "reason": "No qualifying action surfaced in date-focused official floor checks. The Senate’s October 1 floor record shows it adjourned until October 5; the Senate/House items surfaced in news results were earlier legislative actions or publication-date references.",
+      "source_urls": [
+        "https://www.senate.gov/legislative/LIS/floor_activity/10_01_2026_Senate_Floor.htm",
+        "https://clerk.house.gov/evs/2026/index.asp"
+      ]
+    }
+  ],
+  "research_coverage": {
+    "court_orders": "Date-restricted searches across Oct. 1–3 surfaced the already-recorded Rogoff, Cox, AAU, mandatory-detention and Big Bend matters; no additional administration-connected order with a supported in-window date was promoted. The separate New Mexico DHS waiver is included as an agency determination.",
+    "federal_agency_actions": "Reviewed Oct. 1 and Oct. 2 Federal Register issue contents and targeted State, DHS, USDA, OPM, USCIS, CMS and Treasury records; promoted the Syria rule, New Mexico waiver, REAP rule announcement and OPM cycle start when the dated action or implementation fell in range.",
+    "executive_actions": "Checked White House presidential-action pages and Federal Register presidential documents; signature dates were used to screen out orders merely published during the window.",
+    "public_claims": "Checked Oct. 1 and Oct. 2 White House departure-gaggle recordings and contemporaneous reporting; added two separately attributed statements and tied related prior rows into dedupe notes.",
+    "congress": "Checked official Senate floor activity and House roll-call listings; no in-window action was supported."
+  },
+  "source_access_caveats": [
+    "Official GovInfo Federal Register PDFs were read for the Syria, DHS waiver and USDA REAP documents. FederalRegister.gov pages were also read; the site identifies its XML rendition as informational and links the official printed edition.",
+    "The OPM-hosted memorandum is dated June 17, 2025 and notes a March 24, 2026 revision. Its scheduled October 1, 2026 implementation date, not the earlier memo issuance, is the event recorded.",
+    "USDA announced its REAP rule on October 2, while the Federal Register publication is October 1 and the effective date is October 16; no later effects are claimed.",
+    "White House video pages do not include written transcripts. The exact Oct. 1 Iran and Oct. 2 diesel quotations are attributed to reporting and contemporaneous press-pool notes.",
+    "DHS crossing and seizure totals are attributed to DHS and were not independently reproduced.",
+    "The OPM category is provisional editorial routing for a centralised appraisal policy; the description expressly makes no claim of partisan targeting or unlawful dismissals."
+  ],
+  "no_database_or_canonical_edits": true,
+  "no_code_changes": true,
+  "checks_not_run": "Project lint/typecheck/test scripts were not run because this change adds only research JSONL, checkpoint, and QA data; the dedicated packet validator and schema comparison were run instead."
+}

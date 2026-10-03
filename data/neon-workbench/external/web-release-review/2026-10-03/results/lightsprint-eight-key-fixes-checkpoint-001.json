@@ -1,0 +1,98 @@
+{
+  "task": "ChatGPT Web PR #49 eight-key terminal rescue",
+  "created_at_utc": "2026-10-03",
+  "status": "completed_terminal_review_proposal_only",
+  "proposal_only": true,
+  "insert_authorized": false,
+  "live_db_write": false,
+  "packet_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+  "published_results_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "published_history_selection": {
+    "fresh_keys": {
+      "latest_valid_revision": 3,
+      "terminal_revision": 4
+    },
+    "held_keys": {
+      "latest_valid_revision": 105,
+      "terminal_revision": 106
+    }
+  },
+  "unpublished_cloud_amendments_recovered": false,
+  "assignment_keys": [
+    "fresh-20260914-oge-trump-ptr",
+    "fresh-20260915-tbilisi-launch",
+    "expanded-20260821-visa75-court",
+    "expanded-20260902-california-waivers-order",
+    "expanded-20260902-birthright-new-injunction",
+    "entry-6443",
+    "entry-5851",
+    "entry-6456"
+  ],
+  "expected_rows": 8,
+  "actual_rows": 8,
+  "output_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/lightsprint-eight-key-fixes-20261003-001.jsonl",
+  "output_sha256": "d1138fd578dfc9ec238bf71b7d2a0709ee7cca0f42f9e6ac4fc389c834f57350",
+  "terminal_outcomes": {
+    "fresh-20260914-oge-trump-ptr": {
+      "selected_revision": 4,
+      "latest_valid_published_revision": 3,
+      "selection_basis": "The published review05 revision 3 is the latest valid published review for this key. This explicit terminal revision adds direct source verification and adopts the source-supported event scope; unavailable cloud amendments are not represented as recovered.",
+      "unpublished_cloud_amendments_recovered": false,
+      "unpublished_amendments_note": "Cloud amendments listed in the access-blocked checkpoint were not recovered or assumed; this terminal review uses the latest valid published history and the cited public evidence."
+    },
+    "fresh-20260915-tbilisi-launch": {
+      "selected_revision": 4,
+      "latest_valid_published_revision": 3,
+      "selection_basis": "The published review05 revision 3 is the latest valid published review for this key. This explicit terminal revision adds direct source verification and adopts the source-supported event scope; unavailable cloud amendments are not represented as recovered.",
+      "unpublished_cloud_amendments_recovered": false,
+      "unpublished_amendments_note": "Cloud amendments listed in the access-blocked checkpoint were not recovered or assumed; this terminal review uses the latest valid published history and the cited public evidence."
+    },
+    "expanded-20260821-visa75-court": {
+      "selected_revision": 4,
+      "latest_valid_published_revision": 3,
+      "selection_basis": "The published review05 revision 3 is the latest valid published review for this key. This explicit terminal revision adds direct source verification and adopts the source-supported event scope; unavailable cloud amendments are not represented as recovered.",
+      "unpublished_cloud_amendments_recovered": false,
+      "unpublished_amendments_note": "Cloud amendments listed in the access-blocked checkpoint were not recovered or assumed; this terminal review uses the latest valid published history and the cited public evidence."
+    },
+    "expanded-20260902-california-waivers-order": {
+      "selected_revision": 4,
+      "latest_valid_published_revision": 3,
+      "selection_basis": "The published review05 revision 3 is the latest valid published review for this key. This explicit terminal revision adds direct source verification and adopts the source-supported event scope; unavailable cloud amendments are not represented as recovered.",
+      "unpublished_cloud_amendments_recovered": false,
+      "unpublished_amendments_note": "Cloud amendments listed in the access-blocked checkpoint were not recovered or assumed; this terminal review uses the latest valid published history and the cited public evidence."
+    },
+    "expanded-20260902-birthright-new-injunction": {
+      "selected_revision": 4,
+      "latest_valid_published_revision": 3,
+      "selection_basis": "The published review05 revision 3 is the latest valid published review for this key. This explicit terminal revision adds direct source verification and adopts the source-supported event scope; unavailable cloud amendments are not represented as recovered.",
+      "unpublished_cloud_amendments_recovered": false,
+      "unpublished_amendments_note": "Cloud amendments listed in the access-blocked checkpoint were not recovered or assumed; this terminal review uses the latest valid published history and the cited public evidence."
+    },
+    "entry-6443": {
+      "selected_revision": 106,
+      "latest_valid_published_revision": 105,
+      "selection_basis": "Revision 105 is the latest valid published source review; its two supported event drafts are retained and only the overlength energy-emergency short field is shortened.",
+      "unpublished_cloud_amendments_recovered": false,
+      "unpublished_amendments_note": "Cloud amendments listed in the access-blocked checkpoint were not recovered or assumed; this terminal review uses the latest valid published history and the cited public evidence."
+    },
+    "entry-5851": {
+      "selected_revision": 106,
+      "latest_valid_published_revision": 105,
+      "selection_basis": "Revision 105 is the latest valid published source review; its July 24 attributed event and supporting NPR source are retained while only the overlength short field is shortened.",
+      "unpublished_cloud_amendments_recovered": false,
+      "unpublished_amendments_note": "Cloud amendments listed in the access-blocked checkpoint were not recovered or assumed; this terminal review uses the latest valid published history and the cited public evidence."
+    },
+    "entry-6456": {
+      "selected_revision": 106,
+      "latest_valid_published_revision": 105,
+      "selection_basis": "Revision 105 is the latest valid published source review; the Israeli and U.S. actions remain separate, and the June 13 medium description now adds the supported date and immediate context.",
+      "unpublished_cloud_amendments_recovered": false,
+      "unpublished_amendments_note": "Cloud amendments listed in the access-blocked checkpoint were not recovered or assumed; this terminal review uses the latest valid published history and the cited public evidence."
+    }
+  },
+  "open_exact_gap": {
+    "key": "fresh-20260914-oge-trump-ptr",
+    "gap": "Official OGE PDF text extraction shows purchase date July 12, while Reuters reports July 10; visually confirm the original source cell before selecting the exact transaction date. The September 14 OGE receipt event is supported."
+  },
+  "scope_note": "No other assignment keys, review04 duplicate keys, PR49 branch, canonical input, score, database, index, merge, deploy, or install was changed."
+}

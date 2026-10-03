@@ -1,0 +1,30 @@
+{
+  "worker": 2,
+  "source_commit": "95eb7977f6d66eb110b38dfba25023743453fd2a",
+  "completed_ids": [
+    "entry-1667",
+    "entry-1884",
+    "entry-2349",
+    "entry-252",
+    "entry-278",
+    "entry-3520",
+    "entry-3947",
+    "entry-4320",
+    "entry-5441",
+    "entry-5966",
+    "entry-6279",
+    "entry-7",
+    "entry-842"
+  ],
+  "batches": [
+    {
+      "file": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-02-batch-20261003-a.jsonl",
+      "count": 7
+    },
+    {
+      "file": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-02-batch-20261003-b.jsonl",
+      "count": 6
+    }
+  ],
+  "status": "complete"
+}

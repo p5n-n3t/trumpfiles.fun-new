@@ -1,0 +1,206 @@
+{
+  "assignment": "source-last30-corrections-2026-10-04",
+  "artifact": "final exact-set QA",
+  "worker": 2,
+  "created_at_utc": "2026-10-03T22:04:42Z",
+  "branch": "ls/2-trump-description-rescue-02-of-12-53-dis-d-rf",
+  "head_before_qa_commit": "672897a1d84ac990e1f01801ab258d1ec785578d",
+  "assigned_ids": [
+    "entry-5316",
+    "entry-5522",
+    "entry-5729",
+    "entry-5748",
+    "entry-5802"
+  ],
+  "observed_ids": [
+    "entry-5316",
+    "entry-5522",
+    "entry-5729",
+    "entry-5748",
+    "entry-5802"
+  ],
+  "saved_batch": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-02-batch-20261004-001.jsonl",
+  "saved_batch_sha256": "34fe827283544297e5469ad040ae4b1ce6e17e612ff5fe081a5dc7d4ba3a0912",
+  "source_packet": {
+    "branch": "ls/5-trump-description-rescue-05-of-12-53-dis-8OoQ",
+    "commit": "ef2007fd51a47a237f10e35213faaa50eb7c7df5",
+    "effective_output": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-05-batch-001.jsonl",
+    "effective_output_sha256": "ca0a80b7489a864ca9f000d0dab26eb2cd17f8521452b4b4d44230f8324387c4"
+  },
+  "input_preservation_caveat": {
+    "frozen_input_path": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/worker-05-input.jsonl",
+    "present_at_source_commit": false,
+    "preservation_check": "Each saved original_claim_summary was compared exactly with the corresponding effective worker-05 unsupported_original_claims list. The specified frozen input itself is absent from the source commit, so byte-for-byte comparison to that snapshot is unavailable."
+  },
+  "checks": {
+    "exactly_five_rows": true,
+    "exact_id_set": true,
+    "no_duplicate_ids": true,
+    "one_terminal_proposal_per_id": true,
+    "original_claim_summaries_exactly_match_effective_worker05_unsupported_claims": true,
+    "frozen_input_unavailable_caveat_retained": true,
+    "provenance_source_commit_and_batch_match": true,
+    "title_and_short_fields_le_180_chars": true,
+    "medium_fields_45_to_90_words": true,
+    "long_fields_140_to_300_words": true,
+    "claim_fields_match_evidence_resolution_proposal": true,
+    "source_urls_match_mapping_and_citation_dispositions": true,
+    "source_urls_preserved_from_effective_worker05_sources": true,
+    "source_mappings_and_supported_facts_present": true
+  },
+  "field_policy": {
+    "title_max_chars": 180,
+    "short_max_chars": 180,
+    "medium_words": [
+      45,
+      90
+    ],
+    "long_words": [
+      140,
+      300
+    ],
+    "hold_rows": 0
+  },
+  "source_access_note": "Direct requests to Reuters returned HTTP 401 and Bloomberg HTTP 403; exact-URL article excerpts retrieved via Exa corroborated the mapped facts. NOTUS, UN News, and House Oversight pages returned HTTP 200 and their text was directly reviewed. No saved row or URL was changed.",
+  "source_access": {
+    "https://www.reuters.com/article/world/us/brookfield-gains-lease-on-kushners-landmark-new-york-tower-idUSKBN1KO2KC/": {
+      "direct_http_status": 401,
+      "source_excerpt_review": "Exact-URL Reuters excerpt retrieved via Exa; mapped 99-year lease fact matches."
+    },
+    "https://www.reuters.com/article/world/qatar-revamps-investment-strategy-after-kushner-building-bailout-idUSKCN1Q00W3/": {
+      "direct_http_status": 401,
+      "source_excerpt_review": "Exact-URL Reuters excerpt retrieved via Exa; mapped QIA/Doha non-involvement fact matches."
+    },
+    "https://www.bloomberg.com/news/articles/2025-01-31/trump-raised-millions-from-crypto-firms-for-his-inauguration": {
+      "direct_http_status": 403,
+      "source_excerpt_review": "Exact-URL Bloomberg excerpt retrieved via Exa; reported inaugural committee donations match."
+    },
+    "https://www.notus.org/donald-trump/crypto-inauguration-donations": {
+      "direct_http_status": 200,
+      "source_excerpt_review": "Page text directly retrieved; mapped donation and attributed dinner-access facts match."
+    },
+    "https://www.reuters.com/business/trump-announces-30-tariffs-eu-2025-07-12/": {
+      "direct_http_status": 401,
+      "source_excerpt_review": "Exact-URL Reuters excerpt retrieved via Exa; announcement date, rate, trading partners, and proposed start match."
+    },
+    "https://www.reuters.com/world/middle-east/us-backed-gaza-aid-group-halt-distribution-wednesday-un-vote-ceasefire-demand-2025-06-04/": {
+      "direct_http_status": 401,
+      "source_excerpt_review": "Exact-URL Reuters excerpt retrieved via Exa; date and resolution/veto fact match."
+    },
+    "https://news.un.org/en/story/2025/06/1164056": {
+      "direct_http_status": 200,
+      "source_excerpt_review": "UN News page text directly retrieved; vote and sole-negative-vote facts match."
+    },
+    "https://oversightdemocrats.house.gov/news/press-releases/oversight-democrats-release-report-proving-trump-pocketed-millions-from-at-least": {
+      "direct_http_status": 200,
+      "source_excerpt_review": "House Oversight Democrats page text directly retrieved; attributed report findings match."
+    }
+  },
+  "records": [
+    {
+      "record_id": "entry-5316",
+      "terminal_proposal": "corrected_claim_proposal",
+      "original_claim_summary_exact_match": true,
+      "original_claim_summary": [
+        "That Qatar bailed out 666 Fifth Avenue in June 2017.",
+        "The asserted $1.8 billion bailout and any quid pro quo; these are not established by the cited reporting."
+      ],
+      "title_chars": 83,
+      "short_chars": 83,
+      "medium_words": 56,
+      "long_words": 145,
+      "source_urls": [
+        "https://www.reuters.com/article/world/us/brookfield-gains-lease-on-kushners-landmark-new-york-tower-idUSKBN1KO2KC/",
+        "https://www.reuters.com/article/world/qatar-revamps-investment-strategy-after-kushner-building-bailout-idUSKCN1Q00W3/"
+      ],
+      "source_to_fact_mapping_count": 2,
+      "mapping_review": "Reuters exact-URL excerpts support Brookfield’s 99-year office lease in August 2018; separate Reuters exact-URL excerpt supports QIA/Doha non-involvement in that lease. Wording excludes the unsupported June 2017 Qatar bailout and quid pro quo.",
+      "source_output_line": 6,
+      "exact_blocker": null
+    },
+    {
+      "record_id": "entry-5522",
+      "terminal_proposal": "corrected_claim_proposal",
+      "original_claim_summary_exact_match": true,
+      "original_claim_summary": [
+        "That the donations were to an inaugural ball (sources describe the inaugural committee).",
+        "That crypto donations bought favorable regulation or policy treatment across the industry."
+      ],
+      "title_chars": 104,
+      "short_chars": 104,
+      "medium_words": 55,
+      "long_words": 141,
+      "source_urls": [
+        "https://www.bloomberg.com/news/articles/2025-01-31/trump-raised-millions-from-crypto-firms-for-his-inauguration",
+        "https://www.notus.org/donald-trump/crypto-inauguration-donations"
+      ],
+      "source_to_fact_mapping_count": 2,
+      "mapping_review": "Bloomberg exact-URL excerpt supports cryptocurrency-firm donations to the 2025 inaugural committee; NOTUS page text supports Coinbase’s $1 million donation and its policy vice president’s attributed dinner-access statement. Text does not claim a policy exchange.",
+      "source_output_line": 7,
+      "exact_blocker": null
+    },
+    {
+      "record_id": "entry-5729",
+      "terminal_proposal": "corrected_claim_proposal",
+      "original_claim_summary_exact_match": true,
+      "original_claim_summary": [
+        "The frozen July 28 event date.",
+        "Any statement that the proposed tariffs actually took effect on August 1."
+      ],
+      "title_chars": 82,
+      "short_chars": 82,
+      "medium_words": 54,
+      "long_words": 155,
+      "source_urls": [
+        "https://www.reuters.com/business/trump-announces-30-tariffs-eu-2025-07-12/"
+      ],
+      "source_to_fact_mapping_count": 1,
+      "mapping_review": "Reuters exact-URL excerpt supports July 12, 2025 announcement, 30% rates for EU/Mexico, and proposed August 1 start; wording preserves threat/announcement status and does not claim later implementation.",
+      "source_output_line": 8,
+      "exact_blocker": null
+    },
+    {
+      "record_id": "entry-5748",
+      "terminal_proposal": "corrected_claim_proposal",
+      "original_claim_summary_exact_match": true,
+      "original_claim_summary": [
+        "The broad characterization of unconditional U.S. backing for escalating Israeli operations as a single sourced event.",
+        "The frozen August 1 date as the date of the veto."
+      ],
+      "title_chars": 82,
+      "short_chars": 82,
+      "medium_words": 56,
+      "long_words": 144,
+      "source_urls": [
+        "https://www.reuters.com/world/middle-east/us-backed-gaza-aid-group-halt-distribution-wednesday-un-vote-ceasefire-demand-2025-06-04/",
+        "https://news.un.org/en/story/2025/06/1164056"
+      ],
+      "source_to_fact_mapping_count": 2,
+      "mapping_review": "Reuters exact-URL excerpt and UN News page support the June 4, 2025 Security Council Gaza ceasefire vote and U.S. veto; UN News says it was the sole negative vote. Wording limits claim to the discrete vote.",
+      "source_output_line": 9,
+      "exact_blocker": null
+    },
+    {
+      "record_id": "entry-5802",
+      "terminal_proposal": "corrected_claim_proposal",
+      "original_claim_summary_exact_match": true,
+      "original_claim_summary": [
+        "That foreign governments began booking the hotel on inauguration day.",
+        "That the report itself proves an Emoluments Clause violation or a judicial finding of one."
+      ],
+      "title_chars": 96,
+      "short_chars": 96,
+      "medium_words": 51,
+      "long_words": 149,
+      "source_urls": [
+        "https://oversightdemocrats.house.gov/news/press-releases/oversight-democrats-release-report-proving-trump-pocketed-millions-from-at-least"
+      ],
+      "source_to_fact_mapping_count": 1,
+      "mapping_review": "House Oversight Democrats release text supports the committee minority’s reported at-least-$7.8-million figure, 20 governments, four properties, and presidency timeframe. Wording attributes the finding to the report and does not describe it as a judicial ruling.",
+      "source_output_line": 10,
+      "exact_blocker": null
+    }
+  ],
+  "unresolved_ids": [],
+  "result": "PASS_WITH_FROZEN_INPUT_CAVEAT_AND_DIRECT_ACCESS_LIMITS"
+}

@@ -1,0 +1,443 @@
+{
+  "assignment_commit": "73a2e5144ad19aea9f7a779cc87d113a5a09b9d2",
+  "packet": "final-context-lightsprint/worker-02-input.jsonl",
+  "worker": 2,
+  "processed_ids": [
+    "entry-1667",
+    "entry-1729",
+    "entry-1777",
+    "entry-1857",
+    "entry-2061",
+    "entry-2200",
+    "entry-2332",
+    "entry-2375",
+    "entry-2462",
+    "entry-2515",
+    "entry-2557",
+    "entry-2624",
+    "entry-2731",
+    "entry-290",
+    "entry-3273",
+    "entry-352",
+    "entry-3722",
+    "entry-3863",
+    "entry-3981",
+    "entry-4097",
+    "entry-4304",
+    "entry-4619",
+    "entry-5125",
+    "entry-5433",
+    "entry-5559",
+    "entry-5707",
+    "entry-6138",
+    "entry-6235",
+    "entry-6320",
+    "entry-643",
+    "entry-6991",
+    "entry-766",
+    "entry-824",
+    "entry-868",
+    "entry-954"
+  ],
+  "complete_ids": [
+    "entry-1857",
+    "entry-2200",
+    "entry-2515",
+    "entry-2557",
+    "entry-290",
+    "entry-4304",
+    "entry-4619",
+    "entry-5125",
+    "entry-6138",
+    "entry-6235",
+    "entry-6320"
+  ],
+  "needs_context_ids": [
+    "entry-1667",
+    "entry-1729",
+    "entry-1777",
+    "entry-2061",
+    "entry-2332",
+    "entry-2375",
+    "entry-2462",
+    "entry-2624",
+    "entry-2731",
+    "entry-3273",
+    "entry-352",
+    "entry-3722",
+    "entry-3863",
+    "entry-3981",
+    "entry-4097",
+    "entry-5433",
+    "entry-5559",
+    "entry-5707",
+    "entry-643",
+    "entry-6991",
+    "entry-766",
+    "entry-824",
+    "entry-868",
+    "entry-954"
+  ],
+  "batches": [
+    {
+      "file": "worker-02-batch-001.jsonl",
+      "ids": [
+        "entry-1667",
+        "entry-1729",
+        "entry-1777",
+        "entry-1857",
+        "entry-2061"
+      ]
+    },
+    {
+      "file": "worker-02-batch-002.jsonl",
+      "ids": [
+        "entry-2200",
+        "entry-2332",
+        "entry-2375",
+        "entry-2462",
+        "entry-2515"
+      ]
+    },
+    {
+      "file": "worker-02-batch-003.jsonl",
+      "ids": [
+        "entry-2557",
+        "entry-2624",
+        "entry-2731",
+        "entry-290",
+        "entry-3273"
+      ]
+    },
+    {
+      "file": "worker-02-batch-004.jsonl",
+      "ids": [
+        "entry-352",
+        "entry-3722",
+        "entry-3863",
+        "entry-3981",
+        "entry-4097"
+      ]
+    },
+    {
+      "file": "worker-02-batch-005.jsonl",
+      "ids": [
+        "entry-4304",
+        "entry-4619",
+        "entry-5125",
+        "entry-5433",
+        "entry-5559"
+      ]
+    },
+    {
+      "file": "worker-02-batch-006.jsonl",
+      "ids": [
+        "entry-5707",
+        "entry-6138",
+        "entry-6235",
+        "entry-6320",
+        "entry-643"
+      ]
+    },
+    {
+      "file": "worker-02-batch-007.jsonl",
+      "ids": [
+        "entry-6991",
+        "entry-766",
+        "entry-824",
+        "entry-868",
+        "entry-954"
+      ]
+    },
+    {
+      "file": "worker-02-batch-008.jsonl",
+      "ids": [
+        "entry-6320"
+      ],
+      "revision": true
+    },
+    {
+      "file": "worker-02-batch-009.jsonl",
+      "ids": [
+        "entry-1667",
+        "entry-1729",
+        "entry-1777",
+        "entry-1857",
+        "entry-2061",
+        "entry-2200",
+        "entry-2332"
+      ],
+      "revision": true
+    },
+    {
+      "file": "worker-02-batch-010.jsonl",
+      "ids": [
+        "entry-2375",
+        "entry-2462",
+        "entry-2515",
+        "entry-2557",
+        "entry-2624",
+        "entry-2731",
+        "entry-290"
+      ],
+      "revision": true
+    },
+    {
+      "file": "worker-02-batch-011.jsonl",
+      "ids": [
+        "entry-3273",
+        "entry-352",
+        "entry-3722",
+        "entry-3863",
+        "entry-3981",
+        "entry-4097",
+        "entry-4304"
+      ],
+      "revision": true
+    },
+    {
+      "file": "worker-02-batch-012.jsonl",
+      "ids": [
+        "entry-4619",
+        "entry-5125",
+        "entry-5433",
+        "entry-5559",
+        "entry-5707",
+        "entry-6138",
+        "entry-6235"
+      ],
+      "revision": true
+    },
+    {
+      "file": "worker-02-batch-013.jsonl",
+      "ids": [
+        "entry-6320",
+        "entry-643",
+        "entry-6991",
+        "entry-766",
+        "entry-824",
+        "entry-868",
+        "entry-954"
+      ],
+      "revision": true
+    }
+  ],
+  "revisions": [
+    {
+      "record_id": "entry-6320",
+      "supersedes": "worker-02-batch-006.jsonl",
+      "file": "worker-02-batch-008.jsonl",
+      "reason": "append-only correction: add specific absent search records to the long description without changing its factual scope"
+    },
+    {
+      "record_id": "entry-1667",
+      "supersedes": "worker-02-batch-001.jsonl",
+      "file": "worker-02-batch-009.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-1729",
+      "supersedes": "worker-02-batch-001.jsonl",
+      "file": "worker-02-batch-009.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-1777",
+      "supersedes": "worker-02-batch-001.jsonl",
+      "file": "worker-02-batch-009.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-1857",
+      "supersedes": "worker-02-batch-001.jsonl",
+      "file": "worker-02-batch-009.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-2061",
+      "supersedes": "worker-02-batch-001.jsonl",
+      "file": "worker-02-batch-009.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-2200",
+      "supersedes": "worker-02-batch-002.jsonl",
+      "file": "worker-02-batch-009.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-2332",
+      "supersedes": "worker-02-batch-002.jsonl",
+      "file": "worker-02-batch-009.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-2375",
+      "supersedes": "worker-02-batch-002.jsonl",
+      "file": "worker-02-batch-010.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-2462",
+      "supersedes": "worker-02-batch-002.jsonl",
+      "file": "worker-02-batch-010.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-2515",
+      "supersedes": "worker-02-batch-002.jsonl",
+      "file": "worker-02-batch-010.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained. The short description was also shortened to meet the 180-character limit."
+    },
+    {
+      "record_id": "entry-2557",
+      "supersedes": "worker-02-batch-003.jsonl",
+      "file": "worker-02-batch-010.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-2624",
+      "supersedes": "worker-02-batch-003.jsonl",
+      "file": "worker-02-batch-010.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-2731",
+      "supersedes": "worker-02-batch-003.jsonl",
+      "file": "worker-02-batch-010.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-290",
+      "supersedes": "worker-02-batch-003.jsonl",
+      "file": "worker-02-batch-010.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained. The short description was also shortened to meet the 180-character limit."
+    },
+    {
+      "record_id": "entry-3273",
+      "supersedes": "worker-02-batch-003.jsonl",
+      "file": "worker-02-batch-011.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-352",
+      "supersedes": "worker-02-batch-004.jsonl",
+      "file": "worker-02-batch-011.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-3722",
+      "supersedes": "worker-02-batch-004.jsonl",
+      "file": "worker-02-batch-011.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-3863",
+      "supersedes": "worker-02-batch-004.jsonl",
+      "file": "worker-02-batch-011.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-3981",
+      "supersedes": "worker-02-batch-004.jsonl",
+      "file": "worker-02-batch-011.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-4097",
+      "supersedes": "worker-02-batch-004.jsonl",
+      "file": "worker-02-batch-011.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-4304",
+      "supersedes": "worker-02-batch-005.jsonl",
+      "file": "worker-02-batch-011.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-4619",
+      "supersedes": "worker-02-batch-005.jsonl",
+      "file": "worker-02-batch-012.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-5125",
+      "supersedes": "worker-02-batch-005.jsonl",
+      "file": "worker-02-batch-012.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained. The short description was also shortened to meet the 180-character limit."
+    },
+    {
+      "record_id": "entry-5433",
+      "supersedes": "worker-02-batch-005.jsonl",
+      "file": "worker-02-batch-012.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-5559",
+      "supersedes": "worker-02-batch-005.jsonl",
+      "file": "worker-02-batch-012.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-5707",
+      "supersedes": "worker-02-batch-006.jsonl",
+      "file": "worker-02-batch-012.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-6138",
+      "supersedes": "worker-02-batch-006.jsonl",
+      "file": "worker-02-batch-012.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-6235",
+      "supersedes": "worker-02-batch-006.jsonl",
+      "file": "worker-02-batch-012.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-6320",
+      "supersedes": "worker-02-batch-008.jsonl",
+      "file": "worker-02-batch-013.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-643",
+      "supersedes": "worker-02-batch-006.jsonl",
+      "file": "worker-02-batch-013.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-6991",
+      "supersedes": "worker-02-batch-007.jsonl",
+      "file": "worker-02-batch-013.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-766",
+      "supersedes": "worker-02-batch-007.jsonl",
+      "file": "worker-02-batch-013.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-824",
+      "supersedes": "worker-02-batch-007.jsonl",
+      "file": "worker-02-batch-013.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-868",
+      "supersedes": "worker-02-batch-007.jsonl",
+      "file": "worker-02-batch-013.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    },
+    {
+      "record_id": "entry-954",
+      "supersedes": "worker-02-batch-007.jsonl",
+      "file": "worker-02-batch-013.jsonl",
+      "reason": "Full-schema retry: the prior row lacked the required preserved_fields key; all prior outcome content and source URLs are retained."
+    }
+  ]
+}

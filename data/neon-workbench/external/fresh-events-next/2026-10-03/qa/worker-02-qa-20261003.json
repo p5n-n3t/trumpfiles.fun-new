@@ -1,0 +1,81 @@
+{
+  "worker": 2,
+  "status": "PASS_WITH_EXPLICIT_UNRESOLVED_LEADS",
+  "source_commit": "432179c3cefe6c531217b4315f00df799639d64b",
+  "references": {
+    "frozen_title_date_index": {
+      "rows": 7143,
+      "sha256": "f07fdd5c9edc563373dd8f790a0d1a945503768c8a9da2581ec0684de5f31ff3"
+    },
+    "prior_fresh_context": {
+      "rows": 84,
+      "sha256": "29102aea07191ca1ce3f68f2ed276b41edb8a8ec52a3ebf6a7854a3484ee8102"
+    }
+  },
+  "counts": {
+    "complete_proposals": 14,
+    "unresolved_leads": 2,
+    "total_rows": 16,
+    "batch_counts": [
+      5,
+      5,
+      6
+    ]
+  },
+  "checks": {
+    "jsonl_parse": true,
+    "unique_oct2026_keys": true,
+    "title_short_max_180_chars": true,
+    "medium_45_to_90_words": true,
+    "long_140_to_300_words": true,
+    "valid_category_taxonomy": true,
+    "event_dates_in_range": true,
+    "all_supported_claim_urls_listed_as_sources": true,
+    "source_urls_https": true,
+    "proposal_only_no_insert_authorization": true,
+    "unresolved_leads_have_exact_gap_no_padded_descriptions": true,
+    "no_impact_scores_assigned": true
+  },
+  "source_access_caveats": [
+    "Primary and high-quality secondary sources were read through official pages, publisher excerpts, and indexed document excerpts. Source-level verification fields identify where only excerpts or copies were available; full report calculations and several court PDFs were not independently reproduced locally.",
+    "The Justice Department complaint URL returned an HTML page in this sandbox; its filing claims are cross-checked against the official DOJ release and Bloomberg Law.",
+    "The Cox opinion copy was hosted by an independent document host; case number and date were checked against CBS reporting.",
+    "Anonymous-source assertions on diesel pressure remain attributed to Reuters/NBC and are not stated as confirmed written policy."
+  ],
+  "screened_out_or_not_promoted": [
+    {
+      "item": "ICE courthouse-arrest policy summary judgment",
+      "reason": "The order is dated September 30, 2026, outside the event window; October 1 reporting is not the event date."
+    },
+    {
+      "item": "DOJ FACE Act lawsuit dismissal in New Jersey",
+      "reason": "The related report identifies the ruling as September 30, 2026; excluded as an older ruling."
+    },
+    {
+      "item": "Federal Register executive orders published October 2",
+      "reason": "The orders were signed September 29, 2026; publication in the window does not make them new actions."
+    },
+    {
+      "item": "Trump’s October 2 rally forecast for the Iran war to end near the midterms",
+      "reason": "A repeated forecast already reported in September; no materially new policy or claim was established."
+    },
+    {
+      "item": "October 1 DHS/DOJ voter-fraud press conference",
+      "reason": "The DHS release says the event was held the previous day, September 30."
+    }
+  ],
+  "unresolved_leads": [
+    {
+      "candidate_key": "oct2026-aircraft-license-slowdown-date-gap",
+      "title": "Reuters reports Commerce slowed aircraft-parts export licenses to China",
+      "exact_gap": "The article says licensing had slowed “in recent weeks” but does not date a specific Commerce decision or establish that a discrete slowdown occurred October 1–3. The exact agency action and effective date are needed before this can be treated as a fresh event."
+    },
+    {
+      "candidate_key": "oct2026-cuba-fuel-vessel-interception-confirmation-gap",
+      "title": "Reuters relays a New York Times report of a Coast Guard fuel-vessel interception near Cuba",
+      "exact_gap": "Reuters attributes the interception to a New York Times report. The underlying NYT account, Coast Guard confirmation, vessel identity, and precise interception time were not established in retrieved material; retain as a lead rather than a confirmed administration action."
+    }
+  ],
+  "no_database_or_canonical_edits": true,
+  "no_merge_install_deploy_or_web80": true
+}

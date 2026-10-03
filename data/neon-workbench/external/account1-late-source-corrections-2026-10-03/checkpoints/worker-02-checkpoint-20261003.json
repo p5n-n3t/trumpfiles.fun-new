@@ -1,0 +1,41 @@
+{
+  "packet": "account1-late-source-corrections-2026-10-03",
+  "source_packet_branch": "codex/account1-late-source-corrections-2026-10-03",
+  "source_packet_commit": "d1c9c5990d6b15257fbb406671cd73994b45420e",
+  "worker": 2,
+  "input_file": "worker-02-input.jsonl",
+  "input_sha256": "f134e33e7d74002eeb4db31bf72257955ac250a834a7616146b25b612022e727",
+  "assigned_ids": [
+    "entry-4242",
+    "entry-4686",
+    "entry-5331",
+    "entry-5741",
+    "entry-5836",
+    "entry-5896",
+    "entry-6452",
+    "entry-6550",
+    "entry-6635",
+    "entry-6716",
+    "entry-6773",
+    "entry-6837",
+    "entry-6942"
+  ],
+  "proposal_count": 13,
+  "complete_count": 13,
+  "unresolved_count": 0,
+  "qa": "qa/worker-02-final-qa-20261003.json",
+  "qa_result": "PASS",
+  "batches": [
+    {
+      "file": "worker-02-batch-20261003-001.jsonl",
+      "row_count": 7,
+      "sha256": "a34f2a3461534155f4a8c326741b80d24df736b20d6c0ff7aa1adb6b6d57a5e5"
+    },
+    {
+      "file": "worker-02-batch-20261003-002.jsonl",
+      "row_count": 6,
+      "sha256": "3f0b1edc0db4a3065b64a64ca4490953d3d5de852d9bcfd369d4832ecca4155b"
+    }
+  ],
+  "scope": "Only worker-02 assigned IDs. Proposal files only; no canonical or Neon data modified."
+}
