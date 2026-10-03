@@ -1,0 +1,27 @@
+{
+  "worker": "worker-05",
+  "phase": "second-writing-wave",
+  "assignment_count": 9,
+  "source_input_commit": "6d8c7badd5b1e482574949eab1af6260a1b732b2",
+  "complete_count": 0,
+  "needs_context_count": 9,
+  "remaining_count": 0,
+  "completed_ids": [],
+  "needs_context_ids": [
+    "entry-1233",
+    "entry-1762",
+    "entry-1915",
+    "entry-268",
+    "entry-2971",
+    "entry-4044",
+    "entry-4329",
+    "entry-5517",
+    "entry-7074"
+  ],
+  "remaining_ids": [],
+  "output_files": [
+    "worker-05-batch-001.jsonl",
+    "worker-05-batch-002.jsonl"
+  ],
+  "latest_batch": "worker-05-batch-002.jsonl"
+}

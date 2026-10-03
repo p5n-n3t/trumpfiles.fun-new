@@ -1,0 +1,22 @@
+{
+  "worker": "05",
+  "phase": "final-context-lightsprint",
+  "batch": "001",
+  "processed_record_ids": [
+    "entry-1673",
+    "entry-1736",
+    "entry-1780",
+    "entry-1915",
+    "entry-210",
+    "entry-227",
+    "entry-2343",
+    "entry-2413",
+    "entry-2483",
+    "entry-2523",
+    "entry-2571",
+    "entry-264"
+  ],
+  "complete_count": 10,
+  "needs_context_count": 2,
+  "total_count": 12
+}

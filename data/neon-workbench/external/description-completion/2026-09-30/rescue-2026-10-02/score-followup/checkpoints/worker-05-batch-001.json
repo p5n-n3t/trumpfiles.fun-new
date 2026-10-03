@@ -1,0 +1,29 @@
+{
+  "worker": "05",
+  "phase": "offline-impact-v2-followup",
+  "batch": "001",
+  "processed_record_ids": [
+    "entry-1032",
+    "entry-1215",
+    "entry-1297",
+    "entry-1350",
+    "entry-1400",
+    "entry-1445",
+    "entry-1482",
+    "entry-1520",
+    "entry-1544",
+    "entry-1563",
+    "entry-1591",
+    "entry-1611",
+    "entry-1632",
+    "entry-1652",
+    "entry-1670",
+    "entry-1700",
+    "entry-1727",
+    "entry-1754",
+    "entry-1769"
+  ],
+  "scored_count": 12,
+  "deferred_count": 7,
+  "total_count": 19
+}

@@ -1,0 +1,29 @@
+{
+  "worker": "05",
+  "phase": "offline-impact-v2-followup",
+  "batch": "003",
+  "processed_record_ids": [
+    "entry-469",
+    "entry-5407",
+    "entry-5524",
+    "entry-5597",
+    "entry-5985",
+    "entry-6144",
+    "entry-6241",
+    "entry-6340",
+    "entry-6633",
+    "entry-6986",
+    "entry-7010",
+    "entry-7056",
+    "entry-7093",
+    "entry-7157",
+    "entry-725",
+    "entry-859",
+    "entry-908",
+    "entry-949",
+    "expanded-20260902-birthright-new-injunction"
+  ],
+  "scored_count": 14,
+  "deferred_count": 5,
+  "total_count": 19
+}
