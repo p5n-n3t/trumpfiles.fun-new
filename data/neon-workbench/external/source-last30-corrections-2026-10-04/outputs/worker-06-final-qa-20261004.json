@@ -1,0 +1,280 @@
+{
+  "packet": "source-last30-corrections-2026-10-04",
+  "worker": 6,
+  "qa_status": "pass",
+  "assigned_entry_numbers": [
+    6651,
+    6682,
+    6730,
+    6752,
+    6771
+  ],
+  "observed_entry_numbers": [
+    6651,
+    6682,
+    6730,
+    6752,
+    6771
+  ],
+  "unique_row_count": 5,
+  "input_provenance": {
+    "commit": "19831e87e22fd5890fe0a764be51c617580d4a99",
+    "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/worker-05-input.jsonl",
+    "sha256": "7d62a5538346e70e12f535cc8a55eddbb620aba8fbf2c66607306e0c5172c1ce"
+  },
+  "effective_worker05_output_provenance": {
+    "commit": "ef2007fd51a47a237f10e35213faaa50eb7c7df5",
+    "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-05-batch-003.jsonl",
+    "sha256": "9a09b1996d2a5e71b68f25611a55f897826cdd2ee546aafd39ca2f892caca28b",
+    "assigned_output_rows": [
+      {
+        "entry_number": 6651,
+        "line": 1,
+        "status": "needs_correction"
+      },
+      {
+        "entry_number": 6682,
+        "line": 2,
+        "status": "needs_correction"
+      },
+      {
+        "entry_number": 6730,
+        "line": 3,
+        "status": "needs_correction"
+      },
+      {
+        "entry_number": 6752,
+        "line": 4,
+        "status": "needs_correction"
+      },
+      {
+        "entry_number": 6771,
+        "line": 5,
+        "status": "needs_correction"
+      }
+    ]
+  },
+  "saved_worker06_batch": {
+    "file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-06-batch-20261004-001.jsonl",
+    "sha256": "b16e89ed990e34ed22ab795e5aee325f71cb371bb47574e7751fde930c0c7595",
+    "row_count": 5
+  },
+  "checks": {
+    "exact_assigned_set_once_each": true,
+    "no_extra_or_duplicate_ids": true,
+    "frozen_originals_match_worker05_input": true,
+    "source_urls_match_source_evidence_records": true,
+    "every_source_url_mapped_to_claim_facts_and_limits": true,
+    "title_and_short_at_most_180_characters": true,
+    "medium_45_to_90_words": true,
+    "long_140_to_300_words": true,
+    "every_row_has_terminal_proposal_or_hold": true,
+    "unsupported_original_claims_have_explicit_gaps": true
+  },
+  "hold_entry_numbers": [],
+  "records": [
+    {
+      "record_id": "entry-6651",
+      "entry_number": 6651,
+      "status": "needs_correction",
+      "terminal_proposal": true,
+      "frozen_original_exact_match": true,
+      "effective_worker05_output_line": 1,
+      "description_lengths": {
+        "title_characters": 71,
+        "short_characters": 81,
+        "medium_words": 53,
+        "long_words": 161
+      },
+      "source_urls": [
+        "https://www.washingtonpost.com/wp-srv/politics/documents/spratingreport_080611.pdf",
+        "https://www.reuters.com/markets/us/fitch-decision-cut-us-credit-rating-based-deteriorating-governance-polarization-2023-08-02/"
+      ],
+      "url_to_fact_mapping": [
+        {
+          "url": "https://www.washingtonpost.com/wp-srv/politics/documents/spratingreport_080611.pdf",
+          "supports_claims": [
+            "S&P lowered the U.S. long-term sovereign rating from AAA to AA+ on August 5, 2011.",
+            "The S&P report describes fiscal and policymaking/governance risks."
+          ],
+          "source_check": "The retrieved rating-action report states the date and rating change and gives fiscal/political risk as the basis."
+        },
+        {
+          "url": "https://www.reuters.com/markets/us/fitch-decision-cut-us-credit-rating-based-deteriorating-governance-polarization-2023-08-02/",
+          "supports_claims": [
+            "Fitch lowered the U.S. rating from AAA to AA+ on August 1, 2023.",
+            "Reuters attributes to Fitch fiscal deterioration, debt-ceiling brinkmanship, governance concerns, and polarization."
+          ],
+          "source_check": "The retrieved Reuters article reports the downgrade date and directly quotes a Fitch director on the rationale."
+        }
+      ],
+      "supported_facts": [
+        "S&P lowered the U.S. rating from AAA to AA+ on August 5, 2011.",
+        "Fitch lowered the U.S. rating from AAA to AA+ on August 1, 2023 and cited fiscal and governance concerns."
+      ],
+      "unsupported_original_claims": [
+        "That these two rating decisions were caused by Trump second-term policies.",
+        "That the cited records establish an all-three-agencies status or billions in annual debt-service costs."
+      ],
+      "exact_gap": "The sources support the dates and agency rationales for the S&P and Fitch downgrades but not the original Trump-policy causal attribution or quantified debt-service effect.",
+      "hold": false
+    },
+    {
+      "record_id": "entry-6682",
+      "entry_number": 6682,
+      "status": "needs_correction",
+      "terminal_proposal": true,
+      "frozen_original_exact_match": true,
+      "effective_worker05_output_line": 2,
+      "description_lengths": {
+        "title_characters": 90,
+        "short_characters": 100,
+        "medium_words": 60,
+        "long_words": 179
+      },
+      "source_urls": [
+        "https://www.reuters.com/world/trump-starts-gulf-visit-seeking-big-economic-deals-2025-05-13/",
+        "https://www.reuters.com/business/aerospace-defense/beyond-headlines-explaining-trumps-gulf-trillions-2025-05-16/"
+      ],
+      "url_to_fact_mapping": [
+        {
+          "url": "https://www.reuters.com/world/trump-starts-gulf-visit-seeking-big-economic-deals-2025-05-13/",
+          "supports_claims": [
+            "During Trump’s May 2025 Gulf trip, Saudi Arabia announced a $600 billion U.S. investment commitment."
+          ],
+          "source_check": "Reuters reports the announced Saudi commitment; the wording remains a commitment, not a completed transfer."
+        },
+        {
+          "url": "https://www.reuters.com/business/aerospace-defense/beyond-headlines-explaining-trumps-gulf-trillions-2025-05-16/",
+          "supports_claims": [
+            "The White House cited over $2 trillion in combined Gulf deals; Reuters tallied over $700 billion in specified announced deals.",
+            "Reuters reports that many corporate agreements were nonbinding memorandums of understanding."
+          ],
+          "source_check": "The retrieved May 16 Reuters article states the headline/tally comparison and notes nonbinding agreements."
+        }
+      ],
+      "supported_facts": [
+        "Reuters reported a $600 billion Saudi commitment to invest in the U.S. during Trump’s May 2025 visit.",
+        "Reuters later distinguished the White House headline total from its own tally of specified announced deals and noted many corporate MOUs were nonbinding."
+      ],
+      "unsupported_original_claims": [
+        "That Gulf governments invested in Trump-linked companies as the price of favorable treatment.",
+        "That headline commitment amounts represent completed investments."
+      ],
+      "exact_gap": "The Reuters reports document announcements and deal-status uncertainty, not pressure, quid pro quo, completed investment of the headline amounts, or direct Trump-family benefit.",
+      "hold": false
+    },
+    {
+      "record_id": "entry-6730",
+      "entry_number": 6730,
+      "status": "needs_correction",
+      "terminal_proposal": true,
+      "frozen_original_exact_match": true,
+      "effective_worker05_output_line": 3,
+      "description_lengths": {
+        "title_characters": 91,
+        "short_characters": 124,
+        "medium_words": 52,
+        "long_words": 169
+      },
+      "source_urls": [
+        "https://www.whitehouse.gov/presidential-actions/2025/01/memorandum-for-the-secretary-of-state-the-secretary-of-defense-the-secretary-of-health-and-human-services-the-administrator-of-the-united-states-for-international-development/"
+      ],
+      "url_to_fact_mapping": [
+        {
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/memorandum-for-the-secretary-of-state-the-secretary-of-defense-the-secretary-of-health-and-human-services-the-administrator-of-the-united-states-for-international-development/",
+          "supports_claims": [
+            "The January 24, 2025 memorandum reinstated the 2017 Mexico City Policy and revoked the 2021 memorandum.",
+            "It directed State, coordinating with HHS and subject to law, to plan an extension to global-health assistance across federal departments and agencies."
+          ],
+          "source_check": "The retrieved White House memorandum states the date, reinstatement, interagency planning directive, and legal qualification."
+        }
+      ],
+      "supported_facts": [
+        "The January 24, 2025 memorandum reinstated the 2017 Mexico City Policy.",
+        "It directed State, with HHS and subject to law, to prepare a plan for broader application to federal global-health assistance."
+      ],
+      "unsupported_original_claims": [
+        "That this memorandum was issued January 20.",
+        "That it immediately ended aid to every organization that mentions abortion or proves regional health outcomes."
+      ],
+      "exact_gap": "The memorandum establishes reinstatement and a planning directive; recipient-level funding changes and health outcomes require implementation evidence.",
+      "hold": false
+    },
+    {
+      "record_id": "entry-6752",
+      "entry_number": 6752,
+      "status": "needs_correction",
+      "terminal_proposal": true,
+      "frozen_original_exact_match": true,
+      "effective_worker05_output_line": 4,
+      "description_lengths": {
+        "title_characters": 77,
+        "short_characters": 137,
+        "medium_words": 54,
+        "long_words": 171
+      },
+      "source_urls": [
+        "https://www.federalregister.gov/documents/2025/01/31/2025-02097/ending-illegal-discrimination-and-restoring-merit-based-opportunity"
+      ],
+      "url_to_fact_mapping": [
+        {
+          "url": "https://www.federalregister.gov/documents/2025/01/31/2025-02097/ending-illegal-discrimination-and-restoring-merit-based-opportunity",
+          "supports_claims": [
+            "EO 14173 was signed January 21, 2025, and revoked EO 11246.",
+            "The order directs agencies to include contract/grant terms requiring compliance with federal anti-discrimination laws and certification about DEI programs that violate those laws."
+          ],
+          "source_check": "The retrieved Federal Register text states the signature date and award-term provisions; it does not state a blanket ban on all DEI activity."
+        }
+      ],
+      "supported_facts": [
+        "EO 14173 was signed January 21, 2025, and revoked EO 11246.",
+        "It directs agencies to include contract and grant terms concerning compliance with anti-discrimination laws and DEI programs that violate those laws."
+      ],
+      "unsupported_original_claims": [
+        "That EO 14173 banned all DEI at all federally funded institutions.",
+        "That every such institution immediately lost funding or changed programs."
+      ],
+      "exact_gap": "The order does not state a universal ban; the scope and outcomes for particular recipients depend on agency terms and legal proceedings.",
+      "hold": false
+    },
+    {
+      "record_id": "entry-6771",
+      "entry_number": 6771,
+      "status": "needs_correction",
+      "terminal_proposal": true,
+      "frozen_original_exact_match": true,
+      "effective_worker05_output_line": 5,
+      "description_lengths": {
+        "title_characters": 85,
+        "short_characters": 134,
+        "medium_words": 57,
+        "long_words": 174
+      },
+      "source_urls": [
+        "https://rollcall.com/2025/03/11/judges-warn-against-impeachments-for-rulings-against-trump/"
+      ],
+      "url_to_fact_mapping": [
+        {
+          "url": "https://rollcall.com/2025/03/11/judges-warn-against-impeachments-for-rulings-against-trump/",
+          "supports_claims": [
+            "By March 11, 2025, four impeachment resolutions had been filed against three judges after rulings that paused or slowed Trump administration actions.",
+            "The article reports judicial officials’ concern about impeachment in response to rulings and identifies the congressional filings."
+          ],
+          "source_check": "The retrieved Roll Call report states the resolution count, timing, post-ruling context, named filings, and judges’ comments."
+        }
+      ],
+      "supported_facts": [
+        "By March 11, 2025, Roll Call reported four impeachment resolutions against three judges after rulings that paused or slowed administration actions.",
+        "The report quotes judicial officials concerned about impeachment being used in response to rulings."
+      ],
+      "unsupported_original_claims": [
+        "That Trump officials threatened IRS audits or DOJ investigations against judges.",
+        "That the White House directed the congressional resolutions."
+      ],
+      "exact_gap": "The source documents congressional resolutions and judicial responses, not executive investigative threats or White House direction.",
+      "hold": false
+    }
+  ],
+  "scope_note": "QA only. This checkpoint adds no canonical or Neon changes and does not alter the saved correction batch."
+}

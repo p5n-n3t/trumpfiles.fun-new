@@ -1,0 +1,73 @@
+{
+  "worker": "account1-worker-06",
+  "packet_branch": "codex/wave3-citation-qa-2026-10-03",
+  "packet_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+  "input_file": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/worker-21-input.jsonl",
+  "input_sha256": "dacaf3fd748c3bafb24c1011e9ce87ba78d0516b484a4082896546bc8b7a76f8",
+  "assigned_ids": [
+    "entry-211",
+    "entry-275",
+    "entry-594",
+    "entry-772",
+    "entry-833",
+    "entry-965",
+    "entry-1728",
+    "entry-2296",
+    "entry-2458",
+    "entry-2571",
+    "entry-3117",
+    "entry-3735",
+    "entry-4054",
+    "entry-4622",
+    "entry-5531",
+    "entry-6138",
+    "entry-6245"
+  ],
+  "outcome_ids": [
+    "entry-211",
+    "entry-275",
+    "entry-594",
+    "entry-772",
+    "entry-833",
+    "entry-965",
+    "entry-1728",
+    "entry-2296",
+    "entry-2458",
+    "entry-2571",
+    "entry-3117",
+    "entry-3735",
+    "entry-4054",
+    "entry-4622",
+    "entry-5531",
+    "entry-6138",
+    "entry-6245"
+  ],
+  "exact_id_set_match": true,
+  "outcome_rows": 17,
+  "unique_outcomes": 17,
+  "batch_files": [
+    "account1-worker-06-batch-20261003-qa-001.jsonl",
+    "account1-worker-06-batch-20261003-qa-002.jsonl",
+    "account1-worker-06-batch-20261003-qa-003.jsonl"
+  ],
+  "batch_sizes": [
+    6,
+    6,
+    5
+  ],
+  "status_counts": {
+    "citation_repaired_proposal": 8,
+    "corrected_claim_proposal": 8,
+    "scope_exclusion_proposal": 1,
+    "unresolved_hold": 0
+  },
+  "qa": {
+    "jsonl_parse": "pass",
+    "required_schema_fields": "pass",
+    "prior_input_hash_per_row": "pass",
+    "source_url_mapping_consistency": "pass",
+    "description_length_bounds": "pass where prose changed",
+    "account2_or_other_worker_outputs_touched": false,
+    "canonical_or_neon_data_touched": false
+  }
+}

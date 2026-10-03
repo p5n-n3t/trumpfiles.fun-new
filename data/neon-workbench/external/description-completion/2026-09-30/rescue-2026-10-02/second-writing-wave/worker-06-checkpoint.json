@@ -1,0 +1,39 @@
+{
+  "worker": 6,
+  "phase": "second-writing-wave",
+  "input_branch": "codex/rescue-second-writing-wave-2026-10-02",
+  "input_commit": "6d8c7badd5b1e482574949eab1af6260a1b732b2",
+  "input_path": "external/description-completion/2026-09-30/rescue-2026-10-02/second-writing-wave/worker-06-input.jsonl",
+  "requested_input_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/second-writing-wave/worker-06-input.jsonl",
+  "input_sha256": "5193231bea74ad8671d849fc78185b5a3d3e40b0b66a6c411528fc2fa555c3ca",
+  "batches": [
+    "outputs/worker-06-batch-001.jsonl"
+  ],
+  "assigned": 9,
+  "processed": 9,
+  "complete": 1,
+  "needs_context": 8,
+  "remaining": 0,
+  "processed_record_ids": [
+    "entry-127",
+    "entry-177",
+    "entry-194",
+    "entry-2731",
+    "entry-3109",
+    "entry-405",
+    "entry-4353",
+    "entry-5565",
+    "entry-7170"
+  ],
+  "effective_status_by_record_id": {
+    "entry-127": "needs_context",
+    "entry-177": "needs_context",
+    "entry-194": "needs_context",
+    "entry-2731": "needs_context",
+    "entry-3109": "needs_context",
+    "entry-405": "needs_context",
+    "entry-4353": "needs_context",
+    "entry-5565": "needs_context",
+    "entry-7170": "complete"
+  }
+}

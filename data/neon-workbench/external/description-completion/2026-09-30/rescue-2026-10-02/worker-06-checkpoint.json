@@ -1,0 +1,237 @@
+{
+  "worker": 6,
+  "input_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/worker-06-input.jsonl",
+  "input_commit": "e95178ad5ca0de630c007c46523c19e40d37d54f",
+  "input_sha256": "0c51edd50696ff0301cc1f976862b115c2be3b1b7e63c8d20a4f8027a852801c",
+  "frozen_results_commit": "0b6568247255dd9f165662146fc0c81efe320205",
+  "base_results_commit": "0409d51891b75b4adeeb63fbae8d94b66038b560",
+  "batches": [
+    "outputs/worker-06-batch-001.jsonl",
+    "outputs/worker-06-batch-002.jsonl",
+    "outputs/worker-06-batch-003.jsonl",
+    "outputs/worker-06-batch-004.jsonl",
+    "outputs/worker-06-batch-005.jsonl"
+  ],
+  "assigned": 53,
+  "processed": 53,
+  "complete": 23,
+  "needs_context": 30,
+  "remaining": 0,
+  "processed_record_ids": [
+    "entry-1203",
+    "entry-1349",
+    "entry-1415",
+    "entry-1457",
+    "entry-1495",
+    "entry-1548",
+    "entry-1592",
+    "entry-1624",
+    "entry-1654",
+    "entry-1696",
+    "entry-1766",
+    "entry-195",
+    "entry-213",
+    "entry-2296",
+    "entry-2343",
+    "entry-2375",
+    "entry-2441",
+    "entry-249",
+    "entry-252",
+    "entry-2557",
+    "entry-2615",
+    "entry-2721",
+    "entry-2903",
+    "entry-3205",
+    "entry-34",
+    "entry-352",
+    "entry-3626",
+    "entry-3761",
+    "entry-3839",
+    "entry-3899",
+    "entry-4113",
+    "entry-4331",
+    "entry-4516",
+    "entry-4628",
+    "entry-483",
+    "entry-5017",
+    "entry-5233",
+    "entry-537",
+    "entry-5597",
+    "entry-580",
+    "entry-5989",
+    "entry-6148",
+    "entry-6206",
+    "entry-6279",
+    "entry-6344",
+    "entry-6500",
+    "entry-6728",
+    "entry-735",
+    "entry-811",
+    "entry-842",
+    "entry-878",
+    "entry-945",
+    "expanded-20260821-visa75-court"
+  ],
+  "amendments": [
+    {
+      "record_id": "entry-1203",
+      "supersedes_file": "outputs/worker-06-batch-001.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-1415",
+      "supersedes_file": "outputs/worker-06-batch-001.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-1495",
+      "supersedes_file": "outputs/worker-06-batch-001.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-1548",
+      "supersedes_file": "outputs/worker-06-batch-001.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-1592",
+      "supersedes_file": "outputs/worker-06-batch-001.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-1624",
+      "supersedes_file": "outputs/worker-06-batch-001.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-1654",
+      "supersedes_file": "outputs/worker-06-batch-001.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-1696",
+      "supersedes_file": "outputs/worker-06-batch-001.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-195",
+      "supersedes_file": "outputs/worker-06-batch-001.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-213",
+      "supersedes_file": "outputs/worker-06-batch-001.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-2296",
+      "supersedes_file": "outputs/worker-06-batch-001.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-2557",
+      "supersedes_file": "outputs/worker-06-batch-002.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-2615",
+      "supersedes_file": "outputs/worker-06-batch-002.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-3205",
+      "supersedes_file": "outputs/worker-06-batch-002.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-34",
+      "supersedes_file": "outputs/worker-06-batch-002.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-3626",
+      "supersedes_file": "outputs/worker-06-batch-002.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-4628",
+      "supersedes_file": "outputs/worker-06-batch-003.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-5233",
+      "supersedes_file": "outputs/worker-06-batch-003.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-6344",
+      "supersedes_file": "outputs/worker-06-batch-003.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-6500",
+      "supersedes_file": "outputs/worker-06-batch-004.jsonl",
+      "revision": 1
+    },
+    {
+      "record_id": "entry-6728",
+      "supersedes_file": "outputs/worker-06-batch-004.jsonl",
+      "revision": 1
+    }
+  ],
+  "effective_status_by_record_id": {
+    "entry-1203": "complete",
+    "entry-1349": "complete",
+    "entry-1415": "complete",
+    "entry-1457": "needs_context",
+    "entry-1495": "complete",
+    "entry-1548": "complete",
+    "entry-1592": "complete",
+    "entry-1624": "complete",
+    "entry-1654": "complete",
+    "entry-1696": "complete",
+    "entry-1766": "needs_context",
+    "entry-195": "needs_context",
+    "entry-213": "needs_context",
+    "entry-2296": "needs_context",
+    "entry-2343": "needs_context",
+    "entry-2375": "needs_context",
+    "entry-2441": "needs_context",
+    "entry-249": "needs_context",
+    "entry-252": "needs_context",
+    "entry-2557": "needs_context",
+    "entry-2615": "needs_context",
+    "entry-2721": "needs_context",
+    "entry-2903": "needs_context",
+    "entry-3205": "complete",
+    "entry-34": "complete",
+    "entry-352": "needs_context",
+    "entry-3626": "complete",
+    "entry-3761": "complete",
+    "entry-3839": "needs_context",
+    "entry-3899": "needs_context",
+    "entry-4113": "needs_context",
+    "entry-4331": "complete",
+    "entry-4516": "needs_context",
+    "entry-4628": "complete",
+    "entry-483": "needs_context",
+    "entry-5017": "needs_context",
+    "entry-5233": "complete",
+    "entry-537": "complete",
+    "entry-5597": "needs_context",
+    "entry-580": "complete",
+    "entry-5989": "complete",
+    "entry-6148": "needs_context",
+    "entry-6206": "needs_context",
+    "entry-6279": "needs_context",
+    "entry-6344": "complete",
+    "entry-6500": "complete",
+    "entry-6728": "complete",
+    "entry-735": "needs_context",
+    "entry-811": "needs_context",
+    "entry-842": "needs_context",
+    "entry-878": "needs_context",
+    "entry-945": "needs_context",
+    "expanded-20260821-visa75-court": "complete"
+  }
+}

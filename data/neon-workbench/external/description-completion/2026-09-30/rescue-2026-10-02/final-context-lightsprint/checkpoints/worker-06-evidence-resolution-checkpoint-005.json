@@ -1,0 +1,15 @@
+{
+  "input_commit": "b746cabf167043cd52896163368baea52af66c07",
+  "batch_file": "worker-06-evidence-resolution-batch-005.jsonl",
+  "row_count": 3,
+  "status_counts": {
+    "complete": 0,
+    "needs_context": 3
+  },
+  "record_ids": [
+    "entry-776",
+    "entry-835",
+    "entry-985"
+  ],
+  "sha256": "7bbb786a7b0155dea01c8c3a198f25f18def589c6f7d197197c643c9ff00a20a"
+}

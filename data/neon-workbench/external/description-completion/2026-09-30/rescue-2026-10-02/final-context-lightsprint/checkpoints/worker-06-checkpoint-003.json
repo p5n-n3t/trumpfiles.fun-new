@@ -1,0 +1,32 @@
+{
+  "worker": 6,
+  "phase": "final-context-lightsprint",
+  "batch": "worker-06-batch-003.jsonl",
+  "assigned_ids": [
+    "entry-4329",
+    "entry-4719",
+    "entry-53",
+    "entry-5469",
+    "entry-5597",
+    "entry-594",
+    "entry-6155",
+    "entry-6245",
+    "entry-6351",
+    "entry-655"
+  ],
+  "processed_ids": [
+    "entry-4329",
+    "entry-4719",
+    "entry-53",
+    "entry-5469",
+    "entry-5597",
+    "entry-594",
+    "entry-6155",
+    "entry-6245",
+    "entry-6351",
+    "entry-655"
+  ],
+  "complete": 4,
+  "needs_context": 6,
+  "status": "checkpointed"
+}

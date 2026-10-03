@@ -1,0 +1,10 @@
+{
+  "worker": "06",
+  "phase": "score-followup",
+  "batch": "worker-06-batch-004.jsonl",
+  "assigned_ids": ["entry-1790"],
+  "processed_ids": ["entry-1790"],
+  "scored": 1,
+  "deferred": 0,
+  "status": "complete"
+}

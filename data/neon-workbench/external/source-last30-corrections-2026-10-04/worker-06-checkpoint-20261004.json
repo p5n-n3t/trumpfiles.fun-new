@@ -1,0 +1,63 @@
+{
+  "packet": "source-last30-corrections-2026-10-04",
+  "worker": 6,
+  "assigned_entry_numbers": [
+    6651,
+    6682,
+    6730,
+    6752,
+    6771
+  ],
+  "rows_written": 5,
+  "terminal_status_counts": {
+    "needs_correction": 5
+  },
+  "unresolved_entry_numbers": [],
+  "input_provenance": {
+    "commit": "19831e87e22fd5890fe0a764be51c617580d4a99",
+    "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/worker-05-input.jsonl",
+    "sha256": "7d62a5538346e70e12f535cc8a55eddbb620aba8fbf2c66607306e0c5172c1ce"
+  },
+  "effective_worker05_source_output": {
+    "commit": "ef2007fd51a47a237f10e35213faaa50eb7c7df5",
+    "file": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/outputs/worker-05-batch-003.jsonl",
+    "sha256": "9a09b1996d2a5e71b68f25611a55f897826cdd2ee546aafd39ca2f892caca28b",
+    "assigned_rows": [
+      {
+        "entry_number": 6651,
+        "line": 1
+      },
+      {
+        "entry_number": 6682,
+        "line": 2
+      },
+      {
+        "entry_number": 6730,
+        "line": 3
+      },
+      {
+        "entry_number": 6752,
+        "line": 4
+      },
+      {
+        "entry_number": 6771,
+        "line": 5
+      }
+    ]
+  },
+  "output_file": {
+    "path": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-06-batch-20261004-001.jsonl",
+    "sha256": "b16e89ed990e34ed22ab795e5aee325f71cb371bb47574e7751fde930c0c7595"
+  },
+  "validation": {
+    "exact_assigned_ids_once_each": true,
+    "effective_worker05_outputs_all_from_batch003_lines_1_to_5": true,
+    "frozen_original_preserved_as_json_object": true,
+    "input_and_output_commit_provenance_present": true,
+    "each_source_has_url_to_fact_support_and_limits": true,
+    "title_and_short_at_most_180_characters": true,
+    "medium_45_to_90_words_and_long_140_to_300_words": true,
+    "all_proposals_terminal_and_exact_evidence_gaps_recorded": true
+  },
+  "scope": "Only the five assigned proposal rows and this checkpoint; no canonical, Neon, or other-worker changes."
+}

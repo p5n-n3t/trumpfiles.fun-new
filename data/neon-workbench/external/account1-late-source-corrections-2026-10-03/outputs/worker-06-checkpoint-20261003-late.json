@@ -1,0 +1,45 @@
+{
+  "packet": "account1-late-source-corrections-2026-10-03",
+  "packet_commit": "d1c9c5990d6b15257fbb406671cd73994b45420",
+  "worker": 6,
+  "input_file": "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/worker-06-input.jsonl",
+  "input_sha256": "b018069524331bfbd2ace009b42a43f38e336d59a3a2e55a9ba3e6faf76fc96d",
+  "assigned_ids": [
+    "entry-4412",
+    "entry-5082",
+    "entry-5567",
+    "entry-5759",
+    "entry-5861",
+    "entry-6416",
+    "entry-6492",
+    "entry-6616",
+    "entry-6659",
+    "entry-6741",
+    "entry-6812",
+    "entry-6897",
+    "entry-6962"
+  ],
+  "rows_written": 13,
+  "terminal_status_counts": {
+    "needs_correction": 13
+  },
+  "unresolved_ids": [],
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicate_ids": [],
+  "batch_files": {
+    "worker-06-batch-20261003-late-001.jsonl": "ab62bc7c4eedc7753137e12527f06c0504128b2c2c4cfd5efbd133ccd5c6a035",
+    "worker-06-batch-20261003-late-002.jsonl": "7bbf051907ff2c5d9c1f1b02207802a2ccc11f3a7a17ddf195fb26b0332163c8"
+  },
+  "validation": {
+    "input_sha256_matches_manifest_and_assignment": true,
+    "exact_assigned_id_set_once_each": true,
+    "batches_each_5_to_10_rows": true,
+    "all_proposals_terminal_with_corrected_claim": true,
+    "all_sources_have_exact_https_urls_and_support_notes": true,
+    "short_medium_long_length_bounds_pass": true,
+    "all_records_document_support_limits_and_evidence_gaps": true,
+    "unsupported_geographic_tags_removed_from_narrowed_records": true
+  },
+  "scope_note": "Proposal-only evidence correction outputs. No canonical records, database, Neon, score, other worker, merge, install, deploy, or PR changes."
+}
