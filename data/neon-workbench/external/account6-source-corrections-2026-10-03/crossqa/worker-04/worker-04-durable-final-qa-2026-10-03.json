@@ -1,0 +1,337 @@
+{
+  "artifact_type": "durable_final_exact_id_and_rotated_crossqa_checkpoint",
+  "reviewer_worker": "04",
+  "checked_at_utc": "2026-10-03T21:34:47+00:00",
+  "branch": "ls/4-trump-files-source118-review-04-of-12-P8O6",
+  "source_packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "worker04": {
+    "input": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-04-input.jsonl",
+    "input_sha256": "52ec47dff0e1561375a835e7d90b5270a09fad20b500340a04a929f57dbfb558",
+    "required_input_sha256": "52ec47dff0e1561375a835e7d90b5270a09fad20b500340a04a929f57dbfb558",
+    "output": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-04-batch-2026-10-03-01.jsonl",
+    "output_sha256": "10aea4fe9e72d9a7c9cda9b4200ecd49bf915811d508af0a38ebdb3e7091681d",
+    "expected_ids": [
+      "entry-4360",
+      "entry-5095",
+      "entry-5718",
+      "entry-5835",
+      "entry-6418",
+      "entry-6507",
+      "entry-6636",
+      "entry-6740",
+      "entry-6814",
+      "entry-6927"
+    ],
+    "actual_ids": [
+      "entry-4360",
+      "entry-5095",
+      "entry-5718",
+      "entry-5835",
+      "entry-6418",
+      "entry-6507",
+      "entry-6636",
+      "entry-6740",
+      "entry-6814",
+      "entry-6927"
+    ],
+    "checks": {
+      "packet_input_sha256_matches_required": true,
+      "exact_key_set": true,
+      "exactly_one_terminal_row_per_key": true,
+      "all_triage_states_needs_correction": true,
+      "description_limits_pass": true,
+      "every_listed_source_url_has_fact_map_entry": true
+    },
+    "per_id": [
+      {
+        "id": "entry-4360",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "short_characters": 126,
+        "medium_words": 64,
+        "long_words": 191,
+        "source_url_count": 2,
+        "all_source_urls_mapped": true,
+        "unresolved_evidence_gap": "The sources do not establish the legal status of every individual 2025 disruption; the aggregate must not be characterized wholesale as unlawful impoundment."
+      },
+      {
+        "id": "entry-5095",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "short_characters": 136,
+        "medium_words": 69,
+        "long_words": 184,
+        "source_url_count": 4,
+        "all_source_urls_mapped": true,
+        "unresolved_evidence_gap": "The sources establish chronology, transaction selection, and lawmakers’ stated concerns, but not legislative influence, a quid pro quo, or a quantified profit caused by the act."
+      },
+      {
+        "id": "entry-5718",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "short_characters": 128,
+        "medium_words": 60,
+        "long_words": 187,
+        "source_url_count": 3,
+        "all_source_urls_mapped": true,
+        "unresolved_evidence_gap": "The cited sources do not substantiate a specific 2023 prosecution demand or a coordinated purge motive; the documented remarks are from 2022."
+      },
+      {
+        "id": "entry-5835",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "short_characters": 106,
+        "medium_words": 68,
+        "long_words": 195,
+        "source_url_count": 2,
+        "all_source_urls_mapped": true,
+        "unresolved_evidence_gap": "Separate evidence is needed for any distinct ABC or MSNBC threats, reported internal editorial pressure, or measured press-freedom consequences."
+      },
+      {
+        "id": "entry-6418",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "short_characters": 135,
+        "medium_words": 67,
+        "long_words": 192,
+        "source_url_count": 2,
+        "all_source_urls_mapped": true,
+        "unresolved_evidence_gap": "The cited reporting does not establish a coordinated refusal across multiple injunctions, officials’ blanket statements, or multiple completed contempt findings."
+      },
+      {
+        "id": "entry-6507",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "short_characters": 119,
+        "medium_words": 65,
+        "long_words": 196,
+        "source_url_count": 2,
+        "all_source_urls_mapped": true,
+        "unresolved_evidence_gap": "The evidence does not support a close-in-time sequence; any separate “my friend” or “great leader” quotation needs its own dated source."
+      },
+      {
+        "id": "entry-6636",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "short_characters": 156,
+        "medium_words": 64,
+        "long_words": 184,
+        "source_url_count": 4,
+        "all_source_urls_mapped": true,
+        "unresolved_evidence_gap": "The reporting does not support thousands of fired controllers or inspectors, and does not establish that the layoffs caused an accident or benefited SpaceX."
+      },
+      {
+        "id": "entry-6740",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "short_characters": 122,
+        "medium_words": 62,
+        "long_words": 172,
+        "source_url_count": 2,
+        "all_source_urls_mapped": true,
+        "unresolved_evidence_gap": "The cited report does not establish nationwide defunding, a complete end to Medicaid reimbursements, or termination of all Title X awards."
+      },
+      {
+        "id": "entry-6814",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "short_characters": 139,
+        "medium_words": 61,
+        "long_words": 185,
+        "source_url_count": 3,
+        "all_source_urls_mapped": true,
+        "unresolved_evidence_gap": "The cited orders and EPA notice do not establish complete immediate termination across agencies, or verify all claimed rule and grant cancellations."
+      },
+      {
+        "id": "entry-6927",
+        "terminal": true,
+        "source_triage_status": "needs_correction",
+        "short_characters": 133,
+        "medium_words": 64,
+        "long_words": 184,
+        "source_url_count": 1,
+        "all_source_urls_mapped": true,
+        "unresolved_evidence_gap": "An FBI order, investigative record, or credible report identifying targets and describing a dossier program is needed to support the original allegation."
+      }
+    ],
+    "prior_exact_set_qa": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-04/worker-04-exact-set-qa.json",
+    "prior_checkpoint": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-04/worker-04-final-checkpoint.json"
+  },
+  "worker05_rotated_crossqa": {
+    "reviewed_branch": "ls/5-trump-files-source118-review-05-of-12-ry0H",
+    "reviewed_commit": "0444963a1a3093b3f699862e1bb12bd4bc97f2cb",
+    "input": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-05-input.jsonl",
+    "input_sha256": "5de22c1733756cb2c507d406e95ca29037d9f48597b768ddc672231a61120b6b",
+    "output": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-05-batch-20261003-01.jsonl",
+    "output_sha256": "4fc4d35e74dd5756e0a102ef539f195cb4dadb2ea79fe6fd330119e683f0a445",
+    "expected_ids": [
+      "entry-4386",
+      "entry-5154",
+      "entry-5730",
+      "entry-5842",
+      "entry-6422",
+      "entry-6513",
+      "entry-6641",
+      "entry-6742",
+      "entry-6816",
+      "entry-6938"
+    ],
+    "actual_output_ids": [
+      "entry-4386",
+      "entry-5154",
+      "entry-5730",
+      "entry-5842",
+      "entry-6422",
+      "entry-6513",
+      "entry-6641",
+      "entry-6742",
+      "entry-6816",
+      "entry-6938"
+    ],
+    "ledger": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-04/worker-05-crossqa-ledger.jsonl",
+    "ledger_sha256": "ea326edc4244908f02b236cd49f9314a638bc282bb4a9f5c7886e2f4c7ed9bd0",
+    "exact_ids_pass": true,
+    "all_input_triage_states_needs_correction": true,
+    "all_description_length_checks_pass": true,
+    "per_id": {
+      "entry-4386": {
+        "verdict": "needs_revision",
+        "source_url_count_expected": 3,
+        "source_url_count_output": 2,
+        "omitted_packet_or_staged_urls": [
+          "https://www.kpbs.org/news/science-technology/2026/05/21/researchers-say-the-trump-administration-is-finding-new-ways-to-punish-science"
+        ],
+        "all_listed_urls_mapped": true,
+        "old_text_preservation_review": "The prior supported details about roughly 2,300 awards and overdue forecasts are retained, but the comparison was changed from “about half” to 66% fewer. That is a material increase in precision unsupported by the cited article.",
+        "unresolved_gap_review": "The remaining uncertainty about causes and intent is stated. The Chronicle page returned 403 in this session; VPM/NPR was directly reviewed and contradicts the 66% figure.",
+        "recommendation": "Revise medium and long copy and the VPM supports note to “about half as many”; preserve or explicitly account for the omitted KPBS mirror URL."
+      },
+      "entry-5154": {
+        "verdict": "pass_with_access_limit",
+        "source_url_count_expected": 4,
+        "source_url_count_output": 4,
+        "omitted_packet_or_staged_urls": [],
+        "all_listed_urls_mapped": true,
+        "old_text_preservation_review": "Retains Weintraub’s disputed removal, subsequent vacancies, four-vote constraint, and backlog while removing unsupported timing and scope.",
+        "unresolved_gap_review": "The exact start date and duration remain explicitly unresolved, matching the packet gap. The source triage status remains needs_correction; output status complete is a terminal batch state, not accepted_source.",
+        "recommendation": "No factual change identified. Reuters was inaccessible (401); the FEC release and NOTUS page were retrievable, with NOTUS redirecting to Washington Sun."
+      },
+      "entry-5730": {
+        "verdict": "pass_with_access_limit",
+        "source_url_count_expected": 1,
+        "source_url_count_output": 1,
+        "omitted_packet_or_staged_urls": [],
+        "all_listed_urls_mapped": true,
+        "old_text_preservation_review": "Preserves the relevant workforce-reduction subject while correcting the date and distinguishing a target from completed involuntary terminations.",
+        "unresolved_gap_review": "The unresolved count of actual layoffs, civil-service process, and operational effects is stated in the packet gap and output narrative.",
+        "recommendation": "No factual or scope change identified. SSA returned 403 in this session, so independent direct-page confirmation was limited to the immutable packet’s source-specific review."
+      },
+      "entry-5842": {
+        "verdict": "pass_with_access_limit",
+        "source_url_count_expected": 4,
+        "source_url_count_output": 3,
+        "omitted_packet_or_staged_urls": [
+          "https://www.investing.com/news/stock-market-news/trump-hobbles-us-antidiscrimination-agency-by-firing-democrats-3835623"
+        ],
+        "all_listed_urls_mapped": true,
+        "old_text_preservation_review": "Preserves the event’s central removals and institutional consequence while narrowing the original blanket “paralyzing” claim.",
+        "unresolved_gap_review": "The evidence gap about field enforcement, investigations, and charges stopping is preserved. The source triage state remains needs_correction.",
+        "recommendation": "No factual change identified. Consider restoring or recording the omitted Investing.com URL. Reuters pages returned 401; the NLRB biography was directly reviewed and confirms Wilcox’s term and January 27 removal."
+      },
+      "entry-6422": {
+        "verdict": "pass_with_access_limit",
+        "source_url_count_expected": 2,
+        "source_url_count_output": 2,
+        "omitted_packet_or_staged_urls": [],
+        "all_listed_urls_mapped": true,
+        "old_text_preservation_review": "Preserves the access concern and the later restriction, while correctly replacing the original claim of a political-opponent data breach with the reported request and agreement.",
+        "unresolved_gap_review": "The missing proof of access to opponents’ individual returns and universal authorization failures is stated.",
+        "recommendation": "No factual change identified. Both Washington Post pages timed out during direct review; the packet provides source-specific descriptions for the two reports."
+      },
+      "entry-6513": {
+        "verdict": "pass",
+        "source_url_count_expected": 1,
+        "source_url_count_output": 1,
+        "omitted_packet_or_staged_urls": [],
+        "all_listed_urls_mapped": true,
+        "old_text_preservation_review": "Preserves the substance of the interview remarks with corrected date and broader “renewables” scope.",
+        "unresolved_gap_review": "Technical accuracy and comparative expertise remain explicitly unproven.",
+        "recommendation": "No change identified."
+      },
+      "entry-6641": {
+        "verdict": "pass_with_access_limit",
+        "source_url_count_expected": 1,
+        "source_url_count_output": 1,
+        "omitted_packet_or_staged_urls": [],
+        "all_listed_urls_mapped": true,
+        "old_text_preservation_review": "Preserves the policy-influence subject while narrowing the original comprehensive attribution to the profile’s supported characterization.",
+        "unresolved_gap_review": "The gap concerning sole authorship and specific due-process findings is maintained.",
+        "recommendation": "No factual change identified. Reuters returned 401 in this session; the correction remains bounded to the packet’s exact-source summary."
+      },
+      "entry-6742": {
+        "verdict": "pass_with_access_limit",
+        "source_url_count_expected": 2,
+        "source_url_count_output": 1,
+        "omitted_packet_or_staged_urls": [
+          "https://www.dol.gov/sites/dolgov/files/ebsa/laws-and-regulations/laws/mental-health-parity/statement-regarding-enforcement-of-the-final-rule-on-requirements-related-to-mhpaea.pdf"
+        ],
+        "all_listed_urls_mapped": true,
+        "old_text_preservation_review": "Retains the supported limited pause and continuing obligations while correcting the original date and overbroad claim.",
+        "unresolved_gap_review": "The litigation outcome and downstream coverage effects remain explicitly unresolved.",
+        "recommendation": "No factual change identified. Consider preserving the omitted PDF URL if exact packet URL retention is required; the HTML statement returned 403 in this session."
+      },
+      "entry-6816": {
+        "verdict": "pass_with_access_limit",
+        "source_url_count_expected": 2,
+        "source_url_count_output": 2,
+        "omitted_packet_or_staged_urls": [],
+        "all_listed_urls_mapped": true,
+        "old_text_preservation_review": "Preserves the specific removals, quorum consequence, and legal challenge while correcting the original January 20 date and total-shutdown framing.",
+        "unresolved_gap_review": "The output explicitly rejects unsupported claims that all pending cases or NLRB functions stopped.",
+        "recommendation": "No factual change identified. Both Reuters pages returned 401 in this session; packet source notes provide the reviewed facts."
+      },
+      "entry-6938": {
+        "verdict": "pass_with_access_limit",
+        "source_url_count_expected": 2,
+        "source_url_count_output": 2,
+        "omitted_packet_or_staged_urls": [],
+        "all_listed_urls_mapped": true,
+        "old_text_preservation_review": "Preserves the reported system access and privacy concern, while distinguishing them from the original unsupported claim about detailed medical records for millions.",
+        "unresolved_gap_review": "The precise clinical fields available, user-level access, authorization status, and actual use remain explicitly unresolved.",
+        "recommendation": "No factual change identified. WIRED was directly reviewed; the Washington Post page timed out during this session."
+      }
+    },
+    "unsupported_claims_and_exact_urls": [
+      {
+        "id": "entry-4386",
+        "unsupported_claim": "The correction says NIH issued roughly 2,300 grants, 66% fewer year-over-year. The cited story says “about half as many,” so the 66% precision is unsupported by this URL.",
+        "source_url": "https://www.vpm.org/npr-news/2026-05-21/researchers-say-the-trump-administration-is-finding-new-ways-to-punish-science",
+        "verified_text": "NIH had issued roughly 2,300 new grants — about half as many as at the same point the previous year.",
+        "recommendation": "Change 66% fewer to about half as many in medium and long copy and in the source supports note."
+      }
+    ],
+    "omitted_packet_or_staged_urls": [
+      {
+        "id": "entry-4386",
+        "url": "https://www.kpbs.org/news/science-technology/2026/05/21/researchers-say-the-trump-administration-is-finding-new-ways-to-punish-science",
+        "note": "KPBS syndicated copy URL omitted."
+      },
+      {
+        "id": "entry-5842",
+        "url": "https://www.investing.com/news/stock-market-news/trump-hobbles-us-antidiscrimination-agency-by-firing-democrats-3835623",
+        "note": "Investing.com Reuters-syndication URL omitted."
+      },
+      {
+        "id": "entry-6742",
+        "url": "https://www.dol.gov/sites/dolgov/files/ebsa/laws-and-regulations/laws/mental-health-parity/statement-regarding-enforcement-of-the-final-rule-on-requirements-related-to-mhpaea.pdf",
+        "note": "Official DOL PDF mirror omitted; HTML statement URL retained."
+      }
+    ],
+    "source_access_limits": [
+      "Some Reuters and Washington Post pages returned 401 or timed out; SSA, DOL, and Chronicle pages returned 403. Affected rows and the source-specific gap or access caveat are identified in the per-ID ledger."
+    ],
+    "prior_final_checkpoint": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-04/worker-05-final-checkpoint.json"
+  },
+  "scope": "QA artifacts only. Correction rows and worker-05 branch/output, canonical data, and Neon were not edited.",
+  "result": "PASS exact-ID and format checks for worker 04; worker 05 exact-set/source-map/length checks pass with one material factual revision recommended for entry-4386."
+}

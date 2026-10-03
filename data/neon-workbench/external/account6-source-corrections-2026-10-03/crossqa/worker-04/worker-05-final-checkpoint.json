@@ -1,0 +1,75 @@
+{
+  "artifact_type": "independent_crossqa_final_checkpoint",
+  "reviewer_worker": "04",
+  "review_status": "revision_recommended",
+  "checked_at_utc": "2026-10-03T11:42:00+00:00",
+  "reviewed_branch": "ls/5-trump-files-source118-review-05-of-12-ry0H",
+  "reviewed_commit": "0444963a1a3093b3f699862e1bb12bd4bc97f2cb",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_input": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-05-input.jsonl",
+  "packet_input_sha256": "5de22c1733756cb2c507d406e95ca29037d9f48597b768ddc672231a61120b6b",
+  "target_output": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-05-batch-20261003-01.jsonl",
+  "target_output_sha256": "4fc4d35e74dd5756e0a102ef539f195cb4dadb2ea79fe6fd330119e683f0a445",
+  "ledger": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-04/worker-05-crossqa-ledger.jsonl",
+  "ledger_sha256": "ea326edc4244908f02b236cd49f9314a638bc282bb4a9f5c7886e2f4c7ed9bd0",
+  "expected_keys": [
+    "entry-4386",
+    "entry-5154",
+    "entry-5730",
+    "entry-5842",
+    "entry-6422",
+    "entry-6513",
+    "entry-6641",
+    "entry-6742",
+    "entry-6816",
+    "entry-6938"
+  ],
+  "actual_input_keys": [
+    "entry-4386",
+    "entry-5154",
+    "entry-5730",
+    "entry-5842",
+    "entry-6422",
+    "entry-6513",
+    "entry-6641",
+    "entry-6742",
+    "entry-6816",
+    "entry-6938"
+  ],
+  "actual_output_keys": [
+    "entry-4386",
+    "entry-5154",
+    "entry-5730",
+    "entry-5842",
+    "entry-6422",
+    "entry-6513",
+    "entry-6641",
+    "entry-6742",
+    "entry-6816",
+    "entry-6938"
+  ],
+  "exact_set_pass": true,
+  "one_output_row_per_key": true,
+  "all_triage_states_preserved_as_needs_correction": true,
+  "all_description_length_limits_pass": true,
+  "all_listed_output_urls_have_source_map_entries": true,
+  "verdict_counts": {
+    "needs_revision": 1,
+    "pass": 1,
+    "pass_with_access_limit": 8
+  },
+  "material_finding": "entry-4386: cited VPM/NPR page says approximately half as many grants; output and its source map claim 66% fewer.",
+  "nonmaterial_url_preservation_notes": {
+    "entry-4386": "KPBS syndicated-copy URL omitted; VPM/NPR and Chronicle retained.",
+    "entry-5842": "Investing.com Reuters-syndication URL omitted; direct Reuters URL retained.",
+    "entry-6742": "Official DOL PDF mirror omitted; HTML statement retained."
+  },
+  "direct_access_limits": [
+    "Some Reuters and Washington Post pages returned 401 or timed out; SSA, DOL, and Chronicle returned 403. The ledger records affected keys; source-specific packet notes were used where direct retrieval was blocked."
+  ],
+  "scope_statement": "Independent audit only. No files on worker 05 branch, canonical data, or Neon were changed.",
+  "result": "Exact set and length checks pass; factual revision recommended for entry-4386.",
+  "worker04_checkpoint_commit": "007ea55e98b01c47c158fc22ad20d906b88d4ab3",
+  "worker04_exact_set_qa": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-04/worker-04-exact-set-qa.json",
+  "review_branch_base_commit": "007ea55e98b01c47c158fc22ad20d906b88d4ab3"
+}

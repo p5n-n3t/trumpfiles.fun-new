@@ -1,0 +1,27 @@
+{
+  "artifact_type": "final_checkpoint",
+  "worker": "04",
+  "checkpoint_status": "complete",
+  "checked_at_utc": "2026-10-03T11:36:29+00:00",
+  "branch": "ls/4-trump-files-source118-review-04-of-12-P8O6",
+  "content_commit": "409c43c850897ba90d68a88fc2326aec5d7f95ec",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_input_sha256": "52ec47dff0e1561375a835e7d90b5270a09fad20b500340a04a929f57dbfb558",
+  "correction_output": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-04-batch-2026-10-03-01.jsonl",
+  "correction_output_sha256": "10aea4fe9e72d9a7c9cda9b4200ecd49bf915811d508af0a38ebdb3e7091681d",
+  "exact_set_qa": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-04/worker-04-exact-set-qa.json",
+  "expected_keys": [
+    "entry-4360",
+    "entry-5095",
+    "entry-5718",
+    "entry-5835",
+    "entry-6418",
+    "entry-6507",
+    "entry-6636",
+    "entry-6740",
+    "entry-6814",
+    "entry-6927"
+  ],
+  "terminal_rows": 10,
+  "result": "PASS"
+}
