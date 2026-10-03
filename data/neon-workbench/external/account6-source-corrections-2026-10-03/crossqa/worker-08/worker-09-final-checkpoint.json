@@ -1,0 +1,94 @@
+{
+  "checkpoint": "worker-09-independent-crossqa-final-checkpoint",
+  "auditor_worker": 8,
+  "audit_target_branch": "ls/9-trump-files-source118-review-09-of-12-278g",
+  "audit_target_commit": "d5fe7c52734d1ecbd347320516d95714f35388b2",
+  "audit_target_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-09-batch-001-20261003.jsonl",
+  "target_output_sha256": "2d84f16ccba5e63585065f52f6dcbcf480d33f17dbc08ecdfce646f8f4d13968",
+  "packet_branch": "codex/account6-source-corrections-2026-10-03",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_input_file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-09-input.jsonl",
+  "packet_input_sha256": "c7e6c257e05b03ffc0aa7522c002fed7843aa96b3dc931aa5d71dcb5aa413f41",
+  "packet_manifest_expected_sha256": "c7e6c257e05b03ffc0aa7522c002fed7843aa96b3dc931aa5d71dcb5aa413f41",
+  "expected_keys": [
+    "entry-4496",
+    "entry-5289",
+    "entry-5750",
+    "entry-5868",
+    "entry-6454",
+    "entry-6562",
+    "entry-6669",
+    "entry-6764",
+    "entry-6850",
+    "entry-6965"
+  ],
+  "actual_target_keys": [
+    "entry-4496",
+    "entry-5289",
+    "entry-5750",
+    "entry-5868",
+    "entry-6454",
+    "entry-6562",
+    "entry-6669",
+    "entry-6764",
+    "entry-6850",
+    "entry-6965"
+  ],
+  "actual_ledger_keys": [
+    "entry-4496",
+    "entry-5289",
+    "entry-5750",
+    "entry-5868",
+    "entry-6454",
+    "entry-6562",
+    "entry-6669",
+    "entry-6764",
+    "entry-6850",
+    "entry-6965"
+  ],
+  "target_rows": 10,
+  "ledger_rows": 10,
+  "unique_target_keys": 10,
+  "exact_set_match": true,
+  "checks": {
+    "all_source_triage_statuses_remain_needs_correction": true,
+    "all_three_description_length_requirements_pass": true,
+    "every_output_url_has_exactly_one_fact_mapping": true,
+    "all_packet_source_urls_retained_or_explicitly_scope_corrected": true,
+    "preserved_fields_match_target_rows": true,
+    "packet_unresolved_gaps_recorded_for_all_ten": true,
+    "target_branch_and_files_read_only": true,
+    "canonical_or_neon_data_changed": false
+  },
+  "counts": {
+    "length_pass": 10,
+    "source_url_mapping_pass": 10,
+    "preserved_field_match": 10,
+    "input_status_preserved": 10,
+    "staged_urls_replaced_with_explicit_scope_reason": 2,
+    "review_required_keys": [
+      "entry-6669"
+    ],
+    "provenance_note_flags": [],
+    "scope_notes": [
+      "entry-5289",
+      "entry-6454"
+    ],
+    "retrieval_caveats": [
+      "entry-6562"
+    ]
+  },
+  "direct_source_check": {
+    "url": "https://www.propublica.org/article/trump-friends-and-family-cleared-for-millions-in-small-business-bailout",
+    "finding": "The article displays initial publication July 6, 2020 at 8:35 p.m. EDT and a separate July 7 update. Worker 09 labels the report/date_start July 7; reconcile to July 6 publication or distinguish the update."
+  },
+  "self_output_checkpoint": {
+    "path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-08/self-output-qa-checkpoint.json",
+    "sha256": "459025c023064eaa53f095f86c7c75a1d6a92b5cbfc9c3767c69e3a7a706a572",
+    "exact_set_pass": true
+  },
+  "ledger_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-08/worker-09-independent-crossqa.jsonl",
+  "ledger_sha256": "fb4deb0398e2952c742145b20cccfb479a4887f973b1d35362847dce21092125",
+  "result": "complete_with_one_date_reconciliation_required",
+  "notes": "This is a read-only independent QA record. The target output and packet inputs were not edited. No PR was requested."
+}

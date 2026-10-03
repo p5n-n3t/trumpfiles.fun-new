@@ -1,0 +1,162 @@
+{
+  "checkpoint": "worker-09-independent-crossqa-final-checkpoint",
+  "target_branch": "ls/9-trump-files-source118-review-09-of-12-278g",
+  "target_commit": "d5fe7c52734d1ecbd347320516d95714f35388b2",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "packet_input_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-09-input.jsonl",
+  "packet_input_sha256": "c7e6c257e05b03ffc0aa7522c002fed7843aa96b3dc931aa5d71dcb5aa413f41",
+  "target_output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-09-batch-001-20261003.jsonl",
+  "target_output_sha256": "2d84f16ccba5e63585065f52f6dcbcf480d33f17dbc08ecdfce646f8f4d13968",
+  "qa_ledger_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-08/worker-09-independent-final-crossqa.jsonl",
+  "qa_ledger_sha256": "b488d833536e0c22a9cb33f349d1fdaf6f85744ab1a53712f35bcddf5c1612aa",
+  "expected_keys": [
+    "entry-4496",
+    "entry-5289",
+    "entry-5750",
+    "entry-5868",
+    "entry-6454",
+    "entry-6562",
+    "entry-6669",
+    "entry-6764",
+    "entry-6850",
+    "entry-6965"
+  ],
+  "actual_keys": [
+    "entry-4496",
+    "entry-5289",
+    "entry-5750",
+    "entry-5868",
+    "entry-6454",
+    "entry-6562",
+    "entry-6669",
+    "entry-6764",
+    "entry-6850",
+    "entry-6965"
+  ],
+  "row_count": 10,
+  "unique_key_count": 10,
+  "exact_set_match": true,
+  "all_triage_statuses_remain_needs_correction": true,
+  "all_description_limits_pass": true,
+  "all_urls_have_exact_fact_and_limit_maps": true,
+  "preserved_fields_match": true,
+  "intentional_url_replacements_documented": true,
+  "unsupported_claims_and_exact_urls_recorded_per_key": true,
+  "action_required": [
+    "entry-6669"
+  ],
+  "per_key_results": [
+    {
+      "key": "entry-4496",
+      "result": "pass",
+      "date_start": "2025-07-01",
+      "short_chars": 114,
+      "medium_words": 51,
+      "long_words": 148,
+      "url_count": 1,
+      "unsupported_claim_count": 2,
+      "removed_staged_url_count": 0
+    },
+    {
+      "key": "entry-5289",
+      "result": "pass",
+      "date_start": null,
+      "short_chars": 91,
+      "medium_words": 49,
+      "long_words": 148,
+      "url_count": 1,
+      "unsupported_claim_count": 0,
+      "removed_staged_url_count": 0
+    },
+    {
+      "key": "entry-5750",
+      "result": "pass",
+      "date_start": "2025-04-25",
+      "short_chars": 81,
+      "medium_words": 58,
+      "long_words": 146,
+      "url_count": 2,
+      "unsupported_claim_count": 2,
+      "removed_staged_url_count": 0
+    },
+    {
+      "key": "entry-5868",
+      "result": "pass",
+      "date_start": "2020-08-22",
+      "short_chars": 118,
+      "medium_words": 56,
+      "long_words": 166,
+      "url_count": 3,
+      "unsupported_claim_count": 2,
+      "removed_staged_url_count": 0
+    },
+    {
+      "key": "entry-6454",
+      "result": "pass",
+      "date_start": "2025-03-15",
+      "short_chars": 107,
+      "medium_words": 51,
+      "long_words": 167,
+      "url_count": 1,
+      "unsupported_claim_count": 2,
+      "removed_staged_url_count": 2
+    },
+    {
+      "key": "entry-6562",
+      "result": "pass",
+      "date_start": "2018-01-29",
+      "short_chars": 105,
+      "medium_words": 58,
+      "long_words": 162,
+      "url_count": 1,
+      "unsupported_claim_count": 2,
+      "removed_staged_url_count": 1
+    },
+    {
+      "key": "entry-6669",
+      "result": "action_required",
+      "date_start": "2020-07-07",
+      "short_chars": 98,
+      "medium_words": 65,
+      "long_words": 176,
+      "url_count": 1,
+      "unsupported_claim_count": 2,
+      "removed_staged_url_count": 0
+    },
+    {
+      "key": "entry-6764",
+      "result": "pass",
+      "date_start": "2025-05-30",
+      "short_chars": 111,
+      "medium_words": 52,
+      "long_words": 157,
+      "url_count": 5,
+      "unsupported_claim_count": 2,
+      "removed_staged_url_count": 0
+    },
+    {
+      "key": "entry-6850",
+      "result": "pass",
+      "date_start": "2006-03-06",
+      "short_chars": 82,
+      "medium_words": 58,
+      "long_words": 157,
+      "url_count": 2,
+      "unsupported_claim_count": 3,
+      "removed_staged_url_count": 0
+    },
+    {
+      "key": "entry-6965",
+      "result": "pass",
+      "date_start": "2025-01-21",
+      "short_chars": 105,
+      "medium_words": 52,
+      "long_words": 165,
+      "url_count": 1,
+      "unsupported_claim_count": 3,
+      "removed_staged_url_count": 0
+    }
+  ],
+  "result": "pass_with_one_date_discrepancy",
+  "scope_note": "Read-only independent review of target output at pinned commit; did not edit target output, canonical data, or Neon."
+}

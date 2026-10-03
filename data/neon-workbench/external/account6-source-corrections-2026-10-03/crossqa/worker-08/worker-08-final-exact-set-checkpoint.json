@@ -1,0 +1,136 @@
+{
+  "checkpoint": "worker-08-durable-final-exact-set-qa",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "input_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-08-input.jsonl",
+  "input_sha256": "c8057f5ca25067dabbd893d763a9e82f2497d7b55a5e71f229a980e650175cd5",
+  "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-08-batch-2026-10-03-01.jsonl",
+  "output_sha256": "1966c5225f9846876484cdb466f4a35086045c89871b11a96622dc734309644c",
+  "qa_ledger_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-08/worker-08-final-exact-set-qa.jsonl",
+  "qa_ledger_sha256": "cd111a0c2fce78c4079acb269af398841bb110af947b44ade2a56d766b42189b",
+  "expected_keys": [
+    "entry-4435",
+    "entry-5273",
+    "entry-5745",
+    "entry-5860",
+    "entry-6450",
+    "entry-6537",
+    "entry-6660",
+    "entry-6756",
+    "entry-6838",
+    "entry-6960"
+  ],
+  "actual_keys": [
+    "entry-4435",
+    "entry-5273",
+    "entry-5745",
+    "entry-5860",
+    "entry-6450",
+    "entry-6537",
+    "entry-6660",
+    "entry-6756",
+    "entry-6838",
+    "entry-6960"
+  ],
+  "row_count": 10,
+  "unique_key_count": 10,
+  "exact_set_match": true,
+  "all_triage_statuses_remain_needs_correction": true,
+  "no_source_accepted": true,
+  "all_description_limits_pass": true,
+  "all_urls_have_exact_fact_maps": true,
+  "per_key_results": [
+    {
+      "key": "entry-4435",
+      "result": "pass",
+      "short_chars": 101,
+      "medium_words": 66,
+      "long_words": 147,
+      "url_count": 3,
+      "unsupported_claim_count": 2
+    },
+    {
+      "key": "entry-5273",
+      "result": "pass",
+      "short_chars": 127,
+      "medium_words": 63,
+      "long_words": 180,
+      "url_count": 3,
+      "unsupported_claim_count": 3
+    },
+    {
+      "key": "entry-5745",
+      "result": "pass",
+      "short_chars": 133,
+      "medium_words": 56,
+      "long_words": 152,
+      "url_count": 2,
+      "unsupported_claim_count": 2
+    },
+    {
+      "key": "entry-5860",
+      "result": "pass",
+      "short_chars": 110,
+      "medium_words": 62,
+      "long_words": 176,
+      "url_count": 1,
+      "unsupported_claim_count": 2
+    },
+    {
+      "key": "entry-6450",
+      "result": "review_needed",
+      "short_chars": 94,
+      "medium_words": 60,
+      "long_words": 161,
+      "url_count": 2,
+      "unsupported_claim_count": 2
+    },
+    {
+      "key": "entry-6537",
+      "result": "pass",
+      "short_chars": 120,
+      "medium_words": 62,
+      "long_words": 171,
+      "url_count": 1,
+      "unsupported_claim_count": 2
+    },
+    {
+      "key": "entry-6660",
+      "result": "pass",
+      "short_chars": 83,
+      "medium_words": 57,
+      "long_words": 160,
+      "url_count": 1,
+      "unsupported_claim_count": 2
+    },
+    {
+      "key": "entry-6756",
+      "result": "pass",
+      "short_chars": 125,
+      "medium_words": 62,
+      "long_words": 165,
+      "url_count": 1,
+      "unsupported_claim_count": 2
+    },
+    {
+      "key": "entry-6838",
+      "result": "review_needed",
+      "short_chars": 121,
+      "medium_words": 60,
+      "long_words": 161,
+      "url_count": 2,
+      "unsupported_claim_count": 2
+    },
+    {
+      "key": "entry-6960",
+      "result": "pass",
+      "short_chars": 109,
+      "medium_words": 62,
+      "long_words": 176,
+      "url_count": 1,
+      "unsupported_claim_count": 2
+    }
+  ],
+  "result": "pass",
+  "scope_note": "QA artifacts only; append-only correction output and canonical/Neon data were not modified.",
+  "all_staged_url_changes_documented": true
+}

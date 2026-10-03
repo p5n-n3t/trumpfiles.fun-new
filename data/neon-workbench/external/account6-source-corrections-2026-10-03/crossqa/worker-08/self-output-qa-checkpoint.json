@@ -1,0 +1,141 @@
+{
+  "checkpoint": "worker-08-own-output-final-exact-set-qa",
+  "packet_commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+  "input_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-08-input.jsonl",
+  "input_sha256": "c8057f5ca25067dabbd893d763a9e82f2497d7b55a5e71f229a980e650175cd5",
+  "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-08-batch-2026-10-03-01.jsonl",
+  "output_sha256": "1966c5225f9846876484cdb466f4a35086045c89871b11a96622dc734309644c",
+  "expected_keys": [
+    "entry-4435",
+    "entry-5273",
+    "entry-5745",
+    "entry-5860",
+    "entry-6450",
+    "entry-6537",
+    "entry-6660",
+    "entry-6756",
+    "entry-6838",
+    "entry-6960"
+  ],
+  "actual_keys": [
+    "entry-4435",
+    "entry-5273",
+    "entry-5745",
+    "entry-5860",
+    "entry-6450",
+    "entry-6537",
+    "entry-6660",
+    "entry-6756",
+    "entry-6838",
+    "entry-6960"
+  ],
+  "row_count": 10,
+  "unique_key_count": 10,
+  "exact_set_match": true,
+  "all_rows_remain_needs_correction": true,
+  "no_rows_marked_accepted_source": true,
+  "checks": [
+    {
+      "key": "entry-4435",
+      "short_chars": 101,
+      "medium_words": 66,
+      "long_words": 147,
+      "source_urls": 3,
+      "urls_mapped": true,
+      "source_classification": "needs_correction",
+      "accepted_source": false
+    },
+    {
+      "key": "entry-5273",
+      "short_chars": 127,
+      "medium_words": 63,
+      "long_words": 180,
+      "source_urls": 3,
+      "urls_mapped": true,
+      "source_classification": "needs_correction",
+      "accepted_source": false
+    },
+    {
+      "key": "entry-5745",
+      "short_chars": 133,
+      "medium_words": 56,
+      "long_words": 152,
+      "source_urls": 2,
+      "urls_mapped": true,
+      "source_classification": "needs_correction",
+      "accepted_source": false
+    },
+    {
+      "key": "entry-5860",
+      "short_chars": 110,
+      "medium_words": 62,
+      "long_words": 176,
+      "source_urls": 1,
+      "urls_mapped": true,
+      "source_classification": "needs_correction",
+      "accepted_source": false
+    },
+    {
+      "key": "entry-6450",
+      "short_chars": 94,
+      "medium_words": 60,
+      "long_words": 161,
+      "source_urls": 2,
+      "urls_mapped": true,
+      "source_classification": "needs_correction",
+      "accepted_source": false
+    },
+    {
+      "key": "entry-6537",
+      "short_chars": 120,
+      "medium_words": 62,
+      "long_words": 171,
+      "source_urls": 1,
+      "urls_mapped": true,
+      "source_classification": "needs_correction",
+      "accepted_source": false
+    },
+    {
+      "key": "entry-6660",
+      "short_chars": 83,
+      "medium_words": 57,
+      "long_words": 160,
+      "source_urls": 1,
+      "urls_mapped": true,
+      "source_classification": "needs_correction",
+      "accepted_source": false
+    },
+    {
+      "key": "entry-6756",
+      "short_chars": 125,
+      "medium_words": 62,
+      "long_words": 165,
+      "source_urls": 1,
+      "urls_mapped": true,
+      "source_classification": "needs_correction",
+      "accepted_source": false
+    },
+    {
+      "key": "entry-6838",
+      "short_chars": 121,
+      "medium_words": 60,
+      "long_words": 161,
+      "source_urls": 2,
+      "urls_mapped": true,
+      "source_classification": "needs_correction",
+      "accepted_source": false
+    },
+    {
+      "key": "entry-6960",
+      "short_chars": 109,
+      "medium_words": 62,
+      "long_words": 176,
+      "source_urls": 1,
+      "urls_mapped": true,
+      "source_classification": "needs_correction",
+      "accepted_source": false
+    }
+  ],
+  "result": "pass",
+  "scope_note": "Proposal descriptions and citation mappings only; no canonical data, database, impact score, or source acceptance changed."
+}
