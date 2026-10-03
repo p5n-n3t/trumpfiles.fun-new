@@ -1,0 +1,169 @@
+{
+  "artifact": "Independent worker 08 cross-QA final checkpoint",
+  "created_at_utc": "2026-10-03T11:41:49.634208+00:00",
+  "reviewer_worker": 7,
+  "review_branch": "ls/7-trump-files-source118-review-07-of-12-Asbx",
+  "target_branch": "ls/8-trump-files-source118-review-08-of-12-pXJX",
+  "target_commit_reviewed": "831ddd224fca228506bee09c936631feb97fe7ef",
+  "target_branch_remote_head_at_review": "70867086f297d32c47b758ef1de00170a44d3408",
+  "target_commit_is_ancestor_of_branch_head": true,
+  "packet": {
+    "commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+    "input_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-08-input.jsonl",
+    "input_sha256": "c8057f5ca25067dabbd893d763a9e82f2497d7b55a5e71f229a980e650175cd5",
+    "row_count": 10
+  },
+  "target_output": {
+    "path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-08-batch-2026-10-03-01.jsonl",
+    "sha256": "1966c5225f9846876484cdb466f4a35086045c89871b11a96622dc734309644c",
+    "row_count": 10,
+    "keys": [
+      "entry-4435",
+      "entry-5273",
+      "entry-5745",
+      "entry-5860",
+      "entry-6450",
+      "entry-6537",
+      "entry-6660",
+      "entry-6756",
+      "entry-6838",
+      "entry-6960"
+    ]
+  },
+  "ledger": {
+    "path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/crossqa/worker-07/worker-08-crossqa-20261003.jsonl",
+    "sha256": "8e436df71619a804e9d8465bb0d44c0a77a24dbb3e238efbe14a0d67dfdc8ef7",
+    "row_count": 10,
+    "keys": [
+      "entry-4435",
+      "entry-5273",
+      "entry-5745",
+      "entry-5860",
+      "entry-6450",
+      "entry-6537",
+      "entry-6660",
+      "entry-6756",
+      "entry-6838",
+      "entry-6960"
+    ]
+  },
+  "exact_set": {
+    "expected_keys": [
+      "entry-4435",
+      "entry-5273",
+      "entry-5745",
+      "entry-5860",
+      "entry-6450",
+      "entry-6537",
+      "entry-6660",
+      "entry-6756",
+      "entry-6838",
+      "entry-6960"
+    ],
+    "packet_matches": true,
+    "target_output_matches": true,
+    "ledger_matches": true,
+    "all_unique": true
+  },
+  "qa_summary": {
+    "all_rows_remain_needs_correction": true,
+    "all_correction_statuses_are_complete_proposals": true,
+    "all_source_urls_mapped": true,
+    "all_preexisting_staged_urls_preserved": true,
+    "all_description_lengths_pass": true,
+    "all_unresolved_gaps_recorded": true,
+    "outcomes": {
+      "pass": 6,
+      "pass_with_note": 3,
+      "revise": 1
+    },
+    "revision_required_keys": [
+      "entry-5273"
+    ],
+    "per_key": [
+      {
+        "key": "entry-4435",
+        "overall": "pass_with_note",
+        "source_map_pass": true,
+        "staged_urls_preserved": true,
+        "description_limits_pass": true,
+        "gap_recorded": true
+      },
+      {
+        "key": "entry-5273",
+        "overall": "revise",
+        "source_map_pass": true,
+        "staged_urls_preserved": true,
+        "description_limits_pass": true,
+        "gap_recorded": true
+      },
+      {
+        "key": "entry-5745",
+        "overall": "pass",
+        "source_map_pass": true,
+        "staged_urls_preserved": true,
+        "description_limits_pass": true,
+        "gap_recorded": true
+      },
+      {
+        "key": "entry-5860",
+        "overall": "pass_with_note",
+        "source_map_pass": true,
+        "staged_urls_preserved": true,
+        "description_limits_pass": true,
+        "gap_recorded": true
+      },
+      {
+        "key": "entry-6450",
+        "overall": "pass_with_note",
+        "source_map_pass": true,
+        "staged_urls_preserved": true,
+        "description_limits_pass": true,
+        "gap_recorded": true
+      },
+      {
+        "key": "entry-6537",
+        "overall": "pass",
+        "source_map_pass": true,
+        "staged_urls_preserved": true,
+        "description_limits_pass": true,
+        "gap_recorded": true
+      },
+      {
+        "key": "entry-6660",
+        "overall": "pass",
+        "source_map_pass": true,
+        "staged_urls_preserved": true,
+        "description_limits_pass": true,
+        "gap_recorded": true
+      },
+      {
+        "key": "entry-6756",
+        "overall": "pass",
+        "source_map_pass": true,
+        "staged_urls_preserved": true,
+        "description_limits_pass": true,
+        "gap_recorded": true
+      },
+      {
+        "key": "entry-6838",
+        "overall": "pass",
+        "source_map_pass": true,
+        "staged_urls_preserved": true,
+        "description_limits_pass": true,
+        "gap_recorded": true
+      },
+      {
+        "key": "entry-6960",
+        "overall": "pass",
+        "source_map_pass": true,
+        "staged_urls_preserved": true,
+        "description_limits_pass": true,
+        "gap_recorded": true
+      }
+    ]
+  },
+  "revision_finding": "entry-5273: DOJ OLC’s primary opinion addresses state treatment of mentally disabled individuals. The corrected claim and long description broaden this to people with disabilities generally; narrow those phrases to the opinion’s mental-disability scope.",
+  "retrieval_limits": "Directly retrieved the DOJ OLC HTML page and selected DOJ/IAEA primary files. In this environment, some Reuters, AP, Washington Post, BLS, USCIS, and IranWatch URLs returned HTTP 401/403 or timed out; their mapped claims were compared with the frozen packet source-triage notes and the worker output access notes.",
+  "scope": "Review artifacts only. The worker 08 target output, canonical data, and Neon were not modified."
+}

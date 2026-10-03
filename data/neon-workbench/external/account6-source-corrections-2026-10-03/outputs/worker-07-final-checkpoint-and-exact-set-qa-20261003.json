@@ -1,0 +1,221 @@
+{
+  "artifact": "worker-07 final checkpoint and exact-set QA",
+  "created_at_utc": "2026-10-03T11:36:39.161848+00:00",
+  "task_branch": "ls/7-trump-files-source118-review-07-of-12-Asbx",
+  "worker": 7,
+  "packet": {
+    "commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+    "input_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/worker-07-input.jsonl",
+    "input_sha256": "3812ce121181267108020d2ac61ea4aa2ff0c344e42b1d18f27f520b0d34b4c3",
+    "expected_sha256": "3812ce121181267108020d2ac61ea4aa2ff0c344e42b1d18f27f520b0d34b4c3"
+  },
+  "correction_output": {
+    "path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-07-batch-001-20261003.jsonl",
+    "sha256": "55329fe1f065cf67eaa62ef46173a7f479e0adc7a345d04e66950660e8391ffb",
+    "row_count": 10,
+    "keys": [
+      "entry-4413",
+      "entry-5222",
+      "entry-5742",
+      "entry-5853",
+      "entry-6435",
+      "entry-6520",
+      "entry-6653",
+      "entry-6753",
+      "entry-6831",
+      "entry-6953"
+    ]
+  },
+  "exact_set_qa": {
+    "expected_keys": [
+      "entry-4413",
+      "entry-5222",
+      "entry-5742",
+      "entry-5853",
+      "entry-6435",
+      "entry-6520",
+      "entry-6653",
+      "entry-6753",
+      "entry-6831",
+      "entry-6953"
+    ],
+    "observed_keys": [
+      "entry-4413",
+      "entry-5222",
+      "entry-5742",
+      "entry-5853",
+      "entry-6435",
+      "entry-6520",
+      "entry-6653",
+      "entry-6753",
+      "entry-6831",
+      "entry-6953"
+    ],
+    "exact_match": true,
+    "unique_key_count": 10,
+    "all_source_triage_rows_remain_needs_correction": true,
+    "per_row": [
+      {
+        "key": "entry-4413",
+        "terminal_status": "corrected",
+        "short_characters": 137,
+        "medium_words": 62,
+        "long_words": 176,
+        "source_url_count": 2,
+        "checks": {
+          "source_triage_is_needs_correction": true,
+          "terminal_status_is_not_verified": true,
+          "short_at_most_180_chars": true,
+          "medium_45_to_90_words": true,
+          "long_140_to_300_words": true,
+          "all_urls_have_fact_mapping": true
+        }
+      },
+      {
+        "key": "entry-5222",
+        "terminal_status": "corrected",
+        "short_characters": 125,
+        "medium_words": 65,
+        "long_words": 204,
+        "source_url_count": 4,
+        "checks": {
+          "source_triage_is_needs_correction": true,
+          "terminal_status_is_not_verified": true,
+          "short_at_most_180_chars": true,
+          "medium_45_to_90_words": true,
+          "long_140_to_300_words": true,
+          "all_urls_have_fact_mapping": true
+        }
+      },
+      {
+        "key": "entry-5742",
+        "terminal_status": "corrected",
+        "short_characters": 132,
+        "medium_words": 60,
+        "long_words": 171,
+        "source_url_count": 1,
+        "checks": {
+          "source_triage_is_needs_correction": true,
+          "terminal_status_is_not_verified": true,
+          "short_at_most_180_chars": true,
+          "medium_45_to_90_words": true,
+          "long_140_to_300_words": true,
+          "all_urls_have_fact_mapping": true
+        }
+      },
+      {
+        "key": "entry-5853",
+        "terminal_status": "corrected",
+        "short_characters": 153,
+        "medium_words": 65,
+        "long_words": 198,
+        "source_url_count": 2,
+        "checks": {
+          "source_triage_is_needs_correction": true,
+          "terminal_status_is_not_verified": true,
+          "short_at_most_180_chars": true,
+          "medium_45_to_90_words": true,
+          "long_140_to_300_words": true,
+          "all_urls_have_fact_mapping": true
+        }
+      },
+      {
+        "key": "entry-6435",
+        "terminal_status": "corrected",
+        "short_characters": 157,
+        "medium_words": 67,
+        "long_words": 196,
+        "source_url_count": 2,
+        "checks": {
+          "source_triage_is_needs_correction": true,
+          "terminal_status_is_not_verified": true,
+          "short_at_most_180_chars": true,
+          "medium_45_to_90_words": true,
+          "long_140_to_300_words": true,
+          "all_urls_have_fact_mapping": true
+        }
+      },
+      {
+        "key": "entry-6520",
+        "terminal_status": "corrected",
+        "short_characters": 130,
+        "medium_words": 55,
+        "long_words": 173,
+        "source_url_count": 1,
+        "checks": {
+          "source_triage_is_needs_correction": true,
+          "terminal_status_is_not_verified": true,
+          "short_at_most_180_chars": true,
+          "medium_45_to_90_words": true,
+          "long_140_to_300_words": true,
+          "all_urls_have_fact_mapping": true
+        }
+      },
+      {
+        "key": "entry-6653",
+        "terminal_status": "corrected",
+        "short_characters": 142,
+        "medium_words": 68,
+        "long_words": 200,
+        "source_url_count": 1,
+        "checks": {
+          "source_triage_is_needs_correction": true,
+          "terminal_status_is_not_verified": true,
+          "short_at_most_180_chars": true,
+          "medium_45_to_90_words": true,
+          "long_140_to_300_words": true,
+          "all_urls_have_fact_mapping": true
+        }
+      },
+      {
+        "key": "entry-6753",
+        "terminal_status": "corrected",
+        "short_characters": 155,
+        "medium_words": 63,
+        "long_words": 189,
+        "source_url_count": 2,
+        "checks": {
+          "source_triage_is_needs_correction": true,
+          "terminal_status_is_not_verified": true,
+          "short_at_most_180_chars": true,
+          "medium_45_to_90_words": true,
+          "long_140_to_300_words": true,
+          "all_urls_have_fact_mapping": true
+        }
+      },
+      {
+        "key": "entry-6831",
+        "terminal_status": "corrected",
+        "short_characters": 157,
+        "medium_words": 70,
+        "long_words": 213,
+        "source_url_count": 1,
+        "checks": {
+          "source_triage_is_needs_correction": true,
+          "terminal_status_is_not_verified": true,
+          "short_at_most_180_chars": true,
+          "medium_45_to_90_words": true,
+          "long_140_to_300_words": true,
+          "all_urls_have_fact_mapping": true
+        }
+      },
+      {
+        "key": "entry-6953",
+        "terminal_status": "corrected",
+        "short_characters": 131,
+        "medium_words": 57,
+        "long_words": 187,
+        "source_url_count": 1,
+        "checks": {
+          "source_triage_is_needs_correction": true,
+          "terminal_status_is_not_verified": true,
+          "short_at_most_180_chars": true,
+          "medium_45_to_90_words": true,
+          "long_140_to_300_words": true,
+          "all_urls_have_fact_mapping": true
+        }
+      }
+    ]
+  },
+  "checkpoint_commit_before_this_file": "315b0a36b9e6c6bb1812ad751c938cc1c1821b69"
+}
